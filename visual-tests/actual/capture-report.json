@@ -1,0 +1,88 @@
+{
+  "captures": [
+    {
+      "width": 1920,
+      "group": "desktop",
+      "file": "full-page-1920.png",
+      "docHeight": 3748
+    },
+    {
+      "width": 1440,
+      "group": "desktop",
+      "file": "full-page-1440.png",
+      "docHeight": 3748
+    },
+    {
+      "width": 1366,
+      "group": "desktop",
+      "file": "full-page-1366.png",
+      "docHeight": 3748
+    },
+    {
+      "width": 1280,
+      "group": "desktop",
+      "file": "full-page-1280.png",
+      "docHeight": 3748
+    },
+    {
+      "width": 1024,
+      "group": "desktop",
+      "file": "full-page-1024.png",
+      "docHeight": 6535
+    },
+    {
+      "width": 834,
+      "group": "tablet",
+      "file": "full-page-834.png",
+      "docHeight": 5318
+    },
+    {
+      "width": 768,
+      "group": "tablet",
+      "file": "full-page-768.png",
+      "docHeight": 5318
+    },
+    {
+      "width": 430,
+      "group": "mobile",
+      "file": "full-page-430.png",
+      "docHeight": 6306
+    },
+    {
+      "width": 414,
+      "group": "mobile",
+      "file": "full-page-414.png",
+      "docHeight": 6209
+    },
+    {
+      "width": 390,
+      "group": "mobile",
+      "file": "full-page-390.png",
+      "docHeight": 6096
+    },
+    {
+      "width": 375,
+      "group": "mobile",
+      "file": "full-page-375.png",
+      "docHeight": 6006
+    },
+    {
+      "width": 360,
+      "group": "mobile",
+      "file": "full-page-360.png",
+      "docHeight": 5943
+    }
+  ],
+  "base": "http://localhost:3000",
+  "conditions": {
+    "launchArgs": [
+      "--no-sandbox",
+      "--disable-dev-shm-usage",
+      "--font-render-hinting=none"
+    ],
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "locale": "fa-IR",
+    "dpr": 1,
+    "sliders": "frozen on slide 0"
+  }
+}

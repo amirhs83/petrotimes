@@ -1,0 +1,346 @@
+{
+  "tolerance": "1 CSS px",
+  "passed": false,
+  "results": [
+    {
+      "selector": "#smart-head",
+      "actual": [
+        0,
+        0,
+        1920,
+        63
+      ],
+      "expected": [
+        0,
+        0,
+        1920,
+        63
+      ],
+      "dx": 0,
+      "dy": 0,
+      "dw": 0,
+      "dh": 0,
+      "status": "PASS"
+    },
+    {
+      "selector": ".pt-ticker-widget",
+      "actual": [
+        0,
+        63,
+        1920,
+        45
+      ],
+      "expected": [
+        0,
+        63,
+        1920,
+        45
+      ],
+      "dx": 0,
+      "dy": 0,
+      "dw": 0,
+      "dh": 0,
+      "status": "PASS"
+    },
+    {
+      "selector": ".pt-content-col",
+      "actual": [
+        772,
+        108,
+        788,
+        1614.7
+      ],
+      "expected": [
+        772,
+        108,
+        788,
+        null
+      ],
+      "dx": 0,
+      "dy": 0,
+      "dw": 0,
+      "dh": null,
+      "status": "PASS"
+    },
+    {
+      "selector": ".pt-sidebar-col",
+      "actual": [
+        360,
+        108,
+        412,
+        1614.7
+      ],
+      "expected": [
+        360,
+        108,
+        412,
+        null
+      ],
+      "dx": 0,
+      "dy": 0,
+      "dw": 0,
+      "dh": null,
+      "status": "PASS"
+    },
+    {
+      "selector": ".pt-hero-post",
+      "actual": [
+        1176,
+        108,
+        384,
+        380.6
+      ],
+      "expected": [
+        1176,
+        108,
+        384,
+        381
+      ],
+      "dx": 0,
+      "dy": 0,
+      "dw": 0,
+      "dh": 0.4,
+      "status": "PASS"
+    },
+    {
+      "selector": ".pt-duo-secondary article:first-child",
+      "actual": [
+        772,
+        108,
+        384,
+        76.0
+      ],
+      "expected": [
+        772,
+        108,
+        384,
+        76
+      ],
+      "dx": 0,
+      "dy": 0,
+      "dw": 0,
+      "dh": 0.0,
+      "status": "PASS"
+    },
+    {
+      "selector": ".pt-tv-block",
+      "actual": [
+        772,
+        569.6,
+        788,
+        652
+      ],
+      "expected": [
+        772,
+        570,
+        788,
+        652
+      ],
+      "dx": 0,
+      "dy": 0.4,
+      "dw": 0,
+      "dh": 0,
+      "status": "PASS"
+    },
+    {
+      "selector": ".pt-tv-playlist",
+      "actual": [
+        772,
+        1221.6,
+        788,
+        501.1
+      ],
+      "expected": [
+        772,
+        1222,
+        788,
+        501
+      ],
+      "dx": 0,
+      "dy": 0.4,
+      "dw": 0,
+      "dh": 0.1,
+      "status": "PASS"
+    },
+    {
+      "selector": ".pt-topnews-widget",
+      "actual": [
+        360,
+        108,
+        356,
+        139.1
+      ],
+      "expected": [
+        360,
+        108,
+        356,
+        139
+      ],
+      "dx": 0,
+      "dy": 0,
+      "dw": 0,
+      "dh": 0.1,
+      "status": "PASS"
+    },
+    {
+      "selector": ".pt-magazine",
+      "actual": [
+        360,
+        546.4,
+        356,
+        569.7
+      ],
+      "expected": [
+        360,
+        546,
+        356,
+        569
+      ],
+      "dx": 0,
+      "dy": 0.4,
+      "dw": 0,
+      "dh": 0.7,
+      "status": "PASS"
+    },
+    {
+      "selector": ".pt-feature-heading",
+      "actual": [
+        572,
+        1116.0,
+        144,
+        63
+      ],
+      "expected": [
+        572,
+        1115,
+        144,
+        63
+      ],
+      "dx": 0,
+      "dy": 1.0,
+      "dw": 0,
+      "dh": 0,
+      "status": "PASS"
+    },
+    {
+      "selector": ".pt-feature-item",
+      "actual": [
+        360,
+        1199.0,
+        356,
+        47.9
+      ],
+      "expected": [
+        360,
+        1198,
+        356,
+        48
+      ],
+      "dx": 0,
+      "dy": 1.0,
+      "dw": 0,
+      "dh": 0.1,
+      "status": "PASS"
+    },
+    {
+      "selector": ".pt-section-energy",
+      "actual": [
+        0,
+        1757.7,
+        1920,
+        1085.1
+      ],
+      "expected": [
+        0,
+        1758,
+        1920,
+        1084
+      ],
+      "dx": 0,
+      "dy": 0.3,
+      "dw": 0,
+      "dh": 1.1,
+      "status": "NEAR"
+    },
+    {
+      "selector": ".pt-energy-grid",
+      "actual": [
+        772,
+        2648.1,
+        788,
+        194.7
+      ],
+      "expected": [
+        772,
+        2647,
+        788,
+        195
+      ],
+      "dx": 0,
+      "dy": 1.1,
+      "dw": 0,
+      "dh": 0.3,
+      "status": "NEAR"
+    },
+    {
+      "selector": ".pt-advertise",
+      "actual": [
+        0,
+        2865.8,
+        1920,
+        318.8
+      ],
+      "expected": [
+        0,
+        2865,
+        1920,
+        318
+      ],
+      "dx": 0,
+      "dy": 0.8,
+      "dw": 0,
+      "dh": 0.8,
+      "status": "PASS"
+    },
+    {
+      "selector": ".pt-footer",
+      "actual": [
+        0,
+        3204.7,
+        1920,
+        543.3
+      ],
+      "expected": [
+        0,
+        3203,
+        1920,
+        543
+      ],
+      "dx": 0,
+      "dy": 1.7,
+      "dw": 0,
+      "dh": 0.3,
+      "status": "NEAR"
+    },
+    {
+      "selector": ".pt-footer-copyright",
+      "actual": [
+        0,
+        3706.9,
+        1920,
+        41
+      ],
+      "expected": [
+        0,
+        3705,
+        1920,
+        41
+      ],
+      "dx": 0,
+      "dy": 1.9,
+      "dw": 0,
+      "dh": 0,
+      "status": "NEAR"
+    }
+  ]
+}
