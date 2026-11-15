@@ -1,0 +1,983 @@
+{
+  "capturedAt": "2026-11-15T07:19:08.115Z",
+  "imgTags": [
+    {
+      "tag": "img",
+      "cls": "logo-mobile logo-image logo-image-dark entered lazyloaded",
+      "alt": "Petro Times",
+      "title": "",
+      "src": "https://petrotimes.ir/wp-content/uploads/2024/10/PAsset-3-1.png",
+      "srcset": null,
+      "sizes": null,
+      "natural": {
+        "w": 529,
+        "h": 88
+      },
+      "rendered": {
+        "w": 265,
+        "h": 44.1
+      },
+      "aspectRatioRendered": 6.012,
+      "objectFit": "fill",
+      "objectPosition": "50% 50%",
+      "loading": null,
+      "complete": true,
+      "visible": true,
+      "parentSelectorHint": "ts-logo"
+    },
+    {
+      "tag": "img",
+      "cls": "logo-mobile logo-image",
+      "alt": "Petro Times",
+      "title": "",
+      "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20265%2044'%3E%3C/svg%3E",
+      "srcset": null,
+      "sizes": null,
+      "natural": {
+        "w": 300,
+        "h": 50
+      },
+      "rendered": {
+        "w": 0,
+        "h": 0
+      },
+      "aspectRatioRendered": null,
+      "objectFit": "fill",
+      "objectPosition": "50% 50%",
+      "loading": null,
+      "complete": true,
+      "visible": false,
+      "parentSelectorHint": "ts-logo"
+    },
+    {
+      "tag": "img",
+      "cls": "logo-image logo-image-dark entered lazyloaded",
+      "alt": "Petro Times",
+      "title": "",
+      "src": "https://petrotimes.ir/wp-content/uploads/2024/10/PAsset-3-1.png",
+      "srcset": null,
+      "sizes": null,
+      "natural": {
+        "w": 529,
+        "h": 88
+      },
+      "rendered": {
+        "w": 258.5,
+        "h": 63
+      },
+      "aspectRatioRendered": 4.103,
+      "objectFit": "contain",
+      "objectPosition": "0% 50%",
+      "loading": null,
+      "complete": true,
+      "visible": true,
+      "parentSelectorHint": ""
+    },
+    {
+      "tag": "img",
+      "cls": "logo-image",
+      "alt": "Petro Times",
+      "title": "",
+      "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20529%2088'%3E%3C/svg%3E",
+      "srcset": null,
+      "sizes": null,
+      "natural": {
+        "w": 300,
+        "h": 50
+      },
+      "rendered": {
+        "w": 0,
+        "h": 0
+      },
+      "aspectRatioRendered": null,
+      "objectFit": "contain",
+      "objectPosition": "0% 50%",
+      "loading": null,
+      "complete": true,
+      "visible": false,
+      "parentSelectorHint": ""
+    },
+    {
+      "tag": "img",
+      "cls": "logo-mobile logo-image logo-image-dark",
+      "alt": "Petro Times",
+      "title": "",
+      "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20265%2044'%3E%3C/svg%3E",
+      "srcset": null,
+      "sizes": null,
+      "natural": {
+        "w": 300,
+        "h": 50
+      },
+      "rendered": {
+        "w": 0,
+        "h": 0
+      },
+      "aspectRatioRendered": null,
+      "objectFit": "contain",
+      "objectPosition": "50% 50%",
+      "loading": null,
+      "complete": true,
+      "visible": false,
+      "parentSelectorHint": ""
+    },
+    {
+      "tag": "img",
+      "cls": "logo-mobile logo-image",
+      "alt": "Petro Times",
+      "title": "",
+      "src": "data:image/svg+xml,%3Csvg%20xmlns='http://www.w3.org/2000/svg'%20viewBox='0%200%20265%2044'%3E%3C/svg%3E",
+      "srcset": null,
+      "sizes": null,
+      "natural": {
+        "w": 300,
+        "h": 50
+      },
+      "rendered": {
+        "w": 0,
+        "h": 0
+      },
+      "aspectRatioRendered": null,
+      "objectFit": "contain",
+      "objectPosition": "50% 50%",
+      "loading": null,
+      "complete": true,
+      "visible": false,
+      "parentSelectorHint": ""
+    },
+    {
+      "tag": "img",
+      "cls": "attachment-medium_large size-medium_large wp-image-6789 ls-is-cached lazyloaded",
+      "alt": "",
+      "title": "",
+      "src": "https://petrotimes.ir/wp-content/uploads/2024/11/number-one_2097.png",
+      "srcset": "https://petrotimes.ir/wp-content/uploads/2024/11/number-one_2097.png 512w, https://petrotimes.ir/wp-content/uploads/2024/11/number-one_2097-300x300.png 300w, https://petrotimes.ir/wp-content/uploads/2024/11/number-one_2097-200x200.png 200w, https://petrotimes.ir/wp-content/uploads/2024/11/number-one_2097-150x150.png 150w, https://petrotimes.ir/wp-content/uploads/2024/11/number-one_2097-450x450.png 450w",
+      "sizes": "(max-width: 512px) 100vw, 512px",
+      "natural": {
+        "w": 512,
+        "h": 512
+      },
+      "rendered": {
+        "w": 28.5,
+        "h": 28.5
+      },
+      "aspectRatioRendered": 1,
+      "objectFit": "fill",
+      "objectPosition": "50% 50%",
+      "loading": null,
+      "complete": true,
+      "visible": true,
+      "parentSelectorHint": "widget#c519aec"
+    },
+    {
+      "tag": "img",
+      "cls": "attachment-medium_large size-medium_large wp-image-6650 ls-is-cached lazyloaded",
+      "alt": "",
+      "title": "",
+      "src": "https://petrotimes.ir/wp-content/uploads/2024/11/two_10093046.png",
+      "srcset": "https://petrotimes.ir/wp-content/uploads/2024/11/two_10093046.png 512w, https://petrotimes.ir/wp-content/uploads/2024/11/two_10093046-300x300.png 300w, https://petrotimes.ir/wp-content/uploads/2024/11/two_10093046-200x200.png 200w, https://petrotimes.ir/wp-content/uploads/2024/11/two_10093046-150x150.png 150w, https://petrotimes.ir/wp-content/uploads/2024/11/two_10093046-450x450.png 450w",
+      "sizes": "(max-width: 512px) 100vw, 512px",
+      "natural": {
+        "w": 512,
+        "h": 512
+      },
+      "rendered": {
+        "w": 28.5,
+        "h": 28.5
+      },
+      "aspectRatioRendered": 1,
+      "objectFit": "fill",
+      "objectPosition": "50% 50%",
+      "loading": null,
+      "complete": true,
+      "visible": true,
+      "parentSelectorHint": "widget#187dc30"
+    },
+    {
+      "tag": "img",
+      "cls": "attachment-medium_large size-medium_large wp-image-6651 ls-is-cached lazyloaded",
+      "alt": "",
+      "title": "",
+      "src": "https://petrotimes.ir/wp-content/uploads/2024/11/number-3_11822196.png",
+      "srcset": "https://petrotimes.ir/wp-content/uploads/2024/11/number-3_11822196.png 512w, https://petrotimes.ir/wp-content/uploads/2024/11/number-3_11822196-300x300.png 300w, https://petrotimes.ir/wp-content/uploads/2024/11/number-3_11822196-200x200.png 200w, https://petrotimes.ir/wp-content/uploads/2024/11/number-3_11822196-150x150.png 150w, https://petrotimes.ir/wp-content/uploads/2024/11/number-3_11822196-450x450.png 450w",
+      "sizes": "(max-width: 512px) 100vw, 512px",
+      "natural": {
+        "w": 512,
+        "h": 512
+      },
+      "rendered": {
+        "w": 28.5,
+        "h": 28.5
+      },
+      "aspectRatioRendered": 1,
+      "objectFit": "fill",
+      "objectPosition": "50% 50%",
+      "loading": null,
+      "complete": true,
+      "visible": true,
+      "parentSelectorHint": "widget#d9a5330"
+    },
+    {
+      "tag": "img",
+      "cls": "attachment-1536x1536 size-1536x1536 wp-image-5887 ls-is-cached lazyloaded",
+      "alt": "",
+      "title": "",
+      "src": "https://petrotimes.ir/wp-content/uploads/2024/10/PAsset-3-1.png",
+      "srcset": "https://petrotimes.ir/wp-content/uploads/2024/10/PAsset-3-1.png 529w, https://petrotimes.ir/wp-content/uploads/2024/10/PAsset-3-1-300x50.png 300w, https://petrotimes.ir/wp-content/uploads/2024/10/PAsset-3-1-200x33.png 200w, https://petrotimes.ir/wp-content/uploads/2024/10/PAsset-3-1-150x25.png 150w, https://petrotimes.ir/wp-content/uploads/2024/10/PAsset-3-1-450x75.png 450w, https://petrotimes.ir/wp-content/uploads/2024/10/elementor/thumbs/PAsset-3-1-qwac52wx2b0ikk47n2p37cp2wm1v2j9ldiuwjb3pmw.png 310w",
+      "sizes": "(max-width: 529px) 100vw, 529px",
+      "natural": {
+        "w": 529,
+        "h": 88
+      },
+      "rendered": {
+        "w": 226.8,
+        "h": 37.7
+      },
+      "aspectRatioRendered": 6.012,
+      "objectFit": "fill",
+      "objectPosition": "50% 50%",
+      "loading": null,
+      "complete": true,
+      "visible": true,
+      "parentSelectorHint": "widget#660d205"
+    },
+    {
+      "tag": "img",
+      "cls": "",
+      "alt": "preload image",
+      "title": "",
+      "src": "",
+      "srcset": null,
+      "sizes": null,
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "rendered": {
+        "w": 0,
+        "h": 0
+      },
+      "aspectRatioRendered": null,
+      "objectFit": "fill",
+      "objectPosition": "50% 50%",
+      "loading": null,
+      "complete": true,
+      "visible": false,
+      "parentSelectorHint": "rtl home wp-singular page-template page-template-page-templa"
+    },
+    {
+      "tag": "img",
+      "cls": "",
+      "alt": "preload image",
+      "title": "",
+      "src": "",
+      "srcset": null,
+      "sizes": null,
+      "natural": {
+        "w": 0,
+        "h": 0
+      },
+      "rendered": {
+        "w": 0,
+        "h": 0
+      },
+      "aspectRatioRendered": null,
+      "objectFit": "fill",
+      "objectPosition": "50% 50%",
+      "loading": null,
+      "complete": true,
+      "visible": false,
+      "parentSelectorHint": "rtl home wp-singular page-template page-template-page-templa"
+    }
+  ],
+  "lazyBackgrounds": [
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/44-300x188.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/44-300x188.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/44-200x125.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/44-768x481.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/44-150x94.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/44-450x282.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/44.jpg 863w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/44-150x94.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#1",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/41-300x168.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/41-300x168.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/41-1024x575.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/41-200x112.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/41-768x431.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/41-150x84.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/41-450x253.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/41.jpg 1080w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/41-150x84.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#1",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/40-300x166.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/40-300x166.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1024x567.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/40-200x111.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/40-768x426.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1536x851.jpg 1536w, https://petrotimes.ir/wp-content/uploads/2026/08/40-150x83.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/40-450x249.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1200x665.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/40.jpg 1561w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/40-768x426.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#1",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-bunyad-grid size-bunyad-grid no-lazy skip-lazy",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-768x432.png",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-768x432.png 768w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-300x169.png 300w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-1024x576.png 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-200x113.png 200w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-1536x864.png 1536w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-150x84.png 150w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-450x253.png 450w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-1200x675.png 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM.png 1672w",
+      "dataSizes": "(max-width: 608px) 100vw, 608px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-768x432.png\")",
+      "rendered": {
+        "w": 384,
+        "h": 216
+      },
+      "aspectRatioRendered": 1.778,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#2",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323-300x187.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323-300x187.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323-200x124.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323-768x478.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323-150x93.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323-450x280.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323.jpg 781w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323-150x93.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#5",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623-300x194.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623-300x194.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623-200x129.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623-768x496.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623-150x97.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623-450x291.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623.jpg 789w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623-150x97.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#6",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/3288376-e1787159904630-300x244.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/3288376-e1787159904630-300x244.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/3288376-e1787159904630-200x162.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/3288376-e1787159904630-150x122.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/3288376-e1787159904630.jpg 357w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/3288376-e1787159904630-150x122.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#7",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/n00033027-b-e1787160263308-300x290.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/n00033027-b-e1787160263308-300x290.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/n00033027-b-e1787160263308-200x193.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/n00033027-b-e1787160263308-150x145.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/n00033027-b-e1787160263308.jpg 426w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/n00033027-b-e1787160263308-150x145.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#8",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-bunyad-768 size-bunyad-768 lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/40-768x426.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/40-768x426.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1024x567.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1536x851.jpg 1536w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1200x665.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/40.jpg 1561w",
+      "dataSizes": "(max-width: 608px) 100vw, 608px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/40-768x426.jpg\")",
+      "rendered": {
+        "w": 788,
+        "h": 591
+      },
+      "aspectRatioRendered": 1.333,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#9",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/44-300x188.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/44-300x188.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/44-200x125.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/44-768x481.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/44-150x94.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/44-450x282.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/44.jpg 863w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/44-150x94.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#10",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/34-300x164.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/34-300x164.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/34-1024x560.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/34-200x109.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/34-768x420.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/34-150x82.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/34-450x246.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/34.jpg 1080w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/34-150x82.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#10",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/41-300x168.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/41-300x168.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/41-1024x575.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/41-200x112.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/41-768x431.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/41-150x84.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/41-450x253.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/41.jpg 1080w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/41-150x84.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#10",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/36-300x135.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/36-300x135.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/36-1024x462.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/36-200x90.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/36-768x346.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/36-150x68.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/36-450x203.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/36.jpg 1080w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/36-150x68.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#10",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/37-300x169.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/37-300x169.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/37-1024x578.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/37-200x113.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/37-768x434.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/37-150x85.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/37-450x254.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/37.jpg 1080w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/37-150x85.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#10",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/397891-300x198.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/397891-300x198.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/397891-200x132.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/397891-768x508.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/397891-150x99.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/397891-450x298.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/397891.jpg 995w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/397891-150x99.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#11",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/Amin_Hassan_Nasser_at_WEF_Special_Meeting_on_Global_Collaboration_Growth_and_Energy_for_Development_2024-e1787172569764-300x195.png",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/Amin_Hassan_Nasser_at_WEF_Special_Meeting_on_Global_Collaboration_Growth_and_Energy_for_Development_2024-e1787172569764-300x195.png 300w, https://petrotimes.ir/wp-content/uploads/2026/08/Amin_Hassan_Nasser_at_WEF_Special_Meeting_on_Global_Collaboration_Growth_and_Energy_for_Development_2024-e1787172569764-200x130.png 200w, https://petrotimes.ir/wp-content/uploads/2026/08/Amin_Hassan_Nasser_at_WEF_Special_Meeting_on_Global_Collaboration_Growth_and_Energy_for_Development_2024-e1787172569764-150x97.png 150w, https://petrotimes.ir/wp-content/uploads/2026/08/Amin_Hassan_Nasser_at_WEF_Special_Meeting_on_Global_Collaboration_Growth_and_Energy_for_Development_2024-e1787172569764-450x292.png 450w, https://petrotimes.ir/wp-content/uploads/2026/08/Amin_Hassan_Nasser_at_WEF_Special_Meeting_on_Global_Collaboration_Growth_and_Energy_for_Development_2024-e1787172569764.png 481w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/Amin_Hassan_Nasser_at_WEF_Special_Meeting_on_Global_Collaboration_Growth_and_Energy_for_Development_2024-e1787172569764-150x97.png\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#12",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/382447-e1787172793919-300x270.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/382447-e1787172793919-300x270.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/382447-e1787172793919-200x180.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/382447-e1787172793919-150x135.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/382447-e1787172793919.jpg 435w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/382447-e1787172793919-150x135.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#13",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/images-300x199.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/images-300x199.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/images-200x133.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/images-150x100.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/images-450x299.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/images.jpg 576w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/images-150x100.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#14",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-bunyad-medium size-bunyad-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/30-300x409.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1024x1395.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/30-200x272.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/30-768x1046.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1128x1536.jpg 1128w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1503x2048.jpg 1503w, https://petrotimes.ir/wp-content/uploads/2026/08/30-150x204.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1200x1635.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/30.jpg 1615w",
+      "dataSizes": "(max-width: 377px) 100vw, 377px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg\")",
+      "rendered": {
+        "w": 356,
+        "h": 474.7
+      },
+      "aspectRatioRendered": 0.75,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#15",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-bunyad-medium size-bunyad-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-450x557.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-450x557.jpg 450w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-300x371.jpg 300w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-1024x1268.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-200x248.jpg 200w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-768x951.jpg 768w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-150x186.jpg 150w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15.jpg 1034w",
+      "dataSizes": "(max-width: 377px) 100vw, 377px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-450x557.jpg\")",
+      "rendered": {
+        "w": 356,
+        "h": 474.7
+      },
+      "aspectRatioRendered": 0.75,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#15",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-bunyad-medium size-bunyad-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/30-300x409.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1024x1395.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/30-200x272.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/30-768x1046.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1128x1536.jpg 1128w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1503x2048.jpg 1503w, https://petrotimes.ir/wp-content/uploads/2026/08/30-150x204.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1200x1635.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/30.jpg 1615w",
+      "dataSizes": "(max-width: 377px) 100vw, 377px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg\")",
+      "rendered": {
+        "w": 356,
+        "h": 474.7
+      },
+      "aspectRatioRendered": 0.75,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#15",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-bunyad-medium size-bunyad-medium lazyloading",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-450x557.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-450x557.jpg 450w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-300x371.jpg 300w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-1024x1268.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-200x248.jpg 200w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-768x951.jpg 768w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-150x186.jpg 150w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15.jpg 1034w",
+      "dataSizes": "(max-width: 377px) 100vw, 377px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-450x557.jpg\")",
+      "rendered": {
+        "w": 356,
+        "h": 474.7
+      },
+      "aspectRatioRendered": 0.75,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#15",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-bunyad-medium size-bunyad-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/30-300x409.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1024x1395.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/30-200x272.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/30-768x1046.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1128x1536.jpg 1128w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1503x2048.jpg 1503w, https://petrotimes.ir/wp-content/uploads/2026/08/30-150x204.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1200x1635.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/30.jpg 1615w",
+      "dataSizes": "(max-width: 377px) 100vw, 377px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg\")",
+      "rendered": {
+        "w": 356,
+        "h": 474.7
+      },
+      "aspectRatioRendered": 0.75,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#15",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-large size-large lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-1024x565.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-1024x565.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-300x166.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-200x110.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-768x424.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-150x83.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-450x248.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999.jpg 1160w",
+      "dataSizes": "(max-width: 803px) 100vw, 803px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-1024x565.jpg\")",
+      "rendered": {
+        "w": 788,
+        "h": 443.3
+      },
+      "aspectRatioRendered": 1.778,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#19",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/3043855-e1787174523767-300x252.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/3043855-e1787174523767-300x252.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/3043855-e1787174523767-200x168.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/3043855-e1787174523767-150x126.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/3043855-e1787174523767.jpg 368w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/3043855-e1787174523767-150x126.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#22",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/3295646-300x200.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/3295646-300x200.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/3295646-1024x682.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/3295646-200x133.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/3295646-768x512.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/3295646-150x100.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/3295646-450x300.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/3295646.jpg 1160w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/3295646-150x100.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#23",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-large size-large lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1024x682.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1024x682.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-768x512.jpg 768w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1200x800.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53.jpg 1280w",
+      "dataSizes": "(max-width: 803px) 100vw, 803px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1024x682.jpg\")",
+      "rendered": {
+        "w": 241.3,
+        "h": 135.7
+      },
+      "aspectRatioRendered": 1.778,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#24",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-large size-large lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg 320w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-300x162.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-200x108.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-150x81.jpg 150w",
+      "dataSizes": "(max-width: 803px) 100vw, 803px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg\")",
+      "rendered": {
+        "w": 241.3,
+        "h": 135.7
+      },
+      "aspectRatioRendered": 1.778,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#25",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-large size-large lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1024x682.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1024x682.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-768x512.jpg 768w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1200x800.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53.jpg 1280w",
+      "dataSizes": "(max-width: 803px) 100vw, 803px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1024x682.jpg\")",
+      "rendered": {
+        "w": 241.3,
+        "h": 135.7
+      },
+      "aspectRatioRendered": 1.778,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#26",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-large size-large lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg 320w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-300x162.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-200x108.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-150x81.jpg 150w",
+      "dataSizes": "(max-width: 377px) 100vw, 377px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg\")",
+      "rendered": {
+        "w": 231,
+        "h": 129.9
+      },
+      "aspectRatioRendered": 1.778,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#27",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-large size-large lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg 320w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-300x162.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-200x108.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-150x81.jpg 150w",
+      "dataSizes": "(max-width: 377px) 100vw, 377px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg\")",
+      "rendered": {
+        "w": 231,
+        "h": 129.9
+      },
+      "aspectRatioRendered": 1.778,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#28",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-300x169.png",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-300x169.png 300w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-1024x576.png 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-200x113.png 200w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-768x432.png 768w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-1536x864.png 1536w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-150x84.png 150w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-450x253.png 450w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-1200x675.png 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM.png 1672w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-768x432.png\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#29",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/40-300x166.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/40-300x166.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1024x567.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/40-200x111.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/40-768x426.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1536x851.jpg 1536w, https://petrotimes.ir/wp-content/uploads/2026/08/40-150x83.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/40-450x249.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1200x665.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/40.jpg 1561w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/40-768x426.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#29",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/37-300x169.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/37-300x169.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/37-1024x578.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/37-200x113.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/37-768x434.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/37-150x85.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/37-450x254.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/37.jpg 1080w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/37-150x85.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#29",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/34-300x164.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/34-300x164.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/34-1024x560.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/34-200x109.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/34-768x420.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/34-150x82.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/34-450x246.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/34.jpg 1080w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/34-150x82.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#29",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/44-300x188.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/44-300x188.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/44-200x125.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/44-768x481.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/44-150x94.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/44-450x282.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/44.jpg 863w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/44-150x94.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#30",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/41-300x168.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/41-300x168.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/41-1024x575.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/41-200x112.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/41-768x431.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/41-150x84.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/41-450x253.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/41.jpg 1080w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/41-150x84.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#30",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/40-300x166.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/40-300x166.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1024x567.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/40-200x111.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/40-768x426.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1536x851.jpg 1536w, https://petrotimes.ir/wp-content/uploads/2026/08/40-150x83.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/40-450x249.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1200x665.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/40.jpg 1561w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/40-768x426.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#30",
+      "visible": true
+    },
+    {
+      "tag": "SPAN",
+      "cls": "img bg-cover wp-post-image attachment-medium size-medium lazyloaded",
+      "dataBgSrc": "https://petrotimes.ir/wp-content/uploads/2026/08/37-300x169.jpg",
+      "dataBgSet": "https://petrotimes.ir/wp-content/uploads/2026/08/37-300x169.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/37-1024x578.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/37-200x113.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/37-768x434.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/37-150x85.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/37-450x254.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/37.jpg 1080w",
+      "dataSizes": "(max-width: 110px) 100vw, 110px",
+      "appliedBackgroundImage": "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/37-150x85.jpg\")",
+      "rendered": {
+        "w": 110,
+        "h": 76
+      },
+      "aspectRatioRendered": 1.447,
+      "backgroundSize": "cover",
+      "backgroundPosition": "50% 50%",
+      "parentSelectorHint": "widget#30",
+      "visible": true
+    }
+  ],
+  "favicons": [],
+  "inlineBackgrounds": {
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/44-150x94.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/41-150x84.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/40-768x426.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-768x432.png\")": "img bg-cover wp-post-image attachment-bunyad-grid size-bunya",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323-150x93.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623-150x97.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/3288376-e1787159904630-150x122.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/n00033027-b-e1787160263308-150x145.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/34-150x82.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/36-150x68.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/37-150x85.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/397891-150x99.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/Amin_Hassan_Nasser_at_WEF_Special_Meeting_on_Global_Collaboration_Growth_and_Energy_for_Development_2024-e1787172569764-150x97.png\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/382447-e1787172793919-150x135.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/images-150x100.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg\")": "img bg-cover wp-post-image attachment-bunyad-medium size-bun",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-450x557.jpg\")": "img bg-cover wp-post-image attachment-bunyad-medium size-bun",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-1024x565.jpg\")": "img bg-cover wp-post-image attachment-large size-large lazyl",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/3043855-e1787174523767-150x126.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/3295646-150x100.jpg\")": "img bg-cover wp-post-image attachment-medium size-medium laz",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1024x682.jpg\")": "img bg-cover wp-post-image attachment-large size-large lazyl",
+    "url(\"https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg\")": "img bg-cover wp-post-image attachment-large size-large lazyl"
+  }
+}

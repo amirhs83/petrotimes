@@ -1,0 +1,144 @@
+{
+  "viewport": {
+    "w": 430,
+    "h": 1080
+  },
+  "docWidth": 430,
+  "docHeight": 6288,
+  "horizontalOverflow": false,
+  "containers": {
+    "headerInner": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0,
+      "docX": 0,
+      "docY": 223
+    },
+    "mainContainer1": {
+      "x": -18,
+      "y": -130,
+      "w": 466,
+      "h": 3065.1,
+      "docX": -18,
+      "docY": 93
+    },
+    "elementorContainer": {
+      "x": -18,
+      "y": -175,
+      "w": 466,
+      "h": 45,
+      "docX": -18,
+      "docY": 48
+    },
+    "footerContainer": {
+      "x": 2,
+      "y": 5714.7,
+      "w": 426,
+      "h": 312.1,
+      "docX": 2,
+      "docY": 5937.7
+    }
+  },
+  "sections": {
+    "ticker": {
+      "x": 0,
+      "y": -175,
+      "w": 430,
+      "h": 45,
+      "docX": 0,
+      "docY": 48
+    },
+    "topNewsArea": {
+      "x": 0,
+      "y": -130,
+      "w": 430,
+      "h": 3065.1,
+      "docX": 0,
+      "docY": 93
+    },
+    "mainContentCol": {
+      "x": 21.5,
+      "y": -130,
+      "w": 387,
+      "h": 450.6,
+      "docX": 21.5,
+      "docY": 93
+    },
+    "sidebarCol": {
+      "x": 21.5,
+      "y": 1654.1,
+      "w": 387,
+      "h": 137,
+      "docX": 21.5,
+      "docY": 1877.1
+    },
+    "energySection": {
+      "x": 20,
+      "y": 2978.1,
+      "w": 390,
+      "h": 501.3,
+      "docX": 20,
+      "docY": 3201.1
+    },
+    "advertiseRow": {
+      "x": 0,
+      "y": 5192.5,
+      "w": 430,
+      "h": 628.2,
+      "docX": 0,
+      "docY": 5415.5
+    },
+    "footer": {
+      "x": 0,
+      "y": 5714.7,
+      "w": 430,
+      "h": 350.1,
+      "docX": 0,
+      "docY": 5937.7
+    }
+  },
+  "visibility": {
+    "desktopHeader": false,
+    "mobileHeader": true,
+    "offCanvas": false,
+    "desktopNav": false,
+    "hamburger": false,
+    "tickerIframe": true,
+    "magazine": true,
+    "socialWidget": true,
+    "newsletter": true,
+    "footerAbout": true
+  },
+  "columns": [
+    {
+      "cls": "elementor-col-50 elementor-element elementor-element-0cd2772 main-content",
+      "w": 466,
+      "h": 1734.1,
+      "order": "0",
+      "flexBasis": "auto"
+    },
+    {
+      "cls": "elementor-col-50 elementor-element elementor-element-98a6ee8 main-sidebar",
+      "w": 466,
+      "h": 1281.1,
+      "order": "0",
+      "flexBasis": "auto"
+    }
+  ],
+  "fontSizes": {
+    "heroTitle": "20px",
+    "smallPostTitle": "14px",
+    "sectionHeading": null,
+    "menuItem": "15px",
+    "date": "11px",
+    "bodyBase": "14px",
+    "footerTitle": "17px"
+  },
+  "stickyHeaderState": {
+    "cls": "smart-head-row smart-head-mid s-dark smart-head-row-full is-smart animate smart-head-sticky",
+    "position": "fixed",
+    "top": "0px",
+    "transform": "none"
+  }
+}

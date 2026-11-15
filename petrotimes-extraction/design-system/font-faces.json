@@ -1,0 +1,870 @@
+{
+  "count": 111,
+  "fontFaces": [
+    {
+      "family": "Barlow",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/barlow/v13/7cHpv4kjgoGqM7E_A8s52Hs.woff2) format('woff2')",
+      "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Barlow",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/barlow/v13/7cHpv4kjgoGqM7E_Ass52Hs.woff2) format('woff2')",
+      "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Barlow",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/barlow/v13/7cHpv4kjgoGqM7E_DMs5.woff2) format('woff2')",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Barlow",
+      "weight": "500",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/barlow/v13/7cHqv4kjgoGqM7E3_-gs6FospT4.woff2) format('woff2')",
+      "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Barlow",
+      "weight": "500",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/barlow/v13/7cHqv4kjgoGqM7E3_-gs6VospT4.woff2) format('woff2')",
+      "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Barlow",
+      "weight": "500",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/barlow/v13/7cHqv4kjgoGqM7E3_-gs51os.woff2) format('woff2')",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Barlow",
+      "weight": "600",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/barlow/v13/7cHqv4kjgoGqM7E30-8s6FospT4.woff2) format('woff2')",
+      "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Barlow",
+      "weight": "600",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/barlow/v13/7cHqv4kjgoGqM7E30-8s6VospT4.woff2) format('woff2')",
+      "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Barlow",
+      "weight": "600",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/barlow/v13/7cHqv4kjgoGqM7E30-8s51os.woff2) format('woff2')",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Barlow",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/barlow/v13/7cHqv4kjgoGqM7E3t-4s6FospT4.woff2) format('woff2')",
+      "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Barlow",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/barlow/v13/7cHqv4kjgoGqM7E3t-4s6VospT4.woff2) format('woff2')",
+      "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Barlow",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/barlow/v13/7cHqv4kjgoGqM7E3t-4s51os.woff2) format('woff2')",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOhEADFm8hSaQTFG18FErVhsC9x-tarUfvtrftV.woff2) format('woff2')",
+      "unicodeRange": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOhEADFm8hSaQTFG18FErVhsC9x-tarUfLtrftV.woff2) format('woff2')",
+      "unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOhEADFm8hSaQTFG18FErVhsC9x-tarUfrtrftV.woff2) format('woff2')",
+      "unicodeRange": "U+1F00-1FFF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOhEADFm8hSaQTFG18FErVhsC9x-tarUfXtrftV.woff2) format('woff2')",
+      "unicodeRange": "U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOhEADFm8hSaQTFG18FErVhsC9x-tarUfntrftV.woff2) format('woff2')",
+      "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOhEADFm8hSaQTFG18FErVhsC9x-tarUfjtrftV.woff2) format('woff2')",
+      "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOhEADFm8hSaQTFG18FErVhsC9x-tarUfbtrQ.woff2) format('woff2')",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "500",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWQXOuMl0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "500",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWQXOuMB0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "500",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWQXOuMh0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+1F00-1FFF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "500",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWQXOuMd0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "500",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWQXOuMt0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "500",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWQXOuMp0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "500",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWQXOuMR0cg.woff2) format('woff2')",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "600",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWSnJuMl0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "600",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWSnJuMB0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "600",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWSnJuMh0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+1F00-1FFF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "600",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWSnJuMd0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "600",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWSnJuMt0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "600",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWSnJuMp0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "600",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWSnJuMR0cg.woff2) format('woff2')",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWU3IuMl0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWU3IuMB0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWU3IuMh0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+1F00-1FFF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWU3IuMd0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0370-0377, U+037A-037F, U+0384-038A, U+038C, U+038E-03A1, U+03A3-03FF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWU3IuMt0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0102-0103, U+0110-0111, U+0128-0129, U+0168-0169, U+01A0-01A1, U+01AF-01B0, U+0300-0301, U+0303-0304, U+0308-0309, U+0323, U+0329, U+1EA0-1EF9, U+20AB",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWU3IuMp0ciZb.woff2) format('woff2')",
+      "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Fira Sans Condensed",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/firasanscondensed/v11/wEOsEADFm8hSaQTFG18FErVhsC9x-tarWU3IuMR0cg.woff2) format('woff2')",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "PT Serif",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/ptserif/v19/EJRVQgYoZZY2vCFuvAFbzr-tdg.woff2) format('woff2')",
+      "unicodeRange": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "PT Serif",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/ptserif/v19/EJRVQgYoZZY2vCFuvAFSzr-tdg.woff2) format('woff2')",
+      "unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "PT Serif",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/ptserif/v19/EJRVQgYoZZY2vCFuvAFYzr-tdg.woff2) format('woff2')",
+      "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "PT Serif",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/ptserif/v19/EJRVQgYoZZY2vCFuvAFWzr8.woff2) format('woff2')",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "PT Serif",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/ptserif/v19/EJRSQgYoZZY2vCFuvAnt66qfVyvHpA.woff2) format('woff2')",
+      "unicodeRange": "U+0460-052F, U+1C80-1C8A, U+20B4, U+2DE0-2DFF, U+A640-A69F, U+FE2E-FE2F",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "PT Serif",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/ptserif/v19/EJRSQgYoZZY2vCFuvAnt66qWVyvHpA.woff2) format('woff2')",
+      "unicodeRange": "U+0301, U+0400-045F, U+0490-0491, U+04B0-04B1, U+2116",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "PT Serif",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/ptserif/v19/EJRSQgYoZZY2vCFuvAnt66qcVyvHpA.woff2) format('woff2')",
+      "unicodeRange": "U+0100-02BA, U+02BD-02C5, U+02C7-02CC, U+02CE-02D7, U+02DD-02FF, U+0304, U+0308, U+0329, U+1D00-1DBF, U+1E00-1E9F, U+1EF2-1EFF, U+2020, U+20A0-20AB, U+20AD-20C4, U+2113, U+2C60-2C7F, U+A720-A7FF",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "PT Serif",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/fonts/s/ptserif/v19/EJRSQgYoZZY2vCFuvAnt66qSVys.woff2) format('woff2')",
+      "unicodeRange": "U+0000-00FF, U+0131, U+0152-0153, U+02BB-02BC, U+02C6, U+02DA, U+02DC, U+0304, U+0308, U+0329, U+2000-206F, U+20AC, U+2122, U+2191, U+2193, U+2212, U+2215, U+FEFF, U+FFFD",
+      "file": "01-9c70f8e9079e856bc3dbf7fb1df49.css"
+    },
+    {
+      "family": "Glyphicons Halflings",
+      "display": "swap",
+      "src": "url(../../../../../../../../../plugins/content-views-query-and-display-post-page/public/assets/fonts/glyphicons-halflings-regular.eot)",
+      "file": "02-cv.css_ver_1794012845"
+    },
+    {
+      "family": "Droid Arabic Kufi",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Other/dkufir.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Droid Arabic Kufi",
+      "weight": "700",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Other/dkufib.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Droid Arabic Naskh",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Other/dnaskhr.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Droid Arabic Naskh",
+      "weight": "700",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Other/dnaskhb.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Shekasteh",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Other/Shekasteh.ttf) format('truetype')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "IranNastaliq",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Other/irnastaliq.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "B Yekan",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/B/byekan.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Verdana",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Other/verdana.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Tahoma",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Other/tahoma.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Sultan Adan",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Other/sultanadan.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "B Koodak",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/B/bkoodak.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "B Bardiya",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/B/bbardiya.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "B Esfehan",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/B/besfehan.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "B Helal",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/B/bhelal.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "B Mahsa",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/B/bmahsa.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "B Mitra",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/B/bmitra.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "B Mehr",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/B/bmehr.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "B Jadid",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/B/bjadid.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "B Homa",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/B/bhoma.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "B Nasim",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/B/bnasim.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "B Nazanin",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/B/bnazanin.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "B Sina",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/B/bsina.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "B Titr",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/B/btitr.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Dast Nevis",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Other/dastnevis.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Comic Sans MS",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Other/comicsansms.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "IR Yekan",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Other/iryekan.woff) format('woff')",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "VRCD",
+      "weight": "400",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/VazirCode/vrcd.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Sahel",
+      "weight": "400",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Sahel/Sahel.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "IRANSans",
+      "weight": "900",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/IRANSans/eot/IRANSansWeb_Black.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "IRANSans",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/IRANSans/eot/IRANSansWeb_Bold.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "IRANSans",
+      "weight": "500",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/IRANSans/eot/IRANSansWeb_Medium.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "IRANSans",
+      "weight": "300",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/IRANSans/eot/IRANSansWeb_Light.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "IRANSans",
+      "weight": "200",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/IRANSans/eot/IRANSansWeb_UltraLight.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "IRANSans",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/IRANSans/eot/IRANSansWeb.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Vazir",
+      "weight": "400",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Vazir/Vazir.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Vazir",
+      "weight": "700",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Vazir/Vazir-Bold.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Vazir",
+      "weight": "300",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Vazir/Vazir-Light.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Parastoo",
+      "weight": "400",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Parastoo/Parastoo.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Samim",
+      "weight": "400",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Samim/Samim.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Tanha",
+      "weight": "400",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Tanha/Tanha.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Gandom",
+      "weight": "400",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Gandom/Gandom.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "Shabnam",
+      "weight": "400",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/Shabnam/Shabnam.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "XM Yekan",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/XMYekan/eot/XMYekan.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "XM Yekan",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/XMYekan/eot/XMYekan-Bold.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "IRANYekan",
+      "weight": "700",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/IRANYekan/eot/iranyekanwebbold.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "IRANYekan",
+      "weight": "300",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/IRANYekan/eot/iranyekanweblight.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "IRANYekan",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../plugins/parsi-font/assets/fonts/IRANYekan/eot/iranyekanwebregular.eot)",
+      "file": "06-fonts.css_ver_1794012845"
+    },
+    {
+      "family": "swiper-icons",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url('data:application/font-woff",
+      "file": "10-swiper.min.css_ver_1794012845"
+    },
+    {
+      "family": "Font Awesome 6 Brands",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-brands-400.woff2) format(\"woff2\"),url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-brands-400.ttf) format(\"truetype\")",
+      "file": "18-all.css_ver_1794012846"
+    },
+    {
+      "family": "Font Awesome 6 Free",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-regular-400.woff2) format(\"woff2\"),url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-regular-400.ttf) format(\"truetype\")",
+      "file": "18-all.css_ver_1794012846"
+    },
+    {
+      "family": "Font Awesome 6 Free",
+      "weight": "900",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-solid-900.woff2) format(\"woff2\"),url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-solid-900.ttf) format(\"truetype\")",
+      "file": "18-all.css_ver_1794012846"
+    },
+    {
+      "family": "Font Awesome 5 Brands",
+      "weight": "400",
+      "display": "swap",
+      "src": "url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-brands-400.woff2) format(\"woff2\"),url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-brands-400.ttf) format(\"truetype\")",
+      "file": "18-all.css_ver_1794012846"
+    },
+    {
+      "family": "Font Awesome 5 Free",
+      "weight": "900",
+      "display": "swap",
+      "src": "url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-solid-900.woff2) format(\"woff2\"),url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-solid-900.ttf) format(\"truetype\")",
+      "file": "18-all.css_ver_1794012846"
+    },
+    {
+      "family": "Font Awesome 5 Free",
+      "weight": "400",
+      "display": "swap",
+      "src": "url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-regular-400.woff2) format(\"woff2\"),url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-regular-400.ttf) format(\"truetype\")",
+      "file": "18-all.css_ver_1794012846"
+    },
+    {
+      "family": "FontAwesome",
+      "display": "swap",
+      "src": "url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-solid-900.woff2) format(\"woff2\"),url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-solid-900.ttf) format(\"truetype\")",
+      "file": "18-all.css_ver_1794012846"
+    },
+    {
+      "family": "FontAwesome",
+      "display": "swap",
+      "src": "url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-brands-400.woff2) format(\"woff2\"),url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-brands-400.ttf) format(\"truetype\")",
+      "file": "18-all.css_ver_1794012846"
+    },
+    {
+      "family": "FontAwesome",
+      "display": "swap",
+      "src": "url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-regular-400.woff2) format(\"woff2\"),url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-regular-400.ttf) format(\"truetype\")",
+      "unicodeRange": "u+f003,u+f006,u+f014,u+f016-f017,u+f01a-f01b,u+f01d,u+f022,u+f03e,u+f044,u+f046,u+f05c-f05d,u+f06e,u+f070,u+f087-f088,u+f08a,u+f094,u+f096-f097,u+f09d,u+f0a0,u+f0a2,u+f0a4-f0a7,u+f0c5,u+f0c7,u+f0e5-f0",
+      "file": "18-all.css_ver_1794012846"
+    },
+    {
+      "family": "FontAwesome",
+      "display": "swap",
+      "src": "url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-v4compatibility.woff2) format(\"woff2\"),url(https://use.fontawesome.com/releases/v6.6.0/css/../webfonts/fa-v4compatibility.ttf) format(\"truetype\")",
+      "unicodeRange": "u+f041,u+f047,u+f065-f066,u+f07d-f07e,u+f080,u+f08b,u+f08e,u+f090,u+f09a,u+f0ac,u+f0ae,u+f0b2,u+f0d0,u+f0d6,u+f0e4,u+f0ec,u+f10a-f10b,u+f123,u+f13e,u+f148-f149,u+f14c,u+f156,u+f15e,u+f160-f161,u+f163,",
+      "file": "18-all.css_ver_1794012846"
+    },
+    {
+      "family": "eicons",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../../../plugins/elementor/assets/lib/eicons/fonts/eicons.eot?5.31.0)",
+      "file": "19-elementor-icons.min.css_ver_1794012846"
+    },
+    {
+      "family": "Font Awesome 5 Brands",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../../../plugins/elementor/assets/lib/font-awesome/webfonts/fa-brands-400.eot)",
+      "file": "22-brands.css_ver_1794012846"
+    },
+    {
+      "family": "Font Awesome 5 Free",
+      "weight": "900",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../../../plugins/elementor/assets/lib/font-awesome/webfonts/fa-solid-900.eot)",
+      "file": "24-solid.css_ver_1794012846"
+    },
+    {
+      "family": "ts-icons",
+      "weight": "400",
+      "style": "normal",
+      "display": "swap",
+      "src": "url(../../../../../../../../themes/smart-mag/css/icons/fonts/ts-icons.woff2?v3.2) format('woff2'),url(../../../../../../../../themes/smart-mag/css/icons/fonts/ts-icons.woff?v3.2) format('woff')",
+      "file": "30-icons.css_ver_1794012846"
+    }
+  ]
+}

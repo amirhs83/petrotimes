@@ -1,0 +1,434 @@
+{
+  "title": "پترو تایمز - Petro Times",
+  "lang": "fa-IR",
+  "dir": "rtl",
+  "htmlClasses": "s-light site-s-light webp",
+  "bodyClasses": "rtl home wp-singular page-template page-template-page-templates page-template-no-wrapper page-template-page-templatesno-wrapper-php page page-id-7322 wp-theme-smart-mag ehf-template-smart-mag ehf-stylesheet-smart-mag no-sidebar has-lb has-lb-sm ts-img-hov-fade layout-normal elementor-default elementor-kit-344 elementor-page elementor-page-7322 e--ua-blink e--ua-webkit touch",
+  "bodyId": null,
+  "readyState": "complete",
+  "docHeight": 3746,
+  "docWidth": 1920,
+  "viewport": {
+    "w": 1920,
+    "h": 1080
+  },
+  "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+  "platform": "Linux x86_64",
+  "dpr": 1,
+  "performance": {
+    "domContentLoadedEventStart": 2104.7000000001863,
+    "domContentLoadedEventEnd": 2105.600000000093,
+    "loadEventStart": 2929.399999999907,
+    "loadEventEnd": 2929.399999999907,
+    "transferSize": 36724,
+    "encodedBodySize": 36424,
+    "decodedBodySize": 199444,
+    "domInteractive": 2104.600000000093,
+    "responseStart": 1108.6000000000931,
+    "responseEnd": 1135.8999999999069
+  },
+  "metaTags": {
+    "viewport": "width=device-width, initial-scale=1",
+    "description": "خالص واردات پلی‌پروپیلن چین در سال گذشته به حدود ۳۰۰ هزار تن سقوط کرد؛ رقمی…",
+    "robots": "follow, index, max-snippet:-1, max-video-preview:-1, max-image-preview:large",
+    "og:locale": "fa_IR",
+    "og:type": "website",
+    "og:title": "پترو تایمز - Petro Times",
+    "og:description": "خالص واردات پلی‌پروپیلن چین در سال گذشته به حدود ۳۰۰ هزار تن سقوط کرد؛ رقمی…",
+    "og:url": "https://petrotimes.ir/",
+    "og:site_name": "Petro Times | پترو تایمز",
+    "og:updated_time": "2026-08-20T14:15:50+03:30",
+    "og:image": "https://petrotimes.ir/wp-content/uploads/2025/08/Your-paragraph-text.png",
+    "og:image:secure_url": "https://petrotimes.ir/wp-content/uploads/2025/08/Your-paragraph-text.png",
+    "og:image:width": "1200",
+    "og:image:height": "630",
+    "og:image:alt": "PetroTimes 1200x630",
+    "og:image:type": "image/png",
+    "article:published_time": "2024-11-09T17:27:21+00:00",
+    "article:modified_time": "2026-08-20T10:45:50+00:00",
+    "twitter:card": "summary_large_image",
+    "twitter:title": "پترو تایمز - Petro Times",
+    "twitter:description": "خالص واردات پلی‌پروپیلن چین در سال گذشته به حدود ۳۰۰ هزار تن سقوط کرد؛ رقمی…",
+    "twitter:image": "https://petrotimes.ir/wp-content/uploads/2025/08/Your-paragraph-text.png",
+    "twitter:label1": "نویسنده",
+    "twitter:data1": "مدیر سایت",
+    "twitter:label2": "زمان خواندن",
+    "twitter:data2": "1 دقیقه",
+    "generator": "WordPress 7.1.4"
+  },
+  "linkTags": {
+    "stylesheet": [
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/css/4/8/1/9c70f8e9079e856bc3dbf7fb1df49.css",
+        "sizes": null,
+        "type": null,
+        "media": null,
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/content-views-query-and-display-post-page/public/assets/css/cv.css?ver=1794012845",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1794012845",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/uploads/font-awesome/v6.6.0/css/svg-with-js.css?ver=1794012845",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/background-css/1/petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/featured-video-plus/styles/frontend.css?ver=1794012845&wpr_t=1794738317",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/parsi-font/assets/css/fonts.css?ver=1794012845",
+        "sizes": null,
+        "type": null,
+        "media": "",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/uploads/useanyfont/uaf.css?ver=1755829221",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1794012845",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/frontend-rtl.min.css?ver=3.25.1",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1794012845",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.1",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/uploads/elementor/css/post-344.css?ver=1794012845",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-heading-rtl.min.css?ver=3.25.1",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-divider-rtl.min.css?ver=3.25.1",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-image-rtl.min.css?ver=3.25.1",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/uploads/elementor/css/post-7322.css?ver=1794018064",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/uploads/elementor/css/post-7373.css?ver=1794012845",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/releases/v6.6.0/css/all.css?ver=1794012846",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1794012846",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=1794012846",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=1794012846",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=1794012846",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css?ver=3.25.0",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.26.2",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.26.0",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/themes/smart-mag/css/rtl/rtl.css?ver=1794012846",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/themes/smart-mag/css/lightbox.css?ver=1794012846",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/themes/smart-mag/css/icons/icons.css?ver=1794012846",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/releases/v6.6.0/css/v4-shims.css?ver=1794012846",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/post-featured-video/includes/css/pfv-videopopup.css?ver=1794012846",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-text-editor-rtl.min.css?ver=3.25.1",
+        "sizes": null,
+        "type": null,
+        "media": "all",
+        "as": null
+      }
+    ],
+    "preload": [
+      {
+        "href": "https://petrotimes.ir/wp-content/themes/smart-mag/css/icons/fonts/ts-icons.woff2?v3.2",
+        "sizes": null,
+        "type": "font/woff2",
+        "media": null,
+        "as": "font"
+      }
+    ],
+    "canonical": [
+      {
+        "href": "https://petrotimes.ir/",
+        "sizes": null,
+        "type": null,
+        "media": null,
+        "as": null
+      }
+    ],
+    "dns-prefetch": [
+      {
+        "href": "https://use.fontawesome.com/",
+        "sizes": null,
+        "type": null,
+        "media": null,
+        "as": null
+      },
+      {
+        "href": "https://fonts.googleapis.com/",
+        "sizes": null,
+        "type": null,
+        "media": null,
+        "as": null
+      }
+    ],
+    "preconnect": [
+      {
+        "href": "https://fonts.gstatic.com/",
+        "sizes": null,
+        "type": null,
+        "media": null,
+        "as": null
+      }
+    ],
+    "alternate": [
+      {
+        "href": "https://petrotimes.ir/feed/",
+        "sizes": null,
+        "type": "application/rss+xml",
+        "media": null,
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/comments/feed/",
+        "sizes": null,
+        "type": "application/rss+xml",
+        "media": null,
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpetrotimes.ir%2F",
+        "sizes": null,
+        "type": "application/json+oembed",
+        "media": null,
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-json/oembed/1.0/embed?url=https%3A%2F%2Fpetrotimes.ir%2F&format=xml",
+        "sizes": null,
+        "type": "text/xml+oembed",
+        "media": null,
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/wp-json/wp/v2/pages/7322",
+        "sizes": null,
+        "type": "application/json",
+        "media": null,
+        "as": null
+      }
+    ],
+    "https://api.w.org/": [
+      {
+        "href": "https://petrotimes.ir/wp-json/",
+        "sizes": null,
+        "type": null,
+        "media": null,
+        "as": null
+      }
+    ],
+    "EditURI": [
+      {
+        "href": "https://petrotimes.ir/xmlrpc.php?rsd",
+        "sizes": null,
+        "type": "application/rsd+xml",
+        "media": null,
+        "as": null
+      }
+    ],
+    "shortlink": [
+      {
+        "href": "https://petrotimes.ir/",
+        "sizes": null,
+        "type": null,
+        "media": null,
+        "as": null
+      }
+    ],
+    "prefetch": [
+      {
+        "href": "https://petrotimes.ir/chinese-internet-majors-investments-to-slow-profit-growth/",
+        "sizes": null,
+        "type": null,
+        "media": null,
+        "as": null
+      },
+      {
+        "href": "https://petrotimes.ir/%d8%af%d8%a8%db%8c%d8%b1%da%a9%d9%84-%d8%a7%d9%88%d9%be%da%a9%da%86%d8%b1%d8%a7-%d8%a2%da%98%d8%a7%d9%86%d8%b3-%d8%a8%db%8c%d9%86%d8%a7%d9%84%d9%85%d9%84%d9%84%db%8c-%d8%a7%d9%86%d8%b1%da%98/",
+        "sizes": null,
+        "type": null,
+        "media": null,
+        "as": null
+      }
+    ]
+  },
+  "canonical": "https://petrotimes.ir/",
+  "generator": "WordPress 7.1.4",
+  "counts": {
+    "elements": 1107,
+    "articles": 42,
+    "images": 12,
+    "lazyBgSpans": 39,
+    "iframes": 1,
+    "scripts": 52,
+    "stylesheets": 46,
+    "forms": 3,
+    "links": 117
+  },
+  "extractionTimings": {
+    "domContentLoadedClientMs": 2109,
+    "networkSettledMs": 13484
+  }
+}

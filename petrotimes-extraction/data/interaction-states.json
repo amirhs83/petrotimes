@@ -1,0 +1,36 @@
+{
+  "mobileHeader": {
+    "visible": true,
+    "h": 48,
+    "rowCls": "smart-head-row smart-head-mid smart-head-row-3 s-dark wrap is-smart animate"
+  },
+  "offCanvasOpen": {
+    "ocCls": "mobile-menu-container off-canvas s-dark",
+    "transform": "matrix(1, 0, 0, 1, 0, 0)",
+    "left": "70px",
+    "right": "0px",
+    "backdropCls": "off-canvas-backdrop",
+    "backdropOpacity": "1",
+    "menuItems": [
+      "صفحه اصلی",
+      "نفت",
+      "گاز",
+      "پتروشیمی",
+      "پالایش و پخش",
+      "بین الملل",
+      "همه اخبار",
+      "Advertise",
+      "Magazine"
+    ],
+    "widgets": [
+      "What's Hot",
+      "Subscribe to Updates"
+    ]
+  },
+  "mobileSticky": {
+    "h": 48,
+    "y": -700,
+    "cls": "smart-head smart-head-a smart-head-mobile",
+    "pos": "relative"
+  }
+}

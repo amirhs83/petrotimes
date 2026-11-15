@@ -1,0 +1,816 @@
+{
+  "body": {
+    "tag": "BODY",
+    "cls": "rtl home wp-singular page-template page-template-page-templates page-template-no-wrapper page-template-page-templatesno-wrapper-php page page-id-7322 wp-theme-smart-mag",
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 1920,
+      "h": 3746
+    },
+    "children": [
+      {
+        "tag": "DIV",
+        "cls": "main-wrap",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 1920,
+          "h": 3746
+        },
+        "children": [
+          {
+            "tag": "DIV",
+            "cls": "off-canvas-backdrop",
+            "rect": {
+              "x": 1920,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            }
+          },
+          {
+            "tag": "DIV",
+            "id": "off-canvas",
+            "cls": "mobile-menu-container off-canvas s-dark",
+            "rect": {
+              "x": 1920,
+              "y": 0,
+              "w": 370,
+              "h": 1080
+            },
+            "children": [
+              {
+                "tag": "DIV",
+                "cls": "off-canvas-head",
+                "rect": {
+                  "x": 1920,
+                  "y": 0,
+                  "w": 370,
+                  "h": 82
+                },
+                "children": [
+                  {
+                    "tag": "A",
+                    "cls": "close",
+                    "rect": {
+                      "x": 1920,
+                      "y": 0,
+                      "w": 29,
+                      "h": 26
+                    },
+                    "children": [
+                      {
+                        "tag": "SPAN",
+                        "cls": "visuallyhidden",
+                        "rect": {
+                          "x": 1940,
+                          "y": -1,
+                          "w": 1,
+                          "h": 1
+                        }
+                      },
+                      {
+                        "tag": "I",
+                        "cls": "tsi tsi-times",
+                        "rect": {
+                          "x": 1929,
+                          "y": 5,
+                          "w": 11,
+                          "h": 14
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "DIV",
+                    "cls": "ts-logo",
+                    "rect": {
+                      "x": 1945,
+                      "y": 38,
+                      "w": 320,
+                      "h": 44
+                    },
+                    "children": [
+                      {
+                        "tag": "IMG",
+                        "cls": "logo-mobile logo-image logo-image-dark entered lazyloaded",
+                        "rect": {
+                          "x": 1973,
+                          "y": 38,
+                          "w": 265,
+                          "h": 44
+                        }
+                      },
+                      {
+                        "tag": "NOSCRIPT",
+                        "rect": {
+                          "x": 0,
+                          "y": 0,
+                          "w": 0,
+                          "h": 0
+                        }
+                      },
+                      {
+                        "tag": "IMG",
+                        "cls": "logo-mobile logo-image",
+                        "rect": {
+                          "x": 0,
+                          "y": 0,
+                          "w": 0,
+                          "h": 0
+                        }
+                      },
+                      {
+                        "tag": "NOSCRIPT",
+                        "rect": {
+                          "x": 0,
+                          "y": 0,
+                          "w": 0,
+                          "h": 0
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "DIV",
+                "cls": "off-canvas-content",
+                "rect": {
+                  "x": 1920,
+                  "y": 102,
+                  "w": 370,
+                  "h": 978
+                },
+                "children": [
+                  {
+                    "tag": "UL",
+                    "cls": "mobile-menu",
+                    "rect": {
+                      "x": 1945,
+                      "y": 117,
+                      "w": 320,
+                      "h": 0
+                    }
+                  },
+                  {
+                    "tag": "DIV",
+                    "cls": "off-canvas-widgets",
+                    "rect": {
+                      "x": 1945,
+                      "y": 162,
+                      "w": 320,
+                      "h": 756
+                    },
+                    "children": [
+                      {
+                        "tag": "DIV",
+                        "id": "smartmag-block-posts-small-2",
+                        "cls": "widget ts-block-widget smartmag-widget-posts-small",
+                        "rect": {
+                          "x": 1945,
+                          "y": 162,
+                          "w": 320,
+                          "h": 350
+                        }
+                      },
+                      {
+                        "tag": "DIV",
+                        "id": "smartmag-block-newsletter-4",
+                        "cls": "widget ts-block-widget smartmag-widget-newsletter",
+                        "rect": {
+                          "x": 1945,
+                          "y": 557,
+                          "w": 320,
+                          "h": 361
+                        }
+                      }
+                    ]
+                  },
+                  {
+                    "tag": "DIV",
+                    "cls": "spc-social-block spc-social spc-social-b smart-head-social",
+                    "rect": {
+                      "x": 1945,
+                      "y": 1007,
+                      "w": 320,
+                      "h": 57
+                    },
+                    "children": [
+                      {
+                        "tag": "A",
+                        "cls": "link service s-facebook",
+                        "rect": {
+                          "x": 2133,
+                          "y": 1017,
+                          "w": 38,
+                          "h": 38
+                        }
+                      },
+                      {
+                        "tag": "A",
+                        "cls": "link service s-twitter",
+                        "rect": {
+                          "x": 2086,
+                          "y": 1017,
+                          "w": 38,
+                          "h": 38
+                        }
+                      },
+                      {
+                        "tag": "A",
+                        "cls": "link service s-instagram",
+                        "rect": {
+                          "x": 2039,
+                          "y": 1017,
+                          "w": 38,
+                          "h": 38
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "DIV",
+            "id": "smart-head",
+            "cls": "smart-head smart-head-a smart-head-main",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 1920,
+              "h": 63
+            },
+            "children": [
+              {
+                "tag": "DIV",
+                "cls": "smart-head-row smart-head-mid s-dark smart-head-row-full is-smart animate",
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 1920,
+                  "h": 63
+                },
+                "children": [
+                  {
+                    "tag": "DIV",
+                    "cls": "inner wrap",
+                    "rect": {
+                      "x": 360,
+                      "y": 0,
+                      "w": 1200,
+                      "h": 63
+                    },
+                    "children": [
+                      {
+                        "tag": "DIV",
+                        "cls": "items items-left",
+                        "rect": {
+                          "x": 379,
+                          "y": 0,
+                          "w": 1181,
+                          "h": 63
+                        }
+                      },
+                      {
+                        "tag": "DIV",
+                        "cls": "items items-center empty",
+                        "rect": {
+                          "x": 379,
+                          "y": 0,
+                          "w": 0,
+                          "h": 63
+                        }
+                      },
+                      {
+                        "tag": "DIV",
+                        "cls": "items items-right",
+                        "rect": {
+                          "x": 360,
+                          "y": 0,
+                          "w": 19,
+                          "h": 63
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "DIV",
+            "id": "smart-head-mobile",
+            "cls": "smart-head smart-head-a smart-head-mobile",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "children": [
+              {
+                "tag": "DIV",
+                "cls": "smart-head-row smart-head-mid smart-head-row-3 s-dark wrap",
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0
+                },
+                "children": [
+                  {
+                    "tag": "DIV",
+                    "cls": "inner full",
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0
+                    },
+                    "children": [
+                      {
+                        "tag": "DIV",
+                        "cls": "items items-left",
+                        "rect": {
+                          "x": 0,
+                          "y": 0,
+                          "w": 0,
+                          "h": 0
+                        }
+                      },
+                      {
+                        "tag": "DIV",
+                        "cls": "items items-center",
+                        "rect": {
+                          "x": 0,
+                          "y": 0,
+                          "w": 0,
+                          "h": 0
+                        }
+                      },
+                      {
+                        "tag": "DIV",
+                        "cls": "items items-right",
+                        "rect": {
+                          "x": 0,
+                          "y": 0,
+                          "w": 0,
+                          "h": 0
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "DIV",
+            "cls": "main-full",
+            "rect": {
+              "x": 0,
+              "y": 63,
+              "w": 1920,
+              "h": 3140
+            },
+            "children": [
+              {
+                "tag": "DIV",
+                "id": "post-7322",
+                "cls": "page-content post-7322 page type-page status-publish",
+                "rect": {
+                  "x": 0,
+                  "y": 63,
+                  "w": 1920,
+                  "h": 3140
+                },
+                "children": [
+                  {
+                    "tag": "DIV",
+                    "cls": "elementor elementor-7322",
+                    "rect": {
+                      "x": 0,
+                      "y": 63,
+                      "w": 1920,
+                      "h": 3140
+                    },
+                    "children": [
+                      {
+                        "tag": "SECTION",
+                        "cls": "has-el-gap el-gap-default elementor-section elementor-top-section elementor-element elementor-element-7e82819 elementor-section-full_width elementor-section-height-default elementor-section-height-default",
+                        "rect": {
+                          "x": 0,
+                          "y": 63,
+                          "w": 1920,
+                          "h": 45
+                        }
+                      },
+                      {
+                        "tag": "SECTION",
+                        "cls": "has-el-gap el-gap-default elementor-section elementor-top-section elementor-element elementor-element-d64554f is-full-xs elementor-section-boxed elementor-section-height-default elementor-section-height-default",
+                        "rect": {
+                          "x": 0,
+                          "y": 108,
+                          "w": 1920,
+                          "h": 1615
+                        }
+                      },
+                      {
+                        "tag": "SECTION",
+                        "cls": "has-el-gap el-gap-default elementor-section elementor-top-section elementor-element elementor-element-9393be2 elementor-section-boxed elementor-section-height-default elementor-section-height-default",
+                        "rect": {
+                          "x": 0,
+                          "y": 1758,
+                          "w": 1920,
+                          "h": 1084
+                        }
+                      },
+                      {
+                        "tag": "DIV",
+                        "cls": "elementor-element elementor-element-c87ff97 e-flex e-con-boxed e-con e-parent e-lazyloaded",
+                        "rect": {
+                          "x": 0,
+                          "y": 2897,
+                          "w": 1920,
+                          "h": 20
+                        }
+                      },
+                      {
+                        "tag": "DIV",
+                        "cls": "elementor-element elementor-element-41768b4 e-flex e-con-boxed e-con e-parent e-lazyloaded",
+                        "rect": {
+                          "x": 0,
+                          "y": 2865,
+                          "w": 1920,
+                          "h": 318
+                        }
+                      },
+                      {
+                        "tag": "DIV",
+                        "cls": "elementor-element elementor-element-23a1dd3 e-flex e-con-boxed e-con e-parent e-lazyloaded",
+                        "rect": {
+                          "x": 0,
+                          "y": 3183,
+                          "w": 1920,
+                          "h": 20
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          },
+          {
+            "tag": "DIV",
+            "cls": "elementor elementor-7373",
+            "rect": {
+              "x": 0,
+              "y": 3203,
+              "w": 1920,
+              "h": 543
+            },
+            "children": [
+              {
+                "tag": "SECTION",
+                "cls": "has-el-gap el-gap-default elementor-section elementor-top-section elementor-element elementor-element-89ac063 elementor-section-boxed elementor-section-height-default elementor-section-height-default",
+                "rect": {
+                  "x": 0,
+                  "y": 3203,
+                  "w": 1920,
+                  "h": 502
+                },
+                "children": [
+                  {
+                    "tag": "DIV",
+                    "cls": "elementor-container elementor-column-gap-no",
+                    "rect": {
+                      "x": 342,
+                      "y": 3203,
+                      "w": 1236,
+                      "h": 502
+                    },
+                    "children": [
+                      {
+                        "tag": "DIV",
+                        "cls": "elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-116a646",
+                        "rect": {
+                          "x": 1218,
+                          "y": 3203,
+                          "w": 360,
+                          "h": 502
+                        }
+                      },
+                      {
+                        "tag": "DIV",
+                        "cls": "elementor-column elementor-col-66 elementor-top-column elementor-element elementor-element-182fb8f",
+                        "rect": {
+                          "x": 783,
+                          "y": 3203,
+                          "w": 435,
+                          "h": 502
+                        }
+                      },
+                      {
+                        "tag": "DIV",
+                        "cls": "elementor-column elementor-col-16 elementor-top-column elementor-element elementor-element-ad7b38d",
+                        "rect": {
+                          "x": 350,
+                          "y": 3203,
+                          "w": 433,
+                          "h": 502
+                        }
+                      }
+                    ]
+                  }
+                ]
+              },
+              {
+                "tag": "DIV",
+                "cls": "elementor-element elementor-element-226a5f9 e-flex e-con-boxed e-con e-parent e-lazyloaded",
+                "rect": {
+                  "x": 0,
+                  "y": 3705,
+                  "w": 1920,
+                  "h": 41
+                },
+                "children": [
+                  {
+                    "tag": "DIV",
+                    "cls": "e-con-inner",
+                    "rect": {
+                      "x": 360,
+                      "y": 3705,
+                      "w": 1200,
+                      "h": 41
+                    },
+                    "children": [
+                      {
+                        "tag": "DIV",
+                        "cls": "elementor-element elementor-element-774363e elementor-widget elementor-widget-copyright",
+                        "rect": {
+                          "x": 360,
+                          "y": 3715,
+                          "w": 1200,
+                          "h": 21
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "DIV",
+        "cls": "search-modal-wrap",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        },
+        "children": [
+          {
+            "tag": "DIV",
+            "cls": "search-modal-box",
+            "rect": {
+              "x": 0,
+              "y": 0,
+              "w": 0,
+              "h": 0
+            },
+            "children": [
+              {
+                "tag": "FORM",
+                "cls": "search-form",
+                "rect": {
+                  "x": 0,
+                  "y": 0,
+                  "w": 0,
+                  "h": 0
+                },
+                "children": [
+                  {
+                    "tag": "INPUT",
+                    "cls": "search-field live-search-query",
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0
+                    }
+                  },
+                  {
+                    "tag": "BUTTON",
+                    "cls": "search-submit visuallyhidden",
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0
+                    }
+                  },
+                  {
+                    "tag": "P",
+                    "cls": "message",
+                    "rect": {
+                      "x": 0,
+                      "y": 0,
+                      "w": 0,
+                      "h": 0
+                    },
+                    "children": [
+                      {
+                        "tag": "EM",
+                        "rect": {
+                          "x": 0,
+                          "y": 0,
+                          "w": 0,
+                          "h": 0
+                        }
+                      },
+                      {
+                        "tag": "EM",
+                        "rect": {
+                          "x": 0,
+                          "y": 0,
+                          "w": 0,
+                          "h": 0
+                        }
+                      }
+                    ]
+                  }
+                ]
+              }
+            ]
+          }
+        ]
+      },
+      {
+        "tag": "SCRIPT",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "smartmag-lazyload-js-extra",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "smartmag-lazyload-js",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "rocket-browser-checker-js-after",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "rocket-preload-links-js-extra",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "rocket-preload-links-js-after",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "rocket_lazyload_css-js-extra",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "rocket_lazyload_css-js-after",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "smush-nextgen-fallback-js-extra",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "smush-nextgen-fallback-js",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "magnific-popup-js",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "theia-sticky-sidebar-js",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "smartmag-theme-js-extra",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "smartmag-theme-js",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      },
+      {
+        "tag": "SCRIPT",
+        "id": "pt-cv-content-views-script-js-extra",
+        "rect": {
+          "x": 0,
+          "y": 0,
+          "w": 0,
+          "h": 0
+        }
+      }
+    ]
+  }
+}

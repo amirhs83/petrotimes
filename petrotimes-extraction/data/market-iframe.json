@@ -1,0 +1,1737 @@
+{
+  "title": "Market Ticker",
+  "lang": "en",
+  "dir": "",
+  "bodyClasses": "",
+  "docSize": {
+    "w": 1920,
+    "h": 120
+  },
+  "scripts": [
+    "inline:\n        const tickerSlider = document.getElementById(\"tickerContainer\");\n        let previousPrices = {};\n    \n        function fetchPrices() {\n            fetch(\"fetch_prices.php\")\n                .then(response => response.json())\n                .then(data => updatePrices(data))\n                .catch(error => console.error(\"Error fetching prices:\", error));\n        }\n    \n        function updatePrices(data) {\n            Object.keys(data).forEach(key => {\n                const item = ticker"
+  ],
+  "stylesheets": [],
+  "inlineStyles": [
+    "\n            * { box-sizing: border-box; }\n            body { font-family: Arial, sans-serif; margin: 0; padding: 0; }\n    \n            .ticker-container {\n                width: 100%;\n                overflow: hidden;\n                box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);\n                background: #fff;\n                white-space: nowrap;\n                position: relative;\n            }\n    \n            .ticker-slider {\n                display: inline-flex;\n                white-space: nowrap;\n                cursor: grab;\n                transition: transform 0.1s linear;\n            }\n    \n            .ticker-item {\n                display: flex;\n                align-items: center;\n                padding: 10px 20px;\n                border-right: 1px solid #ddd;\n                min-width: 200px;\n                transition: background-color 0.5s ease;\n            }\n    \n            .ticker-item img {\n                width: 20px; \n                height: 20px; \n                margin-right: 10px;\n                border-radius: 50%;\n                border: 1px solid #e3e3e3;\n            }\n    \n            .market-name { font-weight: bold; margin-right: 10px; }\n            .market-value { margin-right: 10px; transition: color 0.5s ease-in-out; }\n            .market-change { font-weight: bold; transition: color 0.5s ease-in-out; }\n            .market-change.positive { color: green; }\n            .market-change.negative { color: red; }\n    \n            /* Loading placeholder */\n            .loading { color: #ccc; animation: pulse 1s infinite ease-in-out; }\n            @keyframes pulse {\n                0% { color: #ccc; }\n                50% { color: #bbb; }\n                100% { color: #ccc; }\n            }\n    \n            /* Price update animation */\n            .updated-price {\n                animation: glow 1s ease-in-out;\n            }\n            @keyframes glow {\n                0% { background-color: #fa9000; }\n                100% { background-color: transparent; }\n            }\n    \n            /* Pause on hover */\n            .ticker-container:hover .ticker-slider { animation-play-state: paused; }\n        "
+  ],
+  "visibleStructure": [
+    {
+      "tag": "DIV",
+      "id": "tickerContainer",
+      "cls": "ticker-container",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 1920,
+        "h": 40
+      },
+      "text": "Crude oil\n                    N/A\n                    N/A (N",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgb(255, 255, 255)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "id": "tickerSlider",
+      "cls": "ticker-slider",
+      "rect": {
+        "x": -1,
+        "y": 0,
+        "w": 3942.1,
+        "h": 40
+      },
+      "text": "Crude oil\n                    N/A\n                    N/A (N",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "inline-flex",
+        "animation": "0s ease 0s 1 normal none paused none",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": -1,
+        "y": 0,
+        "w": 256.6,
+        "h": 40
+      },
+      "text": "Crude oil\n                    N/A\n                    N/A (N",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 19,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 49,
+        "y": 11,
+        "w": 69.3,
+        "h": 18
+      },
+      "text": "Crude oil",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 128.3,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 165,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": 255.6,
+        "y": 0,
+        "w": 300.2,
+        "h": 40
+      },
+      "text": "Brent crude oil\n                    N/A\n                    ",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 275.6,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 305.6,
+        "y": 11,
+        "w": 112.9,
+        "h": 18
+      },
+      "text": "Brent crude oil",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 428.5,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 465.2,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": 555.8,
+        "y": 0,
+        "w": 269.1,
+        "h": 40
+      },
+      "text": "Heating oil\n                    N/A\n                    N/A ",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 575.8,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 605.8,
+        "y": 11,
+        "w": 81.8,
+        "h": 18
+      },
+      "text": "Heating oil",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 697.6,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 734.3,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": 824.9,
+        "y": 0,
+        "w": 251.3,
+        "h": 40
+      },
+      "text": "Bitumen\n                    N/A\n                    N/A (N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 844.9,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 874.9,
+        "y": 11,
+        "w": 64,
+        "h": 18
+      },
+      "text": "Bitumen",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 948.9,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 985.6,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": 1076.2,
+        "y": 0,
+        "w": 274.4,
+        "h": 40
+      },
+      "text": "Natural gas\n                    N/A\n                    N/A ",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 1096.2,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 1126.2,
+        "y": 11,
+        "w": 87.1,
+        "h": 18
+      },
+      "text": "Natural gas",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 1223.4,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 1260,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": 1350.7,
+        "y": 0,
+        "w": 297.5,
+        "h": 40
+      },
+      "text": "Eu natural gas\n                    N/A\n                    N",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 1370.7,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 1400.7,
+        "y": 11,
+        "w": 110.3,
+        "h": 18
+      },
+      "text": "Eu natural gas",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 1520.9,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 1557.6,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": 1648.2,
+        "y": 0,
+        "w": 254.9,
+        "h": 40
+      },
+      "text": "Gasoline\n                    N/A\n                    N/A (N/",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 1668.2,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 1698.2,
+        "y": 11,
+        "w": 67.6,
+        "h": 18
+      },
+      "text": "Gasoline",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 1775.8,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 1812.5,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": 1903.1,
+        "y": 0,
+        "w": 251.3,
+        "h": 40
+      },
+      "text": "Naphtha\n                    N/A\n                    N/A (N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 1923.1,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 1953.1,
+        "y": 11,
+        "w": 64,
+        "h": 18
+      },
+      "text": "Naphtha",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 2027.1,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 2063.8,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": 2154.4,
+        "y": 0,
+        "w": 222,
+        "h": 40
+      },
+      "text": "Coal\n                    N/A\n                    N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 2174.4,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 2204.4,
+        "y": 11,
+        "w": 34.7,
+        "h": 18
+      },
+      "text": "Coal",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 2249,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 2285.7,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": 2376.3,
+        "y": 0,
+        "w": 243.3,
+        "h": 40
+      },
+      "text": "Copper\n                    N/A\n                    N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 2396.3,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 2426.3,
+        "y": 11,
+        "w": 56,
+        "h": 18
+      },
+      "text": "Copper",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 2492.3,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 2529,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": 2619.6,
+        "y": 0,
+        "w": 257.5,
+        "h": 40
+      },
+      "text": "Methanol\n                    N/A\n                    N/A (N/",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 2639.6,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 2669.6,
+        "y": 11,
+        "w": 70.2,
+        "h": 18
+      },
+      "text": "Methanol",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 2749.9,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 2786.5,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": 2877.2,
+        "y": 0,
+        "w": 222.9,
+        "h": 40
+      },
+      "text": "Urea\n                    N/A\n                    N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 2897.2,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 2927.2,
+        "y": 11,
+        "w": 35.6,
+        "h": 18
+      },
+      "text": "Urea",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 2972.7,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 3009.4,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": 3100,
+        "y": 0,
+        "w": 286,
+        "h": 40
+      },
+      "text": "Polyethylene\n                    N/A\n                    N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 3120,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 3150,
+        "y": 11,
+        "w": 98.7,
+        "h": 18
+      },
+      "text": "Polyethylene",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 3258.7,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 3295.4,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": 3386,
+        "y": 0,
+        "w": 257.5,
+        "h": 40
+      },
+      "text": "Polyvinyl\n                    N/A\n                    N/A (N",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 3406,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 3436,
+        "y": 11,
+        "w": 70.3,
+        "h": 18
+      },
+      "text": "Polyvinyl",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 3516.3,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 3553,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "ticker-item",
+      "rect": {
+        "x": 3643.6,
+        "y": 0,
+        "w": 297.5,
+        "h": 40
+      },
+      "text": "Polypropylene\n                    N/A\n                    N/",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "flex",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "IMG",
+      "cls": "",
+      "rect": {
+        "x": 3663.6,
+        "y": 10,
+        "w": 20,
+        "h": 20
+      },
+      "text": "",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-name",
+      "rect": {
+        "x": 3693.6,
+        "y": 11,
+        "w": 110.3,
+        "h": 18
+      },
+      "text": "Polypropylene",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-value",
+      "rect": {
+        "x": 3813.8,
+        "y": 11,
+        "w": 26.7,
+        "h": 18
+      },
+      "text": "N/A",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "DIV",
+      "cls": "market-change positive",
+      "rect": {
+        "x": 3850.5,
+        "y": 11,
+        "w": 69.6,
+        "h": 18
+      },
+      "text": "N/A (N/A)",
+      "styles": {
+        "color": "rgb(0, 128, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "700",
+        "fontFamily": "Arial, sans-serif",
+        "display": "block",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "nowrap"
+      }
+    },
+    {
+      "tag": "SCRIPT",
+      "cls": "",
+      "rect": {
+        "x": 0,
+        "y": 0,
+        "w": 0,
+        "h": 0
+      },
+      "text": "const tickerSlider = document.getElementById(\"tickerContaine",
+      "styles": {
+        "color": "rgb(0, 0, 0)",
+        "backgroundColor": "rgba(0, 0, 0, 0)",
+        "fontSize": "16px",
+        "fontWeight": "400",
+        "fontFamily": "Arial, sans-serif",
+        "display": "none",
+        "animation": "none 0s ease 0s 1 normal none running",
+        "animationDuration": "0s",
+        "whiteSpace": "normal"
+      }
+    }
+  ]
+}

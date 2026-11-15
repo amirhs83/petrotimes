@@ -1,0 +1,36 @@
+{
+  "componentId": "top-news-list",
+  "componentName": "Top News Label + Sidebar List",
+  "category": "news-cards",
+  "primarySelector": ".elementor-7322 .elementor-element-98a6ee8 .elementor-widget-wrap",
+  "extractedAt": "2026-11-15T07:33:36.160Z",
+  "status": "EXTRACTED",
+  "geometry": {
+    "rect": {
+      "x": 360,
+      "y": 108,
+      "w": 356,
+      "h": 1273.7
+    },
+    "computed": {
+      "display": "flex",
+      "position": "sticky",
+      "flexDirection": "row",
+      "padding": "0px",
+      "margin": "0px",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(68, 68, 68)",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "21px",
+      "textAlign": "start",
+      "direction": "rtl",
+      "borderRadius": "0px",
+      "transition": "top 0.2s ease-in",
+      "overflow": "visible",
+      "width": "356px"
+    }
+  },
+  "children": null
+}

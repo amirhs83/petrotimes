@@ -1,0 +1,727 @@
+{
+  "stylesheets": [
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/css/4/8/1/9c70f8e9079e856bc3dbf7fb1df49.css",
+      "media": "",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/content-views-query-and-display-post-page/public/assets/css/cv.css?ver=1794012845",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1794012845",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/uploads/font-awesome/v6.6.0/css/svg-with-js.css?ver=1794012845",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/background-css/1/petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/featured-video-plus/styles/frontend.css?ver=1794012845&wpr_t=1794738317",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/parsi-font/assets/css/fonts.css?ver=1794012845",
+      "media": "",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/uploads/useanyfont/uaf.css?ver=1755829221",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1794012845",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/frontend-rtl.min.css?ver=3.25.1",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1794012845",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.1",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/uploads/elementor/css/post-344.css?ver=1794012845",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-heading-rtl.min.css?ver=3.25.1",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-divider-rtl.min.css?ver=3.25.1",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-image-rtl.min.css?ver=3.25.1",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/uploads/elementor/css/post-7322.css?ver=1794018064",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/uploads/elementor/css/post-7373.css?ver=1794012845",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/releases/v6.6.0/css/all.css?ver=1794012846",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": "anonymous",
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1794012846",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=1794012846",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=1794012846",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=1794012846",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css?ver=3.25.0",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.26.2",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.26.0",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/themes/smart-mag/css/rtl/rtl.css?ver=1794012846",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/themes/smart-mag/css/lightbox.css?ver=1794012846",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/themes/smart-mag/css/icons/icons.css?ver=1794012846",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/releases/v6.6.0/css/v4-shims.css?ver=1794012846",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": "anonymous",
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/post-featured-video/includes/css/pfv-videopopup.css?ver=1794012846",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    },
+    {
+      "href": "https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-text-editor-rtl.min.css?ver=3.25.1",
+      "media": "all",
+      "integrity": null,
+      "crossorigin": null,
+      "disabled": false
+    }
+  ],
+  "scripts": [
+    {
+      "src": null,
+      "id": null,
+      "async": false,
+      "defer": false,
+      "type": null,
+      "hasSrc": false,
+      "inlineLength": 476
+    },
+    {
+      "src": null,
+      "id": null,
+      "async": false,
+      "defer": false,
+      "type": null,
+      "hasSrc": false,
+      "inlineLength": 13465
+    },
+    {
+      "src": null,
+      "id": null,
+      "async": true,
+      "defer": false,
+      "type": "application/ld+json",
+      "hasSrc": false,
+      "inlineLength": 4244
+    },
+    {
+      "src": "data:text/javascript;base64,Ci8qKgogKiBAY29weXJpZ2h0IFRoZW1lU3BoZXJlCiAqIEBwcmVzZXJ2ZQogKi8KdmFyIEJ1bnlhZExhenk9e307QnVueWFkTGF6eS5sb2FkPWZ1bmN0aW9uKCl7ZnVuY3Rpb24gYShlLG4pe3ZhciB0PXt9O2UuZGF0YXNldC5iZ3NldCYmZS5kYXRhc2V0LnNpemVzPyh0LnNpemVzPWUuZGF0YXNldC5zaXplcyx0LnNyY3NldD1lLmRhdGFzZXQuYmdzZXQpOnQuc3JjPWUuZGF0YXNldC5iZ3NyYyxmdW5jdGlvbih0KXt2YXIgYT10LmRhdGFzZXQucmF0aW87aWYoMDxhKXtjb25zdCBlPXQucGFyZW50RWxlbWVudDtpZihlLmNsYXNzTGlzdC5jb250YWlucygibWVkaWEtcmF0aW8iKSl7Y29uc3Qgbj1lLnN0eWxlO24uZ2V0UHJvcGVydHlWYWx1ZSgiLS1hLXJhdGlvIil8fChuLnBhZGRpbmdCb3R0b209MTAwL2ErIiUiKX19fShlKTt2YXIgYSxvPWRvY3VtZW50LmNyZWF0ZUVsZW1lbnQoImltZyIpO2ZvcihhIGluIG8ub25sb2FkPWZ1bmN0aW9uKCl7dmFyIHQ9InVybCgnIisoby5jdXJyZW50U3JjfHxvLnNyYykrIicpIixhPWUuc3R5bGU7YS5iYWNrZ3JvdW5kSW1hZ2UhPT10JiZyZXF1ZXN0QW5pbWF0aW9uRnJhbWUoKCk9PnthLmJhY2tncm91bmRJbWFnZT10LG4mJm4oKX0pLG8ub25sb2FkPW51bGwsby5vbmVycm9yPW51bGwsbz1udWxsfSxvLm9uZXJyb3I9by5vbmxvYWQsdClvLnNldEF0dHJpYnV0ZShhLHRbYV0pO28mJm8uY29tcGxldGUmJjA8by5uYXR1cmFsV2lkdGgmJm8ub25sb2FkJiZvLm9ubG9hZCgpfWZ1bmN0aW9uIGUodCl7dC5kYXRhc2V0LmxvYWRlZHx8YSh0LCgpPT57ZG9jdW1lbnQuZGlzcGF0Y2hFdmVudChuZXcgRXZlbnQoImxhenlsb2FkZWQiKSksdC5kYXRhc2V0LmxvYWRlZD0xfSl9ZnVuY3Rpb24gbih0KXsiY29tcGxldGUiPT09ZG9jdW1lbnQucmVhZHlTdGF0ZT90KCk6d2luZG93LmFkZEV2ZW50TGlzdGVuZXIoImxvYWQiLHQpfXJldHVybntpbml0RWFybHk6ZnVuY3Rpb24oKXt2YXIgdCxhPSgpPT57ZG9jdW1lbnQucXVlcnlTZWxlY3RvckFsbCgiLmltZy5iZy1jb3Zlcjpub3QoLmxhenlsb2FkKSIpLmZvckVhY2goZSl9OyJjb21wbGV0ZSIhPT1kb2N1bWVudC5yZWFkeVN0YXRlPyh0PXNldEludGVydmFsKGEsMTUwKSxuKCgpPT57YSgpLGNsZWFySW50ZXJ2YWwodCl9KSk6YSgpfSxjYWxsT25Mb2FkOm4saW5pdEJnSW1hZ2VzOmZ1bmN0aW9uKHQpe3QmJm4oKCk9Pntkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCIuaW1nLmJnLWNvdmVyIikuZm9yRWFjaChlKX0pfSxiZ0xvYWQ6YX19KCksQnVueWFkTGF6eS5sb2FkLmluaXRFYXJseSgpOwovLyMgc291cmNlVVJMPXNtYXJ0bWFnLWxhenktaW5saW5lLWpzLWFmdGVyCg==",
+      "id": "smartmag-lazy-inline-js-after",
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-includes/js/jquery/jquery.min.js?ver=3.7.1",
+      "id": "jquery-core-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-includes/js/jquery/jquery-migrate.min.js?ver=3.4.1",
+      "id": "jquery-migrate-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "data:text/javascript;base64,d2luZG93LmFkZEV2ZW50TGlzdGVuZXIoJ0RPTUNvbnRlbnRMb2FkZWQnLCBmdW5jdGlvbigpIHsKIWZ1bmN0aW9uKCQpeyJ1c2Ugc3RyaWN0IjskKGRvY3VtZW50KS5yZWFkeShmdW5jdGlvbigpeyQodGhpcykuc2Nyb2xsVG9wKCk+MTAwJiYkKCIuaGZlLXNjcm9sbC10by10b3Atd3JhcCIpLnJlbW92ZUNsYXNzKCJoZmUtc2Nyb2xsLXRvLXRvcC1oaWRlIiksJCh3aW5kb3cpLnNjcm9sbChmdW5jdGlvbigpeyQodGhpcykuc2Nyb2xsVG9wKCk8MTAwPyQoIi5oZmUtc2Nyb2xsLXRvLXRvcC13cmFwIikuZmFkZU91dCgzMDApOiQoIi5oZmUtc2Nyb2xsLXRvLXRvcC13cmFwIikuZmFkZUluKDMwMCl9KSwkKCIuaGZlLXNjcm9sbC10by10b3Atd3JhcCIpLm9uKCJjbGljayIsZnVuY3Rpb24oKXskKCJodG1sLCBib2R5IikuYW5pbWF0ZSh7c2Nyb2xsVG9wOjB9LDMwMCk7cmV0dXJuITF9KX0pfShqUXVlcnkpOwohZnVuY3Rpb24oJCl7J3VzZSBzdHJpY3QnOyQoZG9jdW1lbnQpLnJlYWR5KGZ1bmN0aW9uKCl7dmFyIGJhcj0kKCcuaGZlLXJlYWRpbmctcHJvZ3Jlc3MtYmFyJyk7aWYoIWJhci5sZW5ndGgpcmV0dXJuOyQod2luZG93KS5vbignc2Nyb2xsJyxmdW5jdGlvbigpe3ZhciBzPSQod2luZG93KS5zY3JvbGxUb3AoKSxkPSQoZG9jdW1lbnQpLmhlaWdodCgpLSQod2luZG93KS5oZWlnaHQoKSxwPWQ/IHMvZCoxMDA6MDtiYXIuY3NzKCd3aWR0aCcscCsnJScpfSk7fSk7fShqUXVlcnkpOwovLyMgc291cmNlVVJMPWpxdWVyeS1qcy1hZnRlcgp9KTs=",
+      "id": "jquery-js-after",
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/plugins/featured-video-plus/js/jquery.fitvids.min.js?ver=master-2015-08",
+      "id": "jquery.fitvids-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": null,
+      "id": "fvp-frontend-js-extra",
+      "async": false,
+      "defer": false,
+      "type": null,
+      "hasSrc": false,
+      "inlineLength": 216
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/plugins/featured-video-plus/js/frontend.min.js?ver=2.3.3",
+      "id": "fvp-frontend-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/sphere-post-views/assets/js/post-views.js?ver=1755876211",
+      "id": "sphere-post-views-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "data:text/javascript;base64,CnZhciBTcGhlcmVfUG9zdFZpZXdzID0geyJhamF4VXJsIjoiaHR0cHM6XC9cL3BldHJvdGltZXMuaXJcL3dwLWFkbWluXC9hZG1pbi1hamF4LnBocD9zcGhlcmVfcG9zdF92aWV3cz0xIiwic2FtcGxpbmciOjAsInNhbXBsaW5nUmF0ZSI6MTAsInJlcGVhdENvdW50RGVsYXkiOjAsInBvc3RJRCI6ZmFsc2UsInRva2VuIjoiZDI0OTVhMzVhNSJ9Ci8vIyBzb3VyY2VVUkw9c3BoZXJlLXBvc3Qtdmlld3MtanMtYWZ0ZXIK",
+      "id": "sphere-post-views-js-after",
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "data:text/javascript;base64,CgkJdmFyIEJ1bnlhZFNjaGVtZUtleSA9ICdidW55YWQtc2NoZW1lJzsKCQkoKCkgPT4gewoJCQljb25zdCBkID0gZG9jdW1lbnQuZG9jdW1lbnRFbGVtZW50OwoJCQljb25zdCBjID0gZC5jbGFzc0xpc3Q7CgkJCXZhciBzY2hlbWUgPSBsb2NhbFN0b3JhZ2UuZ2V0SXRlbShCdW55YWRTY2hlbWVLZXkpOwoJCQkKCQkJaWYgKHNjaGVtZSkgewoJCQkJZC5kYXRhc2V0Lm9yaWdDbGFzcyA9IGM7CgkJCQlzY2hlbWUgPT09ICdkYXJrJyA/IGMucmVtb3ZlKCdzLWxpZ2h0JywgJ3NpdGUtcy1saWdodCcpIDogYy5yZW1vdmUoJ3MtZGFyaycsICdzaXRlLXMtZGFyaycpOwoJCQkJYy5hZGQoJ3NpdGUtcy0nICsgc2NoZW1lLCAncy0nICsgc2NoZW1lKTsKCQkJfQoJCX0pKCk7CgkJ",
+      "id": null,
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": null,
+      "id": null,
+      "async": false,
+      "defer": false,
+      "type": "application/javascript",
+      "hasSrc": false,
+      "inlineLength": 1735
+    },
+    {
+      "src": "data:text/javascript;base64,CmRvY3VtZW50LnF1ZXJ5U2VsZWN0b3JBbGwoJy50YWdhIGEnKS5mb3JFYWNoKGxpbmsgPT4gewogICAgbGluay5zZXRBdHRyaWJ1dGUoJ2hyZWYnLCAnamF2YXNjcmlwdDp2b2lkKDApOycpOwp9KTsK",
+      "id": null,
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": null,
+      "id": null,
+      "async": false,
+      "defer": false,
+      "type": "speculationrules",
+      "hasSrc": false,
+      "inlineLength": 379
+    },
+    {
+      "src": "data:text/javascript;base64,CgkJCQljb25zdCBsYXp5bG9hZFJ1bk9ic2VydmVyID0gKCkgPT4gewoJCQkJCWNvbnN0IGxhenlsb2FkQmFja2dyb3VuZHMgPSBkb2N1bWVudC5xdWVyeVNlbGVjdG9yQWxsKCBgLmUtY29uLmUtcGFyZW50Om5vdCguZS1sYXp5bG9hZGVkKWAgKTsKCQkJCQljb25zdCBsYXp5bG9hZEJhY2tncm91bmRPYnNlcnZlciA9IG5ldyBJbnRlcnNlY3Rpb25PYnNlcnZlciggKCBlbnRyaWVzICkgPT4gewoJCQkJCQllbnRyaWVzLmZvckVhY2goICggZW50cnkgKSA9PiB7CgkJCQkJCQlpZiAoIGVudHJ5LmlzSW50ZXJzZWN0aW5nICkgewoJCQkJCQkJCWxldCBsYXp5bG9hZEJhY2tncm91bmQgPSBlbnRyeS50YXJnZXQ7CgkJCQkJCQkJaWYoIGxhenlsb2FkQmFja2dyb3VuZCApIHsKCQkJCQkJCQkJbGF6eWxvYWRCYWNrZ3JvdW5kLmNsYXNzTGlzdC5hZGQoICdlLWxhenlsb2FkZWQnICk7CgkJCQkJCQkJfQoJCQkJCQkJCWxhenlsb2FkQmFja2dyb3VuZE9ic2VydmVyLnVub2JzZXJ2ZSggZW50cnkudGFyZ2V0ICk7CgkJCQkJCQl9CgkJCQkJCX0pOwoJCQkJCX0sIHsgcm9vdE1hcmdpbjogJzIwMHB4IDBweCAyMDBweCAwcHgnIH0gKTsKCQkJCQlsYXp5bG9hZEJhY2tncm91bmRzLmZvckVhY2goICggbGF6eWxvYWRCYWNrZ3JvdW5kICkgPT4gewoJCQkJCQlsYXp5bG9hZEJhY2tncm91bmRPYnNlcnZlci5vYnNlcnZlKCBsYXp5bG9hZEJhY2tncm91bmQgKTsKCQkJCQl9ICk7CgkJCQl9OwoJCQkJY29uc3QgZXZlbnRzID0gWwoJCQkJCSdET01Db250ZW50TG9hZGVkJywKCQkJCQknZWxlbWVudG9yL2xhenlsb2FkL29ic2VydmUnLAoJCQkJXTsKCQkJCWV2ZW50cy5mb3JFYWNoKCAoIGV2ZW50ICkgPT4gewoJCQkJCWRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoIGV2ZW50LCBsYXp5bG9hZFJ1bk9ic2VydmVyICk7CgkJCQl9ICk7CgkJCQ==",
+      "id": null,
+      "async": true,
+      "defer": false,
+      "type": "text/javascript",
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": null,
+      "id": "smartmag-lazyload-js-extra",
+      "async": false,
+      "defer": false,
+      "type": null,
+      "hasSrc": false,
+      "inlineLength": 82
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/themes/smart-mag/js/lazyload.js?ver=1755876211",
+      "id": "smartmag-lazyload-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "data:text/javascript;base64,CiJ1c2Ugc3RyaWN0Ijt2YXIgX2NyZWF0ZUNsYXNzPWZ1bmN0aW9uKCl7ZnVuY3Rpb24gZGVmaW5lUHJvcGVydGllcyh0YXJnZXQscHJvcHMpe2Zvcih2YXIgaT0wO2k8cHJvcHMubGVuZ3RoO2krKyl7dmFyIGRlc2NyaXB0b3I9cHJvcHNbaV07ZGVzY3JpcHRvci5lbnVtZXJhYmxlPWRlc2NyaXB0b3IuZW51bWVyYWJsZXx8ITEsZGVzY3JpcHRvci5jb25maWd1cmFibGU9ITAsInZhbHVlImluIGRlc2NyaXB0b3ImJihkZXNjcmlwdG9yLndyaXRhYmxlPSEwKSxPYmplY3QuZGVmaW5lUHJvcGVydHkodGFyZ2V0LGRlc2NyaXB0b3Iua2V5LGRlc2NyaXB0b3IpfX1yZXR1cm4gZnVuY3Rpb24oQ29uc3RydWN0b3IscHJvdG9Qcm9wcyxzdGF0aWNQcm9wcyl7cmV0dXJuIHByb3RvUHJvcHMmJmRlZmluZVByb3BlcnRpZXMoQ29uc3RydWN0b3IucHJvdG90eXBlLHByb3RvUHJvcHMpLHN0YXRpY1Byb3BzJiZkZWZpbmVQcm9wZXJ0aWVzKENvbnN0cnVjdG9yLHN0YXRpY1Byb3BzKSxDb25zdHJ1Y3Rvcn19KCk7ZnVuY3Rpb24gX2NsYXNzQ2FsbENoZWNrKGluc3RhbmNlLENvbnN0cnVjdG9yKXtpZighKGluc3RhbmNlIGluc3RhbmNlb2YgQ29uc3RydWN0b3IpKXRocm93IG5ldyBUeXBlRXJyb3IoIkNhbm5vdCBjYWxsIGEgY2xhc3MgYXMgYSBmdW5jdGlvbiIpfXZhciBSb2NrZXRCcm93c2VyQ29tcGF0aWJpbGl0eUNoZWNrZXI9ZnVuY3Rpb24oKXtmdW5jdGlvbiBSb2NrZXRCcm93c2VyQ29tcGF0aWJpbGl0eUNoZWNrZXIob3B0aW9ucyl7X2NsYXNzQ2FsbENoZWNrKHRoaXMsUm9ja2V0QnJvd3NlckNvbXBhdGliaWxpdHlDaGVja2VyKSx0aGlzLnBhc3NpdmVTdXBwb3J0ZWQ9ITEsdGhpcy5fY2hlY2tQYXNzaXZlT3B0aW9uKHRoaXMpLHRoaXMub3B0aW9ucz0hIXRoaXMucGFzc2l2ZVN1cHBvcnRlZCYmb3B0aW9uc31yZXR1cm4gX2NyZWF0ZUNsYXNzKFJvY2tldEJyb3dzZXJDb21wYXRpYmlsaXR5Q2hlY2tlcixbe2tleToiX2NoZWNrUGFzc2l2ZU9wdGlvbiIsdmFsdWU6ZnVuY3Rpb24oc2VsZil7dHJ5e3ZhciBvcHRpb25zPXtnZXQgcGFzc2l2ZSgpe3JldHVybiEoc2VsZi5wYXNzaXZlU3VwcG9ydGVkPSEwKX19O3dpbmRvdy5hZGRFdmVudExpc3RlbmVyKCJ0ZXN0IixudWxsLG9wdGlvbnMpLHdpbmRvdy5yZW1vdmVFdmVudExpc3RlbmVyKCJ0ZXN0IixudWxsLG9wdGlvbnMpfWNhdGNoKGVycil7c2VsZi5wYXNzaXZlU3VwcG9ydGVkPSExfX19LHtrZXk6ImluaXRSZXF1ZXN0SWRsZUNhbGxiYWNrIix2YWx1ZTpmdW5jdGlvbigpeyExIGluIHdpbmRvdyYmKHdpbmRvdy5yZXF1ZXN0SWRsZUNhbGxiYWNrPWZ1bmN0aW9uKGNiKXt2YXIgc3RhcnQ9RGF0ZS5ub3coKTtyZXR1cm4gc2V0VGltZW91dChmdW5jdGlvbigpe2NiKHtkaWRUaW1lb3V0OiExLHRpbWVSZW1haW5pbmc6ZnVuY3Rpb24oKXtyZXR1cm4gTWF0aC5tYXgoMCw1MC0oRGF0ZS5ub3coKS1zdGFydCkpfX0pfSwxKX0pLCExIGluIHdpbmRvdyYmKHdpbmRvdy5jYW5jZWxJZGxlQ2FsbGJhY2s9ZnVuY3Rpb24oaWQpe3JldHVybiBjbGVhclRpbWVvdXQoaWQpfSl9fSx7a2V5OiJpc0RhdGFTYXZlck1vZGVPbiIsdmFsdWU6ZnVuY3Rpb24oKXtyZXR1cm4iY29ubmVjdGlvbiJpbiBuYXZpZ2F0b3ImJiEwPT09bmF2aWdhdG9yLmNvbm5lY3Rpb24uc2F2ZURhdGF9fSx7a2V5OiJzdXBwb3J0c0xpbmtQcmVmZXRjaCIsdmFsdWU6ZnVuY3Rpb24oKXt2YXIgZWxlbT1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCJsaW5rIik7cmV0dXJuIGVsZW0ucmVsTGlzdCYmZWxlbS5yZWxMaXN0LnN1cHBvcnRzJiZlbGVtLnJlbExpc3Quc3VwcG9ydHMoInByZWZldGNoIikmJndpbmRvdy5JbnRlcnNlY3Rpb25PYnNlcnZlciYmImlzSW50ZXJzZWN0aW5nImluIEludGVyc2VjdGlvbk9ic2VydmVyRW50cnkucHJvdG90eXBlfX0se2tleToiaXNTbG93Q29ubmVjdGlvbiIsdmFsdWU6ZnVuY3Rpb24oKXtyZXR1cm4iY29ubmVjdGlvbiJpbiBuYXZpZ2F0b3ImJiJlZmZlY3RpdmVUeXBlImluIG5hdmlnYXRvci5jb25uZWN0aW9uJiYoIjJnIj09PW5hdmlnYXRvci5jb25uZWN0aW9uLmVmZmVjdGl2ZVR5cGV8fCJzbG93LTJnIj09PW5hdmlnYXRvci5jb25uZWN0aW9uLmVmZmVjdGl2ZVR5cGUpfX1dKSxSb2NrZXRCcm93c2VyQ29tcGF0aWJpbGl0eUNoZWNrZXJ9KCk7Ci8vIyBzb3VyY2VVUkw9cm9ja2V0LWJyb3dzZXItY2hlY2tlci1qcy1hZnRlcgo=",
+      "id": "rocket-browser-checker-js-after",
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": null,
+      "id": "rocket-preload-links-js-extra",
+      "async": false,
+      "defer": false,
+      "type": null,
+      "hasSrc": false,
+      "inlineLength": 481
+    },
+    {
+      "src": "data:text/javascript;base64,CihmdW5jdGlvbigpIHsKInVzZSBzdHJpY3QiO3ZhciByPSJmdW5jdGlvbiI9PXR5cGVvZiBTeW1ib2wmJiJzeW1ib2wiPT10eXBlb2YgU3ltYm9sLml0ZXJhdG9yP2Z1bmN0aW9uKGUpe3JldHVybiB0eXBlb2YgZX06ZnVuY3Rpb24oZSl7cmV0dXJuIGUmJiJmdW5jdGlvbiI9PXR5cGVvZiBTeW1ib2wmJmUuY29uc3RydWN0b3I9PT1TeW1ib2wmJmUhPT1TeW1ib2wucHJvdG90eXBlPyJzeW1ib2wiOnR5cGVvZiBlfSxlPWZ1bmN0aW9uKCl7ZnVuY3Rpb24gaShlLHQpe2Zvcih2YXIgbj0wO248dC5sZW5ndGg7bisrKXt2YXIgaT10W25dO2kuZW51bWVyYWJsZT1pLmVudW1lcmFibGV8fCExLGkuY29uZmlndXJhYmxlPSEwLCJ2YWx1ZSJpbiBpJiYoaS53cml0YWJsZT0hMCksT2JqZWN0LmRlZmluZVByb3BlcnR5KGUsaS5rZXksaSl9fXJldHVybiBmdW5jdGlvbihlLHQsbil7cmV0dXJuIHQmJmkoZS5wcm90b3R5cGUsdCksbiYmaShlLG4pLGV9fSgpO2Z1bmN0aW9uIGkoZSx0KXtpZighKGUgaW5zdGFuY2VvZiB0KSl0aHJvdyBuZXcgVHlwZUVycm9yKCJDYW5ub3QgY2FsbCBhIGNsYXNzIGFzIGEgZnVuY3Rpb24iKX12YXIgdD1mdW5jdGlvbigpe2Z1bmN0aW9uIG4oZSx0KXtpKHRoaXMsbiksdGhpcy5icm93c2VyPWUsdGhpcy5jb25maWc9dCx0aGlzLm9wdGlvbnM9dGhpcy5icm93c2VyLm9wdGlvbnMsdGhpcy5wcmVmZXRjaGVkPW5ldyBTZXQsdGhpcy5ldmVudFRpbWU9bnVsbCx0aGlzLnRocmVzaG9sZD0xMTExLHRoaXMubnVtT25Ib3Zlcj0wfXJldHVybiBlKG4sW3trZXk6ImluaXQiLHZhbHVlOmZ1bmN0aW9uKCl7IXRoaXMuYnJvd3Nlci5zdXBwb3J0c0xpbmtQcmVmZXRjaCgpfHx0aGlzLmJyb3dzZXIuaXNEYXRhU2F2ZXJNb2RlT24oKXx8dGhpcy5icm93c2VyLmlzU2xvd0Nvbm5lY3Rpb24oKXx8KHRoaXMucmVnZXg9e2V4Y2x1ZGVVcmlzOlJlZ0V4cCh0aGlzLmNvbmZpZy5leGNsdWRlVXJpcywiaSIpLGltYWdlczpSZWdFeHAoIi4oIit0aGlzLmNvbmZpZy5pbWFnZUV4dCsiKSQiLCJpIiksZmlsZUV4dDpSZWdFeHAoIi4oIit0aGlzLmNvbmZpZy5maWxlRXh0KyIpJCIsImkiKX0sdGhpcy5faW5pdExpc3RlbmVycyh0aGlzKSl9fSx7a2V5OiJfaW5pdExpc3RlbmVycyIsdmFsdWU6ZnVuY3Rpb24oZSl7LTE8dGhpcy5jb25maWcub25Ib3ZlckRlbGF5JiZkb2N1bWVudC5hZGRFdmVudExpc3RlbmVyKCJtb3VzZW92ZXIiLGUubGlzdGVuZXIuYmluZChlKSxlLmxpc3RlbmVyT3B0aW9ucyksZG9jdW1lbnQuYWRkRXZlbnRMaXN0ZW5lcigibW91c2Vkb3duIixlLmxpc3RlbmVyLmJpbmQoZSksZS5saXN0ZW5lck9wdGlvbnMpLGRvY3VtZW50LmFkZEV2ZW50TGlzdGVuZXIoInRvdWNoc3RhcnQiLGUubGlzdGVuZXIuYmluZChlKSxlLmxpc3RlbmVyT3B0aW9ucyl9fSx7a2V5OiJsaXN0ZW5lciIsdmFsdWU6ZnVuY3Rpb24oZSl7dmFyIHQ9ZS50YXJnZXQuY2xvc2VzdCgiYSIpLG49dGhpcy5fcHJlcGFyZVVybCh0KTtpZihudWxsIT09bilzd2l0Y2goZS50eXBlKXtjYXNlIm1vdXNlZG93biI6Y2FzZSJ0b3VjaHN0YXJ0Ijp0aGlzLl9hZGRQcmVmZXRjaExpbmsobik7YnJlYWs7Y2FzZSJtb3VzZW92ZXIiOnRoaXMuX2Vhcmx5UHJlZmV0Y2godCxuLCJtb3VzZW91dCIpfX19LHtrZXk6Il9lYXJseVByZWZldGNoIix2YWx1ZTpmdW5jdGlvbih0LGUsbil7dmFyIGk9dGhpcyxyPXNldFRpbWVvdXQoZnVuY3Rpb24oKXtpZihyPW51bGwsMD09PWkubnVtT25Ib3ZlcilzZXRUaW1lb3V0KGZ1bmN0aW9uKCl7cmV0dXJuIGkubnVtT25Ib3Zlcj0wfSwxZTMpO2Vsc2UgaWYoaS5udW1PbkhvdmVyPmkuY29uZmlnLnJhdGVUaHJvdHRsZSlyZXR1cm47aS5udW1PbkhvdmVyKyssaS5fYWRkUHJlZmV0Y2hMaW5rKGUpfSx0aGlzLmNvbmZpZy5vbkhvdmVyRGVsYXkpO3QuYWRkRXZlbnRMaXN0ZW5lcihuLGZ1bmN0aW9uIGUoKXt0LnJlbW92ZUV2ZW50TGlzdGVuZXIobixlLHtwYXNzaXZlOiEwfSksbnVsbCE9PXImJihjbGVhclRpbWVvdXQocikscj1udWxsKX0se3Bhc3NpdmU6ITB9KX19LHtrZXk6Il9hZGRQcmVmZXRjaExpbmsiLHZhbHVlOmZ1bmN0aW9uKGkpe3JldHVybiB0aGlzLnByZWZldGNoZWQuYWRkKGkuaHJlZiksbmV3IFByb21pc2UoZnVuY3Rpb24oZSx0KXt2YXIgbj1kb2N1bWVudC5jcmVhdGVFbGVtZW50KCJsaW5rIik7bi5yZWw9InByZWZldGNoIixuLmhyZWY9aS5ocmVmLG4ub25sb2FkPWUsbi5vbmVycm9yPXQsZG9jdW1lbnQuaGVhZC5hcHBlbmRDaGlsZChuKX0pLmNhdGNoKGZ1bmN0aW9uKCl7fSl9fSx7a2V5OiJfcHJlcGFyZVVybCIsdmFsdWU6ZnVuY3Rpb24oZSl7aWYobnVsbD09PWV8fCJvYmplY3QiIT09KHZvaWQgMD09PWU/InVuZGVmaW5lZCI6cihlKSl8fCExIGluIGV8fC0xPT09WyJodHRwOiIsImh0dHBzOiJdLmluZGV4T2YoZS5wcm90b2NvbCkpcmV0dXJuIG51bGw7dmFyIHQ9ZS5ocmVmLnN1YnN0cmluZygwLHRoaXMuY29uZmlnLnNpdGVVcmwubGVuZ3RoKSxuPXRoaXMuX2dldFBhdGhuYW1lKGUuaHJlZix0KSxpPXtvcmlnaW5hbDplLmhyZWYscHJvdG9jb2w6ZS5wcm90b2NvbCxvcmlnaW46dCxwYXRobmFtZTpuLGhyZWY6dCtufTtyZXR1cm4gdGhpcy5faXNMaW5rT2soaSk/aTpudWxsfX0se2tleToiX2dldFBhdGhuYW1lIix2YWx1ZTpmdW5jdGlvbihlLHQpe3ZhciBuPXQ/ZS5zdWJzdHJpbmcodGhpcy5jb25maWcuc2l0ZVVybC5sZW5ndGgpOmU7cmV0dXJuIG4uc3RhcnRzV2l0aCgiLyIpfHwobj0iLyIrbiksdGhpcy5fc2hvdWxkQWRkVHJhaWxpbmdTbGFzaChuKT9uKyIvIjpufX0se2tleToiX3Nob3VsZEFkZFRyYWlsaW5nU2xhc2giLHZhbHVlOmZ1bmN0aW9uKGUpe3JldHVybiB0aGlzLmNvbmZpZy51c2VzVHJhaWxpbmdTbGFzaCYmIWUuZW5kc1dpdGgoIi8iKSYmIXRoaXMucmVnZXguZmlsZUV4dC50ZXN0KGUpfX0se2tleToiX2lzTGlua09rIix2YWx1ZTpmdW5jdGlvbihlKXtyZXR1cm4gbnVsbCE9PWUmJiJvYmplY3QiPT09KHZvaWQgMD09PWU/InVuZGVmaW5lZCI6cihlKSkmJighdGhpcy5wcmVmZXRjaGVkLmhhcyhlLmhyZWYpJiZlLm9yaWdpbj09PXRoaXMuY29uZmlnLnNpdGVVcmwmJi0xPT09ZS5ocmVmLmluZGV4T2YoIj8iKSYmLTE9PT1lLmhyZWYuaW5kZXhPZigiIyIpJiYhdGhpcy5yZWdleC5leGNsdWRlVXJpcy50ZXN0KGUuaHJlZikmJiF0aGlzLnJlZ2V4LmltYWdlcy50ZXN0KGUuaHJlZikpfX1dLFt7a2V5OiJydW4iLHZhbHVlOmZ1bmN0aW9uKCl7InVuZGVmaW5lZCIhPXR5cGVvZiBSb2NrZXRQcmVsb2FkTGlua3NDb25maWcmJm5ldyBuKG5ldyBSb2NrZXRCcm93c2VyQ29tcGF0aWJpbGl0eUNoZWNrZXIoe2NhcHR1cmU6ITAscGFzc2l2ZTohMH0pLFJvY2tldFByZWxvYWRMaW5rc0NvbmZpZykuaW5pdCgpfX1dKSxufSgpO3QucnVuKCk7Cn0oKSk7CgovLyMgc291cmNlVVJMPXJvY2tldC1wcmVsb2FkLWxpbmtzLWpzLWFmdGVyCg==",
+      "id": "rocket-preload-links-js-after",
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": null,
+      "id": "rocket_lazyload_css-js-extra",
+      "async": false,
+      "defer": false,
+      "type": null,
+      "hasSrc": false,
+      "inlineLength": 96
+    },
+    {
+      "src": null,
+      "id": "rocket_lazyload_css-js-after",
+      "async": false,
+      "defer": false,
+      "type": null,
+      "hasSrc": false,
+      "inlineLength": 1755
+    },
+    {
+      "src": null,
+      "id": "smush-nextgen-fallback-js-extra",
+      "async": false,
+      "defer": false,
+      "type": null,
+      "hasSrc": false,
+      "inlineLength": 94
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/plugins/wp-smush-pro/app/assets/js/smush-nextgen-fallback.min.js?ver=3.18.0",
+      "id": "smush-nextgen-fallback-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/themes/smart-mag/js/jquery.mfp-lightbox.js?ver=1755876211",
+      "id": "magnific-popup-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/themes/smart-mag/js/jquery.sticky-sidebar.js?ver=1755876211",
+      "id": "theia-sticky-sidebar-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": null,
+      "id": "smartmag-theme-js-extra",
+      "async": false,
+      "defer": false,
+      "type": null,
+      "hasSrc": false,
+      "inlineLength": 113
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/themes/smart-mag/js/theme.js?ver=1755876211",
+      "id": "smartmag-theme-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": null,
+      "id": "pt-cv-content-views-script-js-extra",
+      "async": false,
+      "defer": false,
+      "type": null,
+      "hasSrc": false,
+      "inlineLength": 1438
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/content-views-query-and-display-post-page/public/assets/js/cv.js?ver=1755876211",
+      "id": "pt-cv-content-views-script-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/post-featured-video/includes/js/pfv-videopopup.js?ver=1755876211",
+      "id": "pfv_lightbox_scrpt-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/cache/min/1/wp-content/themes/smart-mag/js/jquery.slick.js?ver=1755876211",
+      "id": "smartmag-slick-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/plugins/elementor-pro/assets/js/webpack-pro.runtime.min.js?ver=3.25.0",
+      "id": "elementor-pro-webpack-runtime-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/plugins/elementor/assets/js/webpack.runtime.min.js?ver=3.25.1",
+      "id": "elementor-webpack-runtime-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/plugins/elementor/assets/js/frontend-modules.min.js?ver=3.25.1",
+      "id": "elementor-frontend-modules-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-includes/js/dist/hooks.min.js?ver=f0f188028580e8dc1255",
+      "id": "wp-hooks-js",
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-includes/js/dist/i18n.min.js?ver=1dfe7db3940c23ea9216",
+      "id": "wp-i18n-js",
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "data:text/javascript;base64,CndwLmkxOG4uc2V0TG9jYWxlRGF0YSggeyAndGV4dCBkaXJlY3Rpb25cdTAwMDRsdHInOiBbICdydGwnIF0gfSApOwovLyMgc291cmNlVVJMPXdwLWkxOG4tanMtYWZ0ZXIK",
+      "id": "wp-i18n-js-after",
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "data:text/javascript;base64,CnZhciBFbGVtZW50b3JQcm9Gcm9udGVuZENvbmZpZyA9IHsiYWpheHVybCI6Imh0dHBzOlwvXC9wZXRyb3RpbWVzLmlyXC93cC1hZG1pblwvYWRtaW4tYWpheC5waHAiLCJub25jZSI6ImYwZjhiZTI0MDEiLCJ1cmxzIjp7ImFzc2V0cyI6Imh0dHBzOlwvXC9wZXRyb3RpbWVzLmlyXC93cC1jb250ZW50XC9wbHVnaW5zXC9lbGVtZW50b3ItcHJvXC9hc3NldHNcLyIsInJlc3QiOiJodHRwczpcL1wvcGV0cm90aW1lcy5pclwvd3AtanNvblwvIn0sInNldHRpbmdzIjp7ImxhenlfbG9hZF9iYWNrZ3JvdW5kX2ltYWdlcyI6dHJ1ZX0sInBvcHVwIjp7Imhhc1BvcFVwcyI6ZmFsc2V9LCJzaGFyZUJ1dHRvbnNOZXR3b3JrcyI6eyJmYWNlYm9vayI6eyJ0aXRsZSI6IkZhY2Vib29rIiwiaGFzX2NvdW50ZXIiOnRydWV9LCJ0d2l0dGVyIjp7InRpdGxlIjoiVHdpdHRlciJ9LCJsaW5rZWRpbiI6eyJ0aXRsZSI6IkxpbmtlZEluIiwiaGFzX2NvdW50ZXIiOnRydWV9LCJwaW50ZXJlc3QiOnsidGl0bGUiOiJQaW50ZXJlc3QiLCJoYXNfY291bnRlciI6dHJ1ZX0sInJlZGRpdCI6eyJ0aXRsZSI6IlJlZGRpdCIsImhhc19jb3VudGVyIjp0cnVlfSwidmsiOnsidGl0bGUiOiJWSyIsImhhc19jb3VudGVyIjp0cnVlfSwib2Rub2tsYXNzbmlraSI6eyJ0aXRsZSI6Ik9LIiwiaGFzX2NvdW50ZXIiOnRydWV9LCJ0dW1ibHIiOnsidGl0bGUiOiJUdW1ibHIifSwiZGlnZyI6eyJ0aXRsZSI6IkRpZ2cifSwic2t5cGUiOnsidGl0bGUiOiJTa3lwZSJ9LCJzdHVtYmxldXBvbiI6eyJ0aXRsZSI6IlN0dW1ibGVVcG9uIiwiaGFzX2NvdW50ZXIiOnRydWV9LCJtaXgiOnsidGl0bGUiOiJNaXgifSwidGVsZWdyYW0iOnsidGl0bGUiOiJUZWxlZ3JhbSJ9LCJwb2NrZXQiOnsidGl0bGUiOiJQb2NrZXQiLCJoYXNfY291bnRlciI6dHJ1ZX0sInhpbmciOnsidGl0bGUiOiJYSU5HIiwiaGFzX2NvdW50ZXIiOnRydWV9LCJ3aGF0c2FwcCI6eyJ0aXRsZSI6IldoYXRzQXBwIn0sImVtYWlsIjp7InRpdGxlIjoiRW1haWwifSwicHJpbnQiOnsidGl0bGUiOiJQcmludCJ9LCJ4LXR3aXR0ZXIiOnsidGl0bGUiOiJYIn0sInRocmVhZHMiOnsidGl0bGUiOiJUaHJlYWRzIn19LCJmYWNlYm9va19zZGsiOnsibGFuZyI6ImZhX0lSIiwiYXBwX2lkIjoiIn0sImxvdHRpZSI6eyJkZWZhdWx0QW5pbWF0aW9uVXJsIjoiaHR0cHM6XC9cL3BldHJvdGltZXMuaXJcL3dwLWNvbnRlbnRcL3BsdWdpbnNcL2VsZW1lbnRvci1wcm9cL21vZHVsZXNcL2xvdHRpZVwvYXNzZXRzXC9hbmltYXRpb25zXC9kZWZhdWx0Lmpzb24ifX07Ci8vIyBzb3VyY2VVUkw9ZWxlbWVudG9yLXByby1mcm9udGVuZC1qcy1iZWZvcmUK",
+      "id": "elementor-pro-frontend-js-before",
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/plugins/elementor-pro/assets/js/frontend.min.js?ver=3.25.0",
+      "id": "elementor-pro-frontend-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "data:text/javascript;base64,d2luZG93LmFkZEV2ZW50TGlzdGVuZXIoJ0RPTUNvbnRlbnRMb2FkZWQnLCBmdW5jdGlvbigpIHsKalF1ZXJ5LnVpQmFja0NvbXBhdCA9IHRydWU7Ci8vIyBzb3VyY2VVUkw9anF1ZXJ5LXVpLWNvcmUtanMtYmVmb3JlCn0pOw==",
+      "id": "jquery-ui-core-js-before",
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-includes/js/jquery/ui/core.min.js?ver=1.14.2",
+      "id": "jquery-ui-core-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "data:text/javascript;base64,CnZhciBlbGVtZW50b3JGcm9udGVuZENvbmZpZyA9IHsiZW52aXJvbm1lbnRNb2RlIjp7ImVkaXQiOmZhbHNlLCJ3cFByZXZpZXciOmZhbHNlLCJpc1NjcmlwdERlYnVnIjpmYWxzZX0sImkxOG4iOnsic2hhcmVPbkZhY2Vib29rIjoiXHUwNjI3XHUwNjM0XHUwNjJhXHUwNjMxXHUwNjI3XHUwNmE5IFx1MDZhZlx1MDYzMFx1MDYyN1x1MDYzMVx1MDZjYyBcdTA2MmZcdTA2MzEgRmFjZWJvb2siLCJzaGFyZU9uVHdpdHRlciI6Ilx1MDYyN1x1MDYzNFx1MDYyYVx1MDYzMVx1MDYyN1x1MDZhOSBcdTA2YWZcdTA2MzBcdTA2MjdcdTA2MzFcdTA2Y2MgXHUwNjJmXHUwNjMxIFR3aXR0ZXIiLCJwaW5JdCI6Ilx1MDY3ZVx1MDZjY1x1MDY0NiBcdTA2YTlcdTA2NDZcdTA2Y2NcdTA2MmYiLCJkb3dubG9hZCI6Ilx1MDYyZlx1MDYyN1x1MDY0Nlx1MDY0NFx1MDY0OFx1MDYyZiIsImRvd25sb2FkSW1hZ2UiOiJcdTA2MmZcdTA2MjdcdTA2NDZcdTA2NDRcdTA2NDhcdTA2MmYgXHUwNjJhXHUwNjM1XHUwNjQ4XHUwNmNjXHUwNjMxIiwiZnVsbHNjcmVlbiI6Ilx1MDYyYVx1MDY0NVx1MDYyN1x1MDY0NVx1MjAwY1x1MDYzNVx1MDY0MVx1MDYyZFx1MDY0NyIsInpvb20iOiJcdTA2MjhcdTA2MzJcdTA2MzFcdTA2YWZcdTA2NDZcdTA2NDVcdTA2MjdcdTA2Y2NcdTA2Y2MiLCJzaGFyZSI6Ilx1MDYyN1x1MDYzNFx1MDYyYVx1MDYzMVx1MDYyN1x1MDZhOSBcdTA2YWZcdTA2MzBcdTA2MjdcdTA2MzFcdTA2Y2MiLCJwbGF5VmlkZW8iOiJcdTA2N2VcdTA2MmVcdTA2MzQgXHUwNjQ4XHUwNmNjXHUwNjJmXHUwNmNjXHUwNjQ4IiwicHJldmlvdXMiOiJcdTA2NDJcdTA2MjhcdTA2NDRcdTA2Y2MiLCJuZXh0IjoiXHUwNjI4XHUwNjM5XHUwNjJmXHUwNmNjIiwiY2xvc2UiOiJcdTA2MjhcdTA2MzNcdTA2MmFcdTA2NDYiLCJhMTF5Q2Fyb3VzZWxXcmFwcGVyQXJpYUxhYmVsIjoiXHUwNjg2XHUwNjMxXHUwNjJlIFx1MDY0MVx1MDY0NFx1MDZhOSB8IFx1MDY3ZVx1MDZjY1x1MDY0NVx1MDYyN1x1MDZjY1x1MDYzNCBcdTA2MjdcdTA2NDFcdTA2NDJcdTA2Y2M6IFx1MDY0MVx1MDY0NFx1MDYzNCBcdTA2ODZcdTA2N2UgXHUwNjQ4IFx1MDYzMVx1MDYyN1x1MDYzM1x1MDYyYSIsImExMXlDYXJvdXNlbFByZXZTbGlkZU1lc3NhZ2UiOiJcdTA2MjdcdTA2MzNcdTA2NDRcdTA2MjdcdTA2Y2NcdTA2MmYgXHUwNjQyXHUwNjI4XHUwNjQ0XHUwNmNjIiwiYTExeUNhcm91c2VsTmV4dFNsaWRlTWVzc2FnZSI6Ilx1MDYyN1x1MDYzM1x1MDY0NFx1MDYyN1x1MDZjY1x1MDYyZiBcdTA2MjhcdTA2MzlcdTA2MmZcdTA2Y2MiLCJhMTF5Q2Fyb3VzZWxGaXJzdFNsaWRlTWVzc2FnZSI6Ilx1MDYyN1x1MDZjY1x1MDY0NiBcdTA2MjdcdTA2NDhcdTA2NDRcdTA2Y2NcdTA2NDYgXHUwNjI3XHUwNjMzXHUwNjQ0XHUwNjI3XHUwNmNjXHUwNjJmIFx1MDYyN1x1MDYzM1x1MDYyYSIsImExMXlDYXJvdXNlbExhc3RTbGlkZU1lc3NhZ2UiOiJcdTA2MjdcdTA2Y2NcdTA2NDYgXHUwNjIyXHUwNjJlXHUwNjMxXHUwNmNjXHUwNjQ2IFx1MDYyN1x1MDYzM1x1MDY0NFx1MDYyN1x1MDZjY1x1MDYyZiBcdTA2MjdcdTA2MzNcdTA2MmEiLCJhMTF5Q2Fyb3VzZWxQYWdpbmF0aW9uQnVsbGV0TWVzc2FnZSI6Ilx1MDYzMVx1MDY0MVx1MDYyYVx1MDY0NiBcdTA2MjhcdTA2NDcgXHUwNjI3XHUwNjMzXHUwNjQ0XHUwNjI3XHUwNmNjXHUwNjJmIn0sImlzX3J0bCI6dHJ1ZSwiYnJlYWtwb2ludHMiOnsieHMiOjAsInNtIjo0ODAsIm1kIjo3NjgsImxnIjo5NDAsInhsIjoxNDQwLCJ4eGwiOjE2MDB9LCJyZXNwb25zaXZlIjp7ImJyZWFrcG9pbnRzIjp7Im1vYmlsZSI6eyJsYWJlbCI6Ilx1MDYyZFx1MDYyN1x1MDY0NFx1MDYyYSBcdTA2MzlcdTA2NDVcdTA2NDhcdTA2MmZcdTA2Y2MgXHUwNjQ1XHUwNjQ4XHUwNjI4XHUwNjI3XHUwNmNjXHUwNjQ0IiwidmFsdWUiOjc2NywiZGVmYXVsdF92YWx1ZSI6NzY3LCJkaXJlY3Rpb24iOiJtYXgiLCJpc19lbmFibGVkIjp0cnVlfSwibW9iaWxlX2V4dHJhIjp7ImxhYmVsIjoiXHUwNjJkXHUwNjI3XHUwNjQ0XHUwNjJhIFx1MDYyN1x1MDY0MVx1MDY0Mlx1MDZjYyBcdTA2NDVcdTA2NDhcdTA2MjhcdTA2MjdcdTA2Y2NcdTA2NDQiLCJ2YWx1ZSI6ODgwLCJkZWZhdWx0X3ZhbHVlIjo4ODAsImRpcmVjdGlvbiI6Im1heCIsImlzX2VuYWJsZWQiOmZhbHNlfSwidGFibGV0Ijp7ImxhYmVsIjoiXHUwNjJkXHUwNjI3XHUwNjQ0XHUwNjJhIFx1MDYzOVx1MDY0NVx1MDY0OFx1MDYyZlx1MDZjYyBcdTA2MmFcdTA2MjhcdTA2NDRcdTA2MmEiLCJ2YWx1ZSI6MTAyNCwiZGVmYXVsdF92YWx1ZSI6MTAyNCwiZGlyZWN0aW9uIjoibWF4IiwiaXNfZW5hYmxlZCI6dHJ1ZX0sInRhYmxldF9leHRyYSI6eyJsYWJlbCI6Ilx1MDYyZFx1MDYyN1x1MDY0NFx1MDYyYSBcdTA2MjdcdTA2NDFcdTA2NDJcdTA2Y2MgXHUwNjJhXHUwNjI4XHUwNjQ0XHUwNjJhIiwidmFsdWUiOjEyMDAsImRlZmF1bHRfdmFsdWUiOjEyMDAsImRpcmVjdGlvbiI6Im1heCIsImlzX2VuYWJsZWQiOmZhbHNlfSwibGFwdG9wIjp7ImxhYmVsIjoiXHUwNjQ0XHUwNjdlIFx1MDYyYVx1MDYyN1x1MDY3ZSIsInZhbHVlIjoxMzY2LCJkZWZhdWx0X3ZhbHVlIjoxMzY2LCJkaXJlY3Rpb24iOiJtYXgiLCJpc19lbmFibGVkIjpmYWxzZX0sIndpZGVzY3JlZW4iOnsibGFiZWwiOiJcdTA2MzVcdTA2NDFcdTA2MmRcdTA2NDcgXHUwNjM5XHUwNjMxXHUwNmNjXHUwNjM2IChXaWRlc2NyZWVuKSIsInZhbHVlIjoyNDAwLCJkZWZhdWx0X3ZhbHVlIjoyNDAwLCJkaXJlY3Rpb24iOiJtaW4iLCJpc19lbmFibGVkIjpmYWxzZX19LCJoYXNDdXN0b21CcmVha3BvaW50cyI6ZmFsc2V9LCJ2ZXJzaW9uIjoiMy4yNS4xIiwiaXNfc3RhdGljIjpmYWxzZSwiZXhwZXJpbWVudGFsRmVhdHVyZXMiOnsiZV9mb250X2ljb25fc3ZnIjp0cnVlLCJhZGRpdGlvbmFsX2N1c3RvbV9icmVha3BvaW50cyI6dHJ1ZSwiY29udGFpbmVyIjp0cnVlLCJlX3N3aXBlcl9sYXRlc3QiOnRydWUsImVfbmVzdGVkX2F0b21pY19yZXBlYXRlcnMiOnRydWUsImVfb3B0aW1pemVkX2NvbnRyb2xfbG9hZGluZyI6dHJ1ZSwiZV9vcHRpbWl6ZWRfbWFya3VwIjp0cnVlLCJlX29uYm9hcmRpbmciOnRydWUsImVfY3NzX3Ntb290aF9zY3JvbGwiOnRydWUsInRoZW1lX2J1aWxkZXJfdjIiOnRydWUsImhvbWVfc2NyZWVuIjp0cnVlLCJsYW5kaW5nLXBhZ2VzIjp0cnVlLCJuZXN0ZWQtZWxlbWVudHMiOnRydWUsImVkaXRvcl92MiI6dHJ1ZSwiZV9lbGVtZW50X2NhY2hlIjp0cnVlLCJsaW5rLWluLWJpbyI6dHJ1ZSwiZmxvYXRpbmctYnV0dG9ucyI6dHJ1ZX0sInVybHMiOnsiYXNzZXRzIjoiaHR0cHM6XC9cL3BldHJvdGltZXMuaXJcL3dwLWNvbnRlbnRcL3BsdWdpbnNcL2VsZW1lbnRvclwvYXNzZXRzXC8iLCJhamF4dXJsIjoiaHR0cHM6XC9cL3BldHJvdGltZXMuaXJcL3dwLWFkbWluXC9hZG1pbi1hamF4LnBocCIsInVwbG9hZFVybCI6Imh0dHBzOlwvXC9wZXRyb3RpbWVzLmlyXC93cC1jb250ZW50XC91cGxvYWRzIn0sIm5vbmNlcyI6eyJmbG9hdGluZ0J1dHRvbnNDbGlja1RyYWNraW5nIjoiZjkzMzZlNDgyOCJ9LCJzd2lwZXJDbGFzcyI6InN3aXBlciIsInNldHRpbmdzIjp7InBhZ2UiOltdLCJlZGl0b3JQcmVmZXJlbmNlcyI6W119LCJraXQiOnsiYWN0aXZlX2JyZWFrcG9pbnRzIjpbInZpZXdwb3J0X21vYmlsZSIsInZpZXdwb3J0X3RhYmxldCJdLCJnbG9iYWxfaW1hZ2VfbGlnaHRib3giOiJ5ZXMiLCJsaWdodGJveF9lbmFibGVfY291bnRlciI6InllcyIsImxpZ2h0Ym94X2VuYWJsZV9mdWxsc2NyZWVuIjoieWVzIiwibGlnaHRib3hfZW5hYmxlX3pvb20iOiJ5ZXMiLCJsaWdodGJveF9lbmFibGVfc2hhcmUiOiJ5ZXMiLCJsaWdodGJveF90aXRsZV9zcmMiOiJ0aXRsZSIsImxpZ2h0Ym94X2Rlc2NyaXB0aW9uX3NyYyI6ImRlc2NyaXB0aW9uIn0sInBvc3QiOnsiaWQiOjczMjIsInRpdGxlIjoiJUQ5JUJFJUQ4JUFBJUQ4JUIxJUQ5JTg4JTIwJUQ4JUFBJUQ4JUE3JURCJThDJUQ5JTg1JUQ4JUIyJTIwLSUyMFBldHJvJTIwVGltZXMiLCJleGNlcnB0IjoiIiwiZmVhdHVyZWRJbWFnZSI6ZmFsc2V9fTsKLy8jIHNvdXJjZVVSTD1lbGVtZW50b3ItZnJvbnRlbmQtanMtYmVmb3JlCg==",
+      "id": "elementor-frontend-js-before",
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/plugins/elementor/assets/js/frontend.min.js?ver=3.25.1",
+      "id": "elementor-frontend-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/plugins/elementor-pro/assets/js/elements-handlers.min.js?ver=3.25.0",
+      "id": "pro-elements-handlers-js",
+      "async": true,
+      "defer": true,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": null,
+      "id": null,
+      "async": false,
+      "defer": false,
+      "type": null,
+      "hasSrc": false,
+      "inlineLength": 1794
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/plugins/wp-rocket/assets/js/lazyload/17.8.3/lazyload.min.js",
+      "id": null,
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": null,
+      "id": null,
+      "async": false,
+      "defer": false,
+      "type": null,
+      "hasSrc": false,
+      "inlineLength": 780
+    },
+    {
+      "src": "https://petrotimes.ir/wp-content/plugins/wp-rocket/assets/js/wpr-beacon.min.js",
+      "id": null,
+      "async": true,
+      "defer": false,
+      "type": null,
+      "hasSrc": true,
+      "inlineLength": 0
+    },
+    {
+      "src": null,
+      "id": null,
+      "async": false,
+      "defer": false,
+      "type": null,
+      "hasSrc": false,
+      "inlineLength": 1504
+    }
+  ],
+  "preloadLinks": [
+    {
+      "rel": "preload",
+      "href": "https://petrotimes.ir/wp-content/themes/smart-mag/css/icons/fonts/ts-icons.woff2?v3.2",
+      "as": "font"
+    },
+    {
+      "rel": "dns-prefetch",
+      "href": "https://use.fontawesome.com/",
+      "as": ""
+    },
+    {
+      "rel": "dns-prefetch",
+      "href": "https://fonts.googleapis.com/",
+      "as": ""
+    },
+    {
+      "rel": "preconnect",
+      "href": "https://fonts.gstatic.com/",
+      "as": ""
+    }
+  ]
+}

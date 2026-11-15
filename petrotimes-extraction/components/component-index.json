@@ -1,0 +1,195 @@
+{
+  "generatedAt": "2026-11-15T07:33:36.303Z",
+  "source": "petrotimes.ir homepage (WordPress 6.x, SmartMag theme, Elementor)",
+  "components": [
+    {
+      "componentId": "top-bar-ticker",
+      "componentName": "Market Data Ticker (iframe wrapper)",
+      "category": "ticker",
+      "primarySelector": "[data-id=\"1c95847\"]",
+      "status": "EXTRACTED",
+      "htmlFile": "components/top-bar-ticker.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "header",
+      "componentName": "Main Header (SmartMag smart-head-a)",
+      "category": "header",
+      "primarySelector": "#smart-head",
+      "status": "EXTRACTED",
+      "htmlFile": "components/header.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "navigation-main",
+      "componentName": "Main Navigation",
+      "category": "navigation",
+      "primarySelector": "#smart-head .nav-wrap",
+      "status": "EXTRACTED",
+      "htmlFile": "components/navigation-main.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "mobile-header",
+      "componentName": "Mobile Header",
+      "category": "header",
+      "primarySelector": "#smart-head-mobile",
+      "status": "EXTRACTED",
+      "htmlFile": "components/mobile-header.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "offcanvas-menu",
+      "componentName": "Off-canvas Mobile Menu",
+      "category": "navigation",
+      "primarySelector": "#off-canvas",
+      "status": "EXTRACTED",
+      "htmlFile": "components/offcanvas-menu.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "search-modal",
+      "componentName": "Search Modal",
+      "category": "search",
+      "primarySelector": ".search-modal-wrap",
+      "status": "EXTRACTED",
+      "htmlFile": "components/search-modal.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "top-news-hero",
+      "componentName": "Main Featured Article (highlights)",
+      "category": "hero",
+      "primarySelector": "[data-id=\"cedc57a\"]",
+      "status": "EXTRACTED",
+      "htmlFile": "components/top-news-hero.html",
+      "dataSnapshotKey": "hero_main"
+    },
+    {
+      "componentId": "top-news-secondary",
+      "componentName": "Secondary News Cards (posts-small x4)",
+      "category": "news-cards",
+      "primarySelector": ".elementor-7322 .elementor-element-0cd2772 .elementor-widget-wrap",
+      "status": "EXTRACTED",
+      "htmlFile": "components/top-news-secondary.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "top-news-list",
+      "componentName": "Top News Label + Sidebar List",
+      "category": "news-cards",
+      "primarySelector": ".elementor-7322 .elementor-element-98a6ee8 .elementor-widget-wrap",
+      "status": "EXTRACTED",
+      "htmlFile": "components/top-news-list.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "tv-section",
+      "componentName": "TV Petro Times (overlay video)",
+      "category": "video-section",
+      "primarySelector": "[data-id=\"53fa308\"]",
+      "status": "EXTRACTED",
+      "htmlFile": "components/tv-section.html",
+      "dataSnapshotKey": "tv_player"
+    },
+    {
+      "componentId": "tv-playlist",
+      "componentName": "TV Playlist (posts-small x5)",
+      "category": "video-section",
+      "primarySelector": "[data-id=\"c258178\"]",
+      "status": "EXTRACTED",
+      "htmlFile": "components/tv-playlist.html",
+      "dataSnapshotKey": "tv_playlist"
+    },
+    {
+      "componentId": "magazine",
+      "componentName": "Magazine (overlay slider)",
+      "category": "magazine",
+      "primarySelector": "[data-id=\"c074dc7\"]",
+      "status": "EXTRACTED",
+      "htmlFile": "components/magazine.html",
+      "dataSnapshotKey": "magazine"
+    },
+    {
+      "componentId": "feature-title",
+      "componentName": "Feature Title List (heading + 3 grids)",
+      "category": "news-cards",
+      "primarySelector": ".elementor-7322 .elementor-element-98a6ee8 .elementor-widget-wrap",
+      "status": "EXTRACTED",
+      "htmlFile": "components/feature-title.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "social-widget",
+      "componentName": "We Are Social Buttons",
+      "category": "social",
+      "primarySelector": "[data-id=\"2a4da1e\"]",
+      "status": "EXTRACTED",
+      "htmlFile": "components/social-widget.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "newsletter",
+      "componentName": "Newsletter Subscribe",
+      "category": "newsletter",
+      "primarySelector": "[data-id=\"9609692\"]",
+      "status": "EXTRACTED",
+      "htmlFile": "components/newsletter.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "energy-featured",
+      "componentName": "Energy Featured (highlights)",
+      "category": "energy",
+      "primarySelector": "[data-id=\"2517f37\"]",
+      "status": "EXTRACTED",
+      "htmlFile": "components/energy-featured.html",
+      "dataSnapshotKey": "energy_main"
+    },
+    {
+      "componentId": "energy-list",
+      "componentName": "Energy Sub News (posts-small x2)",
+      "category": "energy",
+      "primarySelector": ".elementor-7322 .elementor-element-0e6f215 .elementor-widget-wrap",
+      "status": "EXTRACTED",
+      "htmlFile": "components/energy-list.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "energy-grid",
+      "componentName": "Energy 3-Column Grid",
+      "category": "energy",
+      "primarySelector": ".elementor-7322 .elementor-element-0e6f215 .elementor-widget-wrap",
+      "status": "EXTRACTED",
+      "htmlFile": "components/energy-grid.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "advertise-row",
+      "componentName": "Advertise Row (5-col flex, 2 filled)",
+      "category": "news-cards",
+      "primarySelector": "[data-id=\"41768b4\"]",
+      "status": "EXTRACTED",
+      "htmlFile": "components/advertise-row.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "footer",
+      "componentName": "Footer (Elementor 7373)",
+      "category": "footer",
+      "primarySelector": ".elementor-7373",
+      "status": "EXTRACTED",
+      "htmlFile": "components/footer.html",
+      "dataSnapshotKey": null
+    },
+    {
+      "componentId": "copyright",
+      "componentName": "Copyright Bar",
+      "category": "footer",
+      "primarySelector": "[data-id=\"226a5f9\"]",
+      "status": "EXTRACTED",
+      "htmlFile": "components/copyright.html",
+      "dataSnapshotKey": null
+    }
+  ]
+}

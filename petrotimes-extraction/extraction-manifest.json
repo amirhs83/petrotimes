@@ -1,0 +1,73 @@
+{
+  "project": "Petro Times — Homepage Reverse Engineering (Phase 01: Extraction & Documentation)",
+  "target": "https://petrotimes.ir/",
+  "extractedAt": "2026-11-15",
+  "extractionEnvironment": {
+    "browser": "Chromium 157 (Playwright 1.57.0, headless)",
+    "primaryViewport": "1920x1080",
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "alsoTestedViewports": [1920, 1440, 1366, 1280, 1024, 834, 768, 430, 414, 390, 375, 360],
+    "locale": "fa-IR",
+    "method": "Real headless Chromium rendering + CDP network capture + getBoundingClientRect/getComputedStyle measurements + stylesheet parsing",
+    "readOnly": true
+  },
+  "siteStack": {
+    "cms": "WordPress (PHP 7.4.33)",
+    "theme": "SmartMag (smart-mag) + bundled rtl.css",
+    "pageBuilder": "Elementor 3.25.1 + Elementor Pro 3.25.0/3.26.x",
+    "headerFooterBuilder": "Header Footer Elementor (hfe) — footer = elementor-7373",
+    "caching": "WP Rocket (minify + delay JS + lazyload 17.8.3 + CSS async)",
+    "seo": "RankMath",
+    "fontsPlugin": "parsi-font (Vazir) + useanyfont",
+    "marketTicker": "iframe https://market.petrotimes.ir/ (separate PHP app)",
+    "otherPlugins": ["content-views-query-and-display-post-page", "featured-video-plus", "post-featured-video", "contact-form-7", "wp-smush", "font-awesome 6.6.0"]
+  },
+  "phasesStatus": {
+    "phase01_discovery": "VERIFIED — DOM, stylesheets, scripts, fonts, images, lazy-loaded content, iframe all loaded and captured",
+    "phase02_pageInventory": "VERIFIED — 21 logical components mapped with exact DOM positions",
+    "phase03_domExtraction": "VERIFIED — original server HTML (199KB) + fully-rendered DOM (247KB) + per-component HTML (21 files)",
+    "phase04_geometry": "VERIFIED — getBoundingClientRect + getComputedStyle for ~100 key elements at 1920px; viewport and document coordinates both recorded",
+    "phase05_cssExtraction": "VERIFIED — all 33 stylesheets downloaded (858KB total), cascade order from <head> link sequence, CSS variable blocks extracted",
+    "phase06_typography": "VERIFIED — 111 @font-face declarations parsed, rendered fonts verified via computed styles, 47 text roles measured",
+    "phase07_colors": "VERIFIED — 175 distinct declared colors + 13 semantic roles with computed evidence + full SmartMag light/dark token scales",
+    "phase08_assets": "VERIFIED — 139 images downloaded (news, logos, icons, ads, favicons), 30+ font files (Vazir/Barlow/PT Serif/ts-icons)",
+    "phase09_responsive": "VERIFIED — 12 viewport widths measured (container widths, column structure, font sizes, visibility, overflow) + 12 full-page screenshots",
+    "phase10_interactions": "PARTIALLY VERIFIED — search modal open/close verified with screenshots; off-canvas mobile menu verified; sticky header verified; hover color change verified live (rgb(22,22,22)→rgb(0,0,0)); TV video click did not open a lightbox in headless (play button element invisible to automation) — recorded as limitation",
+    "phase11_wordpress": "VERIFIED (public surface only) — REST API open: 159 posts, categories, homepage = page 7322 (slug homepage5, template no-wrapper.php)",
+    "phase12_screenshots": "VERIFIED — 12 full-page + 19 component + 6 interaction screenshots",
+    "phase13_componentSpecs": "VERIFIED — 21 component specs with HTML, geometry, computed styles, child trees"
+  },
+  "keyFindings": [
+    "Homepage content is a single Elementor page (post 7322) using SmartMag widgets (smartmag-highlights, smartmag-postssmall, smartmag-overlay, smartmag-grid) + sidebar layouts 50/50 and 66/33",
+    "Container: --main-width 1200px; grid gutter 36px; sidebar 33.333%",
+    "WP Rocket delays ALL theme JS until user interaction — on a fresh load without interaction, news images (lazy background spans with data-bgsrc/data-bgset) never render; extraction triggered the delayed JS to capture the real final state",
+    "News thumbnails are CSS background-images on <span> elements (not <img>) — srcset equivalents live in data-bgset",
+    "Ticker is a cross-origin iframe (market.petrotimes.ir, 1920x38px) with its own fetch_prices.php polling; all 15 commodity values currently render N/A",
+    "The 'current menu item' (صفحه اصلی) renders black-on-black (invisible) because page CSS overrides --c-main to #000000 on a #000000 header — this is the live site's actual behavior",
+    "Typography: Vazir 400/700 for Persian, Barlow for Latin display labels, PT Serif for footer Latin text, ts-icons for glyphs",
+    "Breakpoints (from CSS): 1201+ desktop full, 941–1200 reduced, 768–1024 tablet (desktop header swaps to mobile header at ≤1024), ≤767 mobile, ≤540 small mobile, ≤350 micro"
+  ],
+  "outputs": {
+    "source": ["source/original-response.html", "source/rendered-dom.html", "source/stylesheets/ (33 files)", "source/public-scripts/ (24 files)", "source/market-iframe-dom.html"],
+    "assets": ["assets/images/ (139 files)", "assets/fonts/ (30+ files)", "assets/logos/", "assets/icons/", "data/asset-manifest.json", "data/images-manifest.json", "data/fonts-manifest.json"],
+    "screenshots": ["screenshots/desktop/ (5)", "screenshots/tablet/ (2)", "screenshots/mobile/ (5)", "screenshots/components/ (19)", "screenshots/interactions/ (6)"],
+    "designSystem": ["design-system/colors.json", "design-system/colors-computed.json", "design-system/typography.json", "design-system/typography-roles.json", "design-system/font-faces.json", "design-system/breakpoints.json", "design-system/spacing.json", "design-system/visual-effects.json", "design-system/css-variables.json"],
+    "components": ["components/component-index.json", "components/full-specs.json", "components/<category>/<id>.html + <id>-spec.json (21 components)"],
+    "data": ["data/page-meta.json", "data/dom-tree.json", "data/homepage-snapshot.json", "data/api-endpoints.json", "data/network-manifest.json", "data/interactive-states.json", "data/market-iframe.json", "data/responsive-summary.json", "data/resources-inventory.json", "data/css-cascade-order.json", "data/stylesheets-manifest.json", "data/scripts-manifest.json"],
+    "measurements": ["measurements/desktop/ (6)", "measurements/tablet/ (2)", "measurements/mobile/ (5)"],
+    "scripts": ["scripts/extract.js", "scripts/capture-screenshots.js", "scripts/capture-mobile-interactions.js", "scripts/extract-market-iframe.js", "scripts/analyze-css.js", "scripts/build-design-system.js", "scripts/build-components.js"]
+  },
+  "reproduction": {
+    "prerequisites": "Node.js >= 20, playwright (chromium) installed globally or locally",
+    "commands": [
+      "node scripts/extract.js               # full data extraction + asset downloads (~4 min)",
+      "node scripts/capture-screenshots.js   # responsive + component + interaction screenshots (~4 min)",
+      "node scripts/capture-mobile-interactions.js  # mobile off-canvas/sticky states",
+      "node scripts/extract-market-iframe.js # market ticker internals",
+      "node scripts/analyze-css.js           # breakpoints, hover rules, keyframes, font-faces",
+      "node scripts/build-design-system.js   # aggregate colors.json + typography.json",
+      "node scripts/build-components.js      # per-component HTML + specs"
+    ],
+    "notes": "Scripts hit only public pages, perform no writes, no form submissions, no auth."
+  }
+}

@@ -1,0 +1,119 @@
+{
+  "checkedAt": "live curl checks",
+  "baseUrl": "https://petrotimes.ir/wp-json/",
+  "status": "PUBLICLY ACCESSIBLE",
+  "siteName": "Petro Times",
+  "namespaces": [
+    "oembed/1.0",
+    "contact-form-7/v1",
+    "contentviews/v1",
+    "rankmath/v1",
+    "elementor/v1",
+    "hfe/v1",
+    "wp-rocket/v1",
+    "wp-smush/v1",
+    "font-awesome/v1",
+    "elementor-pro/v1",
+    "wp/v2"
+  ],
+  "posts": {
+    "endpoint": "/wp-json/wp/v2/posts",
+    "totalPosts": 159,
+    "perPageTested": 3,
+    "sampleFields": [
+      "id",
+      "date_gmt",
+      "modified_gmt",
+      "link",
+      "title",
+      "excerpt",
+      "categories",
+      "tags",
+      "format"
+    ],
+    "latestPostFormat": "video",
+    "examples": [
+      {
+        "id": 7919,
+        "date_gmt": "2026-08-20T11:53:41",
+        "format": "video",
+        "title": "۲۸ مرداد؛ روایتی کهنه از طمعی تازه",
+        "link": "https://petrotimes.ir/%db%b2%db%b8-%d9%85%d8%b1%d8%af%d8%a7%d8%af%d8%9b-%d8%b1%d9%88%d8%a7%db%8c%d8%aa%db%8c-%da%a9%d9%87%d9%86%d9%87-%d8%a7%d8%b2-%d8%b7%d9%85%d8%b9%db%8c-%d8%aa%d8%a7%d8%b2%d9%87/"
+      },
+      {
+        "id": 7915,
+        "date_gmt": "2026-08-20T11:48:17",
+        "format": "video",
+        "title": "پارس جنوبی، نه‌فقط برای امروز، فشارافزایی-تصمیمی برای ماندن"
+      },
+      {
+        "id": 7909,
+        "date_gmt": "2026-08-20T11:10:51",
+        "format": "video",
+        "title": "بازار نفت در آستانه شوک جدید"
+      }
+    ]
+  },
+  "categories": {
+    "endpoint": "/wp-json/wp/v2/categories",
+    "activePersianCats": [
+      {
+        "id": 266,
+        "slug": "گاز",
+        "name": "گاز",
+        "count": 5
+      },
+      {
+        "id": 267,
+        "slug": "پتروشیمی",
+        "name": "پتروشیمی",
+        "count": 1
+      },
+      {
+        "id": 268,
+        "slug": "پالایش-و-پخش",
+        "name": "پالایش و پخش",
+        "count": 3
+      },
+      {
+        "id": 269,
+        "slug": "بین-الملل",
+        "name": "بین الملل",
+        "count": 5
+      },
+      {
+        "id": 285,
+        "slug": "انرژی",
+        "name": "انرژی",
+        "count": 5
+      },
+      {
+        "id": 378,
+        "slug": "advertis",
+        "name": "advertis",
+        "count": 3
+      },
+      {
+        "id": 263,
+        "slug": "magazine",
+        "name": "magazine",
+        "count": 5
+      }
+    ],
+    "leftoverDemoCats": "English demo categories from theme sample data remain (Markets/Stocks/Funds/Investments = example-1..4, World, Asia, Europe...)"
+  },
+  "homepagePage": {
+    "id": 7322,
+    "slug": "homepage5",
+    "type": "page",
+    "template": "page-templates/no-wrapper.php",
+    "link": "https://petrotimes.ir/",
+    "title": "پترو تایمز",
+    "note": "Built with Elementor; footer template = elementor-7373 (via Header Footer Elementor plugin)"
+  },
+  "matching": {
+    "heroMain": "matches snapshot order (latest news first?)",
+    "note": "Homepage widgets pull specific posts; featured selection logic is server-side (Elementor/SmartMag widget settings) — not fully visible via REST"
+  },
+  "privacy": "No auth tokens/credentials extracted. Read-only requests only."
+}

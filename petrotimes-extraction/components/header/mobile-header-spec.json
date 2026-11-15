@@ -1,0 +1,35 @@
+{
+  "componentId": "mobile-header",
+  "componentName": "Mobile Header",
+  "category": "header",
+  "primarySelector": "#smart-head-mobile",
+  "extractedAt": "2026-11-15T07:33:36.073Z",
+  "status": "EXTRACTED",
+  "geometry": {
+    "rect": {
+      "x": 0,
+      "y": 0,
+      "w": 0,
+      "h": 0
+    },
+    "computed": {
+      "position": "relative",
+      "flexDirection": "row",
+      "padding": "0px",
+      "margin": "0px",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(68, 68, 68)",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "21px",
+      "textAlign": "start",
+      "direction": "rtl",
+      "borderRadius": "0px",
+      "boxShadow": "rgba(0, 0, 0, 0) 0px 3px 4px 0px",
+      "transition": "all",
+      "overflow": "visible"
+    }
+  },
+  "children": null
+}

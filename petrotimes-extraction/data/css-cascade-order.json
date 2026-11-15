@@ -1,0 +1,137 @@
+{
+  "count": 33,
+  "links": [
+    {
+      "order": 0,
+      "tag": "<link data-wpr-hosted-gf-parameters=\"family=PT%20Serif%3A400%2C500%2C600%2C700%7CBarlow%3A400%2C500%2C600%2C700%7CFira%20Sans%20Condensed%3A400%2C500%2C600%2C700&display=swap\" href=\"https://petrotimes.ir/wp-content/cache/fonts/1/google-fonts/css/4/8/1/9c70f8e9079e856bc3dbf7fb1df49.css\" rel=\"styleshe"
+    },
+    {
+      "order": 1,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='pt-cv-public-style-css' href='https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/content-views-query-and-display-post-page/public/assets/css/cv.css?ver=1794012845' media='all' />"
+    },
+    {
+      "order": 2,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='hfe-widgets-style-css' href='https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/header-footer-elementor/inc/widgets-css/frontend.css?ver=1794012845' media='all' />"
+    },
+    {
+      "order": 3,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='font-awesome-svg-styles-css' href='https://petrotimes.ir/wp-content/cache/min/1/wp-content/uploads/font-awesome/v6.6.0/css/svg-with-js.css?ver=1794012845' media='all' />"
+    },
+    {
+      "order": 4,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='fvp-frontend-css' href='https://petrotimes.ir/wp-content/cache/background-css/1/petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/featured-video-plus/styles/frontend.css?ver=1794012845&wpr_t=1794738317' media='all' />"
+    },
+    {
+      "order": 5,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='mwfcfonts-css' href='https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/parsi-font/assets/css/fonts.css?ver=1794012845' media='' />"
+    },
+    {
+      "order": 6,
+      "tag": "<link rel='stylesheet' id='uaf_client_css-css' href='https://petrotimes.ir/wp-content/uploads/useanyfont/uaf.css?ver=1755829221' media='all' />"
+    },
+    {
+      "order": 7,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='hfe-style-css' href='https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/header-footer-elementor/assets/css/header-footer-elementor.css?ver=1794012845' media='all' />"
+    },
+    {
+      "order": 8,
+      "tag": "<link rel='stylesheet' id='elementor-frontend-css' href='https://petrotimes.ir/wp-content/plugins/elementor/assets/css/frontend-rtl.min.css?ver=3.25.1' media='all' />"
+    },
+    {
+      "order": 9,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='swiper-css' href='https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/swiper/v8/css/swiper.min.css?ver=1794012845' media='all' />"
+    },
+    {
+      "order": 10,
+      "tag": "<link rel='stylesheet' id='e-swiper-css' href='https://petrotimes.ir/wp-content/plugins/elementor/assets/css/conditionals/e-swiper.min.css?ver=3.25.1' media='all' />"
+    },
+    {
+      "order": 11,
+      "tag": "<link rel='stylesheet' id='elementor-post-344-css' href='https://petrotimes.ir/wp-content/uploads/elementor/css/post-344.css?ver=1794012845' media='all' />"
+    },
+    {
+      "order": 12,
+      "tag": "<link rel='stylesheet' id='widget-heading-css' href='https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-heading-rtl.min.css?ver=3.25.1' media='all' />"
+    },
+    {
+      "order": 13,
+      "tag": "<link rel='stylesheet' id='widget-divider-css' href='https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-divider-rtl.min.css?ver=3.25.1' media='all' />"
+    },
+    {
+      "order": 14,
+      "tag": "<link rel='stylesheet' id='widget-image-css' href='https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-image-rtl.min.css?ver=3.25.1' media='all' />"
+    },
+    {
+      "order": 15,
+      "tag": "<link rel='stylesheet' id='elementor-post-7322-css' href='https://petrotimes.ir/wp-content/uploads/elementor/css/post-7322.css?ver=1794018064' media='all' />"
+    },
+    {
+      "order": 16,
+      "tag": "<link rel='stylesheet' id='elementor-post-7373-css' href='https://petrotimes.ir/wp-content/uploads/elementor/css/post-7373.css?ver=1794012845' media='all' />"
+    },
+    {
+      "order": 17,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='font-awesome-official-css' href='https://petrotimes.ir/wp-content/cache/min/1/releases/v6.6.0/css/all.css?ver=1794012846' media='all' crossorigin=\"anonymous\" />"
+    },
+    {
+      "order": 18,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='hfe-elementor-icons-css' href='https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/eicons/css/elementor-icons.min.css?ver=1794012846' media='all' />"
+    },
+    {
+      "order": 19,
+      "tag": "<link rel='stylesheet' id='hfe-icons-list-css' href='https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-icon-list.min.css?ver=3.24.3' media='all' />"
+    },
+    {
+      "order": 20,
+      "tag": "<link rel='stylesheet' id='hfe-social-icons-css' href='https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-social-icons.min.css?ver=3.24.0' media='all' />"
+    },
+    {
+      "order": 21,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='hfe-social-share-icons-brands-css' href='https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/brands.css?ver=1794012846' media='all' />"
+    },
+    {
+      "order": 22,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='hfe-social-share-icons-fontawesome-css' href='https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/fontawesome.css?ver=1794012846' media='all' />"
+    },
+    {
+      "order": 23,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='hfe-nav-menu-icons-css' href='https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/elementor/assets/lib/font-awesome/css/solid.css?ver=1794012846' media='all' />"
+    },
+    {
+      "order": 24,
+      "tag": "<link rel='stylesheet' id='hfe-widget-blockquote-css' href='https://petrotimes.ir/wp-content/plugins/elementor-pro/assets/css/widget-blockquote.min.css?ver=3.25.0' media='all' />"
+    },
+    {
+      "order": 25,
+      "tag": "<link rel='stylesheet' id='hfe-mega-menu-css' href='https://petrotimes.ir/wp-content/plugins/elementor-pro/assets/css/widget-mega-menu.min.css?ver=3.26.2' media='all' />"
+    },
+    {
+      "order": 26,
+      "tag": "<link rel='stylesheet' id='hfe-nav-menu-widget-css' href='https://petrotimes.ir/wp-content/plugins/elementor-pro/assets/css/widget-nav-menu.min.css?ver=3.26.0' media='all' />"
+    },
+    {
+      "order": 27,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='smartmag-core-css' href='https://petrotimes.ir/wp-content/cache/min/1/wp-content/themes/smart-mag/css/rtl/rtl.css?ver=1794012846' media='all' />"
+    },
+    {
+      "order": 28,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='smartmag-magnific-popup-css' href='https://petrotimes.ir/wp-content/cache/min/1/wp-content/themes/smart-mag/css/lightbox.css?ver=1794012846' media='all' />"
+    },
+    {
+      "order": 29,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='smartmag-icons-css' href='https://petrotimes.ir/wp-content/cache/min/1/wp-content/themes/smart-mag/css/icons/icons.css?ver=1794012846' media='all' />"
+    },
+    {
+      "order": 30,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='font-awesome-official-v4shim-css' href='https://petrotimes.ir/wp-content/cache/min/1/releases/v6.6.0/css/v4-shims.css?ver=1794012846' media='all' crossorigin=\"anonymous\" />"
+    },
+    {
+      "order": 31,
+      "tag": "<link data-minify=\"1\" rel='stylesheet' id='pfv_frontnd_style-css' href='https://petrotimes.ir/wp-content/cache/min/1/wp-content/plugins/post-featured-video/includes/css/pfv-videopopup.css?ver=1794012846' media='all' />"
+    },
+    {
+      "order": 32,
+      "tag": "<link rel='stylesheet' id='widget-text-editor-css' href='https://petrotimes.ir/wp-content/plugins/elementor/assets/css/widget-text-editor-rtl.min.css?ver=3.25.1' media='all' />"
+    }
+  ]
+}

@@ -1,0 +1,115 @@
+{
+  "offCanvas": {
+    "cls": "mobile-menu-container off-canvas s-dark",
+    "transform": "matrix(1, 0, 0, 1, 370, 0)",
+    "position": "fixed",
+    "width": "370px",
+    "right": "0px",
+    "left": "1550px",
+    "transition": "transform 0.4s ease-in-out, visibility 0.4s ease-in-out",
+    "display": "flex"
+  },
+  "searchModal": {
+    "cls": "search-modal-wrap",
+    "display": "none",
+    "opacity": "1",
+    "transition": "all",
+    "position": "static",
+    "zIndex": "auto"
+  },
+  "smartHeadRow": {
+    "cls": "smart-head-row smart-head-mid s-dark smart-head-row-full is-smart animate",
+    "position": "static",
+    "top": "auto",
+    "transform": "none",
+    "transition": "all",
+    "zIndex": "auto"
+  },
+  "backTop": null,
+  "forms": [
+    {
+      "id": "",
+      "action": "https://petrotimes.ir/",
+      "method": "post",
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "email",
+          "name": "EMAIL",
+          "placeholder": "Your email address..",
+          "required": true,
+          "cls": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "submit",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "cls": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "name": "privacy",
+          "placeholder": "",
+          "required": true,
+          "cls": ""
+        }
+      ]
+    },
+    {
+      "id": "",
+      "action": "https://petrotimes.ir/",
+      "method": "post",
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "email",
+          "name": "EMAIL",
+          "placeholder": "Your email address..",
+          "required": true,
+          "cls": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "submit",
+          "name": "",
+          "placeholder": "",
+          "required": false,
+          "cls": ""
+        },
+        {
+          "tag": "INPUT",
+          "type": "checkbox",
+          "name": "privacy",
+          "placeholder": "",
+          "required": true,
+          "cls": ""
+        }
+      ]
+    },
+    {
+      "id": "",
+      "action": "https://petrotimes.ir/",
+      "method": "get",
+      "fields": [
+        {
+          "tag": "INPUT",
+          "type": "search",
+          "name": "s",
+          "placeholder": "Search...",
+          "required": true,
+          "cls": "search-field live-search-query"
+        },
+        {
+          "tag": "BUTTON",
+          "type": "submit",
+          "name": "",
+          "cls": "search-submit visuallyhidden"
+        }
+      ]
+    }
+  ],
+  "popups": []
+}

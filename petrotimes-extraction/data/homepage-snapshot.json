@@ -1,0 +1,736 @@
+{
+  "capturedAt": "2026-11-15T07:19:08.105Z",
+  "pageUrl": "https://petrotimes.ir/",
+  "widgets": {
+    "hero_main": {
+      "selector": "[data-id=\"cedc57a\"]",
+      "widgetType": "elementor-widget-smartmag-highlights",
+      "heading": null,
+      "articles": [
+        {
+          "title": "چین از بزرگ‌ترین خریدار PP جهان به رقیب صادراتی تبدیل می‌شود",
+          "url": "https://petrotimes.ir/%da%86%db%8c%d9%86-%d8%a7%d8%b2-%d8%a8%d8%b2%d8%b1%da%af%d8%aa%d8%b1%db%8c%d9%86-%d8%ae%d8%b1%db%8c%d8%af%d8%a7%d8%b1-pp-%d8%ac%d9%87%d8%a7%d9%86-%d8%a8%d9%87-%d8%b1%d9%82%db%8c%d8%a8-%d8%b5/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۰۹:۰۴",
+          "dateISO": null,
+          "category": "بین الملل",
+          "categoryUrl": "https://petrotimes.ir/%d8%a8%db%8c%d9%86-%d8%a7%d9%84%d9%85%d9%84%d9%84/",
+          "excerpt": "خالص واردات پلی‌پروپیلن چین در سال گذشته به حدود ۳۰۰ هزار تن سقوط کرد؛ رقمی…",
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-768x432.png",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-768x432.png 768w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-300x169.png 300w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-1024x576.png 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-200x113.png 200w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-1536x864.png 1536w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-150x84.png 150w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-450x253.png 450w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-1200x675.png 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM.png 1672w",
+          "imageSizes": "(max-width: 608px) 100vw, 608px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "hero_secondary_1": {
+      "selector": "[data-id=\"8316c3e\"]",
+      "widgetType": "elementor-widget-smartmag-postssmall",
+      "heading": null,
+      "articles": [
+        {
+          "title": "وزیر نفت: نخستین گواهی صرفه‌جویی گاز در قالب قرارداد شرکت‌های کارور صادر شد",
+          "url": "https://petrotimes.ir/%d9%88%d8%b2%db%8c%d8%b1-%d9%86%d9%81%d8%aa-%d9%86%d8%ae%d8%b3%d8%aa%db%8c%d9%86-%da%af%d9%88%d8%a7%d9%87%db%8c-%d8%b5%d8%b1%d9%81%d9%87%d8%ac%d9%88%db%8c%db%8c-%da%af%d8%a7%d8%b2-%d8%af/",
+          "dateText": "۲۸ مرداد ۱۴۰۵ - ۱۸:۵۳",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323-300x187.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323-300x187.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323-200x124.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323-768x478.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323-150x93.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323-450x280.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/3232250-e1787152982323.jpg 781w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "hero_secondary_2": {
+      "selector": "[data-id=\"7f377e8\"]",
+      "widgetType": "elementor-widget-smartmag-postssmall",
+      "heading": null,
+      "articles": [
+        {
+          "title": "عضو کمیسیون انرژی: تولید و توزیع سوخت در شرایط جنگی بی‌وقفه ادامه داشت",
+          "url": "https://petrotimes.ir/%d8%b9%d8%b6%d9%88-%da%a9%d9%85%db%8c%d8%b3%db%8c%d9%88%d9%86-%d8%a7%d9%86%d8%b1%da%98%db%8c-%d8%aa%d9%88%d9%84%db%8c%d8%af-%d9%88-%d8%aa%d9%88%d8%b2%db%8c%d8%b9-%d8%b3%d9%88%d8%ae%d8%aa-%d8%af%d8%b1/",
+          "dateText": "۲۸ مرداد ۱۴۰۵ - ۱۹:۰۵",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623-300x194.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623-300x194.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623-200x129.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623-768x496.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623-150x97.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623-450x291.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/2215005-e1787153635623.jpg 789w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "hero_secondary_3": {
+      "selector": "[data-id=\"bf02a19\"]",
+      "widgetType": "elementor-widget-smartmag-postssmall",
+      "heading": null,
+      "articles": [
+        {
+          "title": "وزیر انرژی تاجیکستان: واردات فرآورده‌های نفتی از ایران را افزایش می‌دهیم",
+          "url": "https://petrotimes.ir/%d9%88%d8%b2%db%8c%d8%b1-%d8%a7%d9%86%d8%b1%da%98%db%8c-%d8%aa%d8%a7%d8%ac%db%8c%da%a9%d8%b3%d8%aa%d8%a7%d9%86%d9%88%d8%a7%d8%b1%d8%af%d8%a7%d8%aa-%d9%81%d8%b1%d8%a2%d9%88%d8%b1%d8%af%d9%87/",
+          "dateText": "۲۸ مرداد ۱۴۰۵ - ۲۰:۴۸",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/3288376-e1787159904630-300x244.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/3288376-e1787159904630-300x244.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/3288376-e1787159904630-200x162.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/3288376-e1787159904630-150x122.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/3288376-e1787159904630.jpg 357w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "hero_secondary_4": {
+      "selector": "[data-id=\"791af3e\"]",
+      "widgetType": "elementor-widget-smartmag-postssmall",
+      "heading": null,
+      "articles": [
+        {
+          "title": "مدیرعامل شرکت ملی نفت ایران: آلودگی دریا ارتباطی با تأسیسات نفتی ایران ندارد",
+          "url": "https://petrotimes.ir/%d9%85%d8%af%db%8c%d8%b1%d8%b9%d8%a7%d9%85%d9%84-%d8%b4%d8%b1%da%a9%d8%aa-%d9%85%d9%84%db%8c-%d9%86%d9%81%d8%aa-%d8%a7%db%8c%d8%b1%d8%a7%d9%86-%d8%a2%d9%84%d9%88%d8%af%da%af%db%8c-%d8%af%d8%b1%db%8c/",
+          "dateText": "۲۸ مرداد ۱۴۰۵ - ۲۰:۵۴",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/n00033027-b-e1787160263308-300x290.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/n00033027-b-e1787160263308-300x290.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/n00033027-b-e1787160263308-200x193.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/n00033027-b-e1787160263308-150x145.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/n00033027-b-e1787160263308.jpg 426w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "tv_player": {
+      "selector": "[data-id=\"53fa308\"]",
+      "widgetType": "elementor-widget-smartmag-overlay",
+      "heading": "TV ‌  ‌‌  ‌ ‌ Petro  Times",
+      "articles": [
+        {
+          "title": "بازار نفت در آستانه شوک جدید",
+          "url": "https://petrotimes.ir/%d8%a8%d8%a7%d8%b2%d8%a7%d8%b1-%d9%86%d9%81%d8%aa-%d8%af%d8%b1-%d8%a2%d8%b3%d8%aa%d8%a7%d9%86%d9%87-%d8%b4%d9%88%da%a9-%d8%ac%d8%af%db%8c%d8%af/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۴:۴۰",
+          "dateISO": null,
+          "category": "نفت",
+          "categoryUrl": "https://petrotimes.ir/%d9%86%d9%81%d8%aa/",
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/40-768x426.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/40-768x426.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1024x567.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1536x851.jpg 1536w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1200x665.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/40.jpg 1561w",
+          "imageSizes": "(max-width: 608px) 100vw, 608px",
+          "hasVideoIndicator": true,
+          "videoUrl": null
+        }
+      ]
+    },
+    "tv_playlist": {
+      "selector": "[data-id=\"c258178\"]",
+      "widgetType": "elementor-widget-smartmag-postssmall",
+      "heading": null,
+      "articles": [
+        {
+          "title": "۲۸ مرداد؛ روایتی کهنه از طمعی تازه",
+          "url": "https://petrotimes.ir/%db%b2%db%b8-%d9%85%d8%b1%d8%af%d8%a7%d8%af%d8%9b-%d8%b1%d9%88%d8%a7%db%8c%d8%aa%db%8c-%da%a9%d9%87%d9%86%d9%87-%d8%a7%d8%b2-%d8%b7%d9%85%d8%b9%db%8c-%d8%aa%d8%a7%d8%b2%d9%87/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۵:۲۳",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/44-300x188.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/44-300x188.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/44-200x125.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/44-768x481.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/44-150x94.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/44-450x282.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/44.jpg 863w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": true,
+          "videoUrl": null
+        },
+        {
+          "title": "تهران و اسلام‌آباد، مرز ۹۰۰ کیلومتری را به خط لوله‌ای برای توسعه ۳۰ میلیارد دلاری تبدیل می‌کنند",
+          "url": "https://petrotimes.ir/%d8%aa%d9%87%d8%b1%d8%a7%d9%86-%d9%88-%d8%a7%d8%b3%d9%84%d8%a7%d9%85%d8%a2%d8%a8%d8%a7%d8%af%d8%8c-%d9%85%d8%b1%d8%b2-%db%b9%db%b0%db%b0-%da%a9%db%8c%d9%84%d9%88%d9%85%d8%aa%d8%b1%db%8c/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۳:۵۲",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/34-300x164.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/34-300x164.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/34-1024x560.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/34-200x109.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/34-768x420.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/34-150x82.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/34-450x246.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/34.jpg 1080w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": true,
+          "videoUrl": null
+        },
+        {
+          "title": "پارس جنوبی، نه‌فقط برای امروز، فشارافزایی-تصمیمی برای ماندن",
+          "url": "https://petrotimes.ir/%d9%be%d8%a7%d8%b1%d8%b3-%d8%ac%d9%86%d9%88%d8%a8%db%8c%d8%8c-%d9%86%d9%87%d9%81%d9%82%d8%b7-%d8%a8%d8%b1%d8%a7%db%8c-%d8%a7%d9%85%d8%b1%d9%88%d8%b2%d8%8c-%d9%81%d8%b4%d8%a7%d8%b1%d8%a7%d9%81/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۵:۱۸",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/41-300x168.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/41-300x168.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/41-1024x575.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/41-200x112.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/41-768x431.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/41-150x84.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/41-450x253.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/41.jpg 1080w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": true,
+          "videoUrl": null
+        },
+        {
+          "title": "بازسازی پالایشگاه‌های آسیب‌دیده با شتاب در حال انجام است",
+          "url": "https://petrotimes.ir/%d8%a8%d8%a7%d8%b2%d8%b3%d8%a7%d8%b2%db%8c-%d9%be%d8%a7%d9%84%d8%a7%db%8c%d8%b4%da%af%d8%a7%d9%87%d9%87%d8%a7%db%8c-%d8%a2%d8%b3%db%8c%d8%a8%d8%af%db%8c%d8%af%d9%87-%d8%a8%d8%a7/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۴:۰۲",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/36-300x135.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/36-300x135.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/36-1024x462.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/36-200x90.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/36-768x346.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/36-150x68.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/36-450x203.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/36.jpg 1080w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": true,
+          "videoUrl": null
+        },
+        {
+          "title": "گام تازه تهران-دوشنبه در مسیر خودکفایی سوختی؛ چراغ سبز برای یک قرارداد بلندمدت انرژی",
+          "url": "https://petrotimes.ir/%da%af%d8%a7%d9%85-%d8%aa%d8%a7%d8%b2%d9%87-%d8%aa%d9%87%d8%b1%d8%a7%d9%86-%d8%af%d9%88%d8%b4%d9%86%d8%a8%d9%87-%d8%af%d8%b1-%d9%85%d8%b3%db%8c%d8%b1-%d8%ae%d9%88%d8%af%da%a9%d9%81%d8%a7%db%8c%db%8c/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۴:۱۴",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/37-300x169.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/37-300x169.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/37-1024x578.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/37-200x113.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/37-768x434.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/37-150x85.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/37-450x254.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/37.jpg 1080w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": true,
+          "videoUrl": null
+        }
+      ]
+    },
+    "topnews_label": {
+      "selector": "[data-id=\"a11540e\"]",
+      "widgetType": "elementor-widget-smartmag-postssmall",
+      "heading": "top news",
+      "articles": [
+        {
+          "title": "وزیر انرژی ترکیه: آمادگی ترکیه برای کشف نفت و گاز در سوریه",
+          "url": "https://petrotimes.ir/%d9%88%d8%b2%db%8c%d8%b1-%d8%a7%d9%86%d8%b1%da%98%db%8c-%d8%aa%d8%b1%da%a9%db%8c%d9%87-%d8%a2%d9%85%d8%a7%d8%af%da%af%db%8c-%d8%aa%d8%b1%da%a9%db%8c%d9%87-%d8%a8%d8%b1%d8%a7%db%8c-%da%a9%d8%b4%d9%81/",
+          "dateText": "۲۸ مرداد ۱۴۰۵ - ۲۱:۳۰",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/397891-300x198.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/397891-300x198.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/397891-200x132.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/397891-768x508.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/397891-150x99.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/397891-450x298.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/397891.jpg 995w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "topnews_2": {
+      "selector": "[data-id=\"f46c34f\"]",
+      "widgetType": "elementor-widget-smartmag-postssmall",
+      "heading": null,
+      "articles": [
+        {
+          "title": "مدیرعامل آرامکو: تنش‌های خاورمیانه۲ میلیارد بشکه نفت هزینه داشت",
+          "url": "https://petrotimes.ir/%d9%85%d8%af%db%8c%d8%b1%d8%b9%d8%a7%d9%85%d9%84-%d8%a2%d8%b1%d8%a7%d9%85%da%a9%d9%88-%d8%aa%d9%86%d8%b4%d9%87%d8%a7%db%8c-%d8%ae%d8%a7%d9%88%d8%b1%d9%85%db%8c%d8%a7%d9%86%d9%87%db%b2-%d9%85/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۰۰:۱۹",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/Amin_Hassan_Nasser_at_WEF_Special_Meeting_on_Global_Collaboration_Growth_and_Energy_for_Development_2024-e1787172569764-300x195.png",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/Amin_Hassan_Nasser_at_WEF_Special_Meeting_on_Global_Collaboration_Growth_and_Energy_for_Development_2024-e1787172569764-300x195.png 300w, https://petrotimes.ir/wp-content/uploads/2026/08/Amin_Hassan_Nasser_at_WEF_Special_Meeting_on_Global_Collaboration_Growth_and_Energy_for_Development_2024-e1787172569764-200x130.png 200w, https://petrotimes.ir/wp-content/uploads/2026/08/Amin_Hassan_Nasser_at_WEF_Special_Meeting_on_Global_Collaboration_Growth_and_Energy_for_Development_2024-e1787172569764-150x97.png 150w, https://petrotimes.ir/wp-content/uploads/2026/08/Amin_Hassan_Nasser_at_WEF_Special_Meeting_on_Global_Collaboration_Growth_and_Energy_for_Development_2024-e1787172569764-450x292.png 450w, https://petrotimes.ir/wp-content/uploads/2026/08/Amin_Hassan_Nasser_at_WEF_Special_Meeting_on_Global_Collaboration_Growth_and_Energy_for_Development_2024-e1787172569764.png 481w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "topnews_3": {
+      "selector": "[data-id=\"2b53655\"]",
+      "widgetType": "elementor-widget-smartmag-postssmall",
+      "heading": null,
+      "articles": [
+        {
+          "title": "دبیرکل اوپک:چرا آژانس بین‌المللی انرژی اعتبار تولیدکنندگان خلیج فارس را زیر سؤال می‌برد؟",
+          "url": "https://petrotimes.ir/%d8%af%d8%a8%db%8c%d8%b1%da%a9%d9%84-%d8%a7%d9%88%d9%be%da%a9%da%86%d8%b1%d8%a7-%d8%a2%da%98%d8%a7%d9%86%d8%b3-%d8%a8%db%8c%d9%86%d8%a7%d9%84%d9%85%d9%84%d9%84%db%8c-%d8%a7%d9%86%d8%b1%da%98/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۰۰:۲۳",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/382447-e1787172793919-300x270.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/382447-e1787172793919-300x270.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/382447-e1787172793919-200x180.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/382447-e1787172793919-150x135.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/382447-e1787172793919.jpg 435w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "topnews_4": {
+      "selector": "[data-id=\"ad71bc1\"]",
+      "widgetType": "elementor-widget-smartmag-postssmall",
+      "heading": null,
+      "articles": [
+        {
+          "title": "رئیس مجلس: کاهش مصرف بنزین ضرورتی اجتناب‌ناپذیر است",
+          "url": "https://petrotimes.ir/%d8%b1%d8%a6%db%8c%d8%b3-%d9%85%d8%ac%d9%84%d8%b3-%da%a9%d8%a7%d9%87%d8%b4-%d9%85%d8%b5%d8%b1%d9%81-%d8%a8%d9%86%d8%b2%db%8c%d9%86-%d8%b6%d8%b1%d9%88%d8%b1%d8%aa%db%8c-%d8%a7%d8%ac%d8%aa%d9%86%d8%a7/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۰۰:۴۵",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/images-300x199.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/images-300x199.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/images-200x133.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/images-150x100.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/images-450x299.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/images.jpg 576w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "magazine": {
+      "selector": "[data-id=\"c074dc7\"]",
+      "widgetType": "elementor-widget-smartmag-overlay",
+      "heading": "magazine",
+      "articles": [
+        {
+          "title": "magazine",
+          "url": null,
+          "dateText": null,
+          "dateISO": null,
+          "category": "magazine",
+          "categoryUrl": "https://petrotimes.ir/magazine/",
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/30-300x409.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1024x1395.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/30-200x272.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/30-768x1046.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1128x1536.jpg 1128w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1503x2048.jpg 1503w, https://petrotimes.ir/wp-content/uploads/2026/08/30-150x204.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1200x1635.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/30.jpg 1615w",
+          "imageSizes": "(max-width: 377px) 100vw, 377px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        },
+        {
+          "title": "magazine",
+          "url": null,
+          "dateText": null,
+          "dateISO": null,
+          "category": "magazine",
+          "categoryUrl": "https://petrotimes.ir/magazine/",
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-450x557.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-450x557.jpg 450w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-300x371.jpg 300w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-1024x1268.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-200x248.jpg 200w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-768x951.jpg 768w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-150x186.jpg 150w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15.jpg 1034w",
+          "imageSizes": "(max-width: 377px) 100vw, 377px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        },
+        {
+          "title": "magazine",
+          "url": null,
+          "dateText": null,
+          "dateISO": null,
+          "category": "magazine",
+          "categoryUrl": "https://petrotimes.ir/magazine/",
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/30-300x409.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1024x1395.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/30-200x272.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/30-768x1046.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1128x1536.jpg 1128w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1503x2048.jpg 1503w, https://petrotimes.ir/wp-content/uploads/2026/08/30-150x204.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1200x1635.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/30.jpg 1615w",
+          "imageSizes": "(max-width: 377px) 100vw, 377px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        },
+        {
+          "title": "magazine",
+          "url": null,
+          "dateText": null,
+          "dateISO": null,
+          "category": "magazine",
+          "categoryUrl": "https://petrotimes.ir/magazine/",
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-450x557.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-450x557.jpg 450w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-300x371.jpg 300w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-1024x1268.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-200x248.jpg 200w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-768x951.jpg 768w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15-150x186.jpg 150w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-03_22-37-15.jpg 1034w",
+          "imageSizes": "(max-width: 377px) 100vw, 377px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        },
+        {
+          "title": "magazine",
+          "url": null,
+          "dateText": null,
+          "dateISO": null,
+          "category": "magazine",
+          "categoryUrl": "https://petrotimes.ir/magazine/",
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/30-450x613.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/30-300x409.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1024x1395.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/30-200x272.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/30-768x1046.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1128x1536.jpg 1128w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1503x2048.jpg 1503w, https://petrotimes.ir/wp-content/uploads/2026/08/30-150x204.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/30-1200x1635.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/30.jpg 1615w",
+          "imageSizes": "(max-width: 377px) 100vw, 377px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "feature_1": {
+      "selector": "[data-id=\"cdf7917\"]",
+      "widgetType": "elementor-widget-smartmag-grid",
+      "heading": null,
+      "articles": [
+        {
+          "title": "تنوع‌بخشی به سبد سوخت ضروری است",
+          "url": "https://petrotimes.ir/%d8%aa%d9%86%d9%88%d8%b9%d8%a8%d8%ae%d8%b4%db%8c-%d8%a8%d9%87-%d8%b3%d8%a8%d8%af-%d8%b3%d9%88%d8%ae%d8%aa-%d8%b6%d8%b1%d9%88%d8%b1%db%8c-%d8%a7%d8%b3%d8%aa/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۳:۰۰",
+          "dateISO": null,
+          "category": "انرژی",
+          "categoryUrl": "https://petrotimes.ir/%d8%a7%d9%86%d8%b1%da%98%db%8c/",
+          "excerpt": null,
+          "image": null,
+          "imageSrcSet": null,
+          "imageSizes": null,
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "feature_2": {
+      "selector": "[data-id=\"4a3c89f\"]",
+      "widgetType": "elementor-widget-smartmag-grid",
+      "heading": null,
+      "articles": [
+        {
+          "title": "آزادگان؛ توسعه یک میدان مشترک در مقیاس ملی",
+          "url": "https://petrotimes.ir/%d8%a2%d8%b2%d8%a7%d8%af%da%af%d8%a7%d9%86%d8%9b-%d8%aa%d9%88%d8%b3%d8%b9%d9%87-%db%8c%da%a9-%d9%85%db%8c%d8%af%d8%a7%d9%86-%d9%85%d8%b4%d8%aa%d8%b1%da%a9-%d8%af%d8%b1-%d9%85%d9%82%db%8c%d8%a7%d8%b3/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۳:۰۴",
+          "dateISO": null,
+          "category": "نفت",
+          "categoryUrl": "https://petrotimes.ir/%d9%86%d9%81%d8%aa/",
+          "excerpt": null,
+          "image": null,
+          "imageSrcSet": null,
+          "imageSizes": null,
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "feature_3": {
+      "selector": "[data-id=\"de04eb4\"]",
+      "widgetType": "elementor-widget-smartmag-grid",
+      "heading": null,
+      "articles": [
+        {
+          "title": "وزارت نفت؛ هنر پیداکردن راه",
+          "url": "https://petrotimes.ir/%d9%88%d8%b2%d8%a7%d8%b1%d8%aa-%d9%86%d9%81%d8%aa%d8%9b-%d9%87%d9%86%d8%b1-%d9%be%db%8c%d8%af%d8%a7%da%a9%d8%b1%d8%af%d9%86-%d8%b1%d8%a7%d9%87/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۳:۱۱",
+          "dateISO": null,
+          "category": "نفت",
+          "categoryUrl": "https://petrotimes.ir/%d9%86%d9%81%d8%aa/",
+          "excerpt": null,
+          "image": null,
+          "imageSrcSet": null,
+          "imageSizes": null,
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "energy_main": {
+      "selector": "[data-id=\"2517f37\"]",
+      "widgetType": "elementor-widget-smartmag-highlights",
+      "heading": "energy",
+      "articles": [
+        {
+          "title": "وزیر زیرساخت‌ ارمنستان: توافق تهران و ایروان برای شتاب‌بخشی به مناسبات انرژی",
+          "url": "https://petrotimes.ir/%d9%88%d8%b2%db%8c%d8%b1-%d8%b2%db%8c%d8%b1%d8%b3%d8%a7%d8%ae%d8%aa-%d8%a7%d8%b1%d9%85%d9%86%d8%b3%d8%aa%d8%a7%d9%86-%d8%aa%d9%88%d8%a7%d9%81%d9%82-%d8%aa%d9%87%d8%b1%d8%a7%d9%86-%d9%88/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۰۰:۳۱",
+          "dateISO": null,
+          "category": "دسته‌بندی نشده",
+          "categoryUrl": "https://petrotimes.ir/%d8%af%d8%b3%d8%aa%d9%87%d8%a8%d9%86%d8%af%db%8c-%d9%86%d8%b4%d8%af%d9%87/",
+          "excerpt": "داویت خوداتیان در دیدار با محسن پاک‌نژاد، وزیر نفت، بیان کرد: در این نشست، زمینه‌های…",
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-1024x565.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-1024x565.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-300x166.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-200x110.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-768x424.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-150x83.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999-450x248.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/3044119-e1787173519999.jpg 1160w",
+          "imageSizes": "(max-width: 803px) 100vw, 803px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "energy_sub_1": {
+      "selector": "[data-id=\"ebc9ae9\"]",
+      "widgetType": "elementor-widget-smartmag-postssmall",
+      "heading": null,
+      "articles": [
+        {
+          "title": "مدیرعامل پالایش و پخش:راه‌حل ناترازی سوخت افزایش تولید و عرضه نیست",
+          "url": "https://petrotimes.ir/%d9%85%d8%af%db%8c%d8%b1%d8%b9%d8%a7%d9%85%d9%84-%d9%be%d8%a7%d9%84%d8%a7%db%8c%d8%b4-%d9%88-%d9%be%d8%ae%d8%b4%d8%b1%d8%a7%d9%87%d8%ad%d9%84-%d9%86%d8%a7%d8%aa%d8%b1%d8%a7%d8%b2%db%8c/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۰۰:۵۲",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/3043855-e1787174523767-300x252.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/3043855-e1787174523767-300x252.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/3043855-e1787174523767-200x168.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/3043855-e1787174523767-150x126.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/3043855-e1787174523767.jpg 368w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "energy_sub_2": {
+      "selector": "[data-id=\"4ed4320\"]",
+      "widgetType": "elementor-widget-smartmag-postssmall",
+      "heading": null,
+      "articles": [
+        {
+          "title": "وزیر نیرو در دیدار با وزیر انرژی تاجیکستان:آمادگی ایران برای همکاری فنی در شبکه برق تاجیکستان",
+          "url": "https://petrotimes.ir/%d9%88%d8%b2%db%8c%d8%b1-%d9%86%db%8c%d8%b1%d9%88-%d8%af%d8%b1-%d8%af%db%8c%d8%af%d8%a7%d8%b1-%d8%a8%d8%a7-%d9%88%d8%b2%db%8c%d8%b1-%d8%a7%d9%86%d8%b1%da%98%db%8c-%d8%aa%d8%a7%d8%ac%db%8c%da%a9%d8%b3/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۰۰:۵۵",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/3295646-300x200.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/3295646-300x200.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/3295646-1024x682.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/3295646-200x133.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/3295646-768x512.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/3295646-150x100.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/3295646-450x300.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/3295646.jpg 1160w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "energy_grid_1": {
+      "selector": "[data-id=\"1635d4c\"]",
+      "widgetType": "elementor-widget-smartmag-grid",
+      "heading": null,
+      "articles": [
+        {
+          "title": "",
+          "url": null,
+          "dateText": null,
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1024x682.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1024x682.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-768x512.jpg 768w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1200x800.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53.jpg 1280w",
+          "imageSizes": "(max-width: 803px) 100vw, 803px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "energy_grid_2": {
+      "selector": "[data-id=\"5fabf63\"]",
+      "widgetType": "elementor-widget-smartmag-grid",
+      "heading": null,
+      "articles": [
+        {
+          "title": "",
+          "url": null,
+          "dateText": null,
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg 320w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-300x162.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-200x108.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-150x81.jpg 150w",
+          "imageSizes": "(max-width: 803px) 100vw, 803px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "energy_grid_3": {
+      "selector": "[data-id=\"4957a9a\"]",
+      "widgetType": "elementor-widget-smartmag-grid",
+      "heading": null,
+      "articles": [
+        {
+          "title": "",
+          "url": null,
+          "dateText": null,
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1024x682.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1024x682.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-768x512.jpg 768w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53-1200x800.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2021/03/photo_2024-11-12_23-46-53.jpg 1280w",
+          "imageSizes": "(max-width: 803px) 100vw, 803px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "advertise_1": {
+      "selector": "[data-id=\"98a37f7\"]",
+      "widgetType": "elementor-widget-smartmag-grid",
+      "heading": "advertise",
+      "articles": [
+        {
+          "title": "روغن شرکت نفت سپاهان گریس",
+          "url": "https://petrotimes.ir/%d8%b1%d9%88%d8%ba%d9%86-%d8%b4%d8%b1%da%a9%d8%aa-%d9%86%d9%81%d8%aa-%d8%b3%d9%be%d8%a7%d9%87%d8%a7%d9%86-%da%af%d8%b1%db%8c%d8%b3/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۰۱:۰۵",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg 320w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-300x162.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-200x108.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-150x81.jpg 150w",
+          "imageSizes": "(max-width: 377px) 100vw, 377px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "advertise_2": {
+      "selector": "[data-id=\"7719ff3\"]",
+      "widgetType": "elementor-widget-smartmag-grid",
+      "heading": null,
+      "articles": [
+        {
+          "title": "روغن شرکت نفت سپاهان گریس",
+          "url": "https://petrotimes.ir/%d8%b1%d9%88%d8%ba%d9%86-%d8%b4%d8%b1%da%a9%d8%aa-%d9%86%d9%81%d8%aa-%d8%b3%d9%be%d8%a7%d9%87%d8%a7%d9%86-%da%af%d8%b1%db%8c%d8%b3/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۰۱:۰۵",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1.jpg 320w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-300x162.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-200x108.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/sepahan-oil-1-150x81.jpg 150w",
+          "imageSizes": "(max-width: 377px) 100vw, 377px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "footer_popular": {
+      "selector": "[data-id=\"0740360\"]",
+      "widgetType": "elementor-widget-smartmag-postssmall",
+      "heading": null,
+      "articles": [
+        {
+          "title": "چین از بزرگ‌ترین خریدار PP جهان به رقیب صادراتی تبدیل می‌شود",
+          "url": "https://petrotimes.ir/%da%86%db%8c%d9%86-%d8%a7%d8%b2-%d8%a8%d8%b2%d8%b1%da%af%d8%aa%d8%b1%db%8c%d9%86-%d8%ae%d8%b1%db%8c%d8%af%d8%a7%d8%b1-pp-%d8%ac%d9%87%d8%a7%d9%86-%d8%a8%d9%87-%d8%b1%d9%82%db%8c%d8%a8-%d8%b5/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۰۹:۰۴",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-300x169.png",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-300x169.png 300w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-1024x576.png 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-200x113.png 200w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-768x432.png 768w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-1536x864.png 1536w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-150x84.png 150w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-450x253.png 450w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM-1200x675.png 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/ChatGPT-Image-Aug-20-2026-10_33_07-AM.png 1672w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        },
+        {
+          "title": "بازار نفت در آستانه شوک جدید",
+          "url": "https://petrotimes.ir/%d8%a8%d8%a7%d8%b2%d8%a7%d8%b1-%d9%86%d9%81%d8%aa-%d8%af%d8%b1-%d8%a2%d8%b3%d8%aa%d8%a7%d9%86%d9%87-%d8%b4%d9%88%da%a9-%d8%ac%d8%af%db%8c%d8%af/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۴:۴۰",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/40-300x166.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/40-300x166.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1024x567.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/40-200x111.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/40-768x426.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1536x851.jpg 1536w, https://petrotimes.ir/wp-content/uploads/2026/08/40-150x83.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/40-450x249.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1200x665.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/40.jpg 1561w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        },
+        {
+          "title": "گام تازه تهران-دوشنبه در مسیر خودکفایی سوختی؛ چراغ سبز برای یک قرارداد بلندمدت انرژی",
+          "url": "https://petrotimes.ir/%da%af%d8%a7%d9%85-%d8%aa%d8%a7%d8%b2%d9%87-%d8%aa%d9%87%d8%b1%d8%a7%d9%86-%d8%af%d9%88%d8%b4%d9%86%d8%a8%d9%87-%d8%af%d8%b1-%d9%85%d8%b3%db%8c%d8%b1-%d8%ae%d9%88%d8%af%da%a9%d9%81%d8%a7%db%8c%db%8c/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۴:۱۴",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/37-300x169.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/37-300x169.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/37-1024x578.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/37-200x113.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/37-768x434.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/37-150x85.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/37-450x254.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/37.jpg 1080w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        },
+        {
+          "title": "تهران و اسلام‌آباد، مرز ۹۰۰ کیلومتری را به خط لوله‌ای برای توسعه ۳۰ میلیارد دلاری تبدیل می‌کنند",
+          "url": "https://petrotimes.ir/%d8%aa%d9%87%d8%b1%d8%a7%d9%86-%d9%88-%d8%a7%d8%b3%d9%84%d8%a7%d9%85%d8%a2%d8%a8%d8%a7%d8%af%d8%8c-%d9%85%d8%b1%d8%b2-%db%b9%db%b0%db%b0-%da%a9%db%8c%d9%84%d9%88%d9%85%d8%aa%d8%b1%db%8c/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۳:۵۲",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/34-300x164.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/34-300x164.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/34-1024x560.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/34-200x109.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/34-768x420.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/34-150x82.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/34-450x246.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/34.jpg 1080w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    },
+    "footer_latest": {
+      "selector": "[data-id=\"85e7526\"]",
+      "widgetType": "elementor-widget-smartmag-postssmall",
+      "heading": null,
+      "articles": [
+        {
+          "title": "۲۸ مرداد؛ روایتی کهنه از طمعی تازه",
+          "url": "https://petrotimes.ir/%db%b2%db%b8-%d9%85%d8%b1%d8%af%d8%a7%d8%af%d8%9b-%d8%b1%d9%88%d8%a7%db%8c%d8%aa%db%8c-%da%a9%d9%87%d9%86%d9%87-%d8%a7%d8%b2-%d8%b7%d9%85%d8%b9%db%8c-%d8%aa%d8%a7%d8%b2%d9%87/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۵:۲۳",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/44-300x188.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/44-300x188.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/44-200x125.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/44-768x481.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/44-150x94.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/44-450x282.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/44.jpg 863w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        },
+        {
+          "title": "پارس جنوبی، نه‌فقط برای امروز، فشارافزایی-تصمیمی برای ماندن",
+          "url": "https://petrotimes.ir/%d9%be%d8%a7%d8%b1%d8%b3-%d8%ac%d9%86%d9%88%d8%a8%db%8c%d8%8c-%d9%86%d9%87%d9%81%d9%82%d8%b7-%d8%a8%d8%b1%d8%a7%db%8c-%d8%a7%d9%85%d8%b1%d9%88%d8%b2%d8%8c-%d9%81%d8%b4%d8%a7%d8%b1%d8%a7%d9%81/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۵:۱۸",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/41-300x168.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/41-300x168.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/41-1024x575.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/41-200x112.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/41-768x431.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/41-150x84.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/41-450x253.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/41.jpg 1080w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        },
+        {
+          "title": "بازار نفت در آستانه شوک جدید",
+          "url": "https://petrotimes.ir/%d8%a8%d8%a7%d8%b2%d8%a7%d8%b1-%d9%86%d9%81%d8%aa-%d8%af%d8%b1-%d8%a2%d8%b3%d8%aa%d8%a7%d9%86%d9%87-%d8%b4%d9%88%da%a9-%d8%ac%d8%af%db%8c%d8%af/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۴:۴۰",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/40-300x166.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/40-300x166.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1024x567.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/40-200x111.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/40-768x426.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1536x851.jpg 1536w, https://petrotimes.ir/wp-content/uploads/2026/08/40-150x83.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/40-450x249.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/40-1200x665.jpg 1200w, https://petrotimes.ir/wp-content/uploads/2026/08/40.jpg 1561w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        },
+        {
+          "title": "گام تازه تهران-دوشنبه در مسیر خودکفایی سوختی؛ چراغ سبز برای یک قرارداد بلندمدت انرژی",
+          "url": "https://petrotimes.ir/%da%af%d8%a7%d9%85-%d8%aa%d8%a7%d8%b2%d9%87-%d8%aa%d9%87%d8%b1%d8%a7%d9%86-%d8%af%d9%88%d8%b4%d9%86%d8%a8%d9%87-%d8%af%d8%b1-%d9%85%d8%b3%db%8c%d8%b1-%d8%ae%d9%88%d8%af%da%a9%d9%81%d8%a7%db%8c%db%8c/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۴:۱۴",
+          "dateISO": null,
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "https://petrotimes.ir/wp-content/uploads/2026/08/37-300x169.jpg",
+          "imageSrcSet": "https://petrotimes.ir/wp-content/uploads/2026/08/37-300x169.jpg 300w, https://petrotimes.ir/wp-content/uploads/2026/08/37-1024x578.jpg 1024w, https://petrotimes.ir/wp-content/uploads/2026/08/37-200x113.jpg 200w, https://petrotimes.ir/wp-content/uploads/2026/08/37-768x434.jpg 768w, https://petrotimes.ir/wp-content/uploads/2026/08/37-150x85.jpg 150w, https://petrotimes.ir/wp-content/uploads/2026/08/37-450x254.jpg 450w, https://petrotimes.ir/wp-content/uploads/2026/08/37.jpg 1080w",
+          "imageSizes": "(max-width: 110px) 100vw, 110px",
+          "hasVideoIndicator": false,
+          "videoUrl": null
+        }
+      ]
+    }
+  },
+  "marketIframe": {
+    "src": "https://market.petrotimes.ir/",
+    "title": "Iframe Example",
+    "rendered": {
+      "w": 1920,
+      "h": 38
+    },
+    "wrapperHtml": "<div class=\"elementor-widget-container\">\n\t\t\t<iframe src=\"https://market.petrotimes.ir\" style=\"width: 100%;height: 38px;\" title=\"Iframe Example\"></iframe>\t\t</div>"
+  }
+}

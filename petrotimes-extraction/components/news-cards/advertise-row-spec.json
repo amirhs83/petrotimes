@@ -1,0 +1,37 @@
+{
+  "componentId": "advertise-row",
+  "componentName": "Advertise Row (5-col flex, 2 filled)",
+  "category": "news-cards",
+  "primarySelector": "[data-id=\"41768b4\"]",
+  "extractedAt": "2026-11-15T07:33:36.264Z",
+  "status": "EXTRACTED",
+  "geometry": {
+    "rect": {
+      "x": 0,
+      "y": 2864.9,
+      "w": 1920,
+      "h": 317.8
+    },
+    "computed": {
+      "display": "flex",
+      "position": "relative",
+      "flexDirection": "column",
+      "padding": "0px 10px",
+      "margin": "-52px 0px 0px",
+      "background": "rgba(0, 0, 0, 0) none repeat scroll 0% 0% / auto padding-box border-box",
+      "backgroundColor": "rgba(0, 0, 0, 0)",
+      "color": "rgb(68, 68, 68)",
+      "fontSize": "14px",
+      "fontWeight": "400",
+      "lineHeight": "21px",
+      "textAlign": "start",
+      "direction": "rtl",
+      "borderRadius": "0px",
+      "transition": "background 0.3s, border 0.3s, box-shadow 0.3s, transform 0.4s",
+      "overflow": "visible",
+      "width": "1920px",
+      "maxWidth": "100%"
+    }
+  },
+  "children": null
+}
