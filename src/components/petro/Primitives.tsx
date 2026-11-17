@@ -77,6 +77,9 @@ export function PostMeta({
             </a>
           </span>
         ) : null}
+        {/* live HTML carries a whitespace text node between the meta items —
+            it renders as a ~2.4px Barlow-11px space and offsets the date */}
+        {' '}
         <span className="meta-item date">
           <span className="date-link">
             <time className="post-date">{dateText}</time>

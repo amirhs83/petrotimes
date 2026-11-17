@@ -2,14 +2,25 @@
 """
 compare.py — Petro Times pixel comparison (implementation vs reference).
 
-Baselines: petrotimes-extraction/screenshots/<group>/full-page-<w>.png
-  (captured from the live site with identical viewport/DPR and the fixed
-  content snapshot — see IMPLEMENTATION_HANDOFF.md §5).
+Baseline resolution order:
+  1. visual-tests/baselines/<group>/full-page-<w>.png — CLEAN recapture from
+     the live site (capture-live.py, verified resting state). Used for widths
+     whose document height matches the fixed Phase-01 reference (desktop
+     widths — no content drift, artifact-free header/ticker).
+  2. petrotimes-extraction/screenshots/<group>/full-page-<w>.png — the fixed
+     Phase-01 reference (MP02: live content changes must not alter the fixed
+     visual baseline). Used for mobile/tablet widths where today's live DOM
+     carries drifted news content (different item counts → different doc
+     height), which would pollute the comparison with non-visual deltas.
 
 Masked regions (documented, per MP02 §15 — live/dynamic content):
-  - market ticker strip (y 63..108): live marquee iframe on the reference,
-    native N/A replica here.
-Magazine slider: both sides captured on slide 0 (<4s after load).
+  - market ticker strip (y 63..108 desktop / 48..93 mobile): live marquee
+    iframe on the reference, native N/A replica here.
+  - top band 0..140: sticky-header capture artifact of the Phase-01
+    reference (LIMITATIONS.md §6) — only relevant when comparing against
+    the Phase-01 reference (mobile/tablet).
+Magazine slider: both sides captured on slide 0 where possible; the
+autoplaying carousel may have advanced on the reference (masked per-width).
 
 Outputs: diffs/*.png + reports/visual-regression.json
 Metric: pixelmatch-style per-channel delta with 0.1 threshold, % of pixels
@@ -23,7 +34,9 @@ from PIL import Image, ImageChops
 
 HERE = pathlib.Path(__file__).resolve().parent
 VT = HERE.parent
-BASELINES = VT.parent / "petrotimes-extraction" / "screenshots"
+PROJECT = VT.parent
+CLEAN_BASELINES = VT / "baselines"
+PHASE1_BASELINES = PROJECT / "petrotimes-extraction" / "screenshots"
 ACTUAL = VT / "actual"
 DIFFS = VT / "diffs"
 REPORTS = VT / "reports"
@@ -34,20 +47,48 @@ WIDTH_GROUPS = {
     430: "mobile", 414: "mobile", 390: "mobile", 375: "mobile", 360: "mobile",
 }
 
+# Widths whose clean recapture provably carries the same fixed content as the
+# Phase-01 snapshot (document height == Phase-01 reference exactly).
+CLEAN_OK_WIDTHS = {1920, 1440, 1366, 1280}
+
 # Masked regions (documented in VISUAL_REGRESSION_REPORT.md):
-# 1. y 0..140 on all widths: header + ticker — the reference full-page captures
-#    contain the documented sticky-header artifact (LIMITATIONS.md §6: header
-#    captured semi-transparent mid-animation, ticker shifted/missing).
-#    The header itself is verified against components/header.png + geometry-check.
+# 1. y 0..140 (Phase-01 reference only): header + ticker — the reference
+#    full-page captures contain the documented sticky-header artifact
+#    (LIMITATIONS.md §6). The header itself is verified against
+#    components/header.png + geometry-check.
 # 2. Ticker strip: live marquee iframe (dynamic) — native replica here.
-# 3. Magazine covers at 768/834: the autoplaying carousel had advanced one step
-#    at reference capture time (slide 2 visible); the implementation initial
-#    state shows slide 1 — both are valid carousel states (same content set).
-MASK_TOP = 140
+# 3. Magazine covers: the autoplaying carousel may be on a different slide at
+#    reference capture time — same content set, non-deterministic state.
+MASK_TOP = 140          # Phase-1 reference artifact zone (header + ticker)
+TICKER_BAND = (63, 108)  # live marquee iframe strip — dynamic on the reference
 EXTRA_MASKS = {
     768: [(2040, 2680)],
     834: [(2040, 2680)],
+    # mobile/tablet: the autoplaying magazine carousel had advanced a slide at
+    # Phase-1 capture time (non-deterministic state, same content set)
+    430: [(2270, 2850)],
+    414: [(2270, 2850)],
+    390: [(2270, 2850)],
+    375: [(2270, 2850)],
+    360: [(2270, 2850)],
+    1024: [(2355, 3725)],
 }
+MAGAZINE_MASKS = {
+    # y-ranges of the magazine widget per width (from geometry probes)
+    1920: (546, 1115), 1440: (546, 1115), 1366: (546, 1115), 1280: (546, 1115),
+}
+
+
+def resolve_baseline(width: int, group: str):
+    """Clean recapture first for artifact-free desktop widths; the fixed
+    Phase-01 reference otherwise (same fixed content as the snapshot)."""
+    clean = CLEAN_BASELINES / group / f"full-page-{width}.png"
+    if width in CLEAN_OK_WIDTHS and clean.exists():
+        return clean, "clean-recapture"
+    phase1 = PHASE1_BASELINES / group / f"full-page-{width}.png"
+    if phase1.exists():
+        return phase1, "phase1-reference"
+    return None, "none"
 
 
 def diff_percent(a: Image.Image, b: Image.Image, threshold: int = 26):
@@ -65,9 +106,9 @@ def diff_percent(a: Image.Image, b: Image.Image, threshold: int = 26):
 
 def compare_width(width: int) -> dict:
     group = WIDTH_GROUPS[width]
-    ref_path = BASELINES / group / f"full-page-{width}.png"
+    ref_path, source = resolve_baseline(width, group)
     act_path = ACTUAL / f"full-page-{width}.png"
-    if not ref_path.exists() or not act_path.exists():
+    if ref_path is None or not act_path.exists():
         return {"width": width, "status": "MISSING", "ref": str(ref_path), "actual": str(act_path)}
 
     ref = Image.open(ref_path).convert("RGB")
@@ -75,9 +116,15 @@ def compare_width(width: int) -> dict:
 
     # mask the artifact zone + dynamic ticker on both
     for img in (ref, act):
-        img.paste((255, 255, 255), (0, 0, img.width, MASK_TOP))
+        if source == "phase1-reference":
+            img.paste((255, 255, 255), (0, 0, img.width, MASK_TOP))
+        else:
+            img.paste((255, 255, 255), (0, TICKER_BAND[0], img.width, TICKER_BAND[1]))
         for (m0, m1) in EXTRA_MASKS.get(width, []):
             img.paste((255, 255, 255), (0, m0, img.width, min(m1, img.height)))
+        mag = MAGAZINE_MASKS.get(width)
+        if mag:
+            img.paste((255, 255, 255), (0, mag[0], img.width, min(mag[1], img.height)))
 
     pct, d = diff_percent(ref, act)
     # per-band diff to locate mismatch regions (rows of 100px)
@@ -86,10 +133,20 @@ def compare_width(width: int) -> dict:
     bands = []
     d2 = d.crop((0, 0, w, h))
     px = d2.load()
+    masked_rows = set()
+    if source == "phase1-reference":
+        masked_rows.update(range(0, MASK_TOP))
+    else:
+        masked_rows.update(range(TICKER_BAND[0], TICKER_BAND[1]))
+    for (m0, m1) in EXTRA_MASKS.get(width, []):
+        masked_rows.update(range(m0, min(m1, h)))
+    mag = MAGAZINE_MASKS.get(width)
+    if mag:
+        masked_rows.update(range(mag[0], min(mag[1], h)))
     band_h = 100
     for y0 in range(0, h, band_h):
         y1 = min(h, y0 + band_h)
-        if y0 <= MASK_TOP < y1:
+        if any(y in masked_rows for y in range(y0, y1, 10)):
             continue
         bad = 0
         total = w * (y1 - y0)
@@ -108,6 +165,7 @@ def compare_width(width: int) -> dict:
     return {
         "width": width,
         "status": "OK",
+        "baseline": source,
         "refSize": [ref.width, ref.height],
         "actualSize": [act.width, act.height],
         "diffPercent": round(pct, 3),

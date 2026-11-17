@@ -141,7 +141,12 @@ export function Chrome({
         </div>
       </div>
 
-      {/* off-canvas menu */}
+      {/* off-canvas menu — live structure: .off-canvas > head (close + ts-logo) +
+          content (mobile-menu + off-canvas-widgets). The live theme clones the
+          main navigation into .mobile-menu ONLY on mobile viewports (≤1024):
+          the desktop capture geometry-1920 shows the ul empty (widgets at
+          y=162.1), the 390px interaction capture shows it populated. The
+          desktop emptiness is reproduced via CSS (menu li display:none ≥1025). */}
       <div
         className={`pt-offcanvas-backdrop ${offcanvasOpen ? 'is-open' : ''}`}
         onClick={() => setOffcanvasOpen(false)}
@@ -165,6 +170,7 @@ export function Chrome({
             ))}
           </ul>
           <OffCanvasWidgets whatsHot={whatsHot} newsletter={newsletter} />
+          <OffCanvasSocial />
         </div>
       </aside>
 
@@ -200,9 +206,12 @@ export function Chrome({
   );
 }
 
-/* off-canvas bottom widgets: What's Hot (3 posts, 32px separators) +
-   subscribe block (6px frame) — reproduces the live off-canvas widgets
-   column (756.3px total). */
+/* off-canvas bottom widgets — live structure (rendered-dom.html + live
+   measurement): .off-canvas-widgets = What's Hot (smartmag-block-posts-small-2,
+   block-head-b fs 20, 3 small posts) + smartmag-block-newsletter-4
+   (spc-newsletter-b center sm — 6px frame is the element's own border);
+   box measured 320×756.3 at y=162.1. The .spc-social-block is a SIBLING
+   (direct flex child of .off-canvas-content) — see Chrome JSX below. */
 function OffCanvasWidgets({ whatsHot, newsletter }: { whatsHot: Article[]; newsletter: NewsletterData }) {
   return (
     <div className="pt-offcanvas-widgets">
@@ -212,13 +221,33 @@ function OffCanvasWidgets({ whatsHot, newsletter }: { whatsHot: Article[]; newsl
         </div>
         <div className="pt-loop">
           {whatsHot.map((a) => (
-            <SmallPostCard key={a.url} article={a} variant="dark" />
+            <SmallPostCard key={a.url} article={a} />
           ))}
         </div>
       </div>
-      <div className="pt-newsletter-frame">
-        <NewsletterWidget data={newsletter} />
-      </div>
+      <NewsletterWidget data={newsletter} variant="sm" />
+    </div>
+  );
+}
+
+/* live: .spc-social-block.spc-social-b.smart-head-social — direct child of
+   .off-canvas-content, pushed to the bottom via margin-top:auto; 3 circle
+   icons (facebook / x / instagram) — real hrefs from the live DOM */
+function OffCanvasSocial() {
+  return (
+    <div className="pt-offcanvas-social">
+      <a href="https://www.facebook.com/share/15Yx3THCSY/?mibextid=LQQJ4d" className="pt-svc-link pt-s-facebook" target="_blank" rel="nofollow noopener">
+        <Icon name="facebook" />
+        <span className="pt-visuallyhidden">Facebook</span>
+      </a>
+      <a href="https://x.com/Petrotimes_ir" className="pt-svc-link pt-s-twitter" target="_blank" rel="nofollow noopener">
+        <Icon name="twitter" />
+        <span className="pt-visuallyhidden">X (Twitter)</span>
+      </a>
+      <a href="https://Instagram.com/Petrotimes.ir" className="pt-svc-link pt-s-instagram" target="_blank" rel="nofollow noopener">
+        <Icon name="instagram" />
+        <span className="pt-visuallyhidden">Instagram</span>
+      </a>
     </div>
   );
 }

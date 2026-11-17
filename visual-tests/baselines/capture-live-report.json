@@ -1,0 +1,45 @@
+{
+  "captures": [
+    {
+      "scrollY": 0,
+      "headH": 63,
+      "headTop": 0,
+      "mobileH": 0,
+      "tickerY": 63,
+      "tickerH": 45,
+      "docH": 3746,
+      "stickyClones": 0,
+      "docHStable": true,
+      "docH2": 3746,
+      "ok": true,
+      "width": 1366,
+      "file": "visual-tests/baselines/desktop/full-page-1366.png"
+    },
+    {
+      "scrollY": 0,
+      "headH": 63,
+      "headTop": 0,
+      "mobileH": 0,
+      "tickerY": 63,
+      "tickerH": 45,
+      "docH": 3746,
+      "stickyClones": 0,
+      "docHStable": true,
+      "docH2": 3746,
+      "ok": true,
+      "width": 1280,
+      "file": "visual-tests/baselines/desktop/full-page-1280.png"
+    }
+  ],
+  "conditions": {
+    "launchArgs": [
+      "--no-sandbox",
+      "--disable-dev-shm-usage",
+      "--font-render-hinting=none"
+    ],
+    "userAgent": "Mozilla/5.0 (Windows NT 10.0; Win64; x64) AppleWebKit/537.36 (KHTML, like Gecko) Chrome/157.0.0.0 Safari/537.36",
+    "locale": "fa-IR",
+    "dpr": 1,
+    "settle": "scroll pass + verified resting state"
+  }
+}

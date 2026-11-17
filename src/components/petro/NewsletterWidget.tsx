@@ -9,8 +9,18 @@ import { Icon } from './Primitives';
  * submission goes to /api/newsletter which proxies to the site's Contact
  * Form 7 endpoint when a WordPress backend is configured (WP_BASE_URL).
  * Without a backend the API answers 501 and the message is shown honestly.
+ *
+ * variant="sm" renders the SmartMag native off-canvas widget
+ * (smartmag-block-newsletter-4: spc-newsletter-b center sm) — same texts,
+ * no envelope watermark, 6px frame on the element itself (see petro.css).
  */
-export function NewsletterWidget({ data }: { data: NewsletterData }) {
+export function NewsletterWidget({
+  data,
+  variant = 'default',
+}: {
+  data: NewsletterData;
+  variant?: 'default' | 'sm';
+}) {
   const [email, setEmail] = useState('');
   const [agree, setAgree] = useState(false);
   const [status, setStatus] = useState<'idle' | 'sending' | 'ok' | 'error'>('idle');
@@ -40,14 +50,20 @@ export function NewsletterWidget({ data }: { data: NewsletterData }) {
     }
   }
 
+  const isSm = variant === 'sm';
   return (
-    <div className="pt-newsletter" data-testid="newsletter">
+    <div
+      className={`pt-newsletter ${isSm ? 'pt-newsletter-sm' : ''}`}
+      data-testid={isSm ? 'newsletter-offcanvas' : 'newsletter'}
+    >
       <div className="inner">
-        <div className="mail-bg-icon">
-          <Icon name="envelopeO" />
-        </div>
+        {isSm ? null : (
+          <div className="mail-bg-icon">
+            <Icon name="envelopeO" />
+          </div>
+        )}
         <h3 className="heading">{data.heading}</h3>
-        <div className="message">
+        <div className="base-text message">
           <p>{data.text}</p>
         </div>
         <form method="post" className="form fields-style fields-full" onSubmit={handleSubmit} noValidate={false}>

@@ -4,73 +4,73 @@
       "width": 1920,
       "group": "desktop",
       "file": "full-page-1920.png",
-      "docHeight": 3748
+      "docHeight": 3746
     },
     {
       "width": 1440,
       "group": "desktop",
       "file": "full-page-1440.png",
-      "docHeight": 3748
+      "docHeight": 3746
     },
     {
       "width": 1366,
       "group": "desktop",
       "file": "full-page-1366.png",
-      "docHeight": 3748
+      "docHeight": 3746
     },
     {
       "width": 1280,
       "group": "desktop",
       "file": "full-page-1280.png",
-      "docHeight": 3748
+      "docHeight": 3746
     },
     {
       "width": 1024,
       "group": "desktop",
       "file": "full-page-1024.png",
-      "docHeight": 6535
+      "docHeight": 6641
     },
     {
       "width": 834,
       "group": "tablet",
       "file": "full-page-834.png",
-      "docHeight": 5318
+      "docHeight": 5278
     },
     {
       "width": 768,
       "group": "tablet",
       "file": "full-page-768.png",
-      "docHeight": 5318
+      "docHeight": 5278
     },
     {
       "width": 430,
       "group": "mobile",
       "file": "full-page-430.png",
-      "docHeight": 6306
+      "docHeight": 6324
     },
     {
       "width": 414,
       "group": "mobile",
       "file": "full-page-414.png",
-      "docHeight": 6209
+      "docHeight": 6228
     },
     {
       "width": 390,
       "group": "mobile",
       "file": "full-page-390.png",
-      "docHeight": 6096
+      "docHeight": 6084
     },
     {
       "width": 375,
       "group": "mobile",
       "file": "full-page-375.png",
-      "docHeight": 6006
+      "docHeight": 5993
     },
     {
       "width": 360,
       "group": "mobile",
       "file": "full-page-360.png",
-      "docHeight": 5943
+      "docHeight": 5962
     }
   ],
   "base": "http://localhost:3000",
