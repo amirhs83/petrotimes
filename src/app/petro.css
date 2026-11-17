@@ -260,6 +260,13 @@ a:hover { color: var(--c-a-hover); }
 .pt-block-mb { margin-bottom: var(--block-wrap-mb); }
 
 /* --------------------------------------------------------------- header --- */
+/* flow slot: keeps the header's layout height in the document while the
+   header itself goes fixed when sticky — prevents the 63/48px document
+   shift that pulled the footer over the last advertise card (live SmartMag
+   keeps the original in flow and fixes a clone) */
+.pt-head-slot { position: relative; }
+.pt-head-slot-desktop { height: var(--head-h); }
+.pt-head-slot-mobile { display: none; height: 48px; }
 .pt-smart-head {
   position: relative;
   min-height: var(--head-h);
@@ -1139,11 +1146,14 @@ a:hover { color: var(--c-a-hover); }
   margin-bottom: 20px;
 }
 .pt-footer-col-about .about-email strong { color: #e6e6e6; }
-/* live: 5 service links 34.8×38.4, glyph 14px, 2px gap — facebook rightmost */
+/* post-7373 elementor css: --spc-social-fs:24px, --c-spc-social:#FAFAFA,
+   justify-content:flex-end (RTL → left). Link box = icon 1.2em (28.8) +
+   2×3px padding = 34.8w, height = line-height 1.6 × 24 = 38.4 (measured
+   34.8×38.4 on live) — 2px gap, facebook rightmost */
 .pt-footer-col-about .about-social { display: flex; justify-content: flex-start; margin-top: 20px; }
 .pt-footer-col-about .about-social a {
   color: #fafafa;
-  font-size: 14px;
+  font-size: 24px;
   display: inline-flex; align-items: center; justify-content: center;
   width: 34.8px; height: 38.4px;
   margin-left: 2px;
@@ -1237,6 +1247,8 @@ a:hover { color: var(--c-a-hover); }
 @media (max-width: 940px) {
   /* real header swap breakpoint (28-rtl.css max-width:940px); live container
      at 768/834: fixed 716 box, inner 680 (padding 18) */
+  .pt-head-slot-desktop { display: none; }
+  .pt-head-slot-mobile { display: block; }
   .pt-smart-head { display: none; }
   .pt-mobile-head { display: block; position: relative; z-index: 500; }
   .pt-mobile-head.is-sticky { position: fixed; top: 0; right: 0; left: 0; }
@@ -1319,13 +1331,18 @@ a:hover { color: var(--c-a-hover); }
   .pt-energy-tile { margin: 0; padding: 0 0 45px; }      /* live tile box = media + 45 trailing */
   .pt-energy-tile .pt-media { margin: 0; }               /* live mobile: media flush (350 wide) */
 
-  /* advertise (live computed at 390): mt 42, mb -126; tiles inset 20px like
-     the footer (350 wide), banner + title (mb 9) + 26 trailing per card +
-     45 inner bottom — ads box 628.2 total */
-  .pt-advertise { margin-top: 42px; margin-bottom: -126px; }
+  /* baseline 390 anchors: heading text 5230 (energy edge 5166 → mt 62),
+     image1 5276, image2 = image1 + 240 (card 261 + col pull -21, live
+     article h=261 = media 197 + 16 + content 48 [title 20 + below 28]),
+     title2 text 5736, footer 5749 = title2 text + 13 → mb: card2 bottom
+     (5517+261=5778) + inner pb 45 → 5823 - 74 = 5749. The -126 value came
+     from a drifted live DOM and covered the last post title with the
+     footer (user-reported bug). */
+  .pt-advertise { margin-top: 62px; margin-bottom: -74px; }
   .pt-advertise-inner { flex-direction: column; gap: 0; padding-block: 0 45px; padding-inline: 20px; }
   .pt-advertise-col { width: 100%; }
-  .pt-advertise-card { margin-bottom: 0; padding-bottom: 26px; }
+  .pt-advertise-col + .pt-advertise-col { margin-top: -21px; }
+  .pt-advertise-card { margin-bottom: 0; padding-bottom: 19px; }
   .pt-advertise-card .pt-post-meta { display: none; }
   .pt-advertise-card .pt-post-title { margin-bottom: 9px; }
 
@@ -1350,6 +1367,10 @@ a:hover { color: var(--c-a-hover); }
   .pt-footer-col-about .about-text { text-align: left; line-height: 1.5; margin-bottom: 20px; }
   .pt-footer-col-about .about-email { text-align: left; }
   .pt-footer-col-about .about-social { justify-content: flex-end; }
+  /* live 390: about col content (social box bottom) ends AT the footer main
+     bottom — no col margin below (else main runs 25px taller than the 309px
+     baseline) */
+  .pt-footer-col-about { margin-bottom: 0; }
   .pt-footer-copyright { height: 38px; padding-block: 0; }
   .pt-footer-col-popular, .pt-footer-col-latest { display: none; }
 }

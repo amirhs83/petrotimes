@@ -56,8 +56,12 @@ export function Chrome({
 
   return (
     <>
-      {/* desktop header */}
-      <header className={`pt-smart-head ${sticky ? 'is-sticky' : ''}`} id="smart-head" data-sticky="auto">
+      {/* desktop header — wrapped in a flow slot that keeps its 63px layout
+          height while the header itself goes fixed on sticky (live SmartMag
+          keeps the original in flow; without the slot the document shifted
+          up 63px on scroll, pulling the footer over the last card) */}
+      <div className="pt-head-slot pt-head-slot-desktop">
+        <header className={`pt-smart-head ${sticky ? 'is-sticky' : ''}`} id="smart-head" data-sticky="auto">
         <div className="pt-head-row pt-dark">
           <div className="pt-wrap">
             <div className="pt-head-items-left">
@@ -108,10 +112,12 @@ export function Chrome({
             </div>
           </div>
         </div>
-      </header>
+        </header>
+      </div>
 
-      {/* mobile header (≤1024) */}
-      <div className={`pt-mobile-head ${sticky ? 'is-sticky' : ''}`} id="smart-head-mobile">
+      {/* mobile header (≤940) — same flow-slot pattern (48px reserved) */}
+      <div className="pt-head-slot pt-head-slot-mobile">
+        <div className={`pt-mobile-head ${sticky ? 'is-sticky' : ''}`} id="smart-head-mobile">
         <div className="pt-mobile-head-row pt-dark">
           <div className="pt-wrap">
             <button
@@ -139,6 +145,7 @@ export function Chrome({
             </a>
           </div>
         </div>
+      </div>
       </div>
 
       {/* off-canvas menu — live structure: .off-canvas > head (close + ts-logo) +

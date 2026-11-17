@@ -46,31 +46,31 @@
       "width": 430,
       "group": "mobile",
       "file": "full-page-430.png",
-      "docHeight": 6324
+      "docHeight": 6336
     },
     {
       "width": 414,
       "group": "mobile",
       "file": "full-page-414.png",
-      "docHeight": 6228
+      "docHeight": 6240
     },
     {
       "width": 390,
       "group": "mobile",
       "file": "full-page-390.png",
-      "docHeight": 6084
+      "docHeight": 6096
     },
     {
       "width": 375,
       "group": "mobile",
       "file": "full-page-375.png",
-      "docHeight": 5993
+      "docHeight": 6005
     },
     {
       "width": 360,
       "group": "mobile",
       "file": "full-page-360.png",
-      "docHeight": 5962
+      "docHeight": 5974
     }
   ],
   "base": "http://localhost:3000",
