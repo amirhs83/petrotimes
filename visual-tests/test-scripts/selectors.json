@@ -1,0 +1,406 @@
+{
+  "$comment": "Mapping: extraction selector (petrotimes-extraction/measurements/desktop/geometry-1920.json) -> implementation selector. Verified against live DOM 2026-11-15.",
+  "map": [
+    [
+      ".main-wrap",
+      "body"
+    ],
+    [
+      "#smart-head",
+      "#smart-head"
+    ],
+    [
+      "#smart-head .smart-head-row",
+      "#smart-head .pt-head-row"
+    ],
+    [
+      "#smart-head .inner",
+      "#smart-head .pt-wrap"
+    ],
+    [
+      "#smart-head .items.items-left",
+      "#smart-head .pt-head-items-left"
+    ],
+    [
+      "#smart-head .items.items-right",
+      "#smart-head .pt-head-items-right"
+    ],
+    [
+      "#smart-head .logo-link",
+      "#smart-head .pt-logo-link"
+    ],
+    [
+      "#smart-head .logo-image",
+      "#smart-head .pt-logo-img"
+    ],
+    [
+      "#smart-head .nav-wrap",
+      "#smart-head .pt-nav-wrap"
+    ],
+    [
+      "#smart-head .navigation-main",
+      "#smart-head .pt-navigation"
+    ],
+    [
+      "#smart-head .menu > li",
+      "#smart-head .pt-navigation > li:first-child"
+    ],
+    [
+      "#smart-head .menu > li > a",
+      "#smart-head .pt-navigation > li:first-child > a"
+    ],
+    [
+      "#smart-head .search-icon",
+      "#smart-head .pt-search-icon"
+    ],
+    [
+      "#smart-head .offcanvas-toggle",
+      "#smart-head .pt-offcanvas-toggle"
+    ],
+    [
+      ".hamburger-icon-a",
+      "#smart-head .pt-offcanvas-toggle .pt-hamburger"
+    ],
+    [
+      ".hamburger-icon-a .inner",
+      "#smart-head .pt-offcanvas-toggle .pt-hamburger .inner"
+    ],
+    [
+      "#smart-head-mobile",
+      "#smart-head-mobile"
+    ],
+    [
+      ".off-canvas",
+      "#off-canvas"
+    ],
+    [
+      ".off-canvas-head",
+      "#off-canvas .pt-offcanvas-head"
+    ],
+    [
+      ".off-canvas .ts-logo",
+      "#off-canvas .pt-offcanvas-head img"
+    ],
+    [
+      ".off-canvas-widgets",
+      "#off-canvas .pt-offcanvas-widgets"
+    ],
+    [
+      "[data-id=\"1c95847\"]",
+      ".pt-ticker-section"
+    ],
+    [
+      "[data-id=\"1c95847\"] iframe",
+      ".pt-ticker-section iframe"
+    ],
+    [
+      "[data-id=\"cedc57a\"]",
+      {
+        "union": [
+          ".pt-duo-hero .pt-block-wrap-mb"
+        ],
+        "trailing": 55
+      }
+    ],
+    [
+      "[data-id=\"cedc57a\"] .post-title",
+      ".pt-duo-hero .pt-post-title"
+    ],
+    [
+      "[data-id=\"cedc57a\"] .excerpt",
+      ".pt-duo-hero .pt-excerpt"
+    ],
+    [
+      "[data-id=\"cedc57a\"] .meta-item.date",
+      ".pt-duo-hero .pt-post-meta .meta-item.date"
+    ],
+    [
+      "[data-id=\"8316c3e\"]",
+      ".pt-duo-secondary article:nth-child(1)"
+    ],
+    [
+      "[data-id=\"8316c3e\"] .post-title",
+      ".pt-duo-secondary article:nth-child(1) .pt-post-title"
+    ],
+    [
+      "[data-id=\"8316c3e\"] .media",
+      ".pt-duo-secondary article:nth-child(1) .pt-media"
+    ],
+    [
+      "[data-id=\"53fa308\"]",
+      ".pt-tv-block"
+    ],
+    [
+      "[data-id=\"53fa308\"] .block-head",
+      ".pt-tv-block .pt-block-head"
+    ],
+    [
+      "[data-id=\"53fa308\"] .play-icon, [data-id=\"53fa308\"] .tsi-play",
+      ".pt-tv-block .pt-play-icon .pt-icon"
+    ],
+    [
+      "[data-id=\"c258178\"]",
+      ".pt-tv-playlist"
+    ],
+    [
+      "[data-id=\"c258178\"] article:first-child",
+      ".pt-tv-playlist article:first-child"
+    ],
+    [
+      "[data-id=\"c258178\"] .post-title",
+      ".pt-tv-playlist article:first-child .pt-post-title"
+    ],
+    [
+      "[data-id=\"c258178\"] .meta-item.date",
+      ".pt-tv-playlist article:first-child .meta-item.date"
+    ],
+    [
+      "[data-id=\"a11540e\"]",
+      ".pt-topnews-widget"
+    ],
+    [
+      "[data-id=\"a11540e\"] .block-head",
+      ".pt-topnews-widget .pt-block-head"
+    ],
+    [
+      "[data-id=\"a11540e\"] article",
+      ".pt-topnews-widget article"
+    ],
+    [
+      "[data-id=\"f46c34f\"]",
+      ".pt-topnews-items article:nth-child(1)"
+    ],
+    [
+      "[data-id=\"2b53655\"]",
+      ".pt-topnews-items article:nth-child(2)"
+    ],
+    [
+      "[data-id=\"ad71bc1\"]",
+      ".pt-topnews-items article:nth-child(3)"
+    ],
+    [
+      "[data-id=\"c074dc7\"]",
+      {
+        "union": [
+          ".pt-magazine"
+        ]
+      }
+    ],
+    [
+      "[data-id=\"c074dc7\"] .block-head",
+      ".pt-magazine .pt-block-head"
+    ],
+    [
+      "[data-id=\"d43218c\"]",
+      ".pt-feature-heading"
+    ],
+    [
+      "[data-id=\"c519aec\"]",
+      ".pt-feature-item .pt-rank"
+    ],
+    [
+      "[data-id=\"cdf7917\"]",
+      ".pt-feature-list article:first-child .pt-content"
+    ],
+    [
+      "[data-id=\"cdf7917\"] .post-title",
+      ".pt-feature-list article:first-child .pt-post-title"
+    ],
+    [
+      "[data-id=\"2a4da1e\"]",
+      {
+        "union": [
+          ".pt-social-widget"
+        ],
+        "trailing": 45
+      }
+    ],
+    [
+      "[data-id=\"2a4da1e\"] .block-head",
+      ".pt-social-widget .pt-block-head"
+    ],
+    [
+      "[data-id=\"9609692\"]",
+      "[data-testid=\"energy-section\"] .pt-newsletter"
+    ],
+    [
+      "[data-id=\"9609692\"] .subscribe-input, [data-id=\"9609692\"] input[type=\"email\"]",
+      "[data-testid=\"energy-section\"] .pt-newsletter input[type=\"email\"]"
+    ],
+    [
+      "[data-id=\"2517f37\"]",
+      {
+        "union": [
+          "[data-testid=\"energy-section\"] > .pt-block-head",
+          "[data-testid=\"energy-section\"] .pt-block-wrap-mb"
+        ],
+        "trailing": 55
+      }
+    ],
+    [
+      "[data-id=\"2517f37\"] .block-head",
+      "[data-testid=\"energy-section\"] .pt-block-head"
+    ],
+    [
+      "[data-id=\"2517f37\"] .post-title",
+      "[data-testid=\"energy-section\"] .pt-energy-main .pt-post-title"
+    ],
+    [
+      "[data-id=\"2517f37\"] .excerpt",
+      "[data-testid=\"energy-section\"] .pt-energy-main .pt-excerpt"
+    ],
+    [
+      "[data-id=\"ebc9ae9\"]",
+      ".pt-energy-subs article:nth-child(1)"
+    ],
+    [
+      "[data-id=\"4ed4320\"]",
+      ".pt-energy-subs article:nth-child(2)"
+    ],
+    [
+      "[data-id=\"1635d4c\"]",
+      ".pt-energy-grid article:nth-child(1)"
+    ],
+    [
+      "[data-id=\"5fabf63\"]",
+      ".pt-energy-grid article:nth-child(2)"
+    ],
+    [
+      "[data-id=\"4957a9a\"]",
+      ".pt-energy-grid article:nth-child(3)"
+    ],
+    [
+      "[data-id=\"41768b4\"]",
+      ".pt-advertise"
+    ],
+    [
+      "[data-id=\"98a37f7\"]",
+      {
+        "union": [
+          ".pt-advertise-col:nth-child(1) .pt-block-head",
+          ".pt-advertise-col:nth-child(1) .pt-advertise-card"
+        ],
+        "trailing": 55
+      }
+    ],
+    [
+      "[data-id=\"98a37f7\"] .block-head",
+      ".pt-advertise-col:nth-child(1) .pt-block-head"
+    ],
+    [
+      "[data-id=\"7719ff3\"]",
+      {
+        "union": [
+          ".pt-advertise-col:nth-child(2) .pt-advertise-card"
+        ],
+        "trailing": 55
+      }
+    ],
+    [
+      "[data-id=\"7719ff3\"] .post-title",
+      ".pt-advertise-col:nth-child(2) .pt-advertise-card .pt-post-title"
+    ],
+    [
+      ".elementor-7373",
+      ".pt-footer"
+    ],
+    [
+      "[data-id=\"4d82adf\"]",
+      ".pt-footer-col-about .pt-footer-about-heading"
+    ],
+    [
+      "[data-id=\"660d205\"]",
+      ".pt-footer-col-about .about-logo"
+    ],
+    [
+      "[data-id=\"b35aad9\"]",
+      ".pt-footer-col-about .about-text"
+    ],
+    [
+      "[data-id=\"24bcf41\"]",
+      ".pt-footer-col-about .about-email"
+    ],
+    [
+      "[data-id=\"42dbf9e\"], [data-id=\"42db0c1\"]",
+      ".pt-footer-col-about .about-social"
+    ],
+    [
+      "[data-id=\"3cb94db\"]",
+      ".pt-footer-col-popular .pt-footer-heading"
+    ],
+    [
+      "[data-id=\"0740360\"]",
+      {
+        "union": [
+          ".pt-footer-col-popular .pt-footer-posts"
+        ],
+        "trailing": 55
+      }
+    ],
+    [
+      "[data-id=\"0740360\"] .post-title",
+      ".pt-footer-col-popular article:first-child .pt-post-title"
+    ],
+    [
+      "[data-id=\"9da778c\"]",
+      ".pt-footer-col-latest .pt-footer-heading"
+    ],
+    [
+      "[data-id=\"85e7526\"]",
+      {
+        "union": [
+          ".pt-footer-col-latest .pt-footer-posts"
+        ],
+        "trailing": 55
+      }
+    ],
+    [
+      "[data-id=\"226a5f9\"]",
+      ".pt-footer-lower"
+    ],
+    [
+      "[data-id=\"774363e\"]",
+      ".pt-footer-copyright .copyright-text"
+    ],
+    [
+      ".search-modal-wrap",
+      ".pt-search-modal"
+    ],
+    [
+      "menu-item-1: 7372",
+      "#smart-head .pt-navigation > li:nth-child(1)"
+    ],
+    [
+      "menu-item-2: 6347",
+      "#smart-head .pt-navigation > li:nth-child(2)"
+    ],
+    [
+      "menu-item-3: 6348",
+      "#smart-head .pt-navigation > li:nth-child(3)"
+    ],
+    [
+      "menu-item-4: 6349",
+      "#smart-head .pt-navigation > li:nth-child(4)"
+    ],
+    [
+      "menu-item-5: 6350",
+      "#smart-head .pt-navigation > li:nth-child(5)"
+    ],
+    [
+      "menu-item-6: 6351",
+      "#smart-head .pt-navigation > li:nth-child(6)"
+    ],
+    [
+      "menu-item-7: 6244",
+      "#smart-head .pt-navigation > li:nth-child(7)"
+    ],
+    [
+      "menu-item-8: 231",
+      "#smart-head .pt-navigation > li:nth-child(8)"
+    ],
+    [
+      "menu-item-9: 6301",
+      "#smart-head .pt-navigation > li:nth-child(9)"
+    ]
+  ]
+}

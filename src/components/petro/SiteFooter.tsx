@@ -2,13 +2,14 @@ import type { FooterData } from '@/lib/wp';
 import { Icon, Icons } from './Primitives';
 import { SmallPostCard } from './PostCards';
 
-const ABOUT_ICONS: (keyof typeof Icons)[] = ['youtubePlay', 'instagram', 'telegram', 'twitter', 'facebook'];
+/* live DOM order (RTL renders first child rightmost): facebook → youtube */
+const ABOUT_ICONS: (keyof typeof Icons)[] = ['facebook', 'twitter', 'telegram', 'instagram', 'youtubePlay'];
 const ABOUT_HREFS = [
-  'https://youtube.com/@petrotimes_ir?si=LtuI-OvoSXzeA1FB',
-  'https://Instagram.com/Petrotimes.ir',
-  'https://t.me/petrotimes_ir',
-  'https://x.com/Petrotimes_ir',
   'https://www.facebook.com/share/15Yx3THCSY/?mibextid=LQQJ4d',
+  'https://x.com/Petrotimes_ir',
+  'https://t.me/petrotimes_ir',
+  'https://Instagram.com/Petrotimes.ir',
+  'https://youtube.com/@petrotimes_ir?si=LtuI-OvoSXzeA1FB',
 ];
 
 /**

@@ -1,17 +1,25 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import type { MenuItem } from '@/lib/wp';
+import type { MenuItem, Article, NewsletterData } from '@/lib/wp';
 import { Icon } from './Primitives';
 import { SmallPostCard } from './PostCards';
-import type { Article } from '@/lib/wp';
+import { NewsletterWidget } from './NewsletterWidget';
 
 /**
  * Site chrome: desktop header (sticky-smart), mobile header (≤1024),
- * off-canvas menu and fullscreen search modal — all interactivity of the
- * original SmartMag chrome reproduced.
+ * off-canvas menu (menu + What's Hot + newsletter) and fullscreen search
+ * modal — all interactivity of the original SmartMag chrome reproduced.
  */
-export function Chrome({ menu }: { menu: MenuItem[] }) {
+export function Chrome({
+  menu,
+  whatsHot,
+  newsletter,
+}: {
+  menu: MenuItem[];
+  whatsHot: Article[];
+  newsletter: NewsletterData;
+}) {
   const [offcanvasOpen, setOffcanvasOpen] = useState(false);
   const [searchOpen, setSearchOpen] = useState(false);
   const [sticky, setSticky] = useState(false);
@@ -144,8 +152,9 @@ export function Chrome({ menu }: { menu: MenuItem[] }) {
           <button type="button" className="pt-offcanvas-close" aria-label="Close Menu" onClick={() => setOffcanvasOpen(false)}>
             <Icon name="times" />
           </button>
-          { }
-          <img src="/assets/logos/logo-main-PAsset-3-1.png" alt="Petro Times" width={265} height={44} />
+          <a href="/" className="pt-offcanvas-logo" title="Petro Times" rel="home">
+            <img src="/assets/logos/logo-main-PAsset-3-1.png" alt="Petro Times" width={265} height={44} />
+          </a>
         </div>
         <div className="pt-offcanvas-content">
           <ul className="mobile-menu">
@@ -155,7 +164,7 @@ export function Chrome({ menu }: { menu: MenuItem[] }) {
               </li>
             ))}
           </ul>
-          <OffCanvasWidgets />
+          <OffCanvasWidgets whatsHot={whatsHot} newsletter={newsletter} />
         </div>
       </aside>
 
@@ -191,31 +200,10 @@ export function Chrome({ menu }: { menu: MenuItem[] }) {
   );
 }
 
-/* off-canvas bottom widgets: What's Hot (2 posts) + subscribe block,
-   matching the extracted off-canvas DOM (snapshot content) */
-function OffCanvasWidgets() {
-  const hot: Article[] = [
-    {
-      title: '۲۸ مرداد؛ روایتی کهنه از طمعی تازه',
-      url: 'https://petrotimes.ir/%db%b2%db%b8-%d9%85%d8%b1%d8%af%d8%a7%d8%af%d8%9b-%d8%b1%d9%88%d8%a7%db%8c%d8%aa%db%8c-%da%a9%d9%87%d9%86%d9%87-%d8%a7%d8%b2-%d8%b7%d9%85%d8%b9%db%8c-%d8%aa%d8%a7%d8%b2%d9%87/',
-      dateText: '۲۹ مرداد ۱۴۰۵ - ۱۵:۲۳',
-      category: null,
-      categoryUrl: null,
-      excerpt: null,
-      image: '/assets/images/44-150x94.jpg',
-      imageFull: '/assets/images/44.jpg',
-    },
-    {
-      title: 'پارس جنوبی، نه‌فقط برای امروز، فشارافزایی-تصمیمی برای ماندن',
-      url: 'https://petrotimes.ir/%d9%be%d8%a7%d8%b1%d8%b3-%d8%ac%d9%86%d9%88%d8%a8%db%8c%d8%8c-%d9%86%d9%87%d9%81%d9%82%d8%b7-%d8%a8%d8%b1%d8%a7%db%8c-%d8%a7%d9%85%d8%b1%d9%88%d8%b2%d8%8c-%d9%81%d8%b4%d8%a7%d8%b1%d8%a7%d9%81/',
-      dateText: '۲۹ مرداد ۱۴۰۵ - ۱۲:۳۰',
-      category: null,
-      categoryUrl: null,
-      excerpt: null,
-      image: '/assets/images/41-150x84.jpg',
-      imageFull: '/assets/images/41.jpg',
-    },
-  ];
+/* off-canvas bottom widgets: What's Hot (3 posts, 32px separators) +
+   subscribe block (6px frame) — reproduces the live off-canvas widgets
+   column (756.3px total). */
+function OffCanvasWidgets({ whatsHot, newsletter }: { whatsHot: Article[]; newsletter: NewsletterData }) {
   return (
     <div className="pt-offcanvas-widgets">
       <div className="pt-widget pt-whatshot">
@@ -223,10 +211,13 @@ function OffCanvasWidgets() {
           <h5 className="heading">What&apos;s Hot</h5>
         </div>
         <div className="pt-loop">
-          {hot.map((a) => (
+          {whatsHot.map((a) => (
             <SmallPostCard key={a.url} article={a} variant="dark" />
           ))}
         </div>
+      </div>
+      <div className="pt-newsletter-frame">
+        <NewsletterWidget data={newsletter} />
       </div>
     </div>
   );

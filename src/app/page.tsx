@@ -23,7 +23,7 @@ export default async function Home() {
 
   return (
     <>
-      <Chrome menu={data.header.menu} />
+      <Chrome menu={data.header.menu} whatsHot={s.offcanvas.whatsHot} newsletter={s.newsletter} />
 
       <div className="pt-ticker-section">
         <MarketTicker iframeUrl={data.ticker.iframeUrl} items={data.ticker.items} />

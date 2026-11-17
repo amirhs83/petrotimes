@@ -2,7 +2,16 @@ import type { HomepageData } from './types';
 import { getSnapshot } from './snapshot';
 import { fetchLiveHomepage } from './wordpress';
 
-export type { Article, FeatureArticle, HomepageData, MenuItem, SocialLink, TickerItem } from './types';
+export type {
+  Article,
+  FeatureArticle,
+  FooterData,
+  HomepageData,
+  MenuItem,
+  NewsletterData,
+  SocialLink,
+  TickerItem,
+} from './types';
 
 export type WpMode = 'snapshot' | 'live';
 

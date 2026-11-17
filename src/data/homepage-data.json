@@ -603,6 +603,40 @@
         }
       ],
       "copyright": "حق نشر © 2026 Petro Times"
+    },
+    "offcanvas": {
+      "whatsHot": [
+        {
+          "title": "۲۸ مرداد؛ روایتی کهنه از طمعی تازه",
+          "url": "https://petrotimes.ir/%db%b2%db%b8-%d9%85%d8%b1%d8%af%d8%a7%d8%af%d8%9b-%d8%b1%d9%88%d8%a7%db%8c%d8%aa%db%8c-%da%a9%d9%87%d9%86%d9%87-%d8%a7%d8%b2-%d8%b7%d9%85%d8%b9%db%8c-%d8%aa%d8%a7%d8%b2%d9%87/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۵:۲۳",
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "/assets/images/44-150x94.jpg",
+          "imageFull": "/assets/images/44.jpg"
+        },
+        {
+          "title": "پارس جنوبی، نه‌فقط برای امروز، فشارافزایی-تصمیمی برای ماندن",
+          "url": "https://petrotimes.ir/%d9%be%d8%a7%d8%b1%d8%b3-%d8%ac%d9%86%d9%88%d8%a8%db%8c%d8%8c-%d9%86%d9%87%d9%81%d9%82%d8%b7-%d8%a8%d8%b1%d8%a7%db%8c-%d8%a7%d9%85%d8%b1%d9%88%d8%b2%d8%8c-%d9%81%d8%b4%d8%a7%d8%b1%d8%a7%d9%81/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۵:۱۸",
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "/assets/images/41-150x84.jpg",
+          "imageFull": "/assets/images/41.jpg"
+        },
+        {
+          "title": "بازار نفت در آستانه شوک جدید",
+          "url": "https://petrotimes.ir/%d8%a8%d8%a7%d8%b2%d8%a7%d8%b1-%d9%86%d9%81%d8%aa-%d8%af%d8%b1-%d8%a2%d8%b3%d8%aa%d8%a7%d9%86%d9%87-%d8%b4%d9%88%da%a9-%d8%ac%d8%af%db%8c%d8%af/",
+          "dateText": "۲۹ مرداد ۱۴۰۵ - ۱۴:۴۰",
+          "category": null,
+          "categoryUrl": null,
+          "excerpt": null,
+          "image": "/assets/images/40-150x83.jpg",
+          "imageFull": "/assets/images/40.jpg"
+        }
+      ]
     }
   }
 }

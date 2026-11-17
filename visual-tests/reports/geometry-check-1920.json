@@ -1,0 +1,2542 @@
+{
+ "url": "http://localhost:3000",
+ "viewport": {
+  "w": 1920,
+  "h": 1080
+ },
+ "sampledAt": "2026-11-17T07:00:38.281Z",
+ "rows": [
+  {
+   "sel": ".main-wrap",
+   "present": true,
+   "expected": {
+    "x": 0,
+    "y": 0,
+    "w": 1920,
+    "h": 3746,
+    "docX": 0,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 0,
+    "docY": 0,
+    "h": 3692.421875,
+    "w": 1920,
+    "x": 0,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": -53.6,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 53.6,
+   "status": "FAIL"
+  },
+  {
+   "sel": "#smart-head",
+   "present": true,
+   "expected": {
+    "x": 0,
+    "y": 0,
+    "w": 1920,
+    "h": 63,
+    "docX": 0,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 0,
+    "docY": 0,
+    "h": 63,
+    "w": 1920,
+    "x": 0,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "#smart-head .smart-head-row",
+   "present": true,
+   "expected": {
+    "x": 0,
+    "y": 0,
+    "w": 1920,
+    "h": 63,
+    "docX": 0,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 0,
+    "docY": 0,
+    "h": 63,
+    "w": 1920,
+    "x": 0,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "#smart-head .inner",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 0,
+    "w": 1200,
+    "h": 63,
+    "docX": 360,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 0,
+    "h": 63,
+    "w": 1200,
+    "x": 360,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "#smart-head .items.items-left",
+   "present": true,
+   "expected": {
+    "x": 378.9,
+    "y": 0,
+    "w": 1181.1,
+    "h": 63,
+    "docX": 378.9,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 378.9375,
+    "docY": 0,
+    "h": 63,
+    "w": 1181.0625,
+    "x": 378.9375,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "#smart-head .items.items-right",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 0,
+    "w": 18.9,
+    "h": 63,
+    "docX": 360,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 0,
+    "h": 63,
+    "w": 18.9375,
+    "x": 360,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "#smart-head .logo-link",
+   "present": true,
+   "expected": {
+    "x": 1260.5,
+    "y": 0,
+    "w": 258.5,
+    "h": 63,
+    "docX": 1260.5,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 1260.5,
+    "docY": 0,
+    "h": 63,
+    "w": 258.5,
+    "x": 1260.5,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "#smart-head .logo-image",
+   "present": true,
+   "expected": {
+    "x": 1260.5,
+    "y": 0,
+    "w": 258.5,
+    "h": 63,
+    "docX": 1260.5,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 1260.5,
+    "docY": 0,
+    "h": 63,
+    "w": 258.5,
+    "x": 1260.5,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "#smart-head .nav-wrap",
+   "present": true,
+   "expected": {
+    "x": 393.9,
+    "y": 0,
+    "w": 831.7,
+    "h": 63,
+    "docX": 393.9,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 393.9375,
+    "docY": 0,
+    "h": 63,
+    "w": 831.5625,
+    "x": 393.9375,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": -0.1
+   },
+   "maxAbs": 0.1,
+   "status": "PASS"
+  },
+  {
+   "sel": "#smart-head .navigation-main",
+   "present": true,
+   "expected": {
+    "x": 393.9,
+    "y": 0,
+    "w": 831.7,
+    "h": 63,
+    "docX": 393.9,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 393.9375,
+    "docY": 0,
+    "h": 63,
+    "w": 831.5625,
+    "x": 393.9375,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": -0.1
+   },
+   "maxAbs": 0.1,
+   "status": "PASS"
+  },
+  {
+   "sel": "#smart-head .menu > li",
+   "present": true,
+   "expected": {
+    "x": 1118.4,
+    "y": 0,
+    "w": 107.1,
+    "h": 63,
+    "docX": 1118.4,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 1118.390625,
+    "docY": 0,
+    "h": 63,
+    "w": 107.109375,
+    "x": 1118.390625,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "#smart-head .menu > li > a",
+   "present": true,
+   "expected": {
+    "x": 1118.4,
+    "y": 0,
+    "w": 107.1,
+    "h": 63,
+    "docX": 1118.4,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 1118.390625,
+    "docY": 0,
+    "h": 63,
+    "w": 107.109375,
+    "x": 1118.390625,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "#smart-head .search-icon",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 9,
+    "w": 18.9,
+    "h": 45,
+    "docX": 360,
+    "docY": 9
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 9,
+    "h": 45,
+    "w": 18.9375,
+    "x": 360,
+    "y": 9
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "#smart-head .offcanvas-toggle",
+   "present": true,
+   "expected": {
+    "x": 1534,
+    "y": 9,
+    "w": 26,
+    "h": 45,
+    "docX": 1534,
+    "docY": 9
+   },
+   "actual": {
+    "docX": 1534,
+    "docY": 9,
+    "h": 45,
+    "w": 26,
+    "x": 1534,
+    "y": 9
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": ".hamburger-icon-a",
+   "present": true,
+   "expected": {
+    "x": 1534,
+    "y": 23,
+    "w": 26,
+    "h": 17,
+    "docX": 1534,
+    "docY": 23
+   },
+   "actual": {
+    "docX": 1534,
+    "docY": 23,
+    "h": 17,
+    "w": 26,
+    "x": 1534,
+    "y": 23
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": ".hamburger-icon-a .inner",
+   "present": true,
+   "expected": {
+    "x": 1540,
+    "y": 37,
+    "w": 20,
+    "h": 3,
+    "docX": 1540,
+    "docY": 37
+   },
+   "actual": {
+    "docX": 1540,
+    "docY": 37,
+    "h": 3,
+    "w": 20,
+    "x": 1540,
+    "y": 37
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "#smart-head-mobile",
+   "present": true,
+   "expected": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "docX": 0,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 0,
+    "docY": 0,
+    "h": 0,
+    "w": 0,
+    "x": 0,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": ".off-canvas",
+   "present": true,
+   "expected": {
+    "x": 1920,
+    "y": 0,
+    "w": 370,
+    "h": 1080,
+    "docX": 1920,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 1920,
+    "docY": 0,
+    "h": 1080,
+    "w": 370,
+    "x": 1920,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": ".off-canvas-head",
+   "present": true,
+   "expected": {
+    "x": 1920,
+    "y": 0,
+    "w": 370,
+    "h": 82.1,
+    "docX": 1920,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 1920,
+    "docY": 0,
+    "h": 82.09375,
+    "w": 370,
+    "x": 1920,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": ".off-canvas .ts-logo",
+   "present": true,
+   "expected": {
+    "x": 1945,
+    "y": 38,
+    "w": 320,
+    "h": 44.1,
+    "docX": 1945,
+    "docY": 38
+   },
+   "actual": {
+    "docX": 2000,
+    "docY": 38,
+    "h": 44.09375,
+    "w": 265,
+    "x": 2000,
+    "y": 38
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 55,
+    "w": -55
+   },
+   "maxAbs": 55,
+   "status": "FAIL"
+  },
+  {
+   "sel": ".off-canvas-widgets",
+   "present": true,
+   "expected": {
+    "x": 1945,
+    "y": 162.1,
+    "w": 320,
+    "h": 756.3,
+    "docX": 1945,
+    "docY": 162.1
+   },
+   "actual": {
+    "docX": 1945,
+    "docY": 618.09375,
+    "h": 776.625,
+    "w": 320,
+    "x": 1945,
+    "y": 618.09375
+   },
+   "delta": {
+    "docY": 456,
+    "h": 20.3,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 456,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"1c95847\"]",
+   "present": true,
+   "expected": {
+    "x": 0,
+    "y": 63,
+    "w": 1920,
+    "h": 45,
+    "docX": 0,
+    "docY": 63
+   },
+   "actual": {
+    "docX": 0,
+    "docY": 63,
+    "h": 45,
+    "w": 1920,
+    "x": 0,
+    "y": 63
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"1c95847\"] iframe",
+   "present": true,
+   "expected": {
+    "x": 0,
+    "y": 63,
+    "w": 1920,
+    "h": 38,
+    "docX": 0,
+    "docY": 63
+   },
+   "actual": {
+    "docX": 0,
+    "docY": 63,
+    "h": 38,
+    "w": 1920,
+    "x": 0,
+    "y": 63
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"cedc57a\"]",
+   "present": true,
+   "expected": {
+    "x": 1176,
+    "y": 108,
+    "w": 384,
+    "h": 461.6,
+    "docX": 1176,
+    "docY": 108
+   },
+   "actual": {
+    "docX": 1176,
+    "docY": 108,
+    "h": 406.59375,
+    "w": 384,
+    "x": 1176,
+    "y": 108
+   },
+   "delta": {
+    "docY": 0,
+    "h": -55,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 55,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"cedc57a\"] .post-title",
+   "present": true,
+   "expected": {
+    "x": 1176,
+    "y": 340,
+    "w": 384,
+    "h": 57.1,
+    "docX": 1176,
+    "docY": 340
+   },
+   "actual": {
+    "docX": 1176,
+    "docY": 340,
+    "h": 57.09375,
+    "w": 384,
+    "x": 1176,
+    "y": 340
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"cedc57a\"] .excerpt",
+   "present": true,
+   "expected": {
+    "x": 1176,
+    "y": 440.6,
+    "w": 384,
+    "h": 48,
+    "docX": 1176,
+    "docY": 440.6
+   },
+   "actual": {
+    "docX": 1176,
+    "docY": 440.59375,
+    "h": 48,
+    "w": 384,
+    "x": 1176,
+    "y": 440.59375
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"cedc57a\"] .meta-item.date",
+   "present": true,
+   "expected": {
+    "x": 1390.9,
+    "y": 409.1,
+    "w": 116.3,
+    "h": 13,
+    "docX": 1390.9,
+    "docY": 409.1
+   },
+   "actual": {
+    "docX": 1393.34375,
+    "docY": 409.09375,
+    "h": 13,
+    "w": 116.34375,
+    "x": 1393.34375,
+    "y": 409.09375
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 2.4,
+    "w": 0
+   },
+   "maxAbs": 2.4,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"8316c3e\"]",
+   "present": true,
+   "expected": {
+    "x": 772,
+    "y": 108,
+    "w": 384,
+    "h": 76,
+    "docX": 772,
+    "docY": 108
+   },
+   "actual": {
+    "docX": 772,
+    "docY": 108,
+    "h": 75.984375,
+    "w": 384,
+    "x": 772,
+    "y": 108
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"8316c3e\"] .post-title",
+   "present": true,
+   "expected": {
+    "x": 772,
+    "y": 110,
+    "w": 256,
+    "h": 42.9,
+    "docX": 772,
+    "docY": 110
+   },
+   "actual": {
+    "docX": 772,
+    "docY": 110,
+    "h": 42.875,
+    "w": 256,
+    "x": 772,
+    "y": 110
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"8316c3e\"] .media",
+   "present": true,
+   "expected": {
+    "x": 1046,
+    "y": 108,
+    "w": 110,
+    "h": 76,
+    "docX": 1046,
+    "docY": 108
+   },
+   "actual": {
+    "docX": 1046,
+    "docY": 108,
+    "h": 75.984375,
+    "w": 110,
+    "x": 1046,
+    "y": 108
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"53fa308\"]",
+   "present": true,
+   "expected": {
+    "x": 772,
+    "y": 569.6,
+    "w": 788,
+    "h": 652,
+    "docX": 772,
+    "docY": 569.6
+   },
+   "actual": {
+    "docX": 772,
+    "docY": 569.59375,
+    "h": 652,
+    "w": 788,
+    "x": 772,
+    "y": 569.59375
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"53fa308\"] .block-head",
+   "present": true,
+   "expected": {
+    "x": 772,
+    "y": 569.6,
+    "w": 788,
+    "h": 33,
+    "docX": 772,
+    "docY": 569.6
+   },
+   "actual": {
+    "docX": 772,
+    "docY": 569.59375,
+    "h": 33,
+    "w": 788,
+    "x": 772,
+    "y": 569.59375
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"53fa308\"] .play-icon, [data-id=\"53fa308\"] .tsi-play",
+   "present": true,
+   "expected": {
+    "x": 1161.3,
+    "y": 916.8,
+    "w": 9.5,
+    "h": 18.6,
+    "docX": 1161.3,
+    "docY": 916.8
+   },
+   "actual": {
+    "docX": 1157.65625,
+    "docY": 916.78125,
+    "h": 18.625,
+    "w": 14.703125,
+    "x": 1157.65625,
+    "y": 916.78125
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": -3.6,
+    "w": 5.2
+   },
+   "maxAbs": 5.2,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"c258178\"]",
+   "present": true,
+   "expected": {
+    "x": 772,
+    "y": 1221.6,
+    "w": 788,
+    "h": 501.2,
+    "docX": 772,
+    "docY": 1221.6
+   },
+   "actual": {
+    "docX": 772,
+    "docY": 1221.59375,
+    "h": 501.140625,
+    "w": 788,
+    "x": 772,
+    "y": 1221.59375
+   },
+   "delta": {
+    "docY": 0,
+    "h": -0.1,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0.1,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"c258178\"] article:first-child",
+   "present": true,
+   "expected": {
+    "x": 807,
+    "y": 1246.6,
+    "w": 718,
+    "h": 76,
+    "docX": 807,
+    "docY": 1246.6
+   },
+   "actual": {
+    "docX": 807,
+    "docY": 1246.59375,
+    "h": 75.984375,
+    "w": 718,
+    "x": 807,
+    "y": 1246.59375
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"c258178\"] .post-title",
+   "present": true,
+   "expected": {
+    "x": 807,
+    "y": 1248.6,
+    "w": 590,
+    "h": 24.3,
+    "docX": 807,
+    "docY": 1248.6
+   },
+   "actual": {
+    "docX": 807,
+    "docY": 1248.59375,
+    "h": 24.296875,
+    "w": 590,
+    "x": 807,
+    "y": 1248.59375
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"c258178\"] .meta-item.date",
+   "present": true,
+   "expected": {
+    "x": 1296.2,
+    "y": 1284.9,
+    "w": 100.8,
+    "h": 13,
+    "docX": 1296.2,
+    "docY": 1284.9
+   },
+   "actual": {
+    "docX": 1296.203125,
+    "docY": 1284.890625,
+    "h": 13,
+    "w": 100.796875,
+    "x": 1296.203125,
+    "y": 1284.890625
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"a11540e\"]",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 108,
+    "w": 356,
+    "h": 139.1,
+    "docX": 360,
+    "docY": 108
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 108,
+    "h": 139.09375,
+    "w": 356,
+    "x": 360,
+    "y": 108
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"a11540e\"] .block-head",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 108,
+    "w": 356,
+    "h": 33,
+    "docX": 360,
+    "docY": 108
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 108,
+    "h": 33,
+    "w": 356,
+    "x": 360,
+    "y": 108
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"a11540e\"] article",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 169,
+    "w": 356,
+    "h": 78.1,
+    "docX": 360,
+    "docY": 169
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 169,
+    "h": 78.09375,
+    "w": 356,
+    "x": 360,
+    "y": 169
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"f46c34f\"]",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 262.1,
+    "w": 356,
+    "h": 78.1,
+    "docX": 360,
+    "docY": 262.1
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 262.09375,
+    "h": 78.09375,
+    "w": 356,
+    "x": 360,
+    "y": 262.09375
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"2b53655\"]",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 355.2,
+    "w": 356,
+    "h": 78.1,
+    "docX": 360,
+    "docY": 355.2
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 355.1875,
+    "h": 78.09375,
+    "w": 356,
+    "x": 360,
+    "y": 355.1875
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"ad71bc1\"]",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 448.3,
+    "w": 356,
+    "h": 78.1,
+    "docX": 360,
+    "docY": 448.3
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 448.28125,
+    "h": 78.09375,
+    "w": 356,
+    "x": 360,
+    "y": 448.28125
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"c074dc7\"]",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 546.4,
+    "w": 356,
+    "h": 568.6,
+    "docX": 360,
+    "docY": 546.4
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 546.375,
+    "h": 569.65625,
+    "w": 356,
+    "x": 360,
+    "y": 546.375
+   },
+   "delta": {
+    "docY": 0,
+    "h": 1.1,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 1.1,
+   "status": "NEAR"
+  },
+  {
+   "sel": "[data-id=\"c074dc7\"] .block-head",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 546.4,
+    "w": 356,
+    "h": 24,
+    "docX": 360,
+    "docY": 546.4
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 546.375,
+    "h": 24,
+    "w": 356,
+    "x": 360,
+    "y": 546.375
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"d43218c\"]",
+   "present": true,
+   "expected": {
+    "x": 572.3,
+    "y": 1115,
+    "w": 143.7,
+    "h": 63,
+    "docX": 572.3,
+    "docY": 1115
+   },
+   "actual": {
+    "docX": 572,
+    "docY": 1116.03125,
+    "h": 63,
+    "w": 144,
+    "x": 572,
+    "y": 1116.03125
+   },
+   "delta": {
+    "docY": 1,
+    "h": 0,
+    "docX": -0.3,
+    "w": 0.3
+   },
+   "maxAbs": 1,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"c519aec\"]",
+   "present": true,
+   "expected": {
+    "x": 687.5,
+    "y": 1198,
+    "w": 28.5,
+    "h": 28.5,
+    "docX": 687.5,
+    "docY": 1198
+   },
+   "actual": {
+    "docX": 687.5,
+    "docY": 1199.03125,
+    "h": 28.5,
+    "w": 28.5,
+    "x": 687.5,
+    "y": 1199.03125
+   },
+   "delta": {
+    "docY": 1,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 1,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"cdf7917\"]",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 1198,
+    "w": 318.5,
+    "h": 47.9,
+    "docX": 360,
+    "docY": 1198
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 1199.03125,
+    "h": 47.890625,
+    "w": 318.5,
+    "x": 360,
+    "y": 1199.03125
+   },
+   "delta": {
+    "docY": 1,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 1,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"cdf7917\"] .post-title",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 1198,
+    "w": 318.5,
+    "h": 20.4,
+    "docX": 360,
+    "docY": 1198
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 1199.03125,
+    "h": 20.390625,
+    "w": 318.5,
+    "x": 360,
+    "y": 1199.03125
+   },
+   "delta": {
+    "docY": 1,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 1,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"2a4da1e\"]",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 1757.8,
+    "w": 356,
+    "h": 222,
+    "docX": 360,
+    "docY": 1757.8
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 1757.734375,
+    "h": 178,
+    "w": 356,
+    "x": 360,
+    "y": 1757.734375
+   },
+   "delta": {
+    "docY": -0.1,
+    "h": 1,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 1,
+   "status": "PASS",
+   "trailing": 45
+  },
+  {
+   "sel": "[data-id=\"2a4da1e\"] .block-head",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 1757.8,
+    "w": 356,
+    "h": 24,
+    "docX": 360,
+    "docY": 1757.8
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 1757.734375,
+    "h": 24,
+    "w": 356,
+    "x": 360,
+    "y": 1757.734375
+   },
+   "delta": {
+    "docY": -0.1,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0.1,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"9609692\"]",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 1979.8,
+    "w": 356,
+    "h": 349,
+    "docX": 360,
+    "docY": 1979.8
+   },
+   "actual": {
+    "docX": 1951,
+    "docY": 1015.765625,
+    "h": 372.953125,
+    "w": 308,
+    "x": 1951,
+    "y": 1015.765625
+   },
+   "delta": {
+    "docY": -964,
+    "h": 24,
+    "docX": 1591,
+    "w": -48
+   },
+   "maxAbs": 1591,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"9609692\"] .subscribe-input, [data-id=\"9609692\"] input[type=\"email\"]",
+   "present": true,
+   "expected": {
+    "x": 395.9,
+    "y": 2137.9,
+    "w": 284.2,
+    "h": 44,
+    "docX": 395.9,
+    "docY": 2137.9
+   },
+   "actual": {
+    "docX": 1983.546875,
+    "docY": 1197.90625,
+    "h": 44,
+    "w": 242.90625,
+    "x": 1983.546875,
+    "y": 1197.90625
+   },
+   "delta": {
+    "docY": -940,
+    "h": 0,
+    "docX": 1587.6,
+    "w": -41.3
+   },
+   "maxAbs": 1587.6,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"2517f37\"]",
+   "present": true,
+   "expected": {
+    "x": 772,
+    "y": 1757.8,
+    "w": 788,
+    "h": 685.3,
+    "docX": 772,
+    "docY": 1757.8
+   },
+   "actual": {
+    "docX": 772,
+    "docY": 1757.734375,
+    "h": 631.296875,
+    "w": 788,
+    "x": 772,
+    "y": 1757.734375
+   },
+   "delta": {
+    "docY": -0.1,
+    "h": 27,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 27,
+   "status": "FAIL",
+   "trailing": 81
+  },
+  {
+   "sel": "[data-id=\"2517f37\"] .block-head",
+   "present": true,
+   "expected": {
+    "x": 772,
+    "y": 1757.8,
+    "w": 788,
+    "h": 24,
+    "docX": 772,
+    "docY": 1757.8
+   },
+   "actual": {
+    "docX": 772,
+    "docY": 1757.734375,
+    "h": 24,
+    "w": 788,
+    "x": 772,
+    "y": 1757.734375
+   },
+   "delta": {
+    "docY": -0.1,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0.1,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"2517f37\"] .post-title",
+   "present": true,
+   "expected": {
+    "x": 772,
+    "y": 2266,
+    "w": 788,
+    "h": 28.5,
+    "docX": 772,
+    "docY": 2266
+   },
+   "actual": {
+    "docX": 772,
+    "docY": 2266.984375,
+    "h": 28.546875,
+    "w": 788,
+    "x": 772,
+    "y": 2266.984375
+   },
+   "delta": {
+    "docY": 1,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 1,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"2517f37\"] .excerpt",
+   "present": true,
+   "expected": {
+    "x": 772,
+    "y": 2338.1,
+    "w": 788,
+    "h": 24,
+    "docX": 772,
+    "docY": 2338.1
+   },
+   "actual": {
+    "docX": 772,
+    "docY": 2339.03125,
+    "h": 24,
+    "w": 788,
+    "x": 772,
+    "y": 2339.03125
+   },
+   "delta": {
+    "docY": 0.9,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0.9,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"ebc9ae9\"]",
+   "present": true,
+   "expected": {
+    "x": 772,
+    "y": 2443.1,
+    "w": 788,
+    "h": 76,
+    "docX": 772,
+    "docY": 2443.1
+   },
+   "actual": {
+    "docX": 772,
+    "docY": 2444.03125,
+    "h": 75.984375,
+    "w": 788,
+    "x": 772,
+    "y": 2444.03125
+   },
+   "delta": {
+    "docY": 0.9,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0.9,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"4ed4320\"]",
+   "present": true,
+   "expected": {
+    "x": 772,
+    "y": 2539.1,
+    "w": 788,
+    "h": 78.1,
+    "docX": 772,
+    "docY": 2539.1
+   },
+   "actual": {
+    "docX": 772,
+    "docY": 2540.015625,
+    "h": 78.09375,
+    "w": 788,
+    "x": 772,
+    "y": 2540.015625
+   },
+   "delta": {
+    "docY": 0.9,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0.9,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"1635d4c\"]",
+   "present": true,
+   "expected": {
+    "x": 1310.7,
+    "y": 2647.2,
+    "w": 249.3,
+    "h": 194.7,
+    "docX": 1310.7,
+    "docY": 2647.2
+   },
+   "actual": {
+    "docX": 1310.671875,
+    "docY": 2648.109375,
+    "h": 194.921875,
+    "w": 249.328125,
+    "x": 1310.671875,
+    "y": 2648.109375
+   },
+   "delta": {
+    "docY": 0.9,
+    "h": 0.2,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0.9,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"5fabf63\"]",
+   "present": true,
+   "expected": {
+    "x": 1041.3,
+    "y": 2647.2,
+    "w": 249.3,
+    "h": 194.7,
+    "docX": 1041.3,
+    "docY": 2647.2
+   },
+   "actual": {
+    "docX": 1041.34375,
+    "docY": 2648.109375,
+    "h": 194.921875,
+    "w": 249.328125,
+    "x": 1041.34375,
+    "y": 2648.109375
+   },
+   "delta": {
+    "docY": 0.9,
+    "h": 0.2,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0.9,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"4957a9a\"]",
+   "present": true,
+   "expected": {
+    "x": 772,
+    "y": 2647.2,
+    "w": 249.3,
+    "h": 194.7,
+    "docX": 772,
+    "docY": 2647.2
+   },
+   "actual": {
+    "docX": 772.015625,
+    "docY": 2648.109375,
+    "h": 194.921875,
+    "w": 249.328125,
+    "x": 772.015625,
+    "y": 2648.109375
+   },
+   "delta": {
+    "docY": 0.9,
+    "h": 0.2,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0.9,
+   "status": "PASS"
+  },
+  {
+   "sel": "[data-id=\"41768b4\"]",
+   "present": true,
+   "expected": {
+    "x": 0,
+    "y": 2864.9,
+    "w": 1920,
+    "h": 317.8,
+    "docX": 0,
+    "docY": 2864.9
+   },
+   "actual": {
+    "docX": 0,
+    "docY": 2811.328125,
+    "h": 317.828125,
+    "w": 1920,
+    "x": 0,
+    "y": 2811.328125
+   },
+   "delta": {
+    "docY": -53.6,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 53.6,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"98a37f7\"]",
+   "present": true,
+   "expected": {
+    "x": 1344,
+    "y": 2874.9,
+    "w": 231,
+    "h": 297.8,
+    "docX": 1344,
+    "docY": 2874.9
+   },
+   "actual": {
+    "docX": 1344,
+    "docY": 2821.328125,
+    "h": 242.828125,
+    "w": 231,
+    "x": 1344,
+    "y": 2821.328125
+   },
+   "delta": {
+    "docY": -53.6,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 53.6,
+   "status": "FAIL",
+   "trailing": 55
+  },
+  {
+   "sel": "[data-id=\"98a37f7\"] .block-head",
+   "present": true,
+   "expected": {
+    "x": 1344,
+    "y": 2874.9,
+    "w": 231,
+    "h": 24,
+    "docX": 1344,
+    "docY": 2874.9
+   },
+   "actual": {
+    "docX": 1344,
+    "docY": 2821.328125,
+    "h": 24,
+    "w": 231,
+    "x": 1344,
+    "y": 2821.328125
+   },
+   "delta": {
+    "docY": -53.6,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 53.6,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"7719ff3\"]",
+   "present": true,
+   "expected": {
+    "x": 1098,
+    "y": 2923.9,
+    "w": 231,
+    "h": 248.8,
+    "docX": 1098,
+    "docY": 2923.9
+   },
+   "actual": {
+    "docX": 1098,
+    "docY": 2870.328125,
+    "h": 193.828125,
+    "w": 231,
+    "x": 1098,
+    "y": 2870.328125
+   },
+   "delta": {
+    "docY": -53.6,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 53.6,
+   "status": "FAIL",
+   "trailing": 55
+  },
+  {
+   "sel": "[data-id=\"7719ff3\"] .post-title",
+   "present": true,
+   "expected": {
+    "x": 1098,
+    "y": 3069.8,
+    "w": 231,
+    "h": 20.4,
+    "docX": 1098,
+    "docY": 3069.8
+   },
+   "actual": {
+    "docX": 1098,
+    "docY": 3016.265625,
+    "h": 20.390625,
+    "w": 231,
+    "x": 1098,
+    "y": 3016.265625
+   },
+   "delta": {
+    "docY": -53.5,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 53.5,
+   "status": "FAIL"
+  },
+  {
+   "sel": ".elementor-7373",
+   "present": true,
+   "expected": {
+    "x": 0,
+    "y": 3202.7,
+    "w": 1920,
+    "h": 543.3,
+    "docX": 0,
+    "docY": 3202.7
+   },
+   "actual": {
+    "docX": 0,
+    "docY": 3149.15625,
+    "h": 543.265625,
+    "w": 1920,
+    "x": 0,
+    "y": 3149.15625
+   },
+   "delta": {
+    "docY": -53.5,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 53.5,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"4d82adf\"]",
+   "present": true,
+   "expected": {
+    "x": 1236,
+    "y": 3222.7,
+    "w": 324,
+    "h": 21,
+    "docX": 1236,
+    "docY": 3222.7
+   },
+   "actual": {
+    "docX": 1235.6875,
+    "docY": 3169.15625,
+    "h": 21,
+    "w": 324,
+    "x": 1235.6875,
+    "y": 3169.15625
+   },
+   "delta": {
+    "docY": -53.5,
+    "h": 0,
+    "docX": -0.3,
+    "w": 0
+   },
+   "maxAbs": 53.5,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"660d205\"]",
+   "present": true,
+   "expected": {
+    "x": 1236,
+    "y": 3263.7,
+    "w": 324,
+    "h": 37.7,
+    "docX": 1236,
+    "docY": 3263.7
+   },
+   "actual": {
+    "docX": 1235.6875,
+    "docY": 3210.15625,
+    "h": 37.75,
+    "w": 324,
+    "x": 1235.6875,
+    "y": 3210.15625
+   },
+   "delta": {
+    "docY": -53.5,
+    "h": 0,
+    "docX": -0.3,
+    "w": 0
+   },
+   "maxAbs": 53.5,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"b35aad9\"]",
+   "present": true,
+   "expected": {
+    "x": 1236,
+    "y": 3321.5,
+    "w": 324,
+    "h": 63,
+    "docX": 1236,
+    "docY": 3321.5
+   },
+   "actual": {
+    "docX": 1235.6875,
+    "docY": 3267.90625,
+    "h": 63,
+    "w": 324,
+    "x": 1235.6875,
+    "y": 3267.90625
+   },
+   "delta": {
+    "docY": -53.6,
+    "h": 0,
+    "docX": -0.3,
+    "w": 0
+   },
+   "maxAbs": 53.6,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"24bcf41\"]",
+   "present": true,
+   "expected": {
+    "x": 1236,
+    "y": 3404.5,
+    "w": 324,
+    "h": 21,
+    "docX": 1236,
+    "docY": 3404.5
+   },
+   "actual": {
+    "docX": 1235.6875,
+    "docY": 3350.90625,
+    "h": 21,
+    "w": 324,
+    "x": 1235.6875,
+    "y": 3350.90625
+   },
+   "delta": {
+    "docY": -53.6,
+    "h": 0,
+    "docX": -0.3,
+    "w": 0
+   },
+   "maxAbs": 53.6,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"42dbf9e\"], [data-id=\"42db0c1\"]",
+   "present": true,
+   "expected": {
+    "x": 1235.7,
+    "y": 3445.5,
+    "w": 324.3,
+    "h": 38.4,
+    "docX": 1235.7,
+    "docY": 3445.5
+   },
+   "actual": {
+    "docX": 1235.6875,
+    "docY": 3391.90625,
+    "h": 38.390625,
+    "w": 324,
+    "x": 1235.6875,
+    "y": 3391.90625
+   },
+   "delta": {
+    "docY": -53.6,
+    "h": 0,
+    "docX": 0,
+    "w": -0.3
+   },
+   "maxAbs": 53.6,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"3cb94db\"]",
+   "present": true,
+   "expected": {
+    "x": 801.3,
+    "y": 3202.7,
+    "w": 398.7,
+    "h": 41,
+    "docX": 801.3,
+    "docY": 3202.7
+   },
+   "actual": {
+    "docX": 801,
+    "docY": 3149.15625,
+    "h": 41,
+    "w": 398.6875,
+    "x": 801,
+    "y": 3149.15625
+   },
+   "delta": {
+    "docY": -53.5,
+    "h": 0,
+    "docX": -0.3,
+    "w": 0
+   },
+   "maxAbs": 53.5,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"0740360\"]",
+   "present": true,
+   "expected": {
+    "x": 801.3,
+    "y": 3243.7,
+    "w": 398.7,
+    "h": 461.3,
+    "docX": 801.3,
+    "docY": 3243.7
+   },
+   "actual": {
+    "docX": 801,
+    "docY": 3190.15625,
+    "h": 406.265625,
+    "w": 398.6875,
+    "x": 801,
+    "y": 3190.15625
+   },
+   "delta": {
+    "docY": -53.5,
+    "h": 0,
+    "docX": -0.3,
+    "w": 0
+   },
+   "maxAbs": 53.5,
+   "status": "FAIL",
+   "trailing": 55
+  },
+  {
+   "sel": "[data-id=\"0740360\"] .post-title",
+   "present": true,
+   "expected": {
+    "x": 801.3,
+    "y": 3245.7,
+    "w": 270.7,
+    "h": 48.6,
+    "docX": 801.3,
+    "docY": 3245.7
+   },
+   "actual": {
+    "docX": 801,
+    "docY": 3192.15625,
+    "h": 48.59375,
+    "w": 270.6875,
+    "x": 801,
+    "y": 3192.15625
+   },
+   "delta": {
+    "docY": -53.5,
+    "h": 0,
+    "docX": -0.3,
+    "w": 0
+   },
+   "maxAbs": 53.5,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"9da778c\"]",
+   "present": true,
+   "expected": {
+    "x": 368.3,
+    "y": 3202.7,
+    "w": 397,
+    "h": 41,
+    "docX": 368.3,
+    "docY": 3202.7
+   },
+   "actual": {
+    "docX": 368,
+    "docY": 3149.15625,
+    "h": 41,
+    "w": 397,
+    "x": 368,
+    "y": 3149.15625
+   },
+   "delta": {
+    "docY": -53.5,
+    "h": 0,
+    "docX": -0.3,
+    "w": 0
+   },
+   "maxAbs": 53.5,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"85e7526\"]",
+   "present": true,
+   "expected": {
+    "x": 368.3,
+    "y": 3243.7,
+    "w": 397,
+    "h": 459.2,
+    "docX": 368.3,
+    "docY": 3243.7
+   },
+   "actual": {
+    "docX": 368,
+    "docY": 3190.15625,
+    "h": 404.15625,
+    "w": 397,
+    "x": 368,
+    "y": 3190.15625
+   },
+   "delta": {
+    "docY": -53.5,
+    "h": 0,
+    "docX": -0.3,
+    "w": 0
+   },
+   "maxAbs": 53.5,
+   "status": "FAIL",
+   "trailing": 55
+  },
+  {
+   "sel": "[data-id=\"226a5f9\"]",
+   "present": true,
+   "expected": {
+    "x": 0,
+    "y": 3705,
+    "w": 1920,
+    "h": 41,
+    "docX": 0,
+    "docY": 3705
+   },
+   "actual": {
+    "docX": 0,
+    "docY": 3651.421875,
+    "h": 41,
+    "w": 1920,
+    "x": 0,
+    "y": 3651.421875
+   },
+   "delta": {
+    "docY": -53.6,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 53.6,
+   "status": "FAIL"
+  },
+  {
+   "sel": "[data-id=\"774363e\"]",
+   "present": true,
+   "expected": {
+    "x": 360,
+    "y": 3715,
+    "w": 1200,
+    "h": 21,
+    "docX": 360,
+    "docY": 3715
+   },
+   "actual": {
+    "docX": 360,
+    "docY": 3661.421875,
+    "h": 21,
+    "w": 1200,
+    "x": 360,
+    "y": 3661.421875
+   },
+   "delta": {
+    "docY": -53.6,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 53.6,
+   "status": "FAIL"
+  },
+  {
+   "sel": ".search-modal-wrap",
+   "present": true,
+   "expected": {
+    "x": 0,
+    "y": 0,
+    "w": 0,
+    "h": 0,
+    "docX": 0,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 0,
+    "docY": 0,
+    "h": 0,
+    "w": 0,
+    "x": 0,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "menu-item-1: 7372",
+   "present": true,
+   "expected": {
+    "x": 1118.4,
+    "y": 0,
+    "w": 107.1,
+    "h": 63,
+    "docX": 1118.4,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 1118.390625,
+    "docY": 0,
+    "h": 63,
+    "w": 107.109375,
+    "x": 1118.390625,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "menu-item-2: 6347",
+   "present": true,
+   "expected": {
+    "x": 1052.1,
+    "y": 0,
+    "w": 66.3,
+    "h": 63,
+    "docX": 1052.1,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 1052.078125,
+    "docY": 0,
+    "h": 63,
+    "w": 66.3125,
+    "x": 1052.078125,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "menu-item-3: 6348",
+   "present": true,
+   "expected": {
+    "x": 995.1,
+    "y": 0,
+    "w": 57,
+    "h": 63,
+    "docX": 995.1,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 995.078125,
+    "docY": 0,
+    "h": 63,
+    "w": 57,
+    "x": 995.078125,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "menu-item-4: 6349",
+   "present": true,
+   "expected": {
+    "x": 884.5,
+    "y": 0,
+    "w": 110.5,
+    "h": 63,
+    "docX": 884.5,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 884.546875,
+    "docY": 0,
+    "h": 63,
+    "w": 110.53125,
+    "x": 884.546875,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "menu-item-5: 6350",
+   "present": true,
+   "expected": {
+    "x": 766,
+    "y": 0,
+    "w": 118.5,
+    "h": 63,
+    "docX": 766,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 766.046875,
+    "docY": 0,
+    "h": 63,
+    "w": 118.5,
+    "x": 766.046875,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "menu-item-6: 6351",
+   "present": true,
+   "expected": {
+    "x": 676.8,
+    "y": 0,
+    "w": 89.3,
+    "h": 63,
+    "docX": 676.8,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 676.796875,
+    "docY": 0,
+    "h": 63,
+    "w": 89.25,
+    "x": 676.796875,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "menu-item-7: 6244",
+   "present": true,
+   "expected": {
+    "x": 587.2,
+    "y": 0,
+    "w": 89.5,
+    "h": 63,
+    "docX": 587.2,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 587.296875,
+    "docY": 0,
+    "h": 63,
+    "w": 89.5,
+    "x": 587.296875,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0.1,
+    "w": 0
+   },
+   "maxAbs": 0.1,
+   "status": "PASS"
+  },
+  {
+   "sel": "menu-item-8: 231",
+   "present": true,
+   "expected": {
+    "x": 489.4,
+    "y": 0,
+    "w": 97.9,
+    "h": 63,
+    "docX": 489.4,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 489.4375,
+    "docY": 0,
+    "h": 63,
+    "w": 97.859375,
+    "x": 489.4375,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  },
+  {
+   "sel": "menu-item-9: 6301",
+   "present": true,
+   "expected": {
+    "x": 393.9,
+    "y": 0,
+    "w": 95.5,
+    "h": 63,
+    "docX": 393.9,
+    "docY": 0
+   },
+   "actual": {
+    "docX": 393.9375,
+    "docY": 0,
+    "h": 63,
+    "w": 95.5,
+    "x": 393.9375,
+    "y": 0
+   },
+   "delta": {
+    "docY": 0,
+    "h": 0,
+    "docX": 0,
+    "w": 0
+   },
+   "maxAbs": 0,
+   "status": "PASS"
+  }
+ ],
+ "counts": {
+  "PASS": 62,
+  "NEAR": 1,
+  "FAIL": 27,
+  "missing": 0
+ }
+}

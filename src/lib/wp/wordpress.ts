@@ -194,6 +194,7 @@ export async function fetchLiveHomepage(cfg: WpConfig): Promise<HomepageData> {
       advertise: { label: 'advertise', items: advertise },
       social: getSnapshotSocial(),
       newsletter: getSnapshotNewsletter(),
+      offcanvas: getSnapshotOffcanvas(),
       footer: {
         about: getSnapshotAbout(),
         popularHeading: 'بیشترین بازدید روز',
@@ -213,3 +214,4 @@ const getSnapshotTicker = () => snap.ticker;
 const getSnapshotSocial = () => snap.sections.social;
 const getSnapshotNewsletter = () => snap.sections.newsletter;
 const getSnapshotAbout = () => snap.sections.footer.about;
+const getSnapshotOffcanvas = () => snap.sections.offcanvas;

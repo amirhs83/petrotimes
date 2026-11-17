@@ -60,10 +60,22 @@
 }
 
 /* --------------------------------------------------------------- tokens --- */
+/* parsi-font plugin inline CSS (original-response.html) — verbatim mapping:
+   every heading and body is forced to Vazir regardless of the theme font vars */
+body {
+  font-family: Vazir !important;
+}
+h1, h2, h3, h4, h5, h6 {
+  font-family: Vazir !important;
+}
+
 :root {
   --body-font: 'Vazir', 'Public Sans', system-ui, sans-serif;
-  --ui-font: var(--body-font);
+  /* live customizer: --ui-font = Barlow chain (nav, dates, buttons) — h1..h6/body
+     are force-mapped to Vazir by the parsi-font inline CSS (!important) */
+  --ui-font: 'Barlow', system-ui, -apple-system, 'Segoe UI', Arial, sans-serif;
   --title-font: var(--ui-font);
+  --c-nav: var(--c-contrast-900);
 
   --text-size: 14px;
   --text-lh: 1.714;
@@ -151,6 +163,7 @@
   --c-rgba: 255, 255, 255;
   --c-links: var(--c-contrast);
   --c-headings: var(--c-contrast);
+  --c-nav: var(--c-contrast-900);
   --c-excerpts: var(--c-contrast-450);
   --c-post-meta: rgba(255, 255, 255, 0.65);
   --c-separator: var(--c-contrast-100);
@@ -268,35 +281,39 @@ a:hover { color: var(--c-a-hover); }
   width: 26px; height: 45px; align-self: center;
   color: rgb(240, 240, 240);
   flex-shrink: 0;
+  /* live: offcanvas-toggle margin-left 15px (inline-end in RTL) */
+  margin-inline-end: 15px;
 }
 .pt-offcanvas-toggle .pt-hamburger {
   display: inline-flex; position: relative;
   height: 17px; width: 26px;
 }
+/* live hamburger-icon-a: 3 bars 3px — top 26px, middle 26px, bottom 20px
+   right-aligned (RTL). .inner IS the bottom bar; top/mid via pseudos. */
 .pt-offcanvas-toggle .pt-hamburger .inner,
 .pt-offcanvas-toggle .pt-hamburger::before,
 .pt-offcanvas-toggle .pt-hamburger::after {
   content: "";
   position: absolute;
-  right: 3px;
-  width: 20px; height: 3px;
+  height: 3px;
   background: rgb(240, 240, 240);
 }
-.pt-offcanvas-toggle .pt-hamburger::before { top: 0; }
-.pt-offcanvas-toggle .pt-hamburger .inner { top: 7px; }
-.pt-offcanvas-toggle .pt-hamburger::after { top: 14px; }
+.pt-offcanvas-toggle .pt-hamburger .inner { top: 14px; right: 0; left: 6px; }
+.pt-offcanvas-toggle .pt-hamburger::before { top: -14px; right: 0; left: -6px; }
+.pt-offcanvas-toggle .pt-hamburger::after { top: -7px; right: 0; left: -6px; }
 .pt-offcanvas-toggle:hover { color: var(--c-main); }
 
 .pt-logo-link {
   display: flex; flex-shrink: 0; align-items: center;
   font-size: 0;
+  /* live: logo-link margin-left 35px, margin-right 0 */
   margin-inline-end: 35px;
-  margin-inline-start: 14px;
 }
 .pt-logo-link .pt-logo-img { width: 258.5px; height: 43px; padding: 10px 0; object-fit: contain; box-sizing: content-box; }
 
-.pt-nav-wrap { display: flex; align-items: stretch; min-width: 0; }
-.pt-navigation { display: flex; align-items: stretch; }
+/* live: .navigation{font-family:var(--ui-font);color:var(--c-nav)} + nav-wrap margin-left 15px */
+.pt-nav-wrap { display: flex; align-items: stretch; min-width: 0; margin-inline-end: 15px; }
+.pt-navigation { display: flex; align-items: stretch; font-family: var(--ui-font); color: var(--c-nav); }
 .pt-navigation.menu { display: flex; align-items: stretch; }
 .pt-navigation.menu > li { position: relative; display: flex; align-items: stretch; }
 .pt-navigation.menu > li > a {
@@ -313,7 +330,8 @@ a:hover { color: var(--c-a-hover); }
 .pt-search-icon {
   display: flex; align-items: center;
   padding-right: 5px;
-  height: 100%;
+  height: 45px;
+  align-self: center;
   color: var(--c-icons);
 }
 .pt-search-icon .pt-icon { font-size: 15px; }
@@ -371,13 +389,24 @@ a:hover { color: var(--c-a-hover); }
   content-visibility: auto;   /* skipped when closed — matches live (28-rtl.css) */
 }
 .pt-offcanvas.is-open { transform: translate3d(0, 0, 0); visibility: visible; }
+/* live: head 370×82.1 — logo 320 box (img 265×44.1) at y=38, close at top-left */
 .pt-offcanvas-head {
-  display: flex; align-items: center; justify-content: space-between;
-  padding: 38px 25px;
+  height: 82.1px;
+  padding: 38px 25px 0;
+  position: relative;
   flex-shrink: 0;
 }
-.pt-offcanvas-head .pt-offcanvas-close { color: #fff; font-size: 20px; display: flex; padding: 5px; }
-.pt-offcanvas-head img { width: 265px; height: 44px; object-fit: contain; }
+.pt-offcanvas-head .pt-offcanvas-close {
+  color: #fff; font-size: 20px;
+  position: absolute; top: 0; left: 0;
+  width: 29px; height: 26px;
+  display: flex; align-items: center; justify-content: center;
+}
+.pt-offcanvas-head .pt-offcanvas-logo {
+  display: block; width: 320px; height: 44.1px;
+  margin-inline: auto;
+}
+.pt-offcanvas-head img { width: 265px; height: 44.1px; object-fit: contain; }
 .pt-offcanvas-content { padding: 15px 25px 25px; flex: 1 1 auto; }
 .pt-offcanvas-content .mobile-menu {
   font-size: 16px; font-weight: 700;
@@ -393,12 +422,14 @@ a:hover { color: var(--c-a-hover); }
   line-height: 1.5;
   color: #ececec;
 }
-.pt-offcanvas-widgets { margin-top: 25px; }
-.pt-offcanvas-widgets .pt-block-head { margin-bottom: 20px; }
+/* live: widgets start 80px under the head; What's Hot (350.3) + 45 gap +
+   newsletter (361 incl 6px frame) = 756.3 */
+.pt-offcanvas-widgets { margin-top: 80px; }
+.pt-offcanvas-widgets .pt-block-head { margin-bottom: 28px; }
 .pt-offcanvas-widgets .pt-small-post + .pt-small-post {
-  margin-top: 15px; padding-top: 15px;
-  border-top: 1px solid rgba(255, 255, 255, 0.11);
+  margin-top: 32px;
 }
+.pt-offcanvas-widgets .pt-newsletter-frame { padding: 6px; margin-top: 45px; }
 
 /* ----------------------------------------------------------- search modal --- */
 .pt-search-modal {
@@ -564,7 +595,7 @@ a:hover { color: var(--c-a-hover); }
 /* live .post-meta-below is a plain block — the date stays an inline box (13px tall,
    baseline-aligned) instead of a stretched flex item */
 .pt-post-meta .meta-below { display: block; min-height: 18.5px; }
-.pt-post-meta .meta-item { display: inline-flex; align-items: center; }
+.pt-post-meta .meta-item { display: inline; }
 .pt-post-meta .meta-item::before {
   content: var(--p-meta-sep);
   padding: 0 4px;
@@ -776,13 +807,12 @@ a:hover { color: var(--c-a-hover); }
   max-width: 100%;
 }
 .pt-feature-list { display: flex; flex-direction: column; gap: 20px; }
-.pt-feature-item { display: flex; align-items: flex-start; }
+.pt-feature-item { display: flex; align-items: flex-start; gap: 9px; }
 .pt-feature-item .pt-rank {
-  width: 28px; height: 28px;
-  margin-left: 9px;
+  width: 28.5px; height: 28.5px;
   flex-shrink: 0;
 }
-.pt-feature-item .pt-rank img { width: 28px; height: 28px; display: block; }
+.pt-feature-item .pt-rank img { width: 28.5px; height: 28.5px; display: block; }
 .pt-feature-item .pt-content { min-width: 0; flex: 1; }
 .pt-feature-item .pt-post-title { font-size: 15px; font-weight: var(--title-fw-bold); margin: 0 0 9px; }
 .pt-feature-item .pt-post-meta a.post-cat-link { font-weight: 700; }
@@ -921,7 +951,7 @@ a:hover { color: var(--c-a-hover); }
   grid-template-columns: repeat(3, 1fr);
   gap: 20px;
 }
-.pt-energy-tile { margin: 4px; margin-bottom: var(--block-wrap-mb); }
+.pt-energy-tile { margin: 0; padding-bottom: 54.7px; }  /* live widget box = image + 55 trailing space */
 .pt-gallery-icon {
   --size: 44px;
   background: rgba(255, 255, 255, 0.92);
@@ -929,14 +959,15 @@ a:hover { color: var(--c-a-hover); }
   border: 0;
 }
 
-/* inter-section spacing (measured: 55px + 20px spacer; ads pulled up 52px) */
+/* inter-section spacing — live: topnews→energy gap, energy grid→advertise 23px */
 .pt-section-topnews { margin-bottom: 35px; }
-.pt-section-energy { margin-bottom: 75px; }
+.pt-section-energy { margin-bottom: 23px; }
 
 /* --------------------------------------------------------- advertise ------- */
+/* live: advertise section top = energy-grid bottom + 23px elementor spacing */
 .pt-advertise {
   display: flex; justify-content: center;
-  margin-top: -52px;
+  margin-top: 0;
   position: relative;
   z-index: 2;
 }
@@ -945,13 +976,12 @@ a:hover { color: var(--c-a-hover); }
   max-width: 1230px;
   display: flex;
   gap: 15px;
-  padding-inline: 18px;
   padding-block: 10px;
   align-items: flex-end;
 }
 .pt-advertise { margin-bottom: 20px; }
 .pt-advertise-col { width: 231px; flex-shrink: 0; }
-.pt-advertise .pt-block-head { --c-block: var(--c-contrast); }
+.pt-advertise .pt-block-head { --c-block: var(--c-contrast); margin-bottom: 25px; }
 .pt-advertise-card { margin-bottom: var(--block-wrap-mb); }
 .pt-advertise-card .pt-media { margin-bottom: 16px; }
 .pt-advertise-card .pt-post-title { font-size: 15px; font-weight: var(--title-fw-bold); }
@@ -963,7 +993,7 @@ a:hover { color: var(--c-a-hover); }
 .pt-footer .pt-container { max-width: 1236px; }
 .pt-footer-cols { display: flex; width: 100%; align-items: flex-start; }
 .pt-footer-col-about { width: 324px; margin-inline-start: auto; padding-top: 20px; }
-.pt-footer-col-popular { width: 399px; margin-inline-start: 36px; margin-inline-end: 36px; }
+.pt-footer-col-popular { width: 398.7px; margin-inline-start: 36px; margin-inline-end: 36px; }
 .pt-footer-col-latest { width: 397px; margin-inline-end: 8px; }
 
 .pt-footer-heading {
@@ -971,7 +1001,8 @@ a:hover { color: var(--c-a-hover); }
   font-size: 18px;
   font-weight: 600;
   line-height: 27px;
-  margin: 7px;
+  margin: 0;
+  padding-bottom: 14px;   /* live widget box 41px = 27 text + 14 spacing */
 }
 .pt-footer-about-heading {
   color: #ffffff;
@@ -982,7 +1013,7 @@ a:hover { color: var(--c-a-hover); }
   margin: 0 0 20px;
 }
 .pt-footer-col-about .about-logo { margin-bottom: 20px; text-align: right; }
-.pt-footer-col-about .about-logo img { width: 227px; height: 38px; object-fit: contain; }
+.pt-footer-col-about .about-logo img { width: 227px; height: auto; object-fit: contain; }
 .pt-footer-col-about .about-text {
   color: #b1b1b1;
   font-size: 14px;
@@ -994,18 +1025,21 @@ a:hover { color: var(--c-a-hover); }
 .pt-footer-col-about .about-email {
   color: #b1b1b1;
   font-size: 14px;
+  line-height: 21px;
   text-align: right;
   margin-bottom: 20px;
 }
 .pt-footer-col-about .about-email strong { color: #e6e6e6; }
+/* live: 5 service links 34.8×38.4, glyph 14px, 2px gap — facebook rightmost */
 .pt-footer-col-about .about-social { display: flex; justify-content: flex-start; margin-top: 20px; }
 .pt-footer-col-about .about-social a {
   color: #fafafa;
-  font-size: 24px;
-  display: flex; align-items: center; justify-content: center;
-  padding: 0 3px;
+  font-size: 14px;
+  display: inline-flex; align-items: center; justify-content: center;
+  width: 34.8px; height: 38.4px;
   margin-left: 2px;
 }
+.pt-footer-col-about .about-social a:last-child { margin-left: 0; }
 .pt-footer-col-about .about-social a:hover { color: rgba(255, 255, 255, 0.7); }
 
 .pt-footer-posts-wrap { margin-bottom: var(--block-wrap-mb); }
@@ -1033,15 +1067,18 @@ a:hover { color: var(--c-a-hover); }
 .pt-footer-copyright {
   background: #000;
   height: 41px;
-  display: flex; align-items: center; justify-content: center;
-  padding: 0 10px;
+  display: flex; align-items: center;
 }
+/* live: text block spans the 1200px wrap (x=360..1560), centered */
 .pt-footer-copyright .copyright-text {
   color: #a8a8a8;
   font-size: 14px;
   font-weight: 400;
   line-height: 21px;
   text-align: center;
+  width: var(--main-width);
+  max-width: 100%;
+  margin-inline: auto;
 }
 
 /* ---------------------------------------------------------- responsive ----- */
