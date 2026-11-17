@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import type { TickerItem } from '@/lib/wp';
+import type { TickerItem } from '@/lib/content';
 
 /**
  * Market data ticker — keeps the real embedded iframe (https://market.petrotimes.ir)

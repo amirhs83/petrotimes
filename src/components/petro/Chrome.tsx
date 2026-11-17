@@ -1,7 +1,7 @@
 'use client';
 
 import { useEffect, useRef, useState } from 'react';
-import type { MenuItem, Article, NewsletterData } from '@/lib/wp';
+import type { MenuItem, Article, NewsletterData } from '@/lib/content';
 import { Icon } from './Primitives';
 import { SmallPostCard } from './PostCards';
 import { NewsletterWidget } from './NewsletterWidget';

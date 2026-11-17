@@ -1,4 +1,4 @@
-import type { Article } from '@/lib/wp';
+import type { Article } from '@/lib/content';
 import { Icon } from './Primitives';
 import { HighlightsHero, SmallPostCard } from './PostCards';
 

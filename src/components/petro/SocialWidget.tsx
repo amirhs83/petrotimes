@@ -1,4 +1,4 @@
-import type { SocialLink } from '@/lib/wp';
+import type { SocialLink } from '@/lib/content';
 import { Icon, Icons } from './Primitives';
 
 const ICON_FOR: Record<SocialLink['network'], keyof typeof Icons> = {

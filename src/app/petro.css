@@ -1331,19 +1331,19 @@ a:hover { color: var(--c-a-hover); }
   .pt-energy-tile { margin: 0; padding: 0 0 45px; }      /* live tile box = media + 45 trailing */
   .pt-energy-tile .pt-media { margin: 0; }               /* live mobile: media flush (350 wide) */
 
-  /* baseline 390 anchors: heading text 5230 (energy edge 5166 → mt 62),
-     image1 5276, image2 = image1 + 240 (card 261 + col pull -21, live
-     article h=261 = media 197 + 16 + content 48 [title 20 + below 28]),
-     title2 text 5736, footer 5749 = title2 text + 13 → mb: card2 bottom
-     (5517+261=5778) + inner pb 45 → 5823 - 74 = 5749. The -126 value came
-     from a drifted live DOM and covered the last post title with the
-     footer (user-reported bug). */
-  .pt-advertise { margin-top: 62px; margin-bottom: -74px; }
+  /* baseline 390 advertise cards: image pitch 239, date VISIBLE under each
+     title (title ink bottom → next image top +9). The next card's image box
+     overlaps the date zone, so the date needs relative+z-index to paint on
+     top (matches baseline rendering). Footer must start clear BELOW the last
+     post content — no negative section margin (user-reported bug: the
+     negative margin let the footer cover the last post title/date). The
+     inner's 45px padding is the trailing block space before the footer. */
+  .pt-advertise { margin-top: 62px; }
   .pt-advertise-inner { flex-direction: column; gap: 0; padding-block: 0 45px; padding-inline: 20px; }
   .pt-advertise-col { width: 100%; }
-  .pt-advertise-col + .pt-advertise-col { margin-top: -21px; }
+  .pt-advertise-col + .pt-advertise-col { margin-top: -41px; }
   .pt-advertise-card { margin-bottom: 0; padding-bottom: 19px; }
-  .pt-advertise-card .pt-post-meta { display: none; }
+  .pt-advertise-card .pt-post-meta { position: relative; z-index: 2; }
   .pt-advertise-card .pt-post-title { margin-bottom: 9px; }
 
   /* social widget (live 390: grid end 4549 → head 4594 = 45 gap = sidebar

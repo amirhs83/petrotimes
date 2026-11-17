@@ -1,9 +1,14 @@
 /**
- * Shared data types for the Petro Times homepage data layer.
+ * Shared data types for the Petro Times homepage content layer.
  *
- * These shapes describe BOTH data sources:
- *  - the fixed homepage snapshot (src/data/homepage-data.json), and
- *  - the WordPress REST adapter (wordpress.ts `fetchLiveHomepage`).
+ * These shapes are the SINGLE SOURCE OF TRUTH for the content contract:
+ *  - the fixed local snapshot (src/data/homepage-data.json), and
+ *  - the remote REST adapter (remote.ts), which expects the exact JSON
+ *    documented in docs/API-CONTRACT.md.
+ *
+ * The backend that produces this JSON is implementation-agnostic — it may be
+ * written in any language (Node, Go, Python, PHP, .NET …) as long as the HTTP
+ * contract is honored. Nothing in this layer assumes a specific CMS.
  */
 
 /** One news article as rendered anywhere on the homepage. */
@@ -15,7 +20,7 @@ export interface Article {
   category: string | null;
   categoryUrl: string | null;
   excerpt: string | null;
-  /** Thumbnail used in cards (wp size 150/200/300). */
+  /** Thumbnail used in cards (small size variant). */
   image: string | null;
   /** Large variant for hero/TV overlays. */
   imageFull: string | null;

@@ -1,13 +1,14 @@
 'use client';
 
 import { useState } from 'react';
-import type { NewsletterData } from '@/lib/wp';
+import type { NewsletterData } from '@/lib/content';
 import { Icon } from './Primitives';
 
 /**
  * Newsletter widget — real form behavior: client-side email validation,
- * submission goes to /api/newsletter which proxies to the site's Contact
- * Form 7 endpoint when a WordPress backend is configured (WP_BASE_URL).
+ * submission goes to /api/newsletter which proxies to the external content
+ * backend when an upstream is configured (NEWSLETTER_API_URL or
+ * CONTENT_API_BASE_URL — any backend language, see docs/API-CONTRACT.md).
  * Without a backend the API answers 501 and the message is shown honestly.
  *
  * variant="sm" renders the SmartMag native off-canvas widget

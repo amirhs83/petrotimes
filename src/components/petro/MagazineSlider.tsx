@@ -1,7 +1,7 @@
 'use client';
 
 import { useCallback, useEffect, useRef, useState } from 'react';
-import type { Article } from '@/lib/wp';
+import type { Article } from '@/lib/content';
 import { CategoryChip, Icon } from './Primitives';
 
 /**

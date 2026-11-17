@@ -1,4 +1,4 @@
-import type { FooterData } from '@/lib/wp';
+import type { FooterData } from '@/lib/content';
 import { Icon, Icons } from './Primitives';
 import { SmallPostCard } from './PostCards';
 

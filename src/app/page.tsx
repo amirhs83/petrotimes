@@ -1,4 +1,4 @@
-import { getHomepageData } from '@/lib/wp';
+import { getHomepageData } from '@/lib/content';
 import { Chrome } from '@/components/petro/Chrome';
 import { MarketTicker } from '@/components/petro/MarketTicker';
 import { HighlightsHero, SmallPostCard } from '@/components/petro/PostCards';
@@ -12,7 +12,7 @@ import { AdvertiseRow } from '@/components/petro/AdvertiseRow';
 import { SiteFooter } from '@/components/petro/SiteFooter';
 
 /**
- * Petro Times homepage — assembled from the WordPress data layer.
+ * Petro Times homepage — assembled from the backend-agnostic content layer.
  * Section order and geometry reproduce the live capture (geometry-1920.json):
  * header 63 → ticker 45 → TOP NEWS (content 788 / sidebar 356) → ENERGY →
  * ADVERTISE (-52px offset) → footer 502 → copyright 41.

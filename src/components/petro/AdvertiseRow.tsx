@@ -1,4 +1,4 @@
-import type { Article } from '@/lib/wp';
+import type { Article } from '@/lib/content';
 
 /**
  * ADVERTISE row — 2 ad cards from the right inside a 1230px container

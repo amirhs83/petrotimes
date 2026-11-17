@@ -1,4 +1,4 @@
-import type { FeatureArticle } from '@/lib/wp';
+import type { FeatureArticle } from '@/lib/content';
 import { PostMeta } from './Primitives';
 
 /**

@@ -1,4 +1,4 @@
-import type { Article } from '@/lib/wp';
+import type { Article } from '@/lib/content';
 import { PostMeta } from './Primitives';
 import { Icon } from './Primitives';
 
