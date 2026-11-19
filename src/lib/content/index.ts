@@ -7,6 +7,7 @@ export type {
   FeatureArticle,
   FooterData,
   HomepageData,
+  MarketQuote,
   MenuItem,
   NewsletterData,
   SocialLink,

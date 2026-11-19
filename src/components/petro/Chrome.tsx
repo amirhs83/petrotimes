@@ -98,6 +98,11 @@ export function Chrome({
               </nav>
             </div>
             <div className="pt-head-items-right">
+              {/* Subscribe — the site's real newsletter capability (sidebar
+                  widget anchor); no fake checkout flow */}
+              <a href="#pt-newsletter" className="pt-head-subscribe">
+                Subscribe
+              </a>
               <a
                 href="#"
                 className="pt-search-icon"
@@ -115,7 +120,10 @@ export function Chrome({
         </header>
       </div>
 
-      {/* mobile header (≤940) — same flow-slot pattern (48px reserved) */}
+      {/* mobile header (≤940) — same flow-slot pattern (48px reserved,
+          42px at ≤767 per the client reference). The row is physically LTR:
+          reference order is menu + logo on the left, Subscribe + search on
+          the right, regardless of the RTL content direction. */}
       <div className="pt-head-slot pt-head-slot-mobile">
         <div className={`pt-mobile-head ${sticky ? 'is-sticky' : ''}`} id="smart-head-mobile">
         <div className="pt-mobile-head-row pt-dark">
@@ -132,17 +140,22 @@ export function Chrome({
               { }
               <img src="/assets/logos/logo-main-PAsset-3-1.png" alt="Petro Times" width={265} height={44} />
             </a>
-            <a
-              href="#"
-              className="pt-mobile-search"
-              aria-label="Search"
-              onClick={(e) => {
-                e.preventDefault();
-                setSearchOpen(true);
-              }}
-            >
-              <Icon name="search" />
-            </a>
+            <div className="pt-mobile-actions">
+              <a href="#pt-newsletter" className="pt-head-subscribe">
+                Subscribe
+              </a>
+              <a
+                href="#"
+                className="pt-mobile-search"
+                aria-label="Search"
+                onClick={(e) => {
+                  e.preventDefault();
+                  setSearchOpen(true);
+                }}
+              >
+                <Icon name="search" />
+              </a>
+            </div>
           </div>
         </div>
       </div>

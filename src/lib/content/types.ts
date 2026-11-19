@@ -64,6 +64,19 @@ export interface TickerItem {
   icon: string;
 }
 
+/**
+ * Live commodity quote for one ticker item, served by GET /api/market
+ * (server-side bridge to the project's real market data source).
+ * Values are the raw upstream strings ("3594.00", "+49.00", "1.39%") or
+ * null when the upstream publishes no value — never fabricated.
+ */
+export interface MarketQuote {
+  key: string;
+  price: string | null;
+  change: string | null;
+  percent: string | null;
+}
+
 /** Newsletter subscribe block (sidebar + off-canvas). */
 export interface NewsletterData {
   heading: string;

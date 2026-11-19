@@ -353,33 +353,90 @@ a:hover { color: var(--c-a-hover); }
 .pt-search-icon .pt-icon { font-size: 15px; }
 .pt-search-icon:hover { color: var(--c-main); }
 
+/* header Subscribe — shared by the desktop header and the mobile header.
+   Links to the site's REAL newsletter capability (#pt-newsletter sidebar
+   widget anchor) — no fake checkout flow was created. */
+.pt-head-subscribe {
+  display: inline-flex; align-items: center; justify-content: center;
+  background: #fff;
+  color: #111111;
+  font-family: var(--ui-font);
+  font-weight: 700;
+  text-decoration: none;
+  border-radius: 5px;
+  flex-shrink: 0;
+}
+.pt-head-items-right .pt-head-subscribe {
+  height: 34px;
+  padding: 0 18px;
+  font-size: 13.5px;
+  align-self: center;
+  /* mirror of the reference right group: Subscribe then the search icon */
+  margin-inline-end: 12px;
+}
+
 /* --------------------------------------------------------- mobile header --- */
+/* Client mobile reference (359×474): black 42px bar, PHYSICAL LTR order
+   [hamburger 15×12 @x12 | logo 103px] … [Subscribe 72×26 | search ~16px],
+   white glyphs, no decorative containers. direction:ltr keeps the reference
+   layout un-mirrored on the RTL page. Tablet (768–940): same design, 48px. */
 .pt-mobile-head { display: none; }
 .pt-mobile-head-row {
   background: #000;
-  color: #eee;
+  color: #fff;
   height: 48px;
   display: flex; align-items: center;
-  padding: 0 12px;
+  padding: 0 16px 0 12px;
   position: relative;
+  direction: ltr;
 }
 .pt-mobile-head-row .pt-wrap {
   width: 100%;
-  display: flex; align-items: center; justify-content: space-between;
+  display: flex; align-items: center;
 }
-.pt-mobile-search { color: #c0c0c0; font-size: 16px; display: flex; align-items: center; height: 48px; }
-.pt-mobile-logo { position: absolute; left: 50%; transform: translateX(-50%); height: 48px; display: flex; align-items: center; }
-.pt-mobile-logo img { height: 26px; width: auto; }
-.pt-mobile-toggle { color: #c0c0c0; display: flex; align-items: center; height: 48px; width: 40px; justify-content: flex-start; }
-.pt-mobile-toggle .pt-hamburger { display: inline-flex; position: relative; height: 14px; width: 22px; }
+.pt-mobile-toggle {
+  color: #fff;
+  display: flex; align-items: center; justify-content: flex-start;
+  /* border-box 43 = 14px padding + 15px bars; symmetric negative margins
+     collapse the flow width to 15px so the logo stays at the reference x
+     while the click target spans ~43px */
+  width: 43px; height: 100%;
+  padding: 0 14px;
+  margin: 0 -14px;
+  flex-shrink: 0;
+}
+.pt-mobile-toggle .pt-hamburger { display: inline-flex; position: relative; height: 12px; width: 15px; }
 .pt-mobile-toggle .pt-hamburger::before,
 .pt-mobile-toggle .pt-hamburger .inner,
 .pt-mobile-toggle .pt-hamburger::after {
-  content: ""; position: absolute; right: 0; width: 22px; height: 2px; background: currentColor;
+  content: ""; position: absolute; left: 0; width: 15px; height: 2px; background: currentColor;
 }
 .pt-mobile-toggle .pt-hamburger::before { top: 0; }
-.pt-mobile-toggle .pt-hamburger .inner { top: 6px; }
-.pt-mobile-toggle .pt-hamburger::after { top: 12px; }
+.pt-mobile-toggle .pt-hamburger .inner { top: 5px; }
+.pt-mobile-toggle .pt-hamburger::after { top: 10px; }
+.pt-mobile-logo {
+  display: flex; align-items: center;
+  flex-shrink: 0;
+  /* reference: hamburger ink ends x26 → logo ink starts x43 */
+  margin-left: 15px;
+}
+.pt-mobile-logo img { width: 103px; height: auto; display: block; }
+.pt-mobile-actions { margin-left: auto; display: flex; align-items: center; }
+.pt-mobile-head .pt-head-subscribe { width: 72px; height: 26px; font-size: 11px; }
+.pt-mobile-search {
+  color: #fff; font-size: 17px;
+  display: flex; align-items: center;
+  height: 100%;
+  /* reference subscribe→search ink gap ≈14px */
+  margin-left: 7px;
+  padding: 0 8px;
+  margin-right: -8px; /* keep the glyph at the reference x while the click
+                         target reaches toward the viewport edge */
+}
+@media (min-width: 768px) and (max-width: 940px) {
+  .pt-mobile-head .pt-head-subscribe { width: 84px; height: 29px; font-size: 12px; }
+  .pt-mobile-logo img { width: 124px; }
+}
 
 /* ------------------------------------------------------------- off-canvas --- */
 .pt-offcanvas-backdrop {
@@ -565,59 +622,105 @@ a:hover { color: var(--c-a-hover); }
 }
 
 /* ---------------------------------------------------------------- ticker --- */
+/* Market ticker — client mobile reference 359×474: white bar directly under
+   the black header, market-menu glyph pinned LEFT (outside the scroll
+   region), compact dark commodity cards (#131313, radius 6) with two rows:
+   [product name | icon] / [price ▲ change (percent)]. The row is LTR;
+   only the cards strip scrolls horizontally (page never overflows).
+   Prices come from the real market source via /api/market — no hardcoded
+   values; unpublished values render the N/A state. */
 .pt-ticker-section { background: #fff; }
-.pt-ticker-widget {
-  height: 45px;
-  overflow: hidden;
-}
-.pt-ticker-iframe {
-  width: 100%;
-  height: 38px;
-  border: 0;
-  vertical-align: baseline;
-  display: inline-block;
-}
-.pt-ticker-native {
-  width: 100%;
-  height: 40px;
-  overflow: hidden;
-  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
-  background: #fff;
-  white-space: nowrap;
-  position: relative;
-  direction: ltr;
-  font-family: Arial, sans-serif;
-  font-size: 16px;
-  color: #000;
-}
-.pt-ticker-slider {
-  display: inline-flex;
-  white-space: nowrap;
-  cursor: grab;
-  animation: pt-ticker-scroll 60s linear infinite;
-}
-.pt-ticker-item {
+.pt-ticker-bar {
   display: flex; align-items: center;
-  padding: 10px 20px;
-  border-right: 1px solid #ddd;
-  min-width: 200px;
-  flex-shrink: 0;
+  background: #fff;
+  padding: 7px 8px 8px;
+  direction: ltr;
 }
-.pt-ticker-item img {
-  width: 20px; height: 20px;
-  margin-right: 10px;
-  border-radius: 50%;
-  border: 1px solid #e3e3e3;
+.pt-ticker-menu {
   flex-shrink: 0;
+  width: 11px; height: 10px;
+  position: relative;
+  margin-right: 5px;
 }
-.pt-market-name { font-weight: bold; margin-right: 10px; white-space: nowrap; }
-.pt-market-value { margin-right: 10px; white-space: nowrap; }
-.pt-market-change { font-weight: bold; white-space: nowrap; }
-.pt-market-change.positive { color: green; }
-.pt-market-change.negative { color: red; }
-@keyframes pt-ticker-scroll {
-  0% { transform: translateX(0); }
-  100% { transform: translateX(-50%); }
+.pt-ticker-menu .inner,
+.pt-ticker-menu::before,
+.pt-ticker-menu::after {
+  content: ""; position: absolute; left: 0; right: 0;
+  height: 2px; background: #111111;
+}
+.pt-ticker-menu::before { top: 0; }
+.pt-ticker-menu .inner { top: 4px; }
+.pt-ticker-menu::after { top: 8px; }
+.pt-ticker-cards {
+  display: flex; align-items: center;
+  gap: 5px;
+  flex: 1 1 auto;
+  min-width: 0;
+  overflow-x: auto;
+  scrollbar-width: none;
+}
+.pt-ticker-cards::-webkit-scrollbar { display: none; }
+.pt-ticker-card {
+  flex: 0 0 106px;
+  height: 37px;
+  background: #131313;
+  border-radius: 6px;
+  padding: 5px 8px 5px;
+  overflow: hidden;
+  display: flex; flex-direction: column; justify-content: space-between;
+}
+.pt-ticker-card-top {
+  display: flex; align-items: center; justify-content: space-between;
+  gap: 6px;
+  min-width: 0;
+}
+.pt-ticker-name {
+  font-family: var(--ui-font);
+  font-size: 10px; line-height: 13px;
+  font-weight: 600;
+  letter-spacing: 0.01em;
+  color: #fff;
+  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+}
+.pt-ticker-icon { width: 14px; height: 14px; flex-shrink: 0; }
+.pt-ticker-row {
+  display: flex; align-items: baseline;
+  gap: 3px; /* reference: price → ▲ ink gap */
+  font-family: var(--ui-font);
+  font-size: 8.5px; line-height: 11px;
+  font-weight: 600;
+  font-variant-numeric: tabular-nums;
+  white-space: nowrap;
+  color: #f1f1f1;
+}
+.pt-ticker-price { color: #f1f1f1; }
+.pt-ticker-change { color: #00c878; }
+.pt-ticker-change.down { color: #e0483e; }
+.pt-ticker-change.flat { color: #8a8a8a; }
+.pt-ticker-na { color: #8a8a8a; letter-spacing: 0.02em; }
+/* tablet — same identity, stepped sizes */
+@media (min-width: 768px) {
+  .pt-ticker-bar { padding: 8px 16px; }
+  .pt-ticker-menu { width: 13px; height: 12px; margin-right: 7px; }
+  .pt-ticker-menu .inner { top: 5px; }
+  .pt-ticker-menu::after { top: 10px; }
+  .pt-ticker-cards { gap: 7px; }
+  .pt-ticker-card { flex: 0 0 150px; height: 42px; padding: 6px 10px; }
+  .pt-ticker-name { font-size: 12px; line-height: 15px; }
+  .pt-ticker-icon { width: 15px; height: 15px; }
+  .pt-ticker-row { font-size: 10.5px; line-height: 12px; }
+}
+/* desktop — natural extension of the mobile reference (no grid/dashboard) */
+@media (min-width: 1025px) {
+  .pt-ticker-bar { padding: 9px 20px; }
+  .pt-ticker-menu { width: 14px; height: 13px; margin-right: 9px; }
+  .pt-ticker-menu .inner { top: 5.5px; }
+  .pt-ticker-menu::after { top: 11px; }
+  .pt-ticker-cards { gap: 9px; }
+  .pt-ticker-card { flex: 0 0 170px; height: 46px; padding: 7px 11px; }
+  .pt-ticker-name { font-size: 12.5px; line-height: 16px; }
+  .pt-ticker-icon { width: 17px; height: 17px; }
+  .pt-ticker-row { font-size: 11px; line-height: 13px; }
 }
 
 /* ----------------------------------------------------------- block heads --- */
@@ -832,6 +935,10 @@ a:hover { color: var(--c-a-hover); }
   gap: 15px 20px;
   margin-bottom: 26px;
 }
+/* DESKTOP duo restore — the original hero arrangement (hero post right +
+   secondary column left) is shown ≥1025 and the editorial featured block is
+   a mobile/tablet (≤1024) presentation of the same article */
+.pt-duo-desktop { display: none; }
 @media (max-width: 767px) {
   /* reference inset 9px: the negative margin pulls the block edge to 9px from
      the viewport (19.5px container padding − 10.5px; 15px − 6px at ≤350) */
@@ -849,18 +956,13 @@ a:hover { color: var(--c-a-hover); }
   .pt-featured-meta { font-size: 11px; line-height: 15px; margin-top: 18px; }
 }
 @media (min-width: 1025px) {
-  .pt-featured-grid {
-    display: grid;
-    grid-template-columns: 53% minmax(0, 1fr);
-    column-gap: 28px;
-    align-items: start;
-    direction: ltr; /* media column left, content column right (page is RTL) */
-  }
-  .pt-featured-body { direction: rtl; }
-  .pt-featured-eyebrow { font-size: 13px; line-height: 20px; margin-top: 0; }
-  .pt-featured-title { font-size: 30px; line-height: 40px; margin-top: 8px; }
-  .pt-featured-lead { font-size: 16px; line-height: 24px; margin-top: 14px; }
-  .pt-featured-meta { font-size: 11.5px; line-height: 15px; margin-top: 22px; }
+  /* DESKTOP — original duo arrangement restored (client request: the desktop
+     layout stays exactly as before the mobile-reference work): hero post in
+     the right column + 4 secondary cards in the left column, live geometry.
+     The editorial featured block remains the ≤1024 presentation only. */
+  .pt-featured,
+  .pt-featured-secondary { display: none; }
+  .pt-duo-desktop { display: grid; }
 }
 
 /* energy main — title 21px/700 */
@@ -1376,6 +1478,11 @@ a:hover { color: var(--c-a-hover); }
      energy/footer/ads widgets 350 (x 20) at 390 → 19.5px container padding */
   .pt-container { max-width: none; padding-inline: 19.5px; }
   .pt-footer .pt-container { max-width: none; padding-inline: 20px; }
+  /* client mobile reference: header bar 42px (slot keeps the flow height);
+     reference joining gap — bar bottom (y94) → featured image top (y102) */
+  .pt-head-slot-mobile { height: 42px; }
+  .pt-mobile-head-row { height: 42px; }
+  .pt-ticker-section { padding-bottom: 8px; }
   .pt-footer-cols { display: block; }
   .pt-footer-col-about,
   .pt-footer-col-popular,

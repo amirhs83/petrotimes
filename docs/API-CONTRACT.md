@@ -66,9 +66,9 @@ Any non-2xx status is treated as failure (frontend falls back to snapshot). Reco
     ]
   },
   "ticker": {
-    "iframeUrl": "https://market.petrotimes.ir/…",   // real market ticker iframe
-    "items": [                      // native fallback marquee items
-      { "key": "gold", "name": "طلا", "icon": "/assets/icons/ticker/gold.png" }
+    "iframeUrl": "https://market.petrotimes.ir/…",   // market widget host — origin is the real price source (see §6)
+    "items": [                      // commodity list (names/icons of the ticker cards)
+      { "key": "methanol", "name": "Methanol", "icon": "/assets/icons/ticker/methanol.svg" }
     ]
   },
   "sections": {
@@ -191,14 +191,47 @@ unchanged, and maps upstream 2xx → 200, everything else → 502.
 
 ---
 
-## 4. Versioning & evolution
+## 4. Market quotes — internal bridge `GET /api/market` (frontend-provided)
+
+The commodity cards of the market ticker read live prices through a frontend
+server route. It is **not** part of the content backend contract — it is
+implemented by the frontend itself (`src/app/api/market/route.ts`) and calls
+the project's real market source:
+
+```
+GET {origin-of-ticker.iframeUrl}/fetch_prices.php
+→ { "<key>": { "first": "3594.00", "sec": "49.00", "third": "1.39%" }, … }
+```
+
+`first` = price, `sec` = change amount, `third` = percent change. The bridge
+maps this payload onto `ticker.items` (key/name/icon from the content layer)
+and serves:
+
+```jsonc
+// GET /api/market → 200
+{
+  "ok": true,
+  "updatedAt": "2026-11-19T11:16:15.000Z",
+  "items": [
+    { "key": "methanol", "price": "3594.00", "change": "49.00", "percent": "1.39%" }
+    // price/change/percent are null when the upstream publishes no value —
+    // the UI then renders the N/A unavailable state. Values are never fabricated.
+  ]
+}
+```
+
+Caching: 30s in-memory TTL upstream-side; the browser re-polls every 30s.
+When the future backend takes over market data, it can serve the same shape
+directly from this endpoint's origin or replace the bridge transparently.
+
+## 5. Versioning & evolution
 
 - This contract is **v1**. Any breaking change must bump the version and be coordinated with
   the frontend (`src/lib/content/remote.ts` is the only integration point).
 - New homepage widgets = new keys inside `sections` + a minor-version bump; the frontend
   adopts them with a matching release.
 
-## 5. Implementation checklist for the backend (any language)
+## 6. Implementation checklist for the backend (any language)
 
 - [ ] `GET /homepage` returns the exact `HomepageData` JSON (Content-Type: application/json)
 - [ ] Jalali date formatting for `dateText` (e.g. `۲۹ مرداد ۱۴۰۵ - ۱۵:۲۳`)

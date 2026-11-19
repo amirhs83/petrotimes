@@ -1,7 +1,7 @@
 import { getHomepageData } from '@/lib/content';
 import { Chrome } from '@/components/petro/Chrome';
 import { MarketTicker } from '@/components/petro/MarketTicker';
-import { SmallPostCard } from '@/components/petro/PostCards';
+import { HighlightsHero, SmallPostCard } from '@/components/petro/PostCards';
 import { FeaturedNews } from '@/components/petro/FeaturedNews';
 import { TvSection } from '@/components/petro/TvSection';
 import { MagazineSlider } from '@/components/petro/MagazineSlider';
@@ -27,7 +27,7 @@ export default async function Home() {
       <Chrome menu={data.header.menu} whatsHot={s.offcanvas.whatsHot} newsletter={s.newsletter} />
 
       <div className="pt-ticker-section">
-        <MarketTicker iframeUrl={data.ticker.iframeUrl} items={data.ticker.items} />
+        <MarketTicker items={data.ticker.items} />
       </div>
 
       <main className="main-wrap">
@@ -36,9 +36,22 @@ export default async function Home() {
           <div className="pt-container">
             <div className="pt-columns">
               <div className="pt-content-col">
-                {/* FEATURED NEWS — editorial block per the client mobile
-                    reference (359×474); mobile stacked / desktop two-column
-                    (image left, RTL content right) */}
+                {/* DESKTOP (≥1025) — the ORIGINAL duo arrangement, restored
+                    exactly as before the mobile-reference work: hero post in
+                    the right column + 4 secondary cards in the left column
+                    (live geometry). Hidden on mobile/tablet. */}
+                <div className="pt-duo pt-duo-desktop">
+                  <div className="pt-duo-hero">
+                    <HighlightsHero article={s.heroMain} weight="900" />
+                  </div>
+                  <div className="pt-duo-secondary">
+                    {s.heroSecondary.map((a) => (
+                      <SmallPostCard key={a.url} article={a} size="s" clamp={false} />
+                    ))}
+                  </div>
+                </div>
+                {/* MOBILE/TABLET (≤1024) — FEATURED NEWS editorial block per
+                    the client mobile reference (359×474); unchanged. */}
                 <FeaturedNews article={s.heroMain} />
                 {/* secondary cards — same card design, reflowed below */}
                 <div className="pt-featured-secondary">
@@ -76,7 +89,11 @@ export default async function Home() {
               </div>
               <aside className="pt-sidebar-col">
                 <SocialWidget label={s.social.label} links={s.social.links} />
-                <NewsletterWidget data={s.newsletter} />
+                {/* anchor target for the header Subscribe buttons — the real
+                    newsletter capability of the site (no fake checkout) */}
+                <div id="pt-newsletter">
+                  <NewsletterWidget data={s.newsletter} />
+                </div>
               </aside>
             </div>
           </div>
