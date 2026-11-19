@@ -105,9 +105,15 @@ export function MarketTicker({ items }: { items: TickerItem[] }) {
   const dragStartPos = useRef(0);
   const [dragging, setDragging] = useState(false);
 
+  /* The applied offset is snapped to whole CSS pixels: the float accumulator
+     stays exact (time-based), but translate3d never lands on a half-pixel —
+     fractional offsets make the compositor re-sample glyphs/card edges every
+     frame (subpixel AA), which reads as broken "chunky" pixels while the
+     row slides. 30px/s moves at most 1px per step, so rounding is invisible
+     in motion but keeps text and card borders on the pixel grid. */
   const applyPos = useCallback(() => {
     const track = trackRef.current;
-    if (track) track.style.transform = `translate3d(${posRef.current}px, 0, 0)`;
+    if (track) track.style.transform = `translate3d(${Math.round(posRef.current)}px, 0, 0)`;
   }, []);
 
   /* wrap the offset into [-period, 0) so any drag position lands on the

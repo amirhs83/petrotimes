@@ -420,8 +420,10 @@ a:hover { color: var(--c-a-hover); }
   display: inline-flex; position: relative;
   height: var(--header-menu-icon-height); width: var(--header-menu-icon-width);
 }
-/* live hamburger-icon-a: 3 bars 3px — top 26px, middle 26px, bottom 20px
-   right-aligned (RTL). .inner IS the bottom bar; top/mid via pseudos. */
+/* live hamburger-icon-a (SmartMag source): container 26×17, 3 bars 3px —
+   top 26px @y0, middle 26px @y7, bottom 20px @y14, all right-aligned (RTL).
+   .inner IS the bottom bar; top/mid via pseudos. Bars stay inside the ink
+   box — no negative offsets (a broken -14/-7/-6 variant shipped earlier). */
 .pt-offcanvas-toggle .pt-hamburger .inner,
 .pt-offcanvas-toggle .pt-hamburger::before,
 .pt-offcanvas-toggle .pt-hamburger::after {
@@ -430,9 +432,9 @@ a:hover { color: var(--c-a-hover); }
   height: 3px;
   background: rgb(240, 240, 240);
 }
+.pt-offcanvas-toggle .pt-hamburger::before { top: 0; right: 0; left: 0; }
+.pt-offcanvas-toggle .pt-hamburger::after { top: 7px; right: 0; left: 0; }
 .pt-offcanvas-toggle .pt-hamburger .inner { top: 14px; right: 0; left: 6px; }
-.pt-offcanvas-toggle .pt-hamburger::before { top: -14px; right: 0; left: -6px; }
-.pt-offcanvas-toggle .pt-hamburger::after { top: -7px; right: 0; left: -6px; }
 .pt-offcanvas-toggle:hover { color: var(--c-main); }
 
 .pt-logo-link {
@@ -793,6 +795,10 @@ a:hover { color: var(--c-a-hover); }
   display: flex;
   align-items: center;
   will-change: transform;
+  /* keep the moving layer on one compositor surface — no per-frame
+     re-rasterization seams at the viewport clip edges */
+  backface-visibility: hidden;
+  -webkit-backface-visibility: hidden;
 }
 /* one copy of the card set; its trailing margin must equal the internal
    gap so the distance between consecutive sets is the exact loop period */
