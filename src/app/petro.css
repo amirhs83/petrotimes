@@ -259,6 +259,122 @@ a:hover { color: var(--c-a-hover); }
 .pt-loop-small-space { height: 0; padding-top: 26px; }
 .pt-block-mb { margin-bottom: var(--block-wrap-mb); }
 
+/* ----------------------------------------------------- geometry tokens --- */
+/* Design-token layer for the site chrome (main header + market ticker),
+   master prompt §14: all chrome dimensions live here instead of being
+   scattered across component rules and breakpoint blocks.
+
+   Values below are the MEASURED PetroTimes geometry (DOM audit of this
+   project across the 13 reference viewports — header 63/48/42, cards
+   170/150/106, etc.). Nothing visual changes by this refactor: every token
+   resolves to exactly the value the replaced literal had.
+
+   The Bloomberg geometry benchmark (master prompt) could NOT be extracted
+   (the live site bot-blocks the sandbox — see the audit report); when real
+   benchmark values become available, the transfer is a pure token edit:
+   overwrite the values here per breakpoint, components follow. */
+:root {
+  /* header — desktop (≥941, base rules of the smart header) */
+  --header-height: 63px;              /* main header row height (audit 1440) */
+  --header-padding-inline: 30px;      /* .pt-head-row horizontal padding */
+  --header-item-gap: 15px;            /* toggle→logo / nav inline gaps (logo→nav editorial 35px stays literal) */
+  --header-logo-width: 258.5px;       /* logo ink width (529:88 intrinsic ratio) */
+  --header-logo-height: 43px;         /* logo ink height */
+  --header-logo-pad-block: 10px;      /* logo content-box vertical padding inside the 63px row */
+  --header-menu-icon-width: 26px;     /* hamburger ink width */
+  --header-menu-icon-height: 17px;    /* hamburger ink height (3×3px bars) */
+  --header-search-icon-size: 15px;    /* search glyph font size */
+  --subscribe-height: 34px;
+  --subscribe-padding-inline: 18px;
+  --subscribe-font-size: 13.5px;
+
+  /* header — mobile (≤940; base mobile row, 768–940 steps up via override) */
+  --mobile-header-height: 48px;       /* 42px at ≤767 (client 359×474 reference) */
+  --mobile-header-padding-left: 12px;
+  --mobile-header-padding-right: 16px;
+  --mobile-logo-width: 103px;         /* ink height auto (529:88) = 17.1px */
+  --mobile-hamburger-width: 15px;
+  --mobile-hamburger-height: 12px;
+  --mobile-subscribe-width: 72px;
+  --mobile-subscribe-height: 26px;
+  --mobile-subscribe-font-size: 11px;
+
+  /* market ticker — mobile base (<768); tablet/desktop override below */
+  --market-ticker-height: 52px;       /* bar total = 7 + 37 + 8 */
+  --header-to-ticker-gap: 0px;        /* ticker sits flush under the header (audit) */
+  --market-ticker-padding-top: 7px;
+  --market-ticker-padding-bottom: 8px;
+  --market-ticker-padding-inline: 8px;
+  --market-ticker-menu-width: 11px;
+  --market-ticker-menu-height: 10px;
+  --market-ticker-menu-gap: 5px;      /* menu glyph → card strip */
+  --market-card-gap: 5px;
+  --market-card-width: 106px;
+  --market-card-height: 37px;
+  --market-card-radius: 6px;
+  --market-card-padding-block: 5px;
+  --market-card-padding-inline: 8px;
+  --market-product-font-size: 10px;
+  --market-product-line-height: 13px;
+  --market-price-font-size: 8.5px;
+  --market-price-line-height: 11px;
+  --market-icon-size: 14px;           /* circle card icon */
+  --market-to-content-gap: 8px;       /* card bottom → main content (≤767) */
+
+  /* the original height var keeps its name for existing consumers */
+  --head-h: var(--header-height);
+}
+@media (min-width: 768px) {
+  :root {
+    /* market ticker — tablet steps (768–1024) */
+    --market-ticker-height: 58px;     /* 8 + 42 + 8 */
+    --market-ticker-padding-top: 8px;
+    --market-ticker-padding-bottom: 8px;
+    --market-ticker-padding-inline: 16px;
+    --market-ticker-menu-width: 13px;
+    --market-ticker-menu-height: 12px;
+    --market-ticker-menu-gap: 7px;
+    --market-card-gap: 7px;
+    --market-card-width: 150px;
+    --market-card-height: 42px;
+    --market-card-padding-block: 6px;
+    --market-card-padding-inline: 10px;
+    --market-product-font-size: 12px;
+    --market-product-line-height: 15px;
+    --market-price-font-size: 10.5px;
+    --market-price-line-height: 12px;
+    --market-icon-size: 15px;
+    --market-to-content-gap: 0px;
+    /* mobile header — tablet steps (768–940) */
+    --mobile-logo-width: 124px;
+    --mobile-subscribe-width: 84px;
+    --mobile-subscribe-height: 29px;
+    --mobile-subscribe-font-size: 12px;
+  }
+}
+@media (min-width: 1025px) {
+  :root {
+    /* market ticker — desktop steps (≥1025) */
+    --market-ticker-height: 64px;     /* 9 + 46 + 9 */
+    --market-ticker-padding-top: 9px;
+    --market-ticker-padding-bottom: 9px;
+    --market-ticker-padding-inline: 20px;
+    --market-ticker-menu-width: 14px;
+    --market-ticker-menu-height: 13px;
+    --market-ticker-menu-gap: 9px;
+    --market-card-gap: 9px;
+    --market-card-width: 170px;
+    --market-card-height: 46px;
+    --market-card-padding-block: 7px;
+    --market-card-padding-inline: 11px;
+    --market-product-font-size: 12.5px;
+    --market-product-line-height: 16px;
+    --market-price-font-size: 11px;
+    --market-price-line-height: 13px;
+    --market-icon-size: 17px;
+  }
+}
+
 /* --------------------------------------------------------------- header --- */
 /* flow slot: keeps the header's layout height in the document while the
    header itself goes fixed when sticky — prevents the 63/48px document
@@ -266,7 +382,7 @@ a:hover { color: var(--c-a-hover); }
    keeps the original in flow and fixes a clone) */
 .pt-head-slot { position: relative; }
 .pt-head-slot-desktop { height: var(--head-h); }
-.pt-head-slot-mobile { display: none; height: 48px; }
+.pt-head-slot-mobile { display: none; height: var(--mobile-header-height); }
 .pt-smart-head {
   position: relative;
   min-height: var(--head-h);
@@ -286,7 +402,7 @@ a:hover { color: var(--c-a-hover); }
 .pt-head-row {
   background: rgb(0, 0, 0);
   color: var(--c-contrast-150);
-  padding: 0 30px;
+  padding: 0 var(--header-padding-inline);
 }
 .pt-head-row .pt-wrap { display: flex; align-items: stretch; justify-content: space-between; height: var(--head-h); }
 .pt-head-items-left { display: flex; align-items: stretch; flex-grow: 1; }
@@ -298,11 +414,11 @@ a:hover { color: var(--c-a-hover); }
   color: rgb(240, 240, 240);
   flex-shrink: 0;
   /* live: offcanvas-toggle margin-left 15px (inline-end in RTL) */
-  margin-inline-end: 15px;
+  margin-inline-end: var(--header-item-gap);
 }
 .pt-offcanvas-toggle .pt-hamburger {
   display: inline-flex; position: relative;
-  height: 17px; width: 26px;
+  height: var(--header-menu-icon-height); width: var(--header-menu-icon-width);
 }
 /* live hamburger-icon-a: 3 bars 3px — top 26px, middle 26px, bottom 20px
    right-aligned (RTL). .inner IS the bottom bar; top/mid via pseudos. */
@@ -325,10 +441,14 @@ a:hover { color: var(--c-a-hover); }
   /* live: logo-link margin-left 35px, margin-right 0 */
   margin-inline-end: 35px;
 }
-.pt-logo-link .pt-logo-img { width: 258.5px; height: 43px; padding: 10px 0; object-fit: contain; box-sizing: content-box; }
+.pt-logo-link .pt-logo-img {
+  width: var(--header-logo-width); height: var(--header-logo-height);
+  padding: var(--header-logo-pad-block) 0;
+  object-fit: contain; box-sizing: content-box;
+}
 
 /* live: .navigation{font-family:var(--ui-font);color:var(--c-nav)} + nav-wrap margin-left 15px */
-.pt-nav-wrap { display: flex; align-items: stretch; min-width: 0; margin-inline-end: 15px; }
+.pt-nav-wrap { display: flex; align-items: stretch; min-width: 0; margin-inline-end: var(--header-item-gap); }
 .pt-navigation { display: flex; align-items: stretch; font-family: var(--ui-font); color: var(--c-nav); }
 .pt-navigation.menu { display: flex; align-items: stretch; }
 .pt-navigation.menu > li { position: relative; display: flex; align-items: stretch; }
@@ -350,7 +470,7 @@ a:hover { color: var(--c-a-hover); }
   align-self: center;
   color: var(--c-icons);
 }
-.pt-search-icon .pt-icon { font-size: 15px; }
+.pt-search-icon .pt-icon { font-size: var(--header-search-icon-size); }
 .pt-search-icon:hover { color: var(--c-main); }
 
 /* header Subscribe — shared by the desktop header and the mobile header.
@@ -367,9 +487,9 @@ a:hover { color: var(--c-a-hover); }
   flex-shrink: 0;
 }
 .pt-head-items-right .pt-head-subscribe {
-  height: 34px;
-  padding: 0 18px;
-  font-size: 13.5px;
+  height: var(--subscribe-height);
+  padding: 0 var(--subscribe-padding-inline);
+  font-size: var(--subscribe-font-size);
   align-self: center;
   /* mirror of the reference right group: Subscribe then the search icon */
   margin-inline-end: 12px;
@@ -384,9 +504,9 @@ a:hover { color: var(--c-a-hover); }
 .pt-mobile-head-row {
   background: #000;
   color: #fff;
-  height: 48px;
+  height: var(--mobile-header-height);
   display: flex; align-items: center;
-  padding: 0 16px 0 12px;
+  padding: 0 var(--mobile-header-padding-right) 0 var(--mobile-header-padding-left);
   position: relative;
   direction: ltr;
 }
@@ -405,11 +525,14 @@ a:hover { color: var(--c-a-hover); }
   margin: 0 -14px;
   flex-shrink: 0;
 }
-.pt-mobile-toggle .pt-hamburger { display: inline-flex; position: relative; height: 12px; width: 15px; }
+.pt-mobile-toggle .pt-hamburger {
+  display: inline-flex; position: relative;
+  height: var(--mobile-hamburger-height); width: var(--mobile-hamburger-width);
+}
 .pt-mobile-toggle .pt-hamburger::before,
 .pt-mobile-toggle .pt-hamburger .inner,
 .pt-mobile-toggle .pt-hamburger::after {
-  content: ""; position: absolute; left: 0; width: 15px; height: 2px; background: currentColor;
+  content: ""; position: absolute; left: 0; width: var(--mobile-hamburger-width); height: 2px; background: currentColor;
 }
 .pt-mobile-toggle .pt-hamburger::before { top: 0; }
 .pt-mobile-toggle .pt-hamburger .inner { top: 5px; }
@@ -420,9 +543,13 @@ a:hover { color: var(--c-a-hover); }
   /* reference: hamburger ink ends x26 → logo ink starts x43 */
   margin-left: 15px;
 }
-.pt-mobile-logo img { width: 103px; height: auto; display: block; }
+.pt-mobile-logo img { width: var(--mobile-logo-width); height: auto; display: block; }
 .pt-mobile-actions { margin-left: auto; display: flex; align-items: center; }
-.pt-mobile-head .pt-head-subscribe { width: 72px; height: 26px; font-size: 11px; }
+.pt-mobile-head .pt-head-subscribe {
+  width: var(--mobile-subscribe-width);
+  height: var(--mobile-subscribe-height);
+  font-size: var(--mobile-subscribe-font-size);
+}
 .pt-mobile-search {
   color: #fff; font-size: 17px;
   display: flex; align-items: center;
@@ -433,10 +560,8 @@ a:hover { color: var(--c-a-hover); }
   margin-right: -8px; /* keep the glyph at the reference x while the click
                          target reaches toward the viewport edge */
 }
-@media (min-width: 768px) and (max-width: 940px) {
-  .pt-mobile-head .pt-head-subscribe { width: 84px; height: 29px; font-size: 12px; }
-  .pt-mobile-logo img { width: 124px; }
-}
+/* tablet steps of the mobile header live in the geometry-token override
+   block (min-width:768px) — nothing left to set here */
 
 /* ------------------------------------------------------------- off-canvas --- */
 .pt-offcanvas-backdrop {
@@ -629,18 +754,21 @@ a:hover { color: var(--c-a-hover); }
    only the cards strip scrolls horizontally (page never overflows).
    Prices come from the real market source via /api/market — no hardcoded
    values; unpublished values render the N/A state. */
-.pt-ticker-section { background: #fff; }
+.pt-ticker-section { background: #fff; margin-top: var(--header-to-ticker-gap); }
 .pt-ticker-bar {
   display: flex; align-items: center;
   background: #fff;
-  padding: 7px 8px 8px;
+  min-height: var(--market-ticker-height);
+  padding: var(--market-ticker-padding-top) var(--market-ticker-padding-inline)
+           var(--market-ticker-padding-bottom);
+  box-sizing: border-box;
   direction: ltr;
 }
 .pt-ticker-menu {
   flex-shrink: 0;
-  width: 11px; height: 10px;
+  width: var(--market-ticker-menu-width); height: var(--market-ticker-menu-height);
   position: relative;
-  margin-right: 5px;
+  margin-right: var(--market-ticker-menu-gap);
 }
 .pt-ticker-menu .inner,
 .pt-ticker-menu::before,
@@ -672,15 +800,15 @@ a:hover { color: var(--c-a-hover); }
   display: flex;
   align-items: center;
   flex-shrink: 0;
-  gap: 5px;
-  margin-right: 5px;
+  gap: var(--market-card-gap);
+  margin-right: var(--market-card-gap);
 }
 .pt-ticker-card {
-  flex: 0 0 106px;
-  height: 37px;
+  flex: 0 0 var(--market-card-width);
+  height: var(--market-card-height);
   background: #131313;
-  border-radius: 6px;
-  padding: 5px 8px 5px;
+  border-radius: var(--market-card-radius);
+  padding: var(--market-card-padding-block) var(--market-card-padding-inline);
   overflow: hidden;
   display: flex; flex-direction: column; justify-content: space-between;
 }
@@ -691,7 +819,8 @@ a:hover { color: var(--c-a-hover); }
 }
 .pt-ticker-name {
   font-family: var(--ui-font);
-  font-size: 10px; line-height: 13px;
+  font-size: var(--market-product-font-size);
+  line-height: var(--market-product-line-height);
   font-weight: 600;
   letter-spacing: 0.01em;
   color: #fff;
@@ -703,7 +832,7 @@ a:hover { color: var(--c-a-hover); }
    faint ring keeps dark-on-dark icons (crude oil, heating oil…) legible as
    circles instead of floating glyphs. */
 .pt-ticker-icon {
-  width: 14px; height: 14px; flex-shrink: 0;
+  width: var(--market-icon-size); height: var(--market-icon-size); flex-shrink: 0;
   border-radius: 50%;
   box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.22);
   -webkit-user-drag: none;
@@ -712,7 +841,8 @@ a:hover { color: var(--c-a-hover); }
   display: flex; align-items: baseline;
   gap: 3px; /* reference: price → ▲ ink gap */
   font-family: var(--ui-font);
-  font-size: 8.5px; line-height: 11px;
+  font-size: var(--market-price-font-size);
+  line-height: var(--market-price-line-height);
   font-weight: 600;
   font-variant-numeric: tabular-nums;
   white-space: nowrap;
@@ -723,29 +853,17 @@ a:hover { color: var(--c-a-hover); }
 .pt-ticker-change.down { color: #e0483e; }
 .pt-ticker-change.flat { color: #8a8a8a; }
 .pt-ticker-na { color: #8a8a8a; letter-spacing: 0.02em; }
-/* tablet — same identity, stepped sizes */
+/* tablet + desktop geometry steps live in the geometry-token override
+   blocks (min-width:768 / min-width:1025) — only the menu-glyph bar
+   offsets (derived from the glyph height) remain per breakpoint */
 @media (min-width: 768px) {
-  .pt-ticker-bar { padding: 8px 16px; }
-  .pt-ticker-menu { width: 13px; height: 12px; margin-right: 7px; }
   .pt-ticker-menu .inner { top: 5px; }
   .pt-ticker-menu::after { top: 10px; }
-  .pt-ticker-set { gap: 7px; margin-right: 7px; }
-  .pt-ticker-card { flex: 0 0 150px; height: 42px; padding: 6px 10px; }
-  .pt-ticker-name { font-size: 12px; line-height: 15px; }
-  .pt-ticker-icon { width: 15px; height: 15px; }
-  .pt-ticker-row { font-size: 10.5px; line-height: 12px; }
 }
 /* desktop — natural extension of the mobile reference (no grid/dashboard) */
 @media (min-width: 1025px) {
-  .pt-ticker-bar { padding: 9px 20px; }
-  .pt-ticker-menu { width: 14px; height: 13px; margin-right: 9px; }
   .pt-ticker-menu .inner { top: 5.5px; }
   .pt-ticker-menu::after { top: 11px; }
-  .pt-ticker-set { gap: 9px; margin-right: 9px; }
-  .pt-ticker-card { flex: 0 0 170px; height: 46px; padding: 7px 11px; }
-  .pt-ticker-name { font-size: 12.5px; line-height: 16px; }
-  .pt-ticker-icon { width: 17px; height: 17px; }
-  .pt-ticker-row { font-size: 11px; line-height: 13px; }
 }
 
 /* ----------------------------------------------------------- block heads --- */
@@ -1513,9 +1631,10 @@ a:hover { color: var(--c-a-hover); }
   .pt-footer .pt-container { max-width: none; padding-inline: 20px; }
   /* client mobile reference: header bar 42px (slot keeps the flow height);
      reference joining gap — bar bottom (y94) → featured image top (y102) */
-  .pt-head-slot-mobile { height: 42px; }
-  .pt-mobile-head-row { height: 42px; }
-  .pt-ticker-section { padding-bottom: 8px; }
+  .pt-head-slot-mobile { height: var(--mobile-header-height); }
+  .pt-mobile-head-row { height: var(--mobile-header-height); }
+  :root { --mobile-header-height: 42px; }
+  .pt-ticker-section { padding-bottom: var(--market-to-content-gap); }
   .pt-footer-cols { display: block; }
   .pt-footer-col-about,
   .pt-footer-col-popular,
