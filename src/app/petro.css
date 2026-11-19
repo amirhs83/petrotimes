@@ -1837,15 +1837,15 @@ a:hover { color: var(--c-a-hover); }
     --pt-mobile-header-padding-left: 15px;
     --pt-mobile-header-padding-right: 18px;
 
-    --pt-mobile-logo-height: 24px;
+    --pt-mobile-logo-height: 22px;
     --pt-mobile-logo-left: 45px;
     --pt-mobile-menu-logo-gap: 16px;
 
     --pt-mobile-menu-width: 14px;
     --pt-mobile-menu-height: 12px;
 
-    --pt-mobile-subscribe-width: 88px;
-    --pt-mobile-subscribe-height: 30px;
+    --pt-mobile-subscribe-width: 84px;
+    --pt-mobile-subscribe-height: 28px;
     --pt-mobile-subscribe-radius: 4px;
 
     --pt-mobile-search-size: 14px;
@@ -1896,10 +1896,11 @@ a:hover { color: var(--c-a-hover); }
     width: var(--pt-mobile-menu-width);
   }
 
-  /* §05 logo — VISIBLE ink height 24px is the criterion (the PNG fills its
-     529×88 canvas with no transparent padding, so an img box of 24px renders
-     24px of ink; width follows the original aspect ≈144.27px — never
-     squeezed toward the Bloomberg 119px). Logo ink left offset = 45px:
+  /* §05 logo — VISIBLE ink height 22px is the criterion (the PNG fills its
+     529×88 canvas with no transparent padding, so an img box of 22px renders
+     22px of ink; width follows the original aspect ≈132.25px — never
+     squeezed). Slightly reduced (24→22) per user request, 2025.
+     Logo ink left offset = 45px:
      15 (bar padding) + 14 (ink) + 16 ink gap; the flow margin is the ink
      gap minus the 1px of click-target box that extends past the glyph. */
   .pt-mobile-logo {
@@ -1910,7 +1911,8 @@ a:hover { color: var(--c-a-hover); }
     height: var(--pt-mobile-logo-height);
   }
 
-  /* §06 Subscribe — 88×30, radius 4, 13px/600, white on black. */
+  /* §06 Subscribe — 84×28 (slightly reduced from 88×30 per user request),
+     radius 4, 13px/600, white on black. */
   .pt-mobile-head .pt-head-subscribe {
     width: var(--pt-mobile-subscribe-width);
     height: var(--pt-mobile-subscribe-height);
