@@ -881,24 +881,32 @@ a:hover { color: var(--c-a-hover); }
 }
 .pt-featured-image-link { display: block; }
 .pt-featured-eyebrow {
-  margin: 5px 0 0;
+  margin: 8px 0 0;
   font-size: 12px;
   line-height: 18px;
   font-weight: 400;
   color: var(--c-contrast-600);
+  /* reference kicker: a single gray line above the headline — the real
+     rutitr is longer than the mock line, so it ellipsizes on one row */
+  white-space: nowrap;
+  overflow: hidden;
+  text-overflow: ellipsis;
 }
 .pt-featured-title {
+  /* reference headline: line 1 "…جهان به" fills 336/341 of the text column
+     and breaks before "رقیب" — 23px Vazir reproduces both the fill ratio
+     AND the break (24px pushed "به" onto line 2) */
   margin: 9px 0 0;
-  font-size: 21px;
+  font-size: 23px;
   line-height: 26px;
   font-weight: 700;
   color: var(--c-contrast);
   overflow-wrap: break-word;
 }
-.pt-featured-eyebrow + .pt-featured-title { margin-top: 3px; }
+.pt-featured-eyebrow + .pt-featured-title { margin-top: 4px; }
 .pt-featured-title a { color: inherit; display: block; }
 .pt-featured-lead {
-  margin: 9px 0 0;
+  margin: 10px 0 0;
   font-size: 14px;
   line-height: 19px;
   color: var(--c-contrast-850);
@@ -908,7 +916,7 @@ a:hover { color: var(--c-a-hover); }
 .pt-featured-meta {
   direction: ltr;
   text-align: left;
-  margin-top: 15px;
+  margin-top: 18px;
   font-family: var(--ui-font);
   font-size: 10.5px;
   line-height: 14px;
