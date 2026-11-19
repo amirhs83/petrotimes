@@ -822,6 +822,10 @@ a:hover { color: var(--c-a-hover); }
 .pt-ticker-menu::before { top: 0; }
 .pt-ticker-menu .inner { top: 4px; }
 .pt-ticker-menu::after { top: 8px; }
+/* phone-only chevron glyph (Bloomberg mobile reference, §08): rendered in
+   the JSX for every breakpoint, shown ONLY ≤767 — tablet/desktop keep the
+   three-bar glyph above, untouched */
+.pt-ticker-caret { display: none; }
 .pt-ticker-viewport {
   flex: 1 1 auto;
   min-width: 0;
@@ -1939,24 +1943,37 @@ a:hover { color: var(--c-a-hover); }
     border-bottom: var(--pt-mobile-ticker-bottom-border) solid #ececec;
   }
 
-  /* §08 market menu — 33px container OUTSIDE the scroll region, 11×7 glyph
-     at 11px inside it, 4px gap after the container → first card lands at
-     exactly 37px from the page edge (0 bar padding + 33 + 4). */
+  /* client report — marquee stutter exactly where cards cross the strip
+     edges (left/right clip corners): promote the clip to its own compositor
+     layer and isolate paint to the strip, so a card entering/leaving the
+     edge is pure GPU clipping — no main-thread repaint, no invalidation
+     leaking past the bar while a price passes through the corner. */
+  .pt-ticker-viewport {
+    transform: translateZ(0);
+    contain: layout paint;
+  }
+
+  /* §08 market menu — 33px container OUTSIDE the scroll region, thin
+     chevron (Bloomberg mobile form) 11×7 ink at 11px inside it, 4px gap
+     after the container → first card lands at exactly 37px from the page
+     edge (0 bar padding + 33 + 4). The three-bar glyph is tablet/desktop. */
   .pt-ticker-menu {
     width: var(--pt-mobile-market-menu-width);
     height: 7px;
     margin-right: var(--pt-mobile-market-menu-gap);
+    color: #111111;
   }
   .pt-ticker-menu::before,
   .pt-ticker-menu .inner,
-  .pt-ticker-menu::after {
+  .pt-ticker-menu::after { display: none; }
+  .pt-ticker-caret {
+    display: block;
+    position: absolute;
     left: 11px;
-    right: auto;
+    top: 0;
     width: 11px;
+    height: 7px;
   }
-  .pt-ticker-menu::before { top: 0; }
-  .pt-ticker-menu .inner { top: 2.5px; }
-  .pt-ticker-menu::after { top: 5px; }
 
   /* §09 cards — 49px tall, content-fitted width clamped to the reference
      minimums (133 compact / 141 standard): reference geometry when data is

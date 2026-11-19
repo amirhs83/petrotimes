@@ -126,31 +126,85 @@ export function MarketTicker({ items }: { items: TickerItem[] }) {
     applyPos();
   }, [applyPos]);
 
+  /* Mobile motion hardening (client report: stutter at the strip edges where
+     cards cross the clip). `width: max-content` resolves to fractional
+     glyph-advance widths — every card edge then sits on a subpixel phase,
+     so the integer-snapped marquee transform keeps re-sampling edges while
+     a card crosses the clip. Fix: snap every card's natural width UP to a
+     whole CSS pixel (ceil — the box always contains the full row, so no
+     data is ever clipped; the §09 min-widths still clamp from below).
+     Desktop/tablet keep their fixed flex-basis widths: there the inline
+     width is cleared (and would be ignored anyway — basis ≠ auto). */
+  const snapCardWidths = useCallback(() => {
+    const track = trackRef.current;
+    if (!track) return;
+    const cards = Array.from(track.querySelectorAll<HTMLElement>('.pt-ticker-card'));
+    if (window.matchMedia('(min-width: 768px)').matches) {
+      for (const el of cards) {
+        if (el.style.width) el.style.width = '';
+      }
+      return;
+    }
+    for (const el of cards) el.style.width = ''; /* clear → natural max-content */
+    const widths = cards.map((el) => el.getBoundingClientRect().width); /* read pass */
+    for (let i = 0; i < cards.length; i++) {
+      cards[i].style.width = `${Math.ceil(widths[i])}px`; /* write pass: whole px */
+    }
+  }, []);
+
   /* the loop period = distance between the first two set wrappers
-     (set width + inter-set gap — works for every breakpoint) */
+     (set width + inter-set gap — works for every breakpoint). Measured
+     from getBoundingClientRect (fractional-exact — the current translate
+     shifts both rects equally, so the difference is the exact pitch);
+     the old integer-rounded offsetLeft left a ≤0.5px error that surfaced
+     as a subpixel jump at the loop seam. */
   const measure = useCallback(() => {
     const track = trackRef.current;
     if (!track || track.children.length < 2) return;
     const a = track.children[0] as HTMLElement;
     const b = track.children[1] as HTMLElement;
-    const period = b.offsetLeft - a.offsetLeft;
+    const period = b.getBoundingClientRect().left - a.getBoundingClientRect().left;
     if (period > 0) periodRef.current = period;
     normalize();
   }, [normalize]);
 
-  /* keep the period fresh: mount, viewport resize, and any layout change
-     inside the row (quotes arriving, fonts loading) via ResizeObserver */
-  useEffect(() => {
+  /* snap widths first, then re-measure the period (widths change the pitch) */
+  const remeasure = useCallback(() => {
+    snapCardWidths();
     measure();
+  }, [snapCardWidths, measure]);
+
+  /* keep the period fresh: mount, viewport resize, and any layout change
+     inside the row (quotes arriving, fonts loading) via ResizeObserver.
+     The RO callback is measure-only (snap is idempotent; letting it run
+     here too would just add one redundant pass per resize). */
+  useEffect(() => {
+    remeasure();
     const ro = new ResizeObserver(measure);
     if (trackRef.current) ro.observe(trackRef.current);
     if (viewportRef.current) ro.observe(viewportRef.current);
-    window.addEventListener('resize', measure);
+    window.addEventListener('resize', remeasure);
+    /* widths depend on the real font metrics — re-snap once fonts land —
+       and again when the phone/desktop breakpoint flips */
+    let alive = true;
+    document.fonts?.ready.then(() => {
+      if (alive) remeasure();
+    });
+    const mq = window.matchMedia('(min-width: 768px)');
+    const onFlip = () => remeasure();
+    mq.addEventListener?.('change', onFlip);
     return () => {
+      alive = false;
       ro.disconnect();
-      window.removeEventListener('resize', measure);
+      window.removeEventListener('resize', remeasure);
+      mq.removeEventListener?.('change', onFlip);
     };
-  }, [measure]);
+  }, [remeasure, measure]);
+
+  /* quotes arriving change card content → card widths change → re-snap */
+  useEffect(() => {
+    remeasure();
+  }, [remeasure, quotes, failed]);
 
   /* auto-scroll: right-to-left, time-based (frame-rate independent),
      paused while dragging / mouse-hovering / reduced-motion */
@@ -203,6 +257,13 @@ export function MarketTicker({ items }: { items: TickerItem[] }) {
             (aria-hidden), not a duplicate of the main menu */}
         <span className="pt-ticker-menu" aria-hidden="true">
           <span className="inner" />
+          {/* phone geometry reference (Bloomberg mobile screenshot): the
+              market-menu glyph is the thin chevron. Rendered here for every
+              breakpoint; CSS shows it ONLY ≤767 and keeps the three-bar
+              glyph for tablet/desktop untouched. */}
+          <svg className="pt-ticker-caret" viewBox="0 0 11 7" width="11" height="7" focusable="false">
+            <path d="M1 1l4.5 5L10 1" fill="none" stroke="currentColor" strokeWidth="2" />
+          </svg>
         </span>
         <div
           className={`pt-ticker-viewport${dragging ? ' is-dragging' : ''}`}
@@ -277,7 +338,12 @@ function TickerCard({ item, quote }: { item: TickerItem; quote?: MarketQuote }) 
           alt=""
           width={14}
           height={14}
-          loading="lazy"
+          /* eager + async decode: `lazy` defers offscreen copies, and the
+             marquee brings cards in via transform — a lazily-held icon
+             popping/decoding at the strip edge reads as a stutter exactly
+             where cards cross. 45 same-URL refs hit cache; cost ≈ 0. */
+          loading="eager"
+          decoding="async"
           draggable={false}
         />
       </div>
