@@ -1,7 +1,8 @@
 import { getHomepageData } from '@/lib/content';
 import { Chrome } from '@/components/petro/Chrome';
 import { MarketTicker } from '@/components/petro/MarketTicker';
-import { HighlightsHero, SmallPostCard } from '@/components/petro/PostCards';
+import { SmallPostCard } from '@/components/petro/PostCards';
+import { FeaturedNews } from '@/components/petro/FeaturedNews';
 import { TvSection } from '@/components/petro/TvSection';
 import { MagazineSlider } from '@/components/petro/MagazineSlider';
 import { FeatureTitle } from '@/components/petro/FeatureTitle';
@@ -35,16 +36,15 @@ export default async function Home() {
           <div className="pt-container">
             <div className="pt-columns">
               <div className="pt-content-col">
-                {/* hero (384, right) + 4 secondary cards (384, left) */}
-                <div className="pt-duo">
-                  <div className="pt-duo-hero">
-                    <HighlightsHero article={s.heroMain} weight="900" />
-                  </div>
-                  <div className="pt-duo-secondary">
-                    {s.heroSecondary.map((a) => (
-                      <SmallPostCard key={a.url} article={a} size="s" clamp={false} />
-                    ))}
-                  </div>
+                {/* FEATURED NEWS — editorial block per the client mobile
+                    reference (359×474); mobile stacked / desktop two-column
+                    (image left, RTL content right) */}
+                <FeaturedNews article={s.heroMain} />
+                {/* secondary cards — same card design, reflowed below */}
+                <div className="pt-featured-secondary">
+                  {s.heroSecondary.map((a) => (
+                    <SmallPostCard key={a.url} article={a} size="s" clamp={false} />
+                  ))}
                 </div>
                 <TvSection player={s.tvPlayer} playlist={s.tvPlaylist} />
               </div>

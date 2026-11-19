@@ -750,6 +750,119 @@ a:hover { color: var(--c-a-hover); }
 .pt-hero-post .pt-post-title { font-size: 21px; font-weight: 900; margin: 0 0 9px; }
 .pt-hero-post .pt-excerpt { margin-top: 16px; }
 
+/* ------------------------------------------------ featured news (خبر ویژه) -- */
+/* FEATURED NEWS block — client mobile reference 359×474 is the single source
+   of truth for the mobile design. Measured reference metrics (image top =
+   y103, inset 9px): image 340×179 (1.9:1) → eyebrow ink +9 (12px gray) →
+   headline 2 lines (pitch 26, pure black) → lead 3 lines (pitch 19, #181818,
+   justified, last line right) → LTR meta row "CATEGORY • DATE • TIME"
+   (Barlow ~10.5px gray, left-aligned, small bullets) → ~20px trailing space.
+   Mobile ≤767 escapes the 19.5px container padding to reach the reference
+   9px inset. Desktop ≥1025: two columns — image LEFT 53%, RTL content RIGHT
+   (grid direction: ltr keeps the media column left on the RTL page).
+   Fonts unchanged: Vazir (Persian body/headline) + Barlow (Latin meta row). */
+.pt-featured {
+  background: #fff;
+  margin-bottom: 24px;
+}
+.pt-featured-grid { display: block; }
+.pt-featured-media { position: relative; }
+.pt-featured-media img {
+  display: block;
+  width: 100%;
+  height: auto;
+  aspect-ratio: 1.9 / 1;
+  object-fit: cover;
+  object-position: center;
+  background: var(--c-contrast-50);
+}
+.pt-featured-image-link { display: block; }
+.pt-featured-eyebrow {
+  margin: 5px 0 0;
+  font-size: 12px;
+  line-height: 18px;
+  font-weight: 400;
+  color: var(--c-contrast-600);
+}
+.pt-featured-title {
+  margin: 9px 0 0;
+  font-size: 21px;
+  line-height: 26px;
+  font-weight: 700;
+  color: var(--c-contrast);
+  overflow-wrap: break-word;
+}
+.pt-featured-eyebrow + .pt-featured-title { margin-top: 3px; }
+.pt-featured-title a { color: inherit; display: block; }
+.pt-featured-lead {
+  margin: 9px 0 0;
+  font-size: 14px;
+  line-height: 19px;
+  color: var(--c-contrast-850);
+  text-align: justify;
+  overflow-wrap: break-word;
+}
+.pt-featured-meta {
+  direction: ltr;
+  text-align: left;
+  margin-top: 15px;
+  font-family: var(--ui-font);
+  font-size: 10.5px;
+  line-height: 14px;
+  font-weight: 400;
+  letter-spacing: 0.02em;
+  color: var(--c-contrast-500);
+}
+.pt-featured-meta a { color: inherit; }
+.pt-featured-meta a:hover { color: var(--c-contrast-700); }
+.pt-featured-meta-item { display: inline-block; }
+.pt-featured-meta-item + .pt-featured-meta-item::before {
+  content: '•';
+  display: inline-block;
+  margin: 0 8px;
+  font-size: 9px;
+  line-height: 1;
+  transform: translateY(-1px);
+  color: var(--c-contrast-500);
+}
+/* secondary cards keep their exact card design — reflowed under the featured */
+.pt-featured-secondary {
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 15px 20px;
+  margin-bottom: 26px;
+}
+@media (max-width: 767px) {
+  /* reference inset 9px: the negative margin pulls the block edge to 9px from
+     the viewport (19.5px container padding − 10.5px; 15px − 6px at ≤350) */
+  .pt-featured { margin-inline: -10.5px; }
+  .pt-featured-secondary { grid-template-columns: 1fr; gap: 10px; }
+}
+@media (max-width: 350px) {
+  .pt-featured { margin-inline: -6px; }
+}
+@media (min-width: 768px) {
+  .pt-featured { margin-bottom: 28px; }
+  .pt-featured-eyebrow { font-size: 12.5px; line-height: 19px; }
+  .pt-featured-title { font-size: 24px; line-height: 32px; margin-top: 6px; }
+  .pt-featured-lead { font-size: 15px; line-height: 22px; margin-top: 12px; }
+  .pt-featured-meta { font-size: 11px; line-height: 15px; margin-top: 18px; }
+}
+@media (min-width: 1025px) {
+  .pt-featured-grid {
+    display: grid;
+    grid-template-columns: 53% minmax(0, 1fr);
+    column-gap: 28px;
+    align-items: start;
+    direction: ltr; /* media column left, content column right (page is RTL) */
+  }
+  .pt-featured-body { direction: rtl; }
+  .pt-featured-eyebrow { font-size: 13px; line-height: 20px; margin-top: 0; }
+  .pt-featured-title { font-size: 30px; line-height: 40px; margin-top: 8px; }
+  .pt-featured-lead { font-size: 16px; line-height: 24px; margin-top: 14px; }
+  .pt-featured-meta { font-size: 11.5px; line-height: 15px; margin-top: 22px; }
+}
+
 /* energy main — title 21px/700 */
 .pt-energy-main .pt-post-title { font-size: 21px; font-weight: var(--title-fw-bold); }
 

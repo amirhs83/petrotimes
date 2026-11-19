@@ -104,8 +104,9 @@ Any non-2xx status is treated as failure (frontend falls back to snapshot). Reco
   "categoryUrl": "https://…",
   "excerpt": "string",
   "image": "https://…",               // thumbnail (small variant) — or null
-  "imageFull": "https://…"            // large variant (hero / TV overlay) — or null
-}
+  "imageFull": "https://…",           // large variant (hero / TV overlay) — or null
+  "eyebrow": "…"                      // OPTIONAL overline/kicker for the FEATURED NEWS block
+}                                     //   (additive, v1-compatible; absent/null → not rendered)
 
 // FeatureArticle — FEATURE TITLE ranked list
 {
@@ -145,7 +146,7 @@ Any non-2xx status is treated as failure (frontend falls back to snapshot). Reco
 }
 ```
 
-Nullable fields: `category`, `categoryUrl`, `excerpt`, `image`, `imageFull` may be `null`.
+Nullable fields: `category`, `categoryUrl`, `excerpt`, `image`, `imageFull`, `eyebrow` may be `null`.
 
 ### Field rules (enforced by the frontend's fail-fast guard)
 

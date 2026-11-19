@@ -24,6 +24,11 @@ export interface Article {
   image: string | null;
   /** Large variant for hero/TV overlays. */
   imageFull: string | null;
+  /**
+   * Optional overline / kicker shown above the FEATURED NEWS headline
+   * (additive optional field — when absent the element is not rendered).
+   */
+  eyebrow?: string | null;
 }
 
 /** FEATURE TITLE ranked item (rank icon PNG path + article fields). */
