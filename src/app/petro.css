@@ -323,6 +323,25 @@ a:hover { color: var(--c-a-hover); }
 
   /* the original height var keeps its name for existing consumers */
   --head-h: var(--header-height);
+
+  /* master prompt — "Desktop Header & Price Bar Exact Size Correction":
+     canonical desktop targets. The rendered DOM must measure EXACTLY
+     these values at desktop viewports (verified post-deploy). */
+  --pt-desktop-header-top-height: 101px;    /* A) black top header bar */
+  --pt-desktop-header-nav-height: 50px;     /* B) dark navigation bar */
+  --pt-desktop-header-total-height: 151px;  /* total header before ticker */
+
+  --pt-desktop-ticker-height: 65px;         /* price bar total (border-box) */
+  --pt-desktop-ticker-top-inset: 13px;      /* inset above cards */
+  --pt-desktop-ticker-bottom-inset: 13px;   /* inset below cards */
+
+  --pt-desktop-price-card-height: 39px;
+  --pt-desktop-price-card-gap: 16px;
+  --pt-desktop-price-card-radius: 12px;
+  --pt-desktop-price-card-width-standard: 252px;
+  --pt-desktop-price-card-width-compact: 224px;
+  --pt-desktop-price-card-padding-x: 14px;
+  --pt-desktop-price-card-padding-y: 8px;
 }
 @media (min-width: 768px) {
   :root {
@@ -354,19 +373,21 @@ a:hover { color: var(--c-a-hover); }
 }
 @media (min-width: 1025px) {
   :root {
-    /* market ticker — desktop steps (≥1025) */
-    --market-ticker-height: 64px;     /* 9 + 46 + 9 */
-    --market-ticker-padding-top: 9px;
-    --market-ticker-padding-bottom: 9px;
+    /* market ticker — desktop: master prompt exact sizes, wired to the
+       canonical --pt-desktop-* tokens (13 + 39 + 13 = 65 bar) */
+    --market-ticker-height: var(--pt-desktop-ticker-height);           /* 65px */
+    --market-ticker-padding-top: var(--pt-desktop-ticker-top-inset);   /* 13px */
+    --market-ticker-padding-bottom: var(--pt-desktop-ticker-bottom-inset); /* 13px */
     --market-ticker-padding-inline: 20px;
     --market-ticker-menu-width: 14px;
     --market-ticker-menu-height: 13px;
     --market-ticker-menu-gap: 9px;
-    --market-card-gap: 9px;
-    --market-card-width: 170px;
-    --market-card-height: 46px;
-    --market-card-padding-block: 7px;
-    --market-card-padding-inline: 11px;
+    --market-card-gap: var(--pt-desktop-price-card-gap);               /* 16px */
+    --market-card-width: var(--pt-desktop-price-card-width-standard);  /* 252px */
+    --market-card-height: var(--pt-desktop-price-card-height);         /* 39px */
+    --market-card-radius: var(--pt-desktop-price-card-radius);         /* 12px */
+    --market-card-padding-block: var(--pt-desktop-price-card-padding-y);  /* 8px */
+    --market-card-padding-inline: var(--pt-desktop-price-card-padding-x); /* 14px */
     --market-product-font-size: 12.5px;
     --market-product-line-height: 16px;
     --market-price-font-size: 11px;
@@ -407,6 +428,26 @@ a:hover { color: var(--c-a-hover); }
 .pt-head-row .pt-wrap { display: flex; align-items: stretch; justify-content: space-between; height: var(--head-h); }
 .pt-head-items-left { display: flex; align-items: stretch; flex-grow: 1; }
 .pt-head-items-right { display: flex; align-items: stretch; }
+
+/* master prompt — B) dark navigation bar below the black top header.
+   Only rendered ≥941 (see media block below); the top bar keeps the
+   existing approved black. */
+.pt-head-navrow { display: none; }
+@media (min-width: 941px) {
+  :root { --header-height: var(--pt-desktop-header-top-height); } /* 101px */
+  .pt-head-slot-desktop { height: var(--pt-desktop-header-total-height); } /* 151px flow slot */
+  .pt-smart-head { min-height: var(--pt-desktop-header-total-height); }
+  .pt-head-navrow {
+    display: block;
+    background: rgb(0, 0, 0);
+    color: var(--c-contrast-150);
+    padding: 0 var(--header-padding-inline);
+  }
+  .pt-head-navrow .pt-wrap {
+    display: flex; align-items: stretch;
+    height: var(--pt-desktop-header-nav-height); /* 50px */
+  }
+}
 
 .pt-offcanvas-toggle {
   display: flex; align-items: center;
@@ -870,6 +911,18 @@ a:hover { color: var(--c-a-hover); }
 @media (min-width: 1025px) {
   .pt-ticker-menu .inner { top: 5.5px; }
   .pt-ticker-menu::after { top: 11px; }
+  /* master prompt — desktop cards render as SINGLE-ROW pills (reference
+     form): [name icon] [price ▲ change (percent)] inside the 39px card;
+     cards never stretch, fixed widths 252px standard / 224px compact
+     (content-based class from MarketTicker). */
+  .pt-ticker-card {
+    flex-direction: row;
+    align-items: center;
+    justify-content: flex-start;
+    gap: 8px;
+  }
+  .pt-ticker-card .pt-ticker-row { flex-shrink: 0; }
+  .pt-ticker-card.is-compact { flex-basis: var(--pt-desktop-price-card-width-compact); }
 }
 
 /* ----------------------------------------------------------- block heads --- */

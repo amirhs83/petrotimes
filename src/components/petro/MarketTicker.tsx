@@ -248,6 +248,13 @@ function TickerCard({ item, quote }: { item: TickerItem; quote?: MarketQuote }) 
   const change = quote?.change ?? null;
   const percent = quote?.percent ?? null;
 
+  /* master prompt — desktop width classes: short/medium product names get
+     the compact 224px card, standard/long names the standard 252px card.
+     The class only changes flex-basis at ≥1025 (CSS); mobile/tablet keep
+     their own measured widths. Name length is the stable content signal —
+     market values change per fetch, names do not. */
+  const compact = item.name.trim().length <= 9;
+
   const priceNum = parseNum(price);
   const changeNum = parseNum(change);
   const unavailable =
@@ -258,7 +265,10 @@ function TickerCard({ item, quote }: { item: TickerItem; quote?: MarketQuote }) 
   const direction = unavailable || changeNum === 0 ? 'flat' : changeNum > 0 ? 'up' : 'down';
 
   return (
-    <div className="pt-ticker-card" data-key={item.key}>
+    <div
+      className={`pt-ticker-card${compact ? ' is-compact' : ''}`}
+      data-key={item.key}
+    >
       <div className="pt-ticker-card-top">
         <span className="pt-ticker-name">{item.name}</span>
         <img

@@ -25,12 +25,23 @@ export function Chrome({
   const [sticky, setSticky] = useState(false);
   const searchInput = useRef<HTMLInputElement>(null);
 
-  /* smart sticky: header fixes after scrolling past its own height */
+  /* smart sticky: header fixes after scrolling past its own height.
+     Desktop header (≥941) is the two-bar master-prompt structure
+     (101px black top bar + 50px dark nav row = 151px), so its threshold
+     is 151; the mobile header keeps its 63px behavior. Re-evaluated on
+     resize so crossing the breakpoint never leaves a stale state. */
   useEffect(() => {
-    const onScroll = () => setSticky(window.scrollY > 63);
+    const onScroll = () => {
+      const desktop = window.matchMedia('(min-width: 941px)').matches;
+      setSticky(window.scrollY > (desktop ? 151 : 63));
+    };
     window.addEventListener('scroll', onScroll, { passive: true });
+    window.addEventListener('resize', onScroll, { passive: true });
     onScroll();
-    return () => window.removeEventListener('scroll', onScroll);
+    return () => {
+      window.removeEventListener('scroll', onScroll);
+      window.removeEventListener('resize', onScroll);
+    };
   }, []);
 
   useEffect(() => {
@@ -56,10 +67,11 @@ export function Chrome({
 
   return (
     <>
-      {/* desktop header — wrapped in a flow slot that keeps its 63px layout
-          height while the header itself goes fixed on sticky (live SmartMag
-          keeps the original in flow; without the slot the document shifted
-          up 63px on scroll, pulling the footer over the last card) */}
+      {/* Desktop header (≥941) — master-prompt two-bar structure:
+          A) 101px black top bar (hamburger + logo | Subscribe + search)
+          B) 50px dark navigation row below it. Total before the price
+          ticker = 151px. Mobile (≤940) renders its own separate header
+          and is untouched. */}
       <div className="pt-head-slot pt-head-slot-desktop">
         <header className={`pt-smart-head ${sticky ? 'is-sticky' : ''}`} id="smart-head" data-sticky="auto">
         <div className="pt-head-row pt-dark">
@@ -85,17 +97,6 @@ export function Chrome({
                   />
                 </span>
               </a>
-              <nav className="pt-nav-wrap" aria-label="Main">
-                <ul className="pt-navigation menu">
-                  {menu.map((item) => (
-                    <li key={item.label} className={item.current ? 'current-menu-item' : ''}>
-                      <a href={item.href} aria-current={item.current ? 'page' : undefined}>
-                        {item.label}
-                      </a>
-                    </li>
-                  ))}
-                </ul>
-              </nav>
             </div>
             <div className="pt-head-items-right">
               {/* Subscribe — the site's real newsletter capability (sidebar
@@ -115,6 +116,22 @@ export function Chrome({
                 <Icon name="search" />
               </a>
             </div>
+          </div>
+        </div>
+        {/* B) dark navigation row — 50px bar below the black top header */}
+        <div className="pt-head-navrow pt-dark">
+          <div className="pt-wrap">
+            <nav className="pt-nav-wrap" aria-label="Main">
+              <ul className="pt-navigation menu">
+                {menu.map((item) => (
+                  <li key={item.label} className={item.current ? 'current-menu-item' : ''}>
+                    <a href={item.href} aria-current={item.current ? 'page' : undefined}>
+                      {item.label}
+                    </a>
+                  </li>
+                ))}
+              </ul>
+            </nav>
           </div>
         </div>
         </header>
