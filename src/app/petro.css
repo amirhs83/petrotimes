@@ -1688,11 +1688,12 @@ a:hover { color: var(--c-a-hover); }
      energy/footer/ads widgets 350 (x 20) at 390 → 19.5px container padding */
   .pt-container { max-width: none; padding-inline: 19.5px; }
   .pt-footer .pt-container { max-width: none; padding-inline: 20px; }
-  /* client mobile reference: header bar 42px (slot keeps the flow height);
-     reference joining gap — bar bottom (y94) → featured image top (y102) */
-  .pt-head-slot-mobile { height: var(--mobile-header-height); }
-  .pt-mobile-head-row { height: var(--mobile-header-height); }
-  :root { --mobile-header-height: 42px; }
+  /* reference joining gap — bar bottom (y94) → featured image top (y102).
+     Header/ticker geometry for phones is owned EXCLUSIVELY by the
+     Bloomberg master-prompt mobile block at the end of this file
+     (--pt-mobile-* tokens): the old 42px re-pin lived here and masked
+     every token edit above it (measured root cause of the previous
+     mobile implementation failure). */
   .pt-ticker-section { padding-bottom: var(--market-to-content-gap); }
   .pt-footer-cols { display: block; }
   .pt-footer-col-about,
@@ -1808,6 +1809,200 @@ a:hover { color: var(--c-a-hover); }
 
 @media (max-width: 350px) {
   .pt-container { padding-inline: 15px; }
+}
+
+/* =========================================================================
+   MASTER PROMPT — "Mobile Header & Market Ticker | Exact Bloomberg Geometry"
+   (phones ≤767 — the project's real phone breakpoint). Desktop (≥1025) and
+   tablet (768–1024) rules are NOT touched by anything below: every rule here
+   lives inside @media (max-width:767px) and overrides all earlier mobile
+   rules by source order (this block is last → wins every cascade tie).
+
+   §13 root cause of the previous mobile failure (measured, not guessed):
+   the components consume the --mobile-header-height / --market-card-* token
+   layer, but a LATE block at the file bottom re-pinned
+   `--mobile-header-height: 42px` (old 359×474 client reference) — any edit
+   to the base :root tokens was masked at phone widths and the mobile render
+   kept the old geometry (header 42, cards 106×37, gap 5). The old re-pin is
+   removed and the rendered components are now wired to the §12 tokens below.
+   ========================================================================= */
+@media (max-width: 767px) {
+  /* ---------------------------------------------------- §12 tokens ----- */
+  :root {
+    --pt-mobile-header-height: 51px;
+    --pt-mobile-header-padding-left: 15px;
+    --pt-mobile-header-padding-right: 18px;
+
+    --pt-mobile-logo-height: 24px;
+    --pt-mobile-logo-left: 45px;
+    --pt-mobile-menu-logo-gap: 16px;
+
+    --pt-mobile-menu-width: 14px;
+    --pt-mobile-menu-height: 12px;
+
+    --pt-mobile-subscribe-width: 88px;
+    --pt-mobile-subscribe-height: 30px;
+    --pt-mobile-subscribe-radius: 4px;
+
+    --pt-mobile-search-size: 14px;
+
+    --pt-mobile-ticker-height: 72px;
+    --pt-mobile-ticker-top-inset: 10px;
+    --pt-mobile-ticker-bottom-inset: 11px;
+    --pt-mobile-ticker-bottom-border: 2px;
+
+    --pt-mobile-market-menu-width: 33px;
+    --pt-mobile-market-menu-gap: 4px;
+
+    --pt-mobile-card-height: 49px;
+    --pt-mobile-card-width-compact: 133px;
+    --pt-mobile-card-width-standard: 141px;
+    --pt-mobile-card-gap: 11px;
+    --pt-mobile-card-radius: 8px;
+    --pt-mobile-card-padding-x: 8px;
+    --pt-mobile-card-padding-y: 6px;
+
+    --pt-mobile-product-font-size: 14px;
+    --pt-mobile-price-font-size: 14px;
+    --pt-mobile-card-row-gap: 3px;
+  }
+
+  /* ------------------------------------------- §04 mobile header ------- */
+  /* 51px black bar (border-box, includes any bottom hairline): height is
+     pinned with min+max so no other margin/padding can grow it. */
+  .pt-head-slot-mobile { height: var(--pt-mobile-header-height); }
+  .pt-mobile-head-row {
+    height: var(--pt-mobile-header-height);
+    min-height: var(--pt-mobile-header-height);
+    max-height: var(--pt-mobile-header-height);
+    background: #000000;
+    padding: 0 var(--pt-mobile-header-padding-right) 0 var(--pt-mobile-header-padding-left);
+  }
+
+  /* §06 hamburger — visible ink 14×12 (3 × 2px bars at 0/5/10). The 43px
+     click target (padding 14 + symmetric negative margins) is independent
+     of the visual size and keeps the glyph ink at exactly x=15. */
+  .pt-mobile-toggle .pt-hamburger {
+    width: var(--pt-mobile-menu-width);
+    height: var(--pt-mobile-menu-height);
+  }
+  .pt-mobile-toggle .pt-hamburger::before,
+  .pt-mobile-toggle .pt-hamburger .inner,
+  .pt-mobile-toggle .pt-hamburger::after {
+    width: var(--pt-mobile-menu-width);
+  }
+
+  /* §05 logo — VISIBLE ink height 24px is the criterion (the PNG fills its
+     529×88 canvas with no transparent padding, so an img box of 24px renders
+     24px of ink; width follows the original aspect ≈144.27px — never
+     squeezed toward the Bloomberg 119px). Logo ink left offset = 45px:
+     15 (bar padding) + 14 (ink) + 16 ink gap; the flow margin is the ink
+     gap minus the 1px of click-target box that extends past the glyph. */
+  .pt-mobile-logo {
+    margin-left: calc(var(--pt-mobile-menu-logo-gap) - 1px);
+  }
+  .pt-mobile-logo img {
+    width: auto;
+    height: var(--pt-mobile-logo-height);
+  }
+
+  /* §06 Subscribe — 88×30, radius 4, 13px/600, white on black. */
+  .pt-mobile-head .pt-head-subscribe {
+    width: var(--pt-mobile-subscribe-width);
+    height: var(--pt-mobile-subscribe-height);
+    border-radius: var(--pt-mobile-subscribe-radius);
+    font-size: 13px;
+    font-weight: 600;
+    color: #000000;
+    background: #ffffff;
+  }
+
+  /* §06 search — visible glyph 14px; right offset 18px (glyph right edge
+     = viewport − 18 via padding/negative-margin trick), ink gap from
+     Subscribe = 18px (10 margin + 8 padding). */
+  .pt-mobile-search {
+    font-size: var(--pt-mobile-search-size);
+    margin-left: 10px;
+  }
+
+  /* -------------------------------------- §07/§08/§09/§10 ticker ------- */
+  /* 72px white bar DIRECTLY under the header (margin-top 0):
+     10 top inset + 49 card + 11 bottom inset + 2 separator = 72.
+     The 2px hairline is the bar's own bottom border and is part of the
+     72px (border-box). Inline padding is 0 — the menu container owns the
+     left geometry, cards clip flush at the right edge (Bloomberg form). */
+  .pt-ticker-bar {
+    height: var(--pt-mobile-ticker-height);
+    min-height: var(--pt-mobile-ticker-height);
+    max-height: var(--pt-mobile-ticker-height);
+    padding: var(--pt-mobile-ticker-top-inset) 0 var(--pt-mobile-ticker-bottom-inset);
+    border-bottom: var(--pt-mobile-ticker-bottom-border) solid #ececec;
+  }
+
+  /* §08 market menu — 33px container OUTSIDE the scroll region, 11×7 glyph
+     at 11px inside it, 4px gap after the container → first card lands at
+     exactly 37px from the page edge (0 bar padding + 33 + 4). */
+  .pt-ticker-menu {
+    width: var(--pt-mobile-market-menu-width);
+    height: 7px;
+    margin-right: var(--pt-mobile-market-menu-gap);
+  }
+  .pt-ticker-menu::before,
+  .pt-ticker-menu .inner,
+  .pt-ticker-menu::after {
+    left: 11px;
+    right: auto;
+    width: 11px;
+  }
+  .pt-ticker-menu::before { top: 0; }
+  .pt-ticker-menu .inner { top: 2.5px; }
+  .pt-ticker-menu::after { top: 5px; }
+
+  /* §09 cards — 49px tall, content-fitted width clamped to the reference
+     minimums (133 compact / 141 standard): reference geometry when data is
+     compact, only the minimum necessary growth when real quotes are wider
+     (master prompt §09/§10 — data is never clipped or dropped). No stretch,
+     no wrap, one row, radius 8, padding 6×8, gap 11. */
+  .pt-ticker-set {
+    gap: var(--pt-mobile-card-gap);
+    margin-right: var(--pt-mobile-card-gap);
+  }
+  .pt-ticker-card {
+    flex: 0 0 auto;
+    width: max-content;
+    min-width: var(--pt-mobile-card-width-standard);
+    height: var(--pt-mobile-card-height);
+    min-height: var(--pt-mobile-card-height);
+    max-height: var(--pt-mobile-card-height);
+    border-radius: var(--pt-mobile-card-radius);
+    padding: var(--pt-mobile-card-padding-y) var(--pt-mobile-card-padding-x);
+    gap: var(--pt-mobile-card-row-gap);
+    justify-content: center;
+  }
+  .pt-ticker-card.is-compact { min-width: var(--pt-mobile-card-width-compact); }
+
+  /* §10 card typography — 14px/17px both rows, 3px row gap (padding 6+6 +
+     17+3+17 = 49 exactly). Price white, existing green/red for changes. */
+  .pt-ticker-name {
+    font-size: var(--pt-mobile-product-font-size);
+    line-height: 17px;
+  }
+  .pt-ticker-row {
+    font-size: var(--pt-mobile-price-font-size);
+    line-height: 17px;
+    font-weight: 500;
+    color: #ffffff;
+  }
+  .pt-ticker-price { color: #ffffff; }
+  .pt-ticker-change { font-weight: 600; }
+}
+
+/* §15 narrow-width guard (≤340): ONLY the two flexible gaps shrink so the
+   fixed-size elements never overlap at 320px (15+14+144.27+88+14 + gaps ≤
+   viewport−33). All fixed dimensions are untouched. */
+@media (max-width: 340px) {
+  .pt-mobile-logo { margin-left: calc(13px - 1px); }
+  .pt-mobile-search { margin-left: 5px; } /* +8 padding = 13px ink gap */
 }
 
 /* ------------------------------------------------------------- a11y/misc --- */
