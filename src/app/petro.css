@@ -651,15 +651,30 @@ a:hover { color: var(--c-a-hover); }
 .pt-ticker-menu::before { top: 0; }
 .pt-ticker-menu .inner { top: 4px; }
 .pt-ticker-menu::after { top: 8px; }
-.pt-ticker-cards {
-  display: flex; align-items: center;
-  gap: 5px;
+.pt-ticker-viewport {
   flex: 1 1 auto;
   min-width: 0;
-  overflow-x: auto;
-  scrollbar-width: none;
+  overflow: hidden;
+  cursor: grab;
+  touch-action: pan-y; /* horizontal scrub captured by JS, vertical page scroll stays native */
+  user-select: none;
+  -webkit-user-select: none;
 }
-.pt-ticker-cards::-webkit-scrollbar { display: none; }
+.pt-ticker-viewport.is-dragging { cursor: grabbing; }
+.pt-ticker-track {
+  display: flex;
+  align-items: center;
+  will-change: transform;
+}
+/* one copy of the card set; its trailing margin must equal the internal
+   gap so the distance between consecutive sets is the exact loop period */
+.pt-ticker-set {
+  display: flex;
+  align-items: center;
+  flex-shrink: 0;
+  gap: 5px;
+  margin-right: 5px;
+}
 .pt-ticker-card {
   flex: 0 0 106px;
   height: 37px;
@@ -682,7 +697,17 @@ a:hover { color: var(--c-a-hover); }
   color: #fff;
   white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
 }
-.pt-ticker-icon { width: 14px; height: 14px; flex-shrink: 0; }
+/* every icon is a circle — the dedicated card icons ship full-bleed circles,
+   and the data-driven fallback icons are TradingView full-bleed SQUARES that
+   the radius turns into matching circles (client fix: no square chips). The
+   faint ring keeps dark-on-dark icons (crude oil, heating oil…) legible as
+   circles instead of floating glyphs. */
+.pt-ticker-icon {
+  width: 14px; height: 14px; flex-shrink: 0;
+  border-radius: 50%;
+  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.22);
+  -webkit-user-drag: none;
+}
 .pt-ticker-row {
   display: flex; align-items: baseline;
   gap: 3px; /* reference: price → ▲ ink gap */
@@ -704,7 +729,7 @@ a:hover { color: var(--c-a-hover); }
   .pt-ticker-menu { width: 13px; height: 12px; margin-right: 7px; }
   .pt-ticker-menu .inner { top: 5px; }
   .pt-ticker-menu::after { top: 10px; }
-  .pt-ticker-cards { gap: 7px; }
+  .pt-ticker-set { gap: 7px; margin-right: 7px; }
   .pt-ticker-card { flex: 0 0 150px; height: 42px; padding: 6px 10px; }
   .pt-ticker-name { font-size: 12px; line-height: 15px; }
   .pt-ticker-icon { width: 15px; height: 15px; }
@@ -716,7 +741,7 @@ a:hover { color: var(--c-a-hover); }
   .pt-ticker-menu { width: 14px; height: 13px; margin-right: 9px; }
   .pt-ticker-menu .inner { top: 5.5px; }
   .pt-ticker-menu::after { top: 11px; }
-  .pt-ticker-cards { gap: 9px; }
+  .pt-ticker-set { gap: 9px; margin-right: 9px; }
   .pt-ticker-card { flex: 0 0 170px; height: 46px; padding: 7px 11px; }
   .pt-ticker-name { font-size: 12.5px; line-height: 16px; }
   .pt-ticker-icon { width: 17px; height: 17px; }
