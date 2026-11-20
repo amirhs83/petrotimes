@@ -28,7 +28,19 @@ export default function RootLayout({
 }>) {
   return (
     <html lang="fa-IR" dir="rtl">
-      <body>{children}</body>
+      <body>
+        {/* Preload above-the-fold fonts so the real woff2 wins the
+            font-display:swap race even on slow mobile networks — prevents
+            fallback-font flashes (client screenshot: Subscribe ink sat low
+            because Barlow had not rendered yet). React 19 hoists these
+            <link> tags into <head>. crossOrigin is required for fonts. */}
+        <link rel="preload" href="/assets/fonts/Barlow-400-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/assets/fonts/Barlow-600-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/assets/fonts/Vazir.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        <link rel="preload" href="/assets/fonts/Vazir-Bold.woff" as="font" type="font/woff" crossOrigin="anonymous" />
+        <link rel="preload" href="/assets/fonts/ts-icons.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
+        {children}
+      </body>
     </html>
   );
 }
