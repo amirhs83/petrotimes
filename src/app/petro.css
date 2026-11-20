@@ -458,7 +458,9 @@ a:hover { color: var(--c-a-hover); }
   .pt-smart-head { min-height: var(--pt-desktop-header-total-height); }
   .pt-head-navrow {
     display: block;
-    background: rgb(0, 0, 0);
+    /* client request: nav section (صفحه اصلی/نفت/گاز/…) a shade lighter than
+       the pure-black top header — reference image sampled #1c1c1c uniform */
+    background: #1c1c1c;
     color: var(--c-contrast-150);
     padding: 0 var(--header-padding-inline);
   }
@@ -1869,10 +1871,10 @@ a:hover { color: var(--c-a-hover); }
 
     --pt-mobile-search-size: 14px;
 
-    --pt-mobile-ticker-height: 64px;
+    --pt-mobile-ticker-height: 63px;
     --pt-mobile-ticker-top-inset: 6px;
     --pt-mobile-ticker-bottom-inset: 7px;
-    --pt-mobile-ticker-bottom-border: 2px;
+    --pt-mobile-ticker-bottom-border: 1px;
 
     --pt-mobile-market-menu-width: 33px;
     --pt-mobile-market-menu-gap: 4px;
@@ -1951,19 +1953,19 @@ a:hover { color: var(--c-a-hover); }
   }
 
   /* -------------------------------------- §07/§08/§09/§10 ticker ------- */
-  /* 64px white bar DIRECTLY under the header (margin-top 0):
-     6 top inset + 49 card + 7 bottom inset + 2 separator = 64.
-     Insets reduced from Bloomberg's 10/11 (client request: the white
-     space above/below the black cards read as too tall on phones).
-     The 2px hairline is the bar's own bottom border and is part of the
-     64px (border-box). Inline padding is 0 — the menu container owns the
-     left geometry, cards clip flush at the right edge (Bloomberg form). */
+  /* 63px white bar DIRECTLY under the header (margin-top 0):
+     6 top inset + 49 card + 7 bottom inset + 1 separator = 63.
+     Bottom hairline per client reference image: thin light-gray 1px
+     #e3e3e3 (was 2px #ececec). The hairline is the bar's own bottom
+     border and is part of the 63px (border-box). Inline padding is 0 —
+     the menu container owns the left geometry, cards clip flush at the
+     right edge (Bloomberg form). */
   .pt-ticker-bar {
     height: var(--pt-mobile-ticker-height);
     min-height: var(--pt-mobile-ticker-height);
     max-height: var(--pt-mobile-ticker-height);
     padding: var(--pt-mobile-ticker-top-inset) 0 var(--pt-mobile-ticker-bottom-inset);
-    border-bottom: var(--pt-mobile-ticker-bottom-border) solid #ececec;
+    border-bottom: var(--pt-mobile-ticker-bottom-border) solid #e3e3e3;
   }
 
   /* client report — marquee stutter exactly where cards cross the strip
