@@ -3,6 +3,7 @@ import { Chrome } from '@/components/petro/Chrome';
 import { MarketTicker } from '@/components/petro/MarketTicker';
 import { HighlightsHero, SmallPostCard } from '@/components/petro/PostCards';
 import { FeaturedNews } from '@/components/petro/FeaturedNews';
+import { TopNewsMobile } from '@/components/petro/TopNewsMobile';
 import { TvSection } from '@/components/petro/TvSection';
 import { MagazineSlider } from '@/components/petro/MagazineSlider';
 import { FeatureTitle } from '@/components/petro/FeatureTitle';
@@ -53,6 +54,11 @@ export default async function Home() {
                 {/* MOBILE/TABLET (≤1024) — FEATURED NEWS editorial block per
                     the client mobile reference (359×474); unchanged. */}
                 <FeaturedNews article={s.heroMain} />
+                {/* MOBILE ONLY (≤767) — TOP NEWS section per the client's
+                    1200×1280 reference raster (400px viewport @3x): black
+                    bar + 4:3 image-right rows. Hidden ≥768; tablet keeps
+                    the .pt-featured-secondary grid below, desktop the duo. */}
+                <TopNewsMobile articles={s.heroSecondary} />
                 {/* secondary cards — same card design, reflowed below */}
                 <div className="pt-featured-secondary">
                   {s.heroSecondary.map((a) => (

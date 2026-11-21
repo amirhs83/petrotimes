@@ -555,6 +555,11 @@ a:hover { color: var(--c-a-hover); }
   padding: 0 var(--subscribe-padding-inline);
   font-size: var(--subscribe-font-size);
   align-self: center;
+  /* measured (pixel scan, 1440): Barlow-700 ink sits 1px below the pill's
+     geometric center (gaps 14/12) and reads lower still because the string
+     has no descenders — 2px bottom padding shifts the ink up exactly 1px
+     to center it (mobile pill 80×26 measures already symmetric 8/8). */
+  padding-bottom: 2px;
   /* mirror of the reference right group: Subscribe then the search icon */
   margin-inline-end: 12px;
 }
@@ -613,6 +618,12 @@ a:hover { color: var(--c-a-hover); }
   width: var(--mobile-subscribe-width);
   height: var(--mobile-subscribe-height);
   font-size: var(--mobile-subscribe-font-size);
+}
+/* tablet (768-940, 84x29 pill) — pixel scan: Barlow-600 12px ink sits 1px
+   below the pill center (gaps 12/10); 2px bottom padding re-centers it.
+   Phone ≤767 (80x26) measures symmetric 9/9 and must NOT shift. */
+@media (min-width: 768px) and (max-width: 940px) {
+  .pt-mobile-head .pt-head-subscribe { padding-bottom: 2px; }
 }
 .pt-mobile-search {
   color: #fff; font-size: 17px;
@@ -1188,6 +1199,7 @@ a:hover { color: var(--c-a-hover); }
 @media (max-width: 350px) {
   /* same 10px inset on small phones: container padding 15px − 5px margin */
   .pt-featured { margin-inline: -5px; }
+  .pt-tn { margin-inline: -5px; }
 }
 @media (min-width: 768px) {
   .pt-featured { margin-bottom: 28px; }
@@ -1204,6 +1216,129 @@ a:hover { color: var(--c-a-hover); }
   .pt-featured,
   .pt-featured-secondary { display: none; }
   .pt-duo-desktop { display: grid; }
+}
+
+/* ------------------------------------- top news (mobile ≤767 only) -------- */
+/* Pixel reconstruction of the client's reference raster (1200×1280 = a
+   400px viewport captured at 3×). Every value below is raster/3 (or the
+   raster ratio applied to the live container): black 30px bar, white bold
+   "Top News" at the right, 27px chevron zone at the far right end behind
+   a 1px white separator, then 4:3 image-right rows (image 26.4% of the
+   container, 10px image/text gap, 10px row gap) with the English date/time
+   pinned bottom-left of the text column. Scoped tokens --tn-*; the block
+   is display:none ≥768 so tablet (existing 2-col .pt-featured-secondary
+   grid) and desktop (pt-duo) are untouched. */
+.pt-tn { display: none; }
+@media (max-width: 767px) {
+  .pt-tn {
+    display: block;
+    --tn-bar-h: 30px;          /* raster 89 / 3 */
+    --tn-bar-gap: 13.5px;      /* raster 41 / 3 */
+    --tn-row-gap: 10px;        /* raster 30-35 / 3 */
+    --tn-img-w: 26.4%;         /* raster 303 / 1140 */
+    --tn-media-gap: 10px;      /* raster 30 / 3 */
+    --tn-arrow-w: 27px;        /* raster 81 / 3 */
+    --tn-title-gap: 10px;      /* raster 31 text→separator / 3 */
+    --tn-heading-size: 15px;   /* raster cap 33 / 3 = 11 → Barlow 700 */
+    --tn-title-size: 14px;     /* raster ink 43-45 / 3 ≈ 15px → Vazir ink ≈ 1.07em */
+    --tn-title-lh: 25px;       /* raster line pitch 75 / 3 */
+    --tn-date-size: 9px;       /* raster cap 19 / 3 → Barlow 600 */
+    --tn-date-color: #4a5160;  /* raster sample rgb(72,78,96) */
+    /* same 10px inset as the featured hero block: container padding
+       19.5px − 9.5px negative margin; −5px on ≤350 (15px padding) */
+    margin-inline: -9.5px;
+    margin-bottom: 26px;
+  }
+  .pt-tn-head {
+    display: flex;
+    align-items: stretch;
+    height: var(--tn-bar-h);
+    background: #000;
+  }
+  /* far-right chevron zone (RTL: first flex child sits at the right);
+     its inline-end border = the 1px white separator on its LEFT edge */
+  .pt-tn-arrow {
+    flex: 0 0 var(--tn-arrow-w);
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    border-inline-end: 1px solid #fff;
+    color: #fff;
+    /* ts-icons angle glyph ink ≈ 0.28em wide / 0.45em tall: 18px → ~5×8
+       matches the raster chevron ink (15×25 / 3 = 5×8.3) */
+    font-size: 18px;
+    line-height: 1;
+  }
+  .pt-tn-heading {
+    margin: 0;
+    padding-inline-start: var(--tn-title-gap);
+    align-self: center;
+    font-family: var(--ui-font);
+    font-size: var(--tn-heading-size);
+    font-weight: 700;
+    line-height: 1;
+    color: #fff;
+  }
+  .pt-tn-list {
+    margin-top: var(--tn-bar-gap);
+    display: flex;
+    flex-direction: column;
+    gap: var(--tn-row-gap);
+  }
+  .pt-tn-item {
+    display: flex;
+    align-items: stretch;
+    gap: var(--tn-media-gap);
+  }
+  /* image RIGHT (first child in RTL), uniform 4:3, square, flat.
+     align-self:flex-start keeps the aspect box exact even when a 3-line
+     title makes the row taller than the image (narrow viewports) — the
+     image never stretches; the text column simply runs longer. */
+  .pt-tn-media {
+    align-self: flex-start;
+    flex: 0 0 var(--tn-img-w);
+    aspect-ratio: 4 / 3;
+    display: block;
+  }
+  .pt-tn-media img {
+    display: block;
+    width: 100%;
+    height: 100%;
+    object-fit: cover;
+    object-position: center;
+  }
+  .pt-tn-text {
+    flex: 1 1 auto;
+    min-width: 0;
+    display: flex;
+    flex-direction: column;
+    justify-content: space-between;
+  }
+  .pt-tn-title {
+    margin: 0;
+    font-size: var(--tn-title-size);
+    line-height: var(--tn-title-lh);
+    font-weight: 700;
+    color: var(--c-contrast);
+    overflow-wrap: break-word;
+  }
+  .pt-tn-title a { color: inherit; }
+  .pt-tn-date {
+    margin: 0;
+    direction: ltr;
+    unicode-bidi: isolate;
+    text-align: left;
+    font-family: var(--ui-font);
+    font-size: var(--tn-date-size);
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: 0.02em;
+    color: var(--tn-date-color);
+    /* raster: date ink bottom sits 28px/3 ≈ 9.3px above the image bottom */
+    padding-bottom: 5.5px;
+  }
+  /* the mobile secondary grid is replaced by the Top News section */
+  .pt-featured-secondary { display: none; }
 }
 
 /* energy main — title 21px/700 */
