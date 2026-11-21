@@ -1,0 +1,702 @@
+   601→.pt-mobile-toggle .pt-hamburger::before,
+   602→.pt-mobile-toggle .pt-hamburger .inner,
+   603→.pt-mobile-toggle .pt-hamburger::after {
+   604→  content: ""; position: absolute; left: 0; width: var(--mobile-hamburger-width); height: 2px; background: currentColor;
+   605→}
+   606→.pt-mobile-toggle .pt-hamburger::before { top: 0; }
+   607→.pt-mobile-toggle .pt-hamburger .inner { top: 5px; }
+   608→.pt-mobile-toggle .pt-hamburger::after { top: 10px; }
+   609→.pt-mobile-logo {
+   610→  display: flex; align-items: center;
+   611→  flex-shrink: 0;
+   612→  /* reference: hamburger ink ends x26 → logo ink starts x43 */
+   613→  margin-left: 15px;
+   614→}
+   615→.pt-mobile-logo img { width: var(--mobile-logo-width); height: auto; display: block; }
+   616→.pt-mobile-actions { margin-left: auto; display: flex; align-items: center; }
+   617→.pt-mobile-head .pt-head-subscribe {
+   618→  width: var(--mobile-subscribe-width);
+   619→  height: var(--mobile-subscribe-height);
+   620→  font-size: var(--mobile-subscribe-font-size);
+   621→}
+   622→/* tablet (768-940, 84x29 pill) — pixel scan: Barlow-600 12px ink sits 1px
+   623→   below the pill center (gaps 12/10); 2px bottom padding re-centers it.
+   624→   Phone ≤767 (80x26) measures symmetric 9/9 and must NOT shift. */
+   625→@media (min-width: 768px) and (max-width: 940px) {
+   626→  .pt-mobile-head .pt-head-subscribe { padding-bottom: 2px; }
+   627→}
+   628→.pt-mobile-search {
+   629→  color: #fff; font-size: 17px;
+   630→  display: flex; align-items: center;
+   631→  height: 100%;
+   632→  /* reference subscribe→search ink gap ≈14px */
+   633→  margin-left: 7px;
+   634→  padding: 0 8px;
+   635→  margin-right: -8px; /* keep the glyph at the reference x while the click
+   636→                         target reaches toward the viewport edge */
+   637→}
+   638→/* tablet steps of the mobile header live in the geometry-token override
+   639→   block (min-width:768px) — nothing left to set here */
+   640→
+   641→/* ------------------------------------------------------------- off-canvas --- */
+   642→.pt-offcanvas-backdrop {
+   643→  position: fixed; inset: 0;
+   644→  background: #000;
+   645→  opacity: 0; visibility: hidden;
+   646→  transition: opacity 0.4s ease-in-out;
+   647→  z-index: 9998;
+   648→}
+   649→.pt-offcanvas-backdrop.is-open { opacity: 1; visibility: visible; }
+   650→.pt-offcanvas {
+   651→  position: fixed; top: 0; right: 0;
+   652→  display: flex; flex-direction: column;
+   653→  height: 100%; width: 80vw;
+   654→  min-width: 300px; max-width: 370px;
+   655→  background: #000;
+   656→  z-index: 10000;
+   657→  transform: translate3d(100%, 0, 0);
+   658→  transition: 0.4s ease-in-out;
+   659→  transition-property: transform, visibility;
+   660→  visibility: hidden;
+   661→  overflow-y: auto;
+   662→  content-visibility: auto;   /* skipped when closed — matches live (28-rtl.css) */
+   663→}
+   664→.pt-offcanvas.is-open { transform: translate3d(0, 0, 0); visibility: visible; }
+   665→/* live: .off-canvas-head — padding 0 25px / padding-top 38, margin-bottom 20;
+   666→   head box 370×82.1 (38 + logo 44.1); close is absolute top-left (0 9px pad,
+   667→   line-height 26, font 14, bg contrast-200 in s-dark) */
+   668→.pt-offcanvas-head {
+   669→  height: 82.1px;
+   670→  padding: 38px 25px 0;
+   671→  margin-bottom: 20px;
+   672→  position: relative;
+   673→  flex-shrink: 0;
+   674→}
+   675→.pt-offcanvas-head .pt-offcanvas-close {
+   676→  color: #fff;
+   677→  font-size: 14px;
+   678→  position: absolute; top: 0; left: 0;
+   679→  padding: 0 9px;
+   680→  line-height: 26px;
+   681→  background: var(--c-contrast-200);
+   682→  display: block;
+   683→}
+   684→.pt-offcanvas-head .pt-offcanvas-logo {
+   685→  /* live: .off-canvas .ts-logo — flex centered 320×44.1 box (img 265×44) */
+   686→  display: flex; align-items: center; justify-content: center;
+   687→  width: 320px; height: 44.1px;
+   688→  margin-inline: auto;
+   689→}
+   690→.pt-offcanvas-head img { width: 265px; height: 44.1px; object-fit: contain; }
+   691→/* live: .off-canvas-content — flex column, padding 25px, scrollable */
+   692→.pt-offcanvas-content {
+   693→  display: flex; flex-direction: column;
+   694→  padding: 25px;
+   695→  overflow-y: auto; overflow-x: hidden;
+   696→  flex: 1 1 auto;
+   697→}
+   698→/* live: .off-canvas .mobile-menu — margin-top -10 / margin-bottom 45.
+   699→   The live ul is EMPTY at desktop (geometry-1920: widgets at y=162.1 =
+   700→   82.1 + 20 + 25 - 10 + 45); the theme clones nav items only on mobile —
+   701→   reproduced via the ≤1024 visibility below. */
+   702→.pt-offcanvas-content .mobile-menu {
+   703→  font-size: 16px; font-weight: 700;
+   704→  color: var(--c-contrast-850);
+   705→  margin-top: -10px; margin-bottom: 45px;
+   706→}
+   707→.pt-offcanvas-content .mobile-menu li {
+   708→  display: flex; width: 100%;
+   709→  border-bottom: 1px solid rgba(255, 255, 255, 0.11);
+   710→}
+   711→.pt-offcanvas-content .mobile-menu li a {
+   712→  display: block; width: 100%;
+   713→  padding: 12px 0;
+   714→  line-height: 1.5;
+   715→  color: #ececec;
+   716→}
+   717→/* the live theme clones nav items into .mobile-menu only on mobile viewports
+   718→   (≤1024): desktop capture geometry-1920 shows the ul empty — must come AFTER
+   719→   the base li rule (same specificity, later wins) */
+   720→@media (min-width: 1025px) {
+   721→  .pt-offcanvas-content .mobile-menu li { display: none; }
+   722→}
+   723→/* live: .off-canvas-widgets — box 320×756.3 = What's Hot widget (350.3,
+   724→   block-head-b heading fs 20/24 + mb 28 + 3 posts ×78.1, loop-small-sep 32px
+   725→   gaps, widget mb 45) + newsletter widget (last-child → mb 0, spc-newsletter
+   726→   361). The spc-social-block is NOT inside — it is a direct flex child of
+   727→   .off-canvas-content pushed to the bottom via margin-top auto. */
+   728→.pt-offcanvas-widgets .pt-block-head { margin-bottom: 28px; justify-content: center; }
+   729→.pt-offcanvas-widgets .pt-block-head .heading {
+   730→  font-size: 20px; line-height: 24px;
+   731→}
+   732→.pt-offcanvas-widgets .pt-small-post + .pt-small-post {
+   733→  margin-top: 32px;
+   734→}
+   735→.pt-offcanvas-widgets .pt-whatshot { margin-bottom: 45px; }
+   736→/* live: .spc-newsletter-b — background contrast-0 + 6px solid contrast-50
+   737→   (the 6px frame is the element's own border, no wrapper); last widget →
+   738→   margin-bottom 0 */
+   739→.pt-offcanvas-widgets .pt-newsletter-sm {
+   740→  margin-bottom: 0;
+   741→  background: var(--c-contrast-0);
+   742→  border: 6px solid var(--c-contrast-50);
+   743→}
+   744→/* live global inputs (28-rtl): bg contrast-0, border contrast-150, color 500 */
+   745→.pt-offcanvas-widgets .pt-newsletter-sm .fields-style input[type="email"] {
+   746→  background: var(--c-input-bg, var(--c-contrast-0));
+   747→  color: var(--c-contrast-500);
+   748→  border: 1px solid var(--c-contrast-150);
+   749→  box-shadow: 0 2px 7px -4px rgba(0, 0, 0, 0.1);
+   750→}
+   751→.pt-offcanvas-widgets .pt-newsletter-sm .fields-style input[type="submit"] {
+   752→  /* live inline customizer CSS: .spc-newsletter input[type=submit] #1b61c8 —
+   753→     applies to the off-canvas widget too (base .pt-newsletter rule already
+   754→     uses --subscribe-blue); explicit here so the sm variant stays blue */
+   755→  background: var(--subscribe-blue);
+   756→  color: #fff;
+   757→  border: 0;
+   758→  height: 40px;
+   759→}
+   760→/* live: .spc-social-block.spc-social-b.smart-head-social — direct child of
+   761→   .off-canvas-content (flex column), pushed to the bottom via margin-top auto;
+   762→   38px circles (bg rgba(255,255,255,.12) in s-dark, border rgba(0,0,0,.09)),
+   763→   fs 17, padding-top 10, mb -9 on block + 9 on services → block h 57 */
+   764→.pt-offcanvas-social {
+   765→  display: flex; align-items: center; justify-content: center;
+   766→  flex-wrap: wrap;
+   767→  padding-top: 10px;
+   768→  margin-top: auto;
+   769→  margin-bottom: -9px;
+   770→}
+   771→.pt-offcanvas-social .pt-svc-link {
+   772→  display: flex; align-items: center; justify-content: center;
+   773→  width: 38px; height: 38px;
+   774→  margin-left: 9px;
+   775→  margin-bottom: 9px;
+   776→  border: 1px solid rgba(0, 0, 0, 0.09);
+   777→  border-radius: 50%;
+   778→  background: rgba(var(--c-rgba), 0.12);
+   779→  color: var(--c-contrast);
+   780→}
+   781→.pt-offcanvas-social .pt-svc-link:last-child { margin-left: 0; }
+   782→.pt-offcanvas-social .pt-icon { font-size: 17px; line-height: 1; width: auto; }
+   783→
+   784→/* ----------------------------------------------------------- search modal --- */
+   785→.pt-search-modal {
+   786→  position: fixed; inset: 0;
+   787→  background: rgba(0, 0, 0, 0.95);
+   788→  z-index: 10001;
+   789→  display: none;
+   790→  align-items: flex-start;
+   791→  justify-content: center;
+   792→}
+   793→.pt-search-modal.is-open { display: flex; }
+   794→.pt-search-modal-box {
+   795→  width: 100%;
+   796→  max-width: var(--max-width-md, 680px);
+   797→  margin-top: 10vh;
+   798→  padding: 0 30px;
+   799→  color: #fff;
+   800→}
+   801→.pt-search-field {
+   802→  width: 100%;
+   803→  padding: 0 0 12px;
+   804→  margin-bottom: 22px;
+   805→  border-bottom: 1px solid var(--c-contrast-150);
+   806→  height: auto;
+   807→  font-size: 60px;
+   808→  font-weight: 700;
+   809→  line-height: 1;
+   810→  color: #ececec;
+   811→  background: transparent;
+   812→  caret-color: #fff;
+   813→}
+   814→.pt-search-field::placeholder { color: rgba(255, 255, 255, 0.6); opacity: 1; }
+   815→.pt-search-message { font-size: 14px; color: #cfcfcf; }
+   816→.pt-search-message em { font-style: italic; }
+   817→.pt-search-close {
+   818→  position: absolute; top: 20px; left: 20px;
+   819→  color: #fff; opacity: 0.65;
+   820→  font-size: 28px;
+   821→  padding: 8px;
+   822→}
+   823→
+   824→/* ---------------------------------------------------------------- ticker --- */
+   825→/* Market ticker — client mobile reference 359×474: white bar directly under
+   826→   the black header, market-menu glyph pinned LEFT (outside the scroll
+   827→   region), compact dark commodity cards (#131313, radius 6) with two rows:
+   828→   [product name | icon] / [price ▲ change (percent)]. The row is LTR;
+   829→   only the cards strip scrolls horizontally (page never overflows).
+   830→   Prices come from the real market source via /api/market — no hardcoded
+   831→   values; unpublished values render the N/A state. */
+   832→.pt-ticker-section { background: #fff; margin-top: var(--header-to-ticker-gap); }
+   833→.pt-ticker-bar {
+   834→  display: flex; align-items: center;
+   835→  background: #fff;
+   836→  min-height: var(--market-ticker-height);
+   837→  padding: var(--market-ticker-padding-top) var(--market-ticker-padding-inline)
+   838→           var(--market-ticker-padding-bottom);
+   839→  box-sizing: border-box;
+   840→  direction: ltr;
+   841→}
+   842→.pt-ticker-menu {
+   843→  flex-shrink: 0;
+   844→  width: var(--market-ticker-menu-width); height: var(--market-ticker-menu-height);
+   845→  position: relative;
+   846→  margin-right: var(--market-ticker-menu-gap);
+   847→}
+   848→.pt-ticker-menu .inner,
+   849→.pt-ticker-menu::before,
+   850→.pt-ticker-menu::after {
+   851→  content: ""; position: absolute; left: 0; right: 0;
+   852→  height: 2px; background: #111111;
+   853→}
+   854→.pt-ticker-menu::before { top: 0; }
+   855→.pt-ticker-menu .inner { top: 4px; }
+   856→.pt-ticker-menu::after { top: 8px; }
+   857→/* phone-only chevron glyph (Bloomberg mobile reference, §08): rendered in
+   858→   the JSX for every breakpoint, shown ONLY ≤767 — tablet/desktop keep the
+   859→   three-bar glyph above, untouched */
+   860→.pt-ticker-caret { display: none; }
+   861→.pt-ticker-viewport {
+   862→  flex: 1 1 auto;
+   863→  min-width: 0;
+   864→  overflow: hidden;
+   865→  cursor: grab;
+   866→  touch-action: pan-y; /* horizontal scrub captured by JS, vertical page scroll stays native */
+   867→  user-select: none;
+   868→  -webkit-user-select: none;
+   869→}
+   870→.pt-ticker-viewport.is-dragging { cursor: grabbing; }
+   871→.pt-ticker-track {
+   872→  display: flex;
+   873→  align-items: center;
+   874→  will-change: transform;
+   875→  /* keep the moving layer on one compositor surface — no per-frame
+   876→     re-rasterization seams at the viewport clip edges */
+   877→  backface-visibility: hidden;
+   878→  -webkit-backface-visibility: hidden;
+   879→}
+   880→/* one copy of the card set; its trailing margin must equal the internal
+   881→   gap so the distance between consecutive sets is the exact loop period */
+   882→.pt-ticker-set {
+   883→  display: flex;
+   884→  align-items: center;
+   885→  flex-shrink: 0;
+   886→  gap: var(--market-card-gap);
+   887→  margin-right: var(--market-card-gap);
+   888→}
+   889→.pt-ticker-card {
+   890→  flex: 0 0 var(--market-card-width);
+   891→  height: var(--market-card-height);
+   892→  background: #131313;
+   893→  border-radius: var(--market-card-radius);
+   894→  padding: var(--market-card-padding-block) var(--market-card-padding-inline);
+   895→  overflow: hidden;
+   896→  display: flex; flex-direction: column; justify-content: space-between;
+   897→}
+   898→.pt-ticker-card-top {
+   899→  display: flex; align-items: center; justify-content: space-between;
+   900→  gap: 6px;
+   901→  min-width: 0;
+   902→}
+   903→.pt-ticker-name {
+   904→  font-family: var(--ui-font);
+   905→  font-size: var(--market-product-font-size);
+   906→  line-height: var(--market-product-line-height);
+   907→  font-weight: 600;
+   908→  letter-spacing: 0.01em;
+   909→  color: #fff;
+   910→  white-space: nowrap; overflow: hidden; text-overflow: ellipsis;
+   911→}
+   912→/* every icon is a circle — the dedicated card icons ship full-bleed circles,
+   913→   and the data-driven fallback icons are TradingView full-bleed SQUARES that
+   914→   the radius turns into matching circles (client fix: no square chips). The
+   915→   faint ring keeps dark-on-dark icons (crude oil, heating oil…) legible as
+   916→   circles instead of floating glyphs. */
+   917→.pt-ticker-icon {
+   918→  width: var(--market-icon-size); height: var(--market-icon-size); flex-shrink: 0;
+   919→  border-radius: 50%;
+   920→  box-shadow: 0 0 0 1px rgba(255, 255, 255, 0.22);
+   921→  -webkit-user-drag: none;
+   922→}
+   923→.pt-ticker-row {
+   924→  display: flex; align-items: baseline;
+   925→  gap: 3px; /* reference: price → ▲ ink gap */
+   926→  font-family: var(--ui-font);
+   927→  font-size: var(--market-price-font-size);
+   928→  line-height: var(--market-price-line-height);
+   929→  font-weight: 600;
+   930→  font-variant-numeric: tabular-nums;
+   931→  white-space: nowrap;
+   932→  color: #f1f1f1;
+   933→}
+   934→.pt-ticker-price { color: #f1f1f1; }
+   935→.pt-ticker-change { color: #00c878; }
+   936→.pt-ticker-change.down { color: #e0483e; }
+   937→.pt-ticker-change.flat { color: #8a8a8a; }
+   938→.pt-ticker-na { color: #8a8a8a; letter-spacing: 0.02em; }
+   939→/* tablet + desktop geometry steps live in the geometry-token override
+   940→   blocks (min-width:768 / min-width:1025) — only the menu-glyph bar
+   941→   offsets (derived from the glyph height) remain per breakpoint */
+   942→@media (min-width: 768px) {
+   943→  .pt-ticker-menu .inner { top: 5px; }
+   944→  .pt-ticker-menu::after { top: 10px; }
+   945→}
+   946→/* desktop — natural extension of the mobile reference (no grid/dashboard) */
+   947→@media (min-width: 1025px) {
+   948→  .pt-ticker-menu .inner { top: 5.5px; }
+   949→  .pt-ticker-menu::after { top: 11px; }
+   950→  /* master prompt — desktop cards render as SINGLE-ROW pills (reference
+   951→     form): [name icon] [price ▲ change (percent)] inside the 39px card;
+   952→     cards never stretch, fixed widths 252px standard / 224px compact
+   953→     (content-based class from MarketTicker). */
+   954→  .pt-ticker-card {
+   955→    flex-direction: row;
+   956→    align-items: center;
+   957→    justify-content: flex-start;
+   958→    gap: 8px;
+   959→  }
+   960→  .pt-ticker-card .pt-ticker-row { flex-shrink: 0; }
+   961→  .pt-ticker-card.is-compact { flex-basis: var(--pt-desktop-price-card-width-compact); }
+   962→}
+   963→
+   964→/* ----------------------------------------------------------- block heads --- */
+   965→.pt-block-head {
+   966→  --space-below: 26px;
+   967→  --c-block: var(--c-main);
+   968→  --inner-pad: 20px;
+   969→  --line-weight: 2px;
+   970→  display: flex; flex-wrap: nowrap;
+   971→  font-family: var(--ui-font);
+   972→  align-items: center;
+   973→  justify-content: space-between;
+   974→  margin-bottom: var(--space-below);
+   975→}
+   976→.pt-block-head .heading {
+   977→  font-size: 17px; font-weight: 700; line-height: 1.2;
+   978→  text-transform: uppercase;
+   979→  letter-spacing: .04em;
+   980→  color: var(--c-block);
+   981→  flex-shrink: 0;
+   982→  max-width: 100%;
+   983→}
+   984→/* chip style (block-head-d) — TOP NEWS / TV (space-below 28, no border on page 7322) */
+   985→.pt-block-head-d { --space-below: 28px; }
+   986→.pt-block-head-d .heading {
+   987→  display: inline-block;
+   988→  margin-bottom: 1px;
+   989→  padding: 9px 14px;
+   990→  border-radius: 2px;
+   991→  color: #fff;
+   992→  background: var(--c-block);
+   993→  font-size: 14px;
+   994→  font-weight: 600;
+   995→  line-height: 1;
+   996→  text-transform: uppercase;
+   997→  letter-spacing: .025em;
+   998→}
+   999→/* section style (block-head-e + e2) — MAGAZINE / ENERGY / ADVERTISE / WE ARE SOCIAL */
+  1000→.pt-block-head-e { --c-line: var(--c-separator2); }
+  1001→.pt-block-head-e::after {
+  1002→  content: "";
+  1003→  margin-top: 1px;
+  1004→  height: var(--line-weight);
+  1005→  background-color: var(--c-line);
+  1006→  flex: 1 1 auto;
+  1007→  margin-right: var(--inner-pad);
+  1008→}
+  1009→/* live inline customizer: .block-head-e2 { --space-below: 25px } */
+  1010→.pt-block-head-e2 { --c-block: var(--c-contrast); --space-below: 25px; }
+  1011→.pt-block-head-e2 .heading {
+  1012→  font-size: 20px;
+  1013→  line-height: 24px;
+  1014→  font-weight: 700;
+  1015→  letter-spacing: 0.6px;
+  1016→  text-transform: uppercase;
+  1017→}
+  1018→.pt-block-head-e2.is-left::after { --c-line: var(--c-contrast-100); }
+  1019→
+  1020→/* ------------------------------------------------------------ post cards --- */
+  1021→.pt-post-meta {
+  1022→  --p-meta-sep: "—";
+  1023→  display: flex; flex-direction: column;
+  1024→  font-family: var(--ui-font);
+  1025→  font-size: 12px;
+  1026→  color: var(--c-post-meta);
+  1027→  line-height: 18px;
+  1028→}
+  1029→.pt-post-meta .meta-above { display: flex; flex-direction: column; align-items: flex-start; margin-bottom: 2px; }
+  1030→/* live .post-meta-below is a plain block — the date stays an inline box (13px tall,
+  1031→   baseline-aligned) instead of a stretched flex item */
+  1032→.pt-post-meta .meta-below { display: block; min-height: 18.5px; }
+  1033→.pt-post-meta .meta-item { display: inline; }
+  1034→.pt-post-meta .meta-item::before {
+  1035→  content: var(--p-meta-sep);
+  1036→  padding: 0 4px;
+  1037→  display: inline-block;
+  1038→  transform: scale(0.916);
+  1039→}
+  1040→.pt-post-meta .meta-item:first-child::before { display: none; }
+  1041→.pt-post-meta .meta-item.date { font-size: 11px; line-height: 16.5px; }
+  1042→.pt-post-meta a.post-cat-link {
+  1043→  color: var(--c-links);
+  1044→  font-weight: 600;
+  1045→  font-size: 11px;
+  1046→  line-height: 16.5px;
+  1047→  /* live: .post-meta .post-cat>a letter-spacing .05em (28-rtl base rule) */
+  1048→  letter-spacing: 0.05em;
+  1049→}
+  1050→.pt-post-meta a.post-cat-link:hover { color: var(--c-main); }
+  1051→
+  1052→.pt-post-title {
+  1053→  color: var(--c-headings);
+  1054→  font-family: var(--title-font);
+  1055→  line-height: 1.36;
+  1056→  margin: 0 0 9px;
+  1057→}
+  1058→.pt-post-title a { color: inherit; display: block; }
+  1059→.pt-post-title a:hover { color: var(--c-main); }
+  1060→
+  1061→.pt-excerpt {
+  1062→  color: var(--c-excerpts);
+  1063→  font-size: var(--excerpt-size);
+  1064→  line-height: 1.6;
+  1065→  overflow-wrap: break-word;
+  1066→  word-break: break-word;
+  1067→  margin-top: 16px;
+  1068→}
+  1069→
+  1070→/* small post card (110px thumb) */
+  1071→.pt-small-post { display: flex; width: 100%; align-items: flex-start; }
+  1072→.pt-small-post .pt-media {
+  1073→  display: block;
+  1074→  width: 110px; max-width: 40%;
+  1075→  margin-left: 18px;
+  1076→  flex-shrink: 0;
+  1077→}
+  1078→.pt-small-post .pt-content { margin-top: 2px; flex-grow: 1; min-width: 0; }
+  1079→.pt-small-post .pt-post-title { font-size: 17px; font-weight: var(--title-fw-semi); line-height: 1.43; margin: 0 0 9px; }
+  1080→.pt-small-post.pt-t-s .pt-post-title { font-size: 15px; line-height: 1.43; }
+  1081→/* 2-line clamp (limit-lines l-lines-2 — measured on sidebar/playlist/footer items) */
+  1082→.pt-small-post.pt-clamp .pt-post-title {
+  1083→  display: -webkit-box;
+  1084→  -webkit-box-orient: vertical;
+  1085→  -webkit-line-clamp: 2;
+  1086→  overflow: hidden;
+  1087→}
+  1088→
+  1089→/* hero (highlights) post — title 21px/900, image 16:9 */
+  1090→.pt-hero-post .pt-media { margin-bottom: 16px; }
+  1091→.pt-hero-post .pt-post-title { font-size: 21px; font-weight: 900; margin: 0 0 9px; }
+  1092→.pt-hero-post .pt-excerpt { margin-top: 16px; }
+  1093→
+  1094→/* ------------------------------------------------ featured news (خبر ویژه) -- */
+  1095→/* FEATURED NEWS block — client mobile reference 359×474 is the single source
+  1096→   of truth for the mobile design. Measured reference metrics (image top =
+  1097→   y103, inset 9px): image 340×179 (1.9:1) → eyebrow ink +9 (12px gray) →
+  1098→   headline 2 lines (pitch 26, pure black) → lead 3 lines (pitch 19, #181818,
+  1099→   justified, last line right) → LTR meta row "CATEGORY • DATE • TIME"
+  1100→   (Barlow ~10.5px gray, left-aligned, small bullets) → ~20px trailing space.
+  1101→   Mobile ≤767 escapes the 19.5px container padding to the client rule of
+  1102→   an exact 10px inset (box + image + text, 10px left AND right). Desktop ≥1025: two columns — image LEFT 53%, RTL content RIGHT
+  1103→   (grid direction: ltr keeps the media column left on the RTL page).
+  1104→   Fonts unchanged: Vazir (Persian body/headline) + Barlow (Latin meta row). */
+  1105→.pt-featured {
+  1106→  background: #fff;
+  1107→  margin-bottom: 24px;
+  1108→}
+  1109→.pt-featured-grid { display: block; }
+  1110→.pt-featured-media { position: relative; }
+  1111→.pt-featured-media img {
+  1112→  display: block;
+  1113→  width: 100%;
+  1114→  height: auto;
+  1115→  aspect-ratio: 1.9 / 1;
+  1116→  object-fit: cover;
+  1117→  object-position: center;
+  1118→  background: var(--c-contrast-50);
+  1119→}
+  1120→.pt-featured-image-link { display: block; }
+  1121→.pt-featured-eyebrow {
+  1122→  margin: 8px 0 0;
+  1123→  font-size: 12px;
+  1124→  line-height: 18px;
+  1125→  font-weight: 400;
+  1126→  color: var(--c-contrast-600);
+  1127→  /* reference kicker: a single gray line above the headline — the real
+  1128→     rutitr is longer than the mock line, so it ellipsizes on one row */
+  1129→  white-space: nowrap;
+  1130→  overflow: hidden;
+  1131→  text-overflow: ellipsis;
+  1132→}
+  1133→.pt-featured-title {
+  1134→  /* reference headline: line 1 "…جهان به" fills 336/341 of the text column
+  1135→     and breaks before "رقیب" — 23px Vazir reproduces both the fill ratio
+  1136→     AND the break (24px pushed "به" onto line 2) */
+  1137→  margin: 9px 0 0;
+  1138→  font-size: 23px;
+  1139→  line-height: 26px;
+  1140→  font-weight: 700;
+  1141→  color: var(--c-contrast);
+  1142→  overflow-wrap: break-word;
+  1143→}
+  1144→.pt-featured-eyebrow + .pt-featured-title { margin-top: 4px; }
+  1145→.pt-featured-title a { color: inherit; display: block; }
+  1146→.pt-featured-lead {
+  1147→  margin: 10px 0 0;
+  1148→  font-size: 14px;
+  1149→  line-height: 19px;
+  1150→  color: var(--c-contrast-850);
+  1151→  text-align: justify;
+  1152→  overflow-wrap: break-word;
+  1153→}
+  1154→.pt-featured-meta {
+  1155→  direction: ltr;
+  1156→  text-align: left;
+  1157→  margin-top: 18px;
+  1158→  font-family: var(--ui-font);
+  1159→  font-size: 10.5px;
+  1160→  line-height: 14px;
+  1161→  font-weight: 400;
+  1162→  letter-spacing: 0.02em;
+  1163→  color: var(--c-contrast-500);
+  1164→}
+  1165→.pt-featured-meta a { color: inherit; }
+  1166→.pt-featured-meta a:hover { color: var(--c-contrast-700); }
+  1167→.pt-featured-meta-item { display: inline-block; }
+  1168→.pt-featured-meta-item + .pt-featured-meta-item::before {
+  1169→  content: '•';
+  1170→  display: inline-block;
+  1171→  margin: 0 8px;
+  1172→  font-size: 9px;
+  1173→  line-height: 1;
+  1174→  transform: translateY(-1px);
+  1175→  color: var(--c-contrast-500);
+  1176→}
+  1177→/* secondary cards keep their exact card design — reflowed under the featured */
+  1178→.pt-featured-secondary {
+  1179→  display: grid;
+  1180→  grid-template-columns: 1fr 1fr;
+  1181→  gap: 15px 20px;
+  1182→  margin-bottom: 26px;
+  1183→}
+  1184→/* DESKTOP duo restore — the original hero arrangement (hero post right +
+  1185→   secondary column left) is shown ≥1025 and the editorial featured block is
+  1186→   a mobile/tablet (≤1024) presentation of the same article */
+  1187→.pt-duo-desktop { display: none; }
+  1188→@media (max-width: 767px) {
+  1189→  /* CLIENT RULE (mobile): EXACT 10px whitespace left + right of the featured
+  1190→     hero block (box, image and text share one width so every right edge
+  1191→     stays flush). Implementation: container padding 19.5px − 9.5px negative
+  1192→     margin = 10px inset; used width = 100vw − 20px (381px at 401). Only the
+  1193→     hero block is inset — secondary cards / TV / energy keep the 19.5px
+  1194→     container. No vertical CSS touched; image keeps its 1.9:1 aspect box,
+  1195→     object-fit and object-position. */
+  1196→  .pt-featured { margin-inline: -9.5px; }
+  1197→  .pt-featured-secondary { grid-template-columns: 1fr; gap: 10px; }
+  1198→}
+  1199→@media (max-width: 350px) {
+  1200→  /* same 10px inset on small phones: container padding 15px − 5px margin */
+  1201→  .pt-featured { margin-inline: -5px; }
+  1202→  .pt-tn { margin-inline: -5px; }
+  1203→}
+  1204→@media (min-width: 768px) {
+  1205→  .pt-featured { margin-bottom: 28px; }
+  1206→  .pt-featured-eyebrow { font-size: 12.5px; line-height: 19px; }
+  1207→  .pt-featured-title { font-size: 24px; line-height: 32px; margin-top: 6px; }
+  1208→  .pt-featured-lead { font-size: 15px; line-height: 22px; margin-top: 12px; }
+  1209→  .pt-featured-meta { font-size: 11px; line-height: 15px; margin-top: 18px; }
+  1210→}
+  1211→@media (min-width: 1025px) {
+  1212→  /* DESKTOP — original duo arrangement restored (client request: the desktop
+  1213→     layout stays exactly as before the mobile-reference work): hero post in
+  1214→     the right column + 4 secondary cards in the left column, live geometry.
+  1215→     The editorial featured block remains the ≤1024 presentation only. */
+  1216→  .pt-featured,
+  1217→  .pt-featured-secondary { display: none; }
+  1218→  .pt-duo-desktop { display: grid; }
+  1219→}
+  1220→
+  1221→/* ------------------------------------- top news (mobile ≤767 only) -------- */
+  1222→/* Pixel reconstruction of the client's reference raster (1200×1280 = a
+  1223→   400px viewport captured at 3×). Every value below is raster/3 (or the
+  1224→   raster ratio applied to the live container): black 30px bar, white bold
+  1225→   "Top News" at the right, 27px chevron zone at the far right end behind
+  1226→   a 1px white separator, then 4:3 image-right rows (image 26.4% of the
+  1227→   container, 10px image/text gap, 10px row gap) with the English date/time
+  1228→   pinned bottom-left of the text column. Scoped tokens --tn-*; the block
+  1229→   is display:none ≥768 so tablet (existing 2-col .pt-featured-secondary
+  1230→   grid) and desktop (pt-duo) are untouched. */
+  1231→.pt-tn { display: none; }
+  1232→@media (max-width: 767px) {
+  1233→  .pt-tn {
+  1234→    display: block;
+  1235→    --tn-bar-h: 30px;          /* raster 89 / 3 */
+  1236→    --tn-bar-gap: 13.5px;      /* raster 41 / 3 */
+  1237→    --tn-row-gap: 10px;        /* raster 30-35 / 3 */
+  1238→    --tn-img-w: 26.4%;         /* raster 303 / 1140 */
+  1239→    --tn-media-gap: 10px;      /* raster 30 / 3 */
+  1240→    --tn-arrow-w: 27px;        /* raster 81 / 3 */
+  1241→    --tn-title-gap: 10px;      /* raster 31 text→separator / 3 */
+  1242→    --tn-heading-size: 15px;   /* raster cap 33 / 3 = 11 → Barlow 700 */
+  1243→    --tn-title-size: 14px;     /* raster ink 43-45 / 3 ≈ 15px → Vazir ink ≈ 1.07em */
+  1244→    --tn-title-lh: 25px;       /* raster line pitch 75 / 3 */
+  1245→    --tn-date-size: 9px;       /* raster cap 19 / 3 → Barlow 600 */
+  1246→    --tn-date-color: #848c9b;  /* raster sample rgb(72,78,96), lightened per
+  1247→                                  client review (date/time read too dark) */
+  1248→    /* same 10px inset as the featured hero block: container padding
+  1249→       19.5px − 9.5px negative margin; −5px on ≤350 (15px padding) */
+  1250→    margin-inline: -9.5px;
+  1251→    margin-bottom: 26px;
+  1252→  }
+  1253→  .pt-tn-head {
+  1254→    display: flex;
+  1255→    align-items: stretch;
+  1256→    height: var(--tn-bar-h);
+  1257→    background: #000;
+  1258→  }
+  1259→  /* far-right chevron zone (RTL: first flex child sits at the right);
+  1260→     its inline-end border = the 1px white separator on its LEFT edge */
+  1261→  .pt-tn-arrow {
+  1262→    flex: 0 0 var(--tn-arrow-w);
+  1263→    display: flex;
+  1264→    align-items: center;
+  1265→    justify-content: center;
+  1266→    border-inline-end: 1px solid #fff;
+  1267→    color: #fff;
+  1268→    /* ts-icons angle glyph ink ≈ 0.28em wide / 0.45em tall: 18px → ~5×8
+  1269→       matches the raster chevron ink (15×25 / 3 = 5×8.3) */
+  1270→    font-size: 18px;
+  1271→    line-height: 1;
+  1272→  }
+  1273→  .pt-tn-heading {
+  1274→    margin: 0;
+  1275→    padding-inline-start: var(--tn-title-gap);
+  1276→    align-self: center;
+  1277→    font-family: var(--ui-font);
+  1278→    font-size: var(--tn-heading-size);
+  1279→    font-weight: 700;
+  1280→    line-height: 1;
+  1281→    color: #fff;
+  1282→  }
+  1283→  .pt-tn-list {
+  1284→    margin-top: var(--tn-bar-gap);
+  1285→    display: flex;
+  1286→    flex-direction: column;
+  1287→    gap: var(--tn-row-gap);
+  1288→  }
+  1289→  .pt-tn-item {
+  1290→    display: flex;
+  1291→    align-items: stretch;
+  1292→    gap: var(--tn-media-gap);
+  1293→  }
+  1294→  /* image RIGHT (first child in RTL), uniform 4:3, square, flat.
+  1295→     align-self:flex-start keeps the aspect box exact even when a 3-line
+  1296→     title makes the row taller than the image (narrow viewports) — the
+  1297→     image never stretches; the text column simply runs longer. */
+  1298→  .pt-tn-media {
+  1299→    align-self: flex-start;
+  1300→    flex: 0 0 var(--tn-img-w);
+
+[showing lines 601-1300 of 2253; use offset=1301 with limit to continue reading]
