@@ -1,4 +1,5 @@
 import type { ReactNode } from 'react';
+import { englishMeta } from '@/lib/content/english-meta';
 
 /** ts-icons glyph (SmartMag icon font, v3.2 codepoints) */
 export function Tsi({ code, className = '', label }: { code: string; className?: string; label?: string }) {
@@ -33,6 +34,26 @@ export type IconName = keyof typeof Icons;
 
 export function Icon({ name, className = '', label }: { name: IconName; className?: string; label?: string }) {
   return <Tsi code={Icons[name]} className={className} label={label} />;
+}
+
+/**
+ * English date/time line for TV-section cards ("AUG 19, 2026 • 06:53 PM")
+ * — the Top News meta recipe (Jalali → Gregorian via englishMeta, hour
+ * zero-padded like the Top News raster). The markup renders on every
+ * breakpoint, but CSS keeps .pt-en-date display:none outside phones ≤767
+ * inside the TV sections — desktop/tablet keep the Persian post-date.
+ */
+export function EnglishDateLine({ dateText, className = '' }: { dateText: string; className?: string }) {
+  const meta = englishMeta(dateText, null);
+  const line = [meta.date, meta.time ? meta.time.replace(/^(\d):/, '0$1:') : '']
+    .filter(Boolean)
+    .join(' • ');
+  if (!line) return null;
+  return (
+    <p className={`pt-en-date${className ? ` ${className}` : ''}`} dir="ltr">
+      {line}
+    </p>
+  );
 }
 
 /** category chip (نفت / بین الملل / magazine …) */

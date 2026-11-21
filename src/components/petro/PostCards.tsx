@@ -1,6 +1,5 @@
 import type { Article } from '@/lib/content';
-import { PostMeta } from './Primitives';
-import { Icon } from './Primitives';
+import { EnglishDateLine, Icon, PostMeta } from './Primitives';
 
 /**
  * Standard small post card — 110px thumb + title/date.
@@ -13,6 +12,7 @@ export function SmallPostCard({
   size = 'm',
   playlist = false,
   clamp = true,
+  englishDate = false,
 }: {
   article: Article;
   /** m = 17px (default), s = 15px (hero secondary) */
@@ -20,6 +20,9 @@ export function SmallPostCard({
   playlist?: boolean;
   /** 2-line clamp (limit-lines) — sidebar/playlist/footer yes, duo cards no */
   clamp?: boolean;
+  /** also render the Top News English date line (.pt-en-date, phones ≤767
+   *  only via CSS) — TV playlist uses it to match the Top News meta */
+  englishDate?: boolean;
 }) {
   return (
     <article className={`pt-small-post ${size === 's' ? 'pt-t-s' : ''} ${clamp ? 'pt-clamp' : ''}`}>
@@ -43,6 +46,7 @@ export function SmallPostCard({
           <a href={article.url}>{article.title}</a>
         </h4>
         <PostMeta category={null} categoryUrl={null} dateText={article.dateText} />
+        {englishDate ? <EnglishDateLine dateText={article.dateText} /> : null}
       </div>
     </article>
   );

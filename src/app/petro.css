@@ -1411,9 +1411,11 @@ a:hover { color: var(--c-a-hover); }
 }
 .pt-play-icon .pt-icon {
   /* live: .format-video i — letter-spacing -.28em narrows the <i> advance box
-     (measured 9.5×18.6 vs unspaced 14.7) and .tsi-play mirrors the glyph (RTL) */
+     (measured 9.5×18.6 vs unspaced 14.7). Client report: the big player's
+     play triangle read mirrored — the scale(-1,1) RTL flip the old build
+     copied is removed; every play control on the site (playlist thumbs
+     included) points RIGHT, and the player does too now. */
   letter-spacing: -0.28em;
-  transform: scale(-1, 1);
   margin-inline-start: 2px;
 }
 
@@ -2186,6 +2188,45 @@ a:hover { color: var(--c-a-hover); }
   }
   .pt-ticker-price { color: #ffffff; }
   .pt-ticker-change { font-weight: 600; }
+}
+
+/* base — the English date line exists only for the ≤767 TV swap below;
+   outside phones (and outside the TV sections) it never shows */
+.pt-en-date { display: none; }
+
+/* §16 client pass (phones ≤767):
+   (1) the sidebar's legacy TOP NEWS widget group (black chip heading +
+       Persian-dated small posts) duplicates the rebuilt Top News block on
+       the phone flow — removed from phones. Tablet keeps it (the new
+       Top News block is hidden ≥768 there, so this stays its only top-news
+       list) and the desktop replica is untouched.
+   (2) TV Petro Times: every TV item (player + playlist cards) swaps its
+       Persian post-date for the Top News English date/time — Barlow 9/600
+       #848c9b, LTR, pinned to the item's left edge, exactly the
+       .pt-tn-date recipe (client: "دقیقا مثل تاپ نیوز … سمت چپشون"). */
+@media (max-width: 767px) {
+  .pt-topnews-widget,
+  .pt-topnews-items { display: none; }
+
+  .pt-tv-block .pt-en-date,
+  .pt-tv-playlist .pt-en-date {
+    display: block;
+    margin: 0;
+    direction: ltr;
+    unicode-bidi: isolate;
+    text-align: left;
+    font-family: var(--ui-font);
+    font-size: 9px;
+    font-weight: 600;
+    line-height: 13px;
+    letter-spacing: 0.02em;
+    color: #848c9b;
+  }
+  /* the Persian meta the English line replaces: a playlist card's meta row
+     is date-only (hidden whole); the player keeps its category chip
+     (meta-above) and only the date row (meta-below) goes */
+  .pt-tv-playlist .pt-small-post .pt-post-meta { display: none; }
+  .pt-tv-block .pt-post-meta .meta-below { display: none; }
 }
 
 /* §15 narrow-width guard (≤340): ONLY the two flexible gaps shrink so the

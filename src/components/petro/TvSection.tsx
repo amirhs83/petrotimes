@@ -1,6 +1,5 @@
 import type { Article } from '@/lib/content';
-import { CategoryChip } from './Primitives';
-import { Icon } from './Primitives';
+import { CategoryChip, EnglishDateLine, Icon } from './Primitives';
 import { SmallPostCard } from './PostCards';
 
 /**
@@ -8,6 +7,12 @@ import { SmallPostCard } from './PostCards';
  * Verified geometry: head 33 (chip 32 + mb 1) + 28 + media 591 (4:3 of 788);
  * overlay content inset 23px padding + 10% right margin; title 28px/700
  * start-aligned; chip + date start-aligned.
+ *
+ * Client pass (phones ≤767): every TV item (player + playlist cards) also
+ * renders the Top News English date line (.pt-en-date); CSS swaps it in for
+ * the Persian post-date on phones only — ≥768 markup shows the Persian meta
+ * exactly as before. The player play glyph points RIGHT like the playlist
+ * thumbs (the old RTL mirror removed from .pt-play-icon .pt-icon).
  */
 export function TvSection({ player, playlist }: { player: Article; playlist: Article[] }) {
   return (
@@ -48,6 +53,8 @@ export function TvSection({ player, playlist }: { player: Article; playlist: Art
                       </span>
                     </span>
                   </div>
+                  {/* phones ≤767 only (CSS): Top News English date/time */}
+                  <EnglishDateLine dateText={player.dateText} />
                 </div>
               </div>
             </div>
@@ -57,7 +64,7 @@ export function TvSection({ player, playlist }: { player: Article; playlist: Art
       <section className="pt-tv-playlist pt-dark" data-testid="tv-playlist">
         <div className="pt-loop">
           {playlist.map((a) => (
-            <SmallPostCard key={a.url} article={a} playlist />
+            <SmallPostCard key={a.url} article={a} playlist englishDate />
           ))}
         </div>
       </section>
