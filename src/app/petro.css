@@ -2246,6 +2246,10 @@ a:hover { color: var(--c-a-hover); }
    responsive note is identical on mobile and desktop. Multi-line limits use
    the real -webkit-line-clamp (no JS truncation). ONLY typography is
    touched here — layout, content and component behavior stay untouched.
+   COLORS REVERTED (client request): the spec's hard colors (#08328C titles,
+   #000 rotitr/lead, #77777F lead/excerpt) were removed — every element keeps
+   its ORIGINAL theme-aware color (var(--c-*) tokens); sizes/weights/
+   line-heights/clamps/breakpoints stay exactly as specced.
    NOT APPLICABLE on this site (no such elements exist):
    • 09 آخرین عناوین cards — the site has no light-background "latest
      headlines" card section (footer latest column is dark chrome);
@@ -2253,14 +2257,13 @@ a:hover { color: var(--c-a-hover); }
      their wide/overlay titles therefore have nothing to resize.
    ========================================================================= */
 
-/* ---- 04 — تیتر خبر اصلی (main-news headline): 18px/700/29px #08328C,
+/* ---- 04 — تیتر خبر اصلی (main-news headline): 18px/700/29px,
         justified, max 3 real-clamped lines. Featured editorial card ≤1024
         plus its desktop duo presentation (≥1025). ----------------------- */
 .pt-featured-title {
   font-size: 18px;
   line-height: 29px;
   font-weight: 700;
-  color: #08328C;
   text-align: justify;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -2271,7 +2274,6 @@ a:hover { color: var(--c-a-hover); }
   font-size: 18px;
   line-height: 29px;
   font-weight: 700;
-  color: #08328C;
   text-align: justify;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -2279,14 +2281,13 @@ a:hover { color: var(--c-a-hover); }
   overflow: hidden;
 }
 
-/* ---- 05 — روتیتر خبر اصلی (kicker): 13px/400/21px #000, ONE ellipsized
+/* ---- 05 — روتیتر خبر اصلی (kicker): 13px/400/21px, ONE ellipsized
         line (nowrap pattern kept), 6px below it; rendered ONLY on mobile
         (<640) exactly as the reference shows it ------------------------- */
 .pt-featured-eyebrow {
   font-size: 13px;
   line-height: 21px;
   font-weight: 400;
-  color: #000000;
   margin: 8px 0 6px;
 }
 @media (min-width: 640px) {
@@ -2299,7 +2300,7 @@ a:hover { color: var(--c-a-hover); }
 }
 
 /* ---- 06 — لید خبر اصلی (lead): 13px/300/25px justified, max 4 lines;
-        mobile #000 + word-spacing -0.5px, ≥640 #77777F + normal spacing;
+        mobile word-spacing -0.5px, ≥640 normal spacing (colors: original);
         margin-top 8px at every width. Desktop duo excerpt = same role. -- */
 .pt-featured-lead {
   font-size: 13px;
@@ -2307,7 +2308,6 @@ a:hover { color: var(--c-a-hover); }
   font-weight: 300;
   text-align: justify;
   margin-top: 8px;
-  color: #000000;
   word-spacing: -0.5px;
   display: -webkit-box;
   -webkit-box-orient: vertical;
@@ -2316,7 +2316,6 @@ a:hover { color: var(--c-a-hover); }
 }
 @media (min-width: 640px) {
   .pt-featured-lead {
-    color: #77777F;
     word-spacing: normal;
   }
 }
@@ -2324,7 +2323,6 @@ a:hover { color: var(--c-a-hover); }
   font-size: 13px;
   line-height: 25px;
   font-weight: 300;
-  color: #77777F;
   text-align: justify;
   margin-top: 8px;
   display: -webkit-box;
@@ -2333,7 +2331,7 @@ a:hover { color: var(--c-a-hover); }
   overflow: hidden;
 }
 
-/* ---- 07 — TOP NEWS titles: 14px/500/26px #08328C, max 2 ellipsized
+/* ---- 07 — TOP NEWS titles: 14px/500/26px, max 2 ellipsized
         lines. Covers every TOP NEWS title on the site: the mobile Top News
         block rows, the desktop sidebar TOP NEWS widget/items and the
         secondary top-news cards (desktop duo + tablet grid). The ROW-LIST
@@ -2347,7 +2345,6 @@ a:hover { color: var(--c-a-hover); }
   font-size: 14px;
   line-height: 26px;
   font-weight: 500;
-  color: #08328C;
   display: -webkit-box;
   -webkit-box-orient: vertical;
   -webkit-line-clamp: 2;
@@ -2361,12 +2358,11 @@ a:hover { color: var(--c-a-hover); }
 }
 
 /* ---- 08 — list-section titles (the ENERGY subs are this site's list
-        section): 14px/500/26px #08328C, 2-line clamp via .pt-clamp ----- */
+        section): 14px/500/26px, 2-line clamp via .pt-clamp ------------- */
 .pt-energy-subs .pt-small-post .pt-post-title {
   font-size: 14px;
   line-height: 26px;
   font-weight: 500;
-  color: #08328C;
 }
 
 /* ---- 10 — video titles (TV playlist cards): 13px/500/22px, 2-line clamp
