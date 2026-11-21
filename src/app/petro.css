@@ -7,21 +7,13 @@
    ========================================================================== */
 
 /* ---------------------------------------------------------------- fonts --- */
-@font-face {
-  font-family: 'Vazir';
-  src: url('/assets/fonts/Vazir.woff2') format('woff2'),
-       url('/assets/fonts/Vazir.woff') format('woff');
-  font-weight: 400;
-  font-style: normal;
-  font-display: swap;
-}
-@font-face {
-  font-family: 'Vazir';
-  src: url('/assets/fonts/Vazir-Bold.woff') format('woff');
-  font-weight: 700;
-  font-style: normal;
-  font-display: swap;
-}
+/* IRANSans (Persian) is self-hosted via next/font/local — src/lib/fonts.ts
+   declares the four static FontIran web files with their REAL weights
+   (300/400/500/700), display swap, preload and an Arial metric-adjusted
+   fallback; the generated font-family is exposed as --font-iransans and
+   wired into the rules below. The old Vazir @font-face pair is retired:
+   nothing references it anymore. Barlow (Latin UI/meta), its metric
+   fallback, PT Serif (newsletter message) and ts-icons (icons) stay. */
 @font-face {
   font-family: 'Barlow';
   src: url('/assets/fonts/Barlow-400-latin.woff2') format('woff2');
@@ -79,17 +71,19 @@
 }
 
 /* --------------------------------------------------------------- tokens --- */
-/* parsi-font plugin inline CSS (original-response.html) — verbatim mapping:
-   every heading and body is forced to Vazir regardless of the theme font vars */
+/* IRANSans mapping (typography spec — replaces the parsi-font plugin's Vazir
+   forcing): body and every heading are forced onto the self-hosted
+   var(--font-iransans) chain, exactly like the old plugin forced Vazir.
+   Required chain per the spec: "IRANSans", Tahoma, Arial, sans-serif. */
 body {
-  font-family: Vazir !important;
+  font-family: var(--font-iransans), Tahoma, Arial, sans-serif !important;
 }
 h1, h2, h3, h4, h5, h6 {
-  font-family: Vazir !important;
+  font-family: var(--font-iransans), Tahoma, Arial, sans-serif !important;
 }
 
 :root {
-  --body-font: 'Vazir', 'Public Sans', system-ui, sans-serif;
+  --body-font: var(--font-iransans), Tahoma, Arial, sans-serif;
   /* live customizer inline CSS (smartmag-core-inline-css): --text-font and
      --body-font resolve to PT Serif; the parsi-font plugin then forces the
      computed body/h1-h6 font to Vazir (!important) while the variables stay
@@ -102,8 +96,10 @@ h1, h2, h3, h4, h5, h6 {
   --title-font: var(--ui-font);
   --c-nav: var(--c-contrast-900);
 
-  --text-size: 14px;
-  --text-lh: 1.714;
+  /* typography spec base: body 15px/24px (was 14px/1.714 = 24px, so the
+     --text-lh consumer in the newsletter message renders identically) */
+  --text-size: 15px;
+  --text-lh: 24px;
   --main-width: 1200px;
   --grid-gutter: 36px;
   --wrap-padding: 35px;
@@ -212,13 +208,17 @@ button { cursor: pointer; }
 html { direction: rtl; overflow-x: hidden; }
 body {
   font-family: var(--body-font);
-  font-size: var(--text-size);
-  line-height: var(--text-lh);
+  font-size: var(--text-size);          /* typography spec: 15px */
+  line-height: var(--text-lh);          /* typography spec: 24px */
+  font-weight: 400;                     /* typography spec: real 400 file */
+  text-align: justify;                  /* typography spec: justified body */
+  letter-spacing: normal;               /* typography spec: no Persian letter-spacing */
   color: var(--c-contrast-700);
   background: #fff;
   direction: rtl;
-  text-align: start;
   -webkit-font-smoothing: antialiased;
+  -moz-osx-font-smoothing: grayscale;
+  text-rendering: optimizeLegibility;
   overflow-x: hidden;
 }
 .pt-icon { font-family: 'ts-icons'; font-style: normal; font-weight: 400; line-height: 1; display: inline-block; speak: never; }
@@ -1044,8 +1044,9 @@ a:hover { color: var(--c-a-hover); }
   font-weight: 600;
   font-size: 11px;
   line-height: 16.5px;
-  /* live: .post-meta .post-cat>a letter-spacing .05em (28-rtl base rule) */
-  letter-spacing: 0.05em;
+  /* typography spec: Persian text never carries letter-spacing (was the
+     live 28-rtl .05em on the Persian category labels) */
+  letter-spacing: normal;
 }
 .pt-post-meta a.post-cat-link:hover { color: var(--c-main); }
 
@@ -2235,6 +2236,161 @@ a:hover { color: var(--c-a-hover); }
 @media (max-width: 340px) {
   .pt-mobile-logo { margin-left: calc(13px - 1px); }
   .pt-mobile-search { margin-left: 5px; } /* +8 padding = 13px ink gap */
+}
+
+/* =========================================================================
+   TYPOGRAPHY SPEC — bimehnews-reference type system (client request)
+   Font: IRANSans via next/font/local (src/lib/fonts.ts → --font-iransans).
+   Base: body 15px/24px/400 justified (see the base block above).
+   Spec breakpoints: mobile <640, sm ≥640, md ≥768; every size without a
+   responsive note is identical on mobile and desktop. Multi-line limits use
+   the real -webkit-line-clamp (no JS truncation). ONLY typography is
+   touched here — layout, content and component behavior stay untouched.
+   NOT APPLICABLE on this site (no such elements exist):
+   • 09 آخرین عناوین cards — the site has no light-background "latest
+     headlines" card section (footer latest column is dark chrome);
+   • 11 gallery titles — gallery tiles are image-only (no title elements);
+     their wide/overlay titles therefore have nothing to resize.
+   ========================================================================= */
+
+/* ---- 04 — تیتر خبر اصلی (main-news headline): 18px/700/29px #08328C,
+        justified, max 3 real-clamped lines. Featured editorial card ≤1024
+        plus its desktop duo presentation (≥1025). ----------------------- */
+.pt-featured-title {
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #08328C;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+.pt-duo-hero .pt-post-title {
+  font-size: 18px;
+  line-height: 29px;
+  font-weight: 700;
+  color: #08328C;
+  text-align: justify;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 3;
+  overflow: hidden;
+}
+
+/* ---- 05 — روتیتر خبر اصلی (kicker): 13px/400/21px #000, ONE ellipsized
+        line (nowrap pattern kept), 6px below it; rendered ONLY on mobile
+        (<640) exactly as the reference shows it ------------------------- */
+.pt-featured-eyebrow {
+  font-size: 13px;
+  line-height: 21px;
+  font-weight: 400;
+  color: #000000;
+  margin: 8px 0 6px;
+}
+@media (min-width: 640px) {
+  .pt-featured-eyebrow { display: none; }
+}
+@media (max-width: 639.9px) {
+  /* the kicker's 6px separation replaces the title's own top margin
+     (margins would otherwise collapse to the larger 9px) */
+  .pt-featured-eyebrow + .pt-featured-title { margin-top: 0; }
+}
+
+/* ---- 06 — لید خبر اصلی (lead): 13px/300/25px justified, max 4 lines;
+        mobile #000 + word-spacing -0.5px, ≥640 #77777F + normal spacing;
+        margin-top 8px at every width. Desktop duo excerpt = same role. -- */
+.pt-featured-lead {
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 300;
+  text-align: justify;
+  margin-top: 8px;
+  color: #000000;
+  word-spacing: -0.5px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+@media (min-width: 640px) {
+  .pt-featured-lead {
+    color: #77777F;
+    word-spacing: normal;
+  }
+}
+.pt-duo-hero .pt-excerpt {
+  font-size: 13px;
+  line-height: 25px;
+  font-weight: 300;
+  color: #77777F;
+  text-align: justify;
+  margin-top: 8px;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 4;
+  overflow: hidden;
+}
+
+/* ---- 07 — TOP NEWS titles: 14px/500/26px #08328C, max 2 ellipsized
+        lines. Covers every TOP NEWS title on the site: the mobile Top News
+        block rows, the desktop sidebar TOP NEWS widget/items and the
+        secondary top-news cards (desktop duo + tablet grid). The ROW-LIST
+        title zone is ALWAYS 52px (2 × 26px) so one-line and two-line rows
+        stay regular, and flex may never shrink it. -------------------- */
+.pt-tn-title,
+.pt-topnews-widget .pt-small-post .pt-post-title,
+.pt-topnews-items .pt-small-post .pt-post-title,
+.pt-duo-secondary .pt-small-post .pt-post-title,
+.pt-featured-secondary .pt-small-post .pt-post-title {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #08328C;
+  display: -webkit-box;
+  -webkit-box-orient: vertical;
+  -webkit-line-clamp: 2;
+  overflow: hidden;
+}
+.pt-tn-title,
+.pt-topnews-widget .pt-small-post .pt-post-title,
+.pt-topnews-items .pt-small-post .pt-post-title {
+  min-height: 52px;
+  flex-shrink: 0;
+}
+
+/* ---- 08 — list-section titles (the ENERGY subs are this site's list
+        section): 14px/500/26px #08328C, 2-line clamp via .pt-clamp ----- */
+.pt-energy-subs .pt-small-post .pt-post-title {
+  font-size: 14px;
+  line-height: 26px;
+  font-weight: 500;
+  color: #08328C;
+}
+
+/* ---- 10 — video titles (TV playlist cards): 13px/500/22px, 2-line clamp
+        via .pt-clamp; the current light-on-dark color is KEPT ---------- */
+.pt-tv-playlist .pt-small-post .pt-post-title {
+  font-size: 13px;
+  line-height: 22px;
+  font-weight: 500;
+}
+
+/* ---- 12 — homepage section titles (block-head-e2: ENERGY / MAGAZINE /
+        ADVERTISE / WE ARE SOCIAL) — the section headings themselves, NOT
+        the news titles inside them: 700; 20px/28px mobile, 24px/32px from
+        640, 30px/36px from 768. ---------------------------------------- */
+.pt-block-head-e2 .heading {
+  font-weight: 700;
+  font-size: 20px;
+  line-height: 28px;
+}
+@media (min-width: 640px) {
+  .pt-block-head-e2 .heading { font-size: 24px; line-height: 32px; }
+}
+@media (min-width: 768px) {
+  .pt-block-head-e2 .heading { font-size: 30px; line-height: 36px; }
 }
 
 /* ------------------------------------------------------------- a11y/misc --- */

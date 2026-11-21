@@ -1,4 +1,5 @@
 import type { Metadata, Viewport } from "next";
+import { iransans } from "@/lib/fonts";
 import "./globals.css";
 
 export const metadata: Metadata = {
@@ -27,17 +28,17 @@ export default function RootLayout({
   children: React.ReactNode;
 }>) {
   return (
-    <html lang="fa-IR" dir="rtl">
+    /* Typography spec: html lang="fa" dir="rtl"; the IRANSans next/font/local
+       classes (variable --font-iransans + generated family) sit on <html> so
+       the whole cascade inherits the real self-hosted weights. next/font
+       emits its own preload links for the four woff2 files (preload:true).
+       The Barlow/ts-icons preloads stay: the Latin UI font (--ui-font) and
+       the icon font are still part of the chrome. crossOrigin is required
+       for fonts. */
+    <html lang="fa" dir="rtl" className={`${iransans.variable} ${iransans.className}`}>
       <body>
-        {/* Preload above-the-fold fonts so the real woff2 wins the
-            font-display:swap race even on slow mobile networks — prevents
-            fallback-font flashes (client screenshot: Subscribe ink sat low
-            because Barlow had not rendered yet). React 19 hoists these
-            <link> tags into <head>. crossOrigin is required for fonts. */}
         <link rel="preload" href="/assets/fonts/Barlow-400-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         <link rel="preload" href="/assets/fonts/Barlow-600-latin.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        <link rel="preload" href="/assets/fonts/Vazir.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
-        <link rel="preload" href="/assets/fonts/Vazir-Bold.woff" as="font" type="font/woff" crossOrigin="anonymous" />
         <link rel="preload" href="/assets/fonts/ts-icons.woff2" as="font" type="font/woff2" crossOrigin="anonymous" />
         {children}
       </body>

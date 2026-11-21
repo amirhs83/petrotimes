@@ -43,7 +43,11 @@ export default async function Home() {
                     (live geometry). Hidden on mobile/tablet. */}
                 <div className="pt-duo pt-duo-desktop">
                   <div className="pt-duo-hero">
-                    <HighlightsHero article={s.heroMain} weight="900" />
+                    {/* typography spec (main-news title): weight 700 — the
+                        inline fontWeight is emitted only when weight !== '700',
+                        so passing '700' lets the CSS .pt-duo-hero rule own the
+                        title instead of a stale inline 900 */}
+                    <HighlightsHero article={s.heroMain} weight="700" />
                   </div>
                   <div className="pt-duo-secondary">
                     {s.heroSecondary.map((a) => (
