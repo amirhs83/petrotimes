@@ -6,7 +6,7 @@ import { englishMeta } from '@/lib/content/english-meta';
  * mobile reference (359×474, single source of truth for the mobile design).
  *
  * Mobile (≤767): single column — image (1.9:1) → eyebrow → headline → lead →
- * LTR meta row; section inset 9px per the reference.
+ * LTR meta row; section inset 10px per the client mobile rule.
  * Tablet (768-1024): single column, stepped type scale.
  * Desktop (≥1025): two columns — featured image LEFT, RTL content RIGHT
  * (grid `direction: ltr` keeps the media column left regardless of the RTL

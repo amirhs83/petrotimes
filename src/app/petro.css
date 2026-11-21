@@ -1087,8 +1087,8 @@ a:hover { color: var(--c-a-hover); }
    headline 2 lines (pitch 26, pure black) → lead 3 lines (pitch 19, #181818,
    justified, last line right) → LTR meta row "CATEGORY • DATE • TIME"
    (Barlow ~10.5px gray, left-aligned, small bullets) → ~20px trailing space.
-   Mobile ≤767 escapes the 19.5px container padding to reach the reference
-   9px inset. Desktop ≥1025: two columns — image LEFT 53%, RTL content RIGHT
+   Mobile ≤767 escapes the 19.5px container padding to the client rule of
+   an exact 10px inset (box + image + text, 10px left AND right). Desktop ≥1025: two columns — image LEFT 53%, RTL content RIGHT
    (grid direction: ltr keeps the media column left on the RTL page).
    Fonts unchanged: Vazir (Persian body/headline) + Barlow (Latin meta row). */
 .pt-featured {
@@ -1175,18 +1175,19 @@ a:hover { color: var(--c-a-hover); }
    a mobile/tablet (≤1024) presentation of the same article */
 .pt-duo-desktop { display: none; }
 @media (max-width: 767px) {
-  /* ISNA horizontal reference (401px viewport): featured block + image =
-     380px, centered -> 10.5px whitespace each side (10/11 in the raster).
-     Implementation: container padding 19.5px − 9px negative margin =
-     10.5px inset; used width = (100vw − 39) + 18 = 100vw − 21px, i.e.
-     exactly 380px at 401. No vertical CSS touched; image keeps its
-     1.9:1 aspect box, object-fit and object-position. */
-  .pt-featured { margin-inline: -9px; }
+  /* CLIENT RULE (mobile): EXACT 10px whitespace left + right of the featured
+     hero block (box, image and text share one width so every right edge
+     stays flush). Implementation: container padding 19.5px − 9.5px negative
+     margin = 10px inset; used width = 100vw − 20px (381px at 401). Only the
+     hero block is inset — secondary cards / TV / energy keep the 19.5px
+     container. No vertical CSS touched; image keeps its 1.9:1 aspect box,
+     object-fit and object-position. */
+  .pt-featured { margin-inline: -9.5px; }
   .pt-featured-secondary { grid-template-columns: 1fr; gap: 10px; }
 }
 @media (max-width: 350px) {
-  /* keep the same 10.5px inset: container padding 15px − 4.5px margin */
-  .pt-featured { margin-inline: -4.5px; }
+  /* same 10px inset on small phones: container padding 15px − 5px margin */
+  .pt-featured { margin-inline: -5px; }
 }
 @media (min-width: 768px) {
   .pt-featured { margin-bottom: 28px; }
