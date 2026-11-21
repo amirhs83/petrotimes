@@ -1243,7 +1243,8 @@ a:hover { color: var(--c-a-hover); }
     --tn-title-size: 14px;     /* raster ink 43-45 / 3 ≈ 15px → Vazir ink ≈ 1.07em */
     --tn-title-lh: 25px;       /* raster line pitch 75 / 3 */
     --tn-date-size: 9px;       /* raster cap 19 / 3 → Barlow 600 */
-    --tn-date-color: #4a5160;  /* raster sample rgb(72,78,96) */
+    --tn-date-color: #848c9b;  /* raster sample rgb(72,78,96), lightened per
+                                  client review (date/time read too dark) */
     /* same 10px inset as the featured hero block: container padding
        19.5px − 9.5px negative margin; −5px on ≤350 (15px padding) */
     margin-inline: -9.5px;
@@ -2074,7 +2075,9 @@ a:hover { color: var(--c-a-hover); }
   }
 
   /* §06 Subscribe — 80×26 (reduced twice per user request: 88×30→84×28→80×26),
-     radius 4, 13px/600, white on black. */
+     radius 4, 13px/600, white on black. Client nudge (phones): a touch
+     lower than the exact box center — a paint/hit offset only (relative
+     top), the 51px row and the flex layout are untouched. */
   .pt-mobile-head .pt-head-subscribe {
     width: var(--pt-mobile-subscribe-width);
     height: var(--pt-mobile-subscribe-height);
@@ -2083,14 +2086,19 @@ a:hover { color: var(--c-a-hover); }
     font-weight: 600;
     color: #000000;
     background: #ffffff;
+    position: relative;
+    top: 2px;
   }
 
   /* §06 search — visible glyph 14px; right offset 18px (glyph right edge
-     = viewport − 18 via padding/negative-margin trick), ink gap from
-     Subscribe = 18px (10 margin + 8 padding). */
+     = viewport − 18 via padding/negative-margin trick). The button group
+     is right-anchored, so THIS margin is the Subscribe↔search gap: the
+     client nudge (phones) shrinks it 18px → 15px (7 margin + 8 padding)
+     which slides Subscribe 3px toward the edge while the search glyph
+     stays pinned at its reference offset. */
   .pt-mobile-search {
     font-size: var(--pt-mobile-search-size);
-    margin-left: 10px;
+    margin-left: 7px;
   }
 
   /* -------------------------------------- §07/§08/§09/§10 ticker ------- */

@@ -23,8 +23,13 @@ import type { TickerItem, MarketQuote } from '@/lib/content';
  *    pan-y` keeps vertical page scrolling native), pointer capture keeps
  *    the gesture alive outside the bar, and the loop pauses only while a
  *    drag is active — on release the right-to-left motion resumes at once;
- *  - `prefers-reduced-motion: reduce` disables the auto-scroll (dragging
- *    still works) — the row becomes a manually browsable strip.
+ *  - the marquee runs on EVERY device (client report: the strip sat frozen
+ *    on some phones). Cause: the old build parked the loop whenever the OS
+ *    matched `prefers-reduced-motion: reduce` — Android "Remove animations",
+ *    Samsung "Reduce animations" and iOS Reduce Motion all map to it, so
+ *    those handsets showed a dead bar. The ticker is the delivery mechanism
+ *    for the live prices themselves, so the auto-scroll is now
+ *    unconditional; drag-to-browse remains the motion-free interaction.
  *
  * Data integrity (master prompt §07):
  *  - product names/icons come from the content layer (ticker.items);
@@ -100,7 +105,6 @@ export function MarketTicker({ items }: { items: TickerItem[] }) {
   const posRef = useRef(0);
   const periodRef = useRef(0); /* one set width + gap, px */
   const draggingRef = useRef(false);
-  const reducedRef = useRef(false);
   const dragStartX = useRef(0);
   const dragStartPos = useRef(0);
   const [dragging, setDragging] = useState(false);
@@ -207,17 +211,20 @@ export function MarketTicker({ items }: { items: TickerItem[] }) {
   }, [remeasure, quotes, failed]);
 
   /* auto-scroll: right-to-left, time-based (frame-rate independent),
-     paused while dragging / mouse-hovering / reduced-motion */
+     paused ONLY while an active drag scrubs the row. The old build also
+     parked the loop under `prefers-reduced-motion: reduce` — that is what
+     froze the bar on phones whose OS enables an animations-off
+     accessibility toggle (client report "static on some mobiles"). The
+     marquee carries the live prices, so it now runs unconditionally; the
+     pointer drag stays available as the reduced-motion browsing mode. */
   useEffect(() => {
     let raf = 0;
     let last: number | null = null;
-    reducedRef.current = window.matchMedia('(prefers-reduced-motion: reduce)').matches;
     const tick = (ts: number) => {
       if (last === null) last = ts;
       const dt = Math.min(ts - last, 100); /* clamp tab-switch jumps */
       last = ts;
-      const paused = draggingRef.current || reducedRef.current;
-      if (!paused && periodRef.current > 0) {
+      if (!draggingRef.current && periodRef.current > 0) {
         posRef.current -= (SCROLL_SPEED * dt) / 1000;
         normalize();
       }
